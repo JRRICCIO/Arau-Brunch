@@ -1,0 +1,46 @@
+        <!-- Feature -->
+        <article class="event-feature reveal">
+          <div class="event-feature__media">
+            <button type="button" class="event-feature__photo thumb" data-gallery="evento-feature"
+                    data-full="{{ eventos.feature.photo }}" data-caption="{{ eventos.feature.kicker }} — {{ eventos.feature.titleStart }} {{ eventos.feature.titleAccent }}">
+              <img src="{{ eventos.feature.photo }}" alt="{{ eventos.feature.photoAlt }}" width="760" height="560" loading="lazy" decoding="async" />
+              <span class="event-feature__play" aria-hidden="true">Ver fotos</span>
+            </button>
+            <div class="event-strip" aria-label="Más fotos de {{ eventos.feature.kicker }}">
+              {%- for s in eventos.feature.strip %}
+              <button type="button" class="event-strip__thumb thumb" data-gallery="evento-feature" data-full="{{ s.src }}" data-caption="{{ s.caption }}">
+                <img src="{{ s.src }}" alt="{{ s.alt }}" width="200" height="150" loading="lazy" decoding="async" />
+              </button>
+              {%- endfor %}
+            </div>
+          </div>
+          <div class="event-feature__body">
+            <p class="event__kicker">{{ eventos.feature.kicker }}</p>
+            <h3 class="event-feature__title">{{ eventos.feature.titleStart }} <span class="ital">{{ eventos.feature.titleAccent }}</span></h3>
+            <span class="event__chip">{{ eventos.feature.chip }}</span>
+            <p class="event-feature__desc">{{ eventos.feature.desc }}</p>
+            <div class="event__actions">
+              <a class="btn btn--terra" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer">Reservar por WhatsApp</a>
+              <a class="inline-link" href="https://instagram.com/{{ site.contacto.instagram }}" target="_blank" rel="noopener noreferrer">Ver fotos en Instagram →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Noches recurrentes -->
+        <div class="events-grid">
+          {%- for card in eventos.cards %}
+          <article class="event-card reveal">
+            <button type="button" class="event-card__photo thumb" data-gallery="evento-{{ loop.index }}"
+                    data-full="{{ card.photo }}" data-caption="{{ card.caption }}">
+              <img src="{{ card.photo }}" alt="{{ card.photoAlt }}" width="600" height="400" loading="lazy" decoding="async" />
+              <span class="event-feature__play" aria-hidden="true">Ver fotos</span>
+            </button>
+            <div class="event-card__body">
+              <p class="event__kicker">{{ card.kicker }}</p>
+              <h3 class="event-card__title">{{ card.title }}</h3>
+              <span class="event__chip">{{ card.chip }}</span>
+              <p class="event-card__desc">{{ card.desc }}</p>
+            </div>
+          </article>
+          {%- endfor %}
+        </div>

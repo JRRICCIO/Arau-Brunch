@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f3e9d6" />
+
+  <title>ARAU · Grilled Brunch & Specialty Coffee — Barcelona</title>
+  <meta name="description" content="No somos un brunch cualquiera. Alma australiana, corazón argentino: brunch a la brasa y café de especialidad en el Eixample, Barcelona." />
+
+  <link rel="canonical" href="https://araubrunch.netlify.app/" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:site_name" content="ARAU" />
+  <meta property="og:title" content="ARAU · Grilled Brunch & Specialty Coffee" />
+  <meta property="og:description" content="Aussie soul, Argentinian heart. Brunch a la brasa y café de especialidad en el Eixample, Barcelona." />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:url" content="https://araubrunch.netlify.app/" />
+  <meta property="og:image" content="https://araubrunch.netlify.app/img/facade.jpg" />
+  <meta property="og:image:alt" content="Fachada de ARAU con su arco de terracota en Provença 322, Barcelona" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ARAU · Grilled Brunch & Specialty Coffee" />
+  <meta name="twitter:description" content="Aussie soul, Argentinian heart. Brunch a la brasa y café de especialidad en Barcelona." />
+  <meta name="twitter:image" content="https://araubrunch.netlify.app/img/facade.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "ARAU — Grilled Brunch & Specialty Coffee",
+    "description": "Brunch a la brasa argentino-australiano y café de especialidad en el Eixample, Barcelona.",
+    "image": "https://araubrunch.netlify.app/img/facade.jpg",
+    "url": "https://araubrunch.netlify.app/",
+    "servesCuisine": ["Brunch", "Argentina", "Australiana", "Café de especialidad"],
+    "priceRange": "€€",
+    "acceptsReservations": "True",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer de Provença, 322",
+      "addressLocality": "Barcelona",
+      "postalCode": "08037",
+      "addressRegion": "Cataluña",
+      "addressCountry": "ES"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.3968763, "longitude": 2.1644798 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "16:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "09:30", "closes": "17:00" }
+    ],
+    "sameAs": ["https://instagram.com/araubrunch", "https://tiktok.com/@araubrunch"]
+  }
+  </script>
+
+  <!-- Favicon: logo ARAU (tacita con anteojos) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 104'%3E%3Crect width='100' height='104' rx='20' fill='%23f3e9d6'/%3E%3Cg fill='none' stroke='%23bd4b2b' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M43 20c-3-3-3-6 0-9'/%3E%3Cpath d='M50 18c-3-3-3-6 0-9'/%3E%3Cpath d='M57 20c-3-3-3-6 0-9'/%3E%3Cellipse cx='50' cy='30' rx='17' ry='4.6'/%3E%3Cpath d='M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37'/%3E%3Cpath d='M35.5 39c6 2 23 2 29 0'/%3E%3Cpath d='M44 60c4 3.5 8 3.5 12 0'/%3E%3Cpath d='M33 47c-5 1-10-1-13-6'/%3E%3Cpath d='M20 41l-3-19'/%3E%3Cpath d='M67 47c5 1 10-1 13-6'/%3E%3Cpath d='M80 41l3-19'/%3E%3Cpath d='M80.4 26l-.5-5M83 26l.4-5'/%3E%3Cpath d='M44 70l-2 13M42 83l-6 2'/%3E%3Cpath d='M56 70l2 13M58 83l6 2'/%3E%3C/g%3E%3Cpath d='M17 22l-2.6 4.5 5.4 0z' fill='%23bd4b2b'/%3E%3Cg fill='%23bd4b2b'%3E%3Crect x='37.5' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='52' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='47' y='47' width='6' height='2.2' rx='1'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <!-- Fuentes self-hosted (sin round-trip a Google) -->
+  <link rel="preload" as="font" type="font/woff2" href="fonts/fraunces-latin.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin.woff2" crossorigin />
+  <!-- Precarga del hero (LCP) -->
+  <link rel="preload" as="image" href="{{ site.hero.image }}" type="image/webp" fetchpriority="high" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header site-header--overlay" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="ARAU · Inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 100 104" width="36" height="37" role="img" aria-label="ARAU">
+            <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <!-- vapor -->
+              <path d="M43 20c-3-3-3-6 0-9"/>
+              <path d="M50 18c-3-3-3-6 0-9"/>
+              <path d="M57 20c-3-3-3-6 0-9"/>
+              <!-- borde taza -->
+              <ellipse cx="50" cy="30" rx="17" ry="4.6"/>
+              <!-- cuerpo taza -->
+              <path d="M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37"/>
+              <!-- línea del café -->
+              <path d="M35.5 39c6 2 23 2 29 0"/>
+              <!-- sonrisa -->
+              <path d="M44 60c4 3.5 8 3.5 12 0"/>
+              <!-- brazo izq + cuchillo -->
+              <path d="M33 47c-5 1-10-1-13-6"/>
+              <path d="M20 41l-3-19"/>
+              <!-- brazo der + tenedor -->
+              <path d="M67 47c5 1 10-1 13-6"/>
+              <path d="M80 41l3-19"/>
+              <path d="M80.4 26l-.5-5M83 26l.4-5"/>
+              <!-- piernas -->
+              <path d="M44 70l-2 13M42 83l-6 2"/>
+              <path d="M56 70l2 13M58 83l6 2"/>
+            </g>
+            <!-- punta cuchillo -->
+            <path d="M17 22l-2.6 4.5 5.4 0z" fill="currentColor"/>
+            <!-- anteojos de sol -->
+            <g fill="currentColor">
+              <rect x="37.5" y="45" width="10.5" height="7.4" rx="3.4"/>
+              <rect x="52" y="45" width="10.5" height="7.4" rx="3.4"/>
+              <rect x="47" y="47" width="6" height="2.2" rx="1"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand__word" translate="no">ARAU</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list" id="primary-nav">
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#cafe">Café</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#visitanos">Visitanos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--terra" href="#reservar">Reservar</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__bg" src="{{ site.hero.image }}" alt="{{ site.hero.imageAlt }}" width="720" height="960" fetchpriority="high" />
+      <span class="hero__scrim" aria-hidden="true"></span>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            Aussie soul · Argentinian heart
+          </p>
+          <span id="open-status" class="open-badge" aria-live="polite"></span>
+
+          <h1 class="hero__title" id="hero-title">
+            {{ site.hero.titleStart }} <span class="hero__title-accent swap" id="hero-swap" aria-label="{{ site.hero.titleAccent }}">{%- for w in (site.hero.accentSwap or [site.hero.titleAccent]) %}<span class="swap__w{% if loop.first %} is-on{% endif %}" aria-hidden="true">{{ w }}</span>{%- endfor %}</span>
+          </h1>
+
+          <p class="hero__lead">{{ site.hero.lead }}</p>
+
+          <div class="hero__cta">
+            <a class="btn btn--terra btn--lg" href="carta.html">
+              Ver la carta
+              <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg btn--on-photo" href="#reservar">Reservar mesa</a>
+          </div>
+
+          <ul class="hero__trust" aria-label="Lo que nos define">
+            <li>
+              <span class="hero__trust-num">9.6<span class="hero__trust-star" aria-hidden="true">★</span></span>
+              <span class="hero__trust-label">valoración media</span>
+            </li>
+            <li aria-hidden="true" class="hero__trust-sep"></li>
+            <li>
+              <span class="hero__trust-num">100%</span>
+              <span class="hero__trust-label">producto local</span>
+            </li>
+            <li aria-hidden="true" class="hero__trust-sep"></li>
+            <li>
+              <span class="hero__trust-num">+500</span>
+              <span class="hero__trust-label">cafés al mes</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="hero__cue" href="#nosotros" aria-label="Bajar a nuestra historia">
+        <span class="hero__cue-mark" aria-hidden="true">
+          <svg viewBox="0 0 100 104" width="30" height="31">
+            <g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M43 20c-3-3-3-6 0-9"/><path d="M50 18c-3-3-3-6 0-9"/><path d="M57 20c-3-3-3-6 0-9"/>
+              <ellipse cx="50" cy="30" rx="17" ry="4.6"/>
+              <path d="M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37"/>
+              <path d="M35.5 39c6 2 23 2 29 0"/><path d="M44 60c4 3.5 8 3.5 12 0"/>
+              <path d="M33 47c-5 1-10-1-13-6"/><path d="M20 41l-3-19"/>
+              <path d="M67 47c5 1 10-1 13-6"/><path d="M80 41l3-19"/><path d="M80.4 26l-.5-5M83 26l.4-5"/>
+              <path d="M44 70l-2 13M42 83l-6 2"/><path d="M56 70l2 13M58 83l6 2"/>
+            </g>
+            <path d="M17 22l-2.6 4.5 5.4 0z" fill="currentColor"/>
+            <g fill="currentColor"><rect x="37.5" y="45" width="10.5" height="7.4" rx="3.4"/><rect x="52" y="45" width="10.5" height="7.4" rx="3.4"/><rect x="47" y="47" width="6" height="2.2" rx="1"/></g>
+          </svg>
+        </span>
+        <span class="hero__cue-chevron" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Aussie soul</span><span class="marquee__sep">✶</span>
+        <span>Argentinian heart</span><span class="marquee__sep">✶</span>
+        <span>A la brasa</span><span class="marquee__sep">✶</span>
+        <span>Specialty coffee</span><span class="marquee__sep">✶</span>
+        <span>Pan de masa madre</span><span class="marquee__sep">✶</span>
+        <span>Aussie soul</span><span class="marquee__sep">✶</span>
+        <span>Argentinian heart</span><span class="marquee__sep">✶</span>
+        <span>A la brasa</span><span class="marquee__sep">✶</span>
+        <span>Specialty coffee</span><span class="marquee__sep">✶</span>
+        <span>Pan de masa madre</span><span class="marquee__sep">✶</span>
+      </div>
+    </div>
+
+    <!-- ===================== HISTORIA ===================== -->
+    <section class="historia section" id="nosotros" aria-labelledby="hist-title">
+      <div class="container historia__grid">
+        <figure class="historia__frame reveal">
+          <button type="button" class="historia__photo thumb" data-gallery="lugar"
+                  data-full="img/terrace.webp" data-caption="La terraza de ARAU en Provença 322 — brunch a la brasa al sol del Eixample">
+            <img src="img/terrace.webp" alt="Terraza de ARAU: mesa de terracota con eggs benedict y bloody mary, y la fachada con el cartel ARAU al fondo" width="720" height="900" loading="lazy" decoding="async" />
+          </button>
+          <figcaption class="historia__cap">Provença 322 · donde todo pasa</figcaption>
+        </figure>
+
+        <div class="historia__body reveal">
+          <p class="section-eyebrow">Nuestra historia</p>
+          <h2 class="section-title" id="hist-title">
+            Hace unos años, <span class="ital">ella no tenía</span> un brunch en Barcelona.
+          </h2>
+          <p>
+            Tenía una idea: unir el fuego y el asado de Argentina con la cultura de brunch y café de
+            especialidad que enamora en Australia. Dos mundos, una misma mesa.
+          </p>
+          <p>
+            Hoy esa idea tiene dirección. Cada mañana encendemos la brasa, molemos café de especialidad y
+            abrimos la puerta de <span translate="no">ARAU</span> para que te sientas, literalmente, como en casa.
+          </p>
+          <p>
+            Lo demás —los huevos en su punto, el dulce de leche de verdad, el flat white, las noches de
+            bingo y folklore— es la parte fácil. La difícil ya la hicimos: <em>animarnos</em>.
+          </p>
+          <p class="historia__sign">— Agustina, fundadora de <span translate="no">ARAU</span></p>
+        </div>
+      </div>
+
+      <div class="container stats reveal" aria-label="ARAU en números">
+        <div class="stat">
+          <span class="stat__num">+10</span>
+          <span class="stat__label">años de oficio gastronómico</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">9.6<span class="stat__star" aria-hidden="true">★</span></span>
+          <span class="stat__label">valoración de nuestra gente</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">+500</span>
+          <span class="stat__label">cafés de especialidad al mes</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">100%</span>
+          <span class="stat__label">ingredientes locales y frescos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERÍA ===================== -->
+    <section class="galeria" aria-labelledby="galeria-label">
+      <h2 class="galeria__overline" id="galeria-label">{{ galeria.overline }}</h2>
+      <div class="galeria__grid">
+        {%- for item in galeria.items %}
+        <button type="button" class="galeria__item{% if item.main %} galeria__item--main{% endif %} thumb" data-gallery="galeria"
+                data-full="{{ item.src }}" data-caption="{{ item.caption }}">
+          <img src="{{ item.src }}" alt="{{ item.alt }}" width="600" height="{% if item.main %}900{% else %}450{% endif %}" loading="lazy" decoding="async" />
+        </button>
+        {%- endfor %}
+      </div>
+    </section>
+
+    <!-- ===================== CARTA ===================== -->
+    <section class="carta section" id="carta" aria-labelledby="carta-title">
+      <div class="container">
+        <div class="carta__head reveal">
+          <p class="section-eyebrow">La carta</p>
+          <h2 class="section-title" id="carta-title">
+            Un vistazo a <span class="ital">la carta</span>
+          </h2>
+          <p class="carta__sub">Una probada de la casa. La carta completa —parrilla argentina, huevos aussie, dulces y café de especialidad— está a un clic.</p>
+        </div>
+
+        <div class="dishes">
+          <a class="dish dish--photo dish--link reveal" href="carta.html#huevos">
+            <div class="dish__photo" aria-hidden="true">
+              <img src="img/big-arau.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
+            </div>
+            <div class="dish__text">
+              <h3 class="dish__name">The Big <span translate="no">ARAU</span></h3>
+              <p class="dish__desc">Chorizo, panceta, champiñones, tomate asado, hash brown, alubias y dos huevos.</p>
+              <span class="dish__tag">La bestia</span>
+            </div>
+          </a>
+
+          <a class="dish dish--photo dish--link reveal" href="carta.html#huevos">
+            <div class="dish__photo" aria-hidden="true">
+              <img src="img/eggs-benedict.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
+            </div>
+            <div class="dish__text">
+              <h3 class="dish__name">Eggs Benedict</h3>
+              <p class="dish__desc">Huevos pochados, jamón, holandesa cítrica y cebollín, sobre masa madre.</p>
+              <span class="dish__tag">Clásico aussie</span>
+            </div>
+          </a>
+
+          <a class="dish dish--photo dish--link reveal" href="carta.html#parrilla">
+            <div class="dish__photo" aria-hidden="true">
+              <img src="img/mushroom-skillet.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
+            </div>
+            <div class="dish__text">
+              <h3 class="dish__name">De la parrilla</h3>
+              <p class="dish__desc">Entraña ahumada a la brasa, provoleta y asado para compartir. El corazón argentino.</p>
+              <span class="dish__tag">A la brasa</span>
+            </div>
+          </a>
+
+          <a class="dish dish--photo dish--link reveal" href="carta.html#dulces">
+            <div class="dish__photo" aria-hidden="true">
+              <img src="img/flan.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
+            </div>
+            <div class="dish__text">
+              <h3 class="dish__name">Flantástico</h3>
+              <p class="dish__desc">Flan casero de dulce de leche con crema. El final feliz que pide cualquier brunch.</p>
+              <span class="dish__tag">Para el dulce</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="carta__cta reveal">
+          <a class="btn btn--terra btn--lg" href="carta.html">
+            Ver la carta completa
+            <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#reservar">Reservá tu mesa</a>
+          <p class="carta__note">¿Alergias o dieta especial? Avisanos al reservar y lo resolvemos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PULL QUOTE ===================== -->
+    <section class="pullquote" aria-label="Cita">
+      <p class="pullquote__text reveal">
+        “No wonder Aussies are chill <span class="ital">if this is breakfast.</span>”
+      </p>
+    </section>
+
+    <!-- ===================== CAFÉ ===================== -->
+    <section class="cafe section" id="cafe" aria-labelledby="cafe-title">
+      <div class="container cafe__grid">
+        <div class="cafe__art reveal" aria-hidden="true">
+          <div class="cafe__photo">
+            <img src="img/cafe.webp" alt="Flat white de especialidad en taza de cerámica artesanal" width="600" height="800" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="cafe__copy reveal">
+          <p class="section-eyebrow section-eyebrow--cream">Café de especialidad</p>
+          <h2 class="section-title section-title--cream" id="cafe-title">
+            El <span class="ital">flat white</span> es religión
+          </h2>
+          <p class="cafe__lead">
+            Tostamos pensando en el grano, no en la prisa. Trabajamos cafés de especialidad
+            seleccionados uno a uno y los servimos como en Australia: flat white, cortado largo,
+            filtrado del día. Más de <strong>500 tazas</strong> salen de la barra cada mes.
+          </p>
+          <ul class="cafe__chips">
+            <li>Flat white</li>
+            <li>Single origin</li>
+            <li>Filtrado V60</li>
+            <li>Cold brew</li>
+            <li>Matcha</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EVENTOS ===================== -->
+    <section class="eventos section" id="eventos" aria-labelledby="eventos-title">
+      <div class="container">
+        <div class="eventos__head reveal">
+          <p class="section-eyebrow">Más que un brunch</p>
+          <h2 class="section-title" id="eventos-title">Pasan <span class="ital">cosas</span> en <span translate="no">ARAU</span></h2>
+          <p class="carta__sub">Bingo, folklore y música en vivo. Tocá una foto para verla en grande, o seguinos en <a class="inline-link" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">@araubrunch</a> para la agenda y las fotos de la última edición.</p>
+        </div>
+
+        {% include "eventos.njk" %}
+
+        <div class="loyalty reveal">
+          <span class="loyalty__badge" aria-hidden="true">★</span>
+          <p class="loyalty__text">
+            <strong>Tu 6º brunch, gratis.</strong> Sumá puntos con cada visita en nuestra app de fidelidad
+            y el sexto corre por cuenta de la casa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCIA ===================== -->
+    <section class="experiencia section" id="experiencia" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="experiencia__head reveal">
+          <p class="section-eyebrow">La experiencia</p>
+          <h2 class="section-title" id="exp-title">Lo que se llevan de <span class="ital">vuelta</span></h2>
+          <p class="carta__sub">Si lo decimos nosotros queda mal… pero si lo dicen ustedes, lo contamos con orgullo.</p>
+        </div>
+
+        <ul class="quotes">
+          <li class="quote reveal">
+            <p class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</p>
+            <blockquote class="quote__text">
+              "La milanesa con trufa es de otro nivel. Se nota el fuego en cada bocado y el café acompaña perfecto."
+            </blockquote>
+            <p class="quote__author">Martina&nbsp;G. <span>· vino por el brunch, volvió por el café</span></p>
+          </li>
+          <li class="quote reveal">
+            <p class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</p>
+            <blockquote class="quote__text">
+              "Un rincón de Buenos Aires en el Eixample. El flan de dulce de leche me hizo cerrar los ojos."
+            </blockquote>
+            <p class="quote__author">Pau&nbsp;R. <span>· habitué de los domingos</span></p>
+          </li>
+          <li class="quote reveal">
+            <p class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</p>
+            <blockquote class="quote__text">
+              "Mejor flat white de la zona y un Big Breakfast que te deja listo para el día. Atención de diez."
+            </blockquote>
+            <p class="quote__author">Lucía&nbsp;M. <span>· reseña de Google</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== VISITANOS ===================== -->
+    <section class="visitanos section" id="visitanos" aria-labelledby="visit-title">
+      <div class="container visitanos__grid">
+        <div class="visitanos__info reveal">
+          <p class="section-eyebrow section-eyebrow--cream">Visitanos</p>
+          <h2 class="section-title section-title--cream" id="visit-title">Te esperamos con la <span class="ital">brasa encendida</span></h2>
+
+          <dl class="info">
+            <div class="info__row">
+              <dt>Dónde</dt>
+              <dd>
+                {{ site.contacto.direccion }}<br />
+                {{ site.contacto.ciudad }}
+              </dd>
+            </div>
+            <div class="info__row">
+              <dt>Horario</dt>
+              <dd>
+                <ul class="hours">
+                  {%- for h in site.horarios %}
+                  <li{% if h.cerrado %} class="hours--closed"{% endif %}><span>{{ h.dia }}</span><span>{% if h.cerrado %}Cerrado{% else %}{{ h.apertura }} – {{ h.cierre }}{% endif %}</span></li>
+                  {%- endfor %}
+                </ul>
+              </dd>
+            </div>
+            <div class="info__row">
+              <dt>Contacto</dt>
+              <dd>
+                <a class="info__link" href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a><br />
+                <a class="info__link" href="mailto:{{ site.contacto.email }}">{{ site.contacto.email }}</a>
+              </dd>
+            </div>
+          </dl>
+
+          <div class="socials" aria-label="Redes sociales">
+            <a class="social" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer" aria-label="ARAU en Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.4" fill="currentColor"/></svg>
+              <span>@araubrunch</span>
+            </a>
+            <a class="social" href="https://tiktok.com/@araubrunch" target="_blank" rel="noopener noreferrer" aria-label="ARAU en TikTok">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 4c.5 2.7 2.3 4.4 5 4.6v3c-1.8 0-3.5-.6-5-1.6V16a5.5 5.5 0 1 1-5.5-5.5c.3 0 .6 0 .9.1v3.1a2.5 2.5 0 1 0 1.6 2.3V4z" fill="currentColor"/></svg>
+              <span>@araubrunch</span>
+            </a>
+            <a class="social" href="https://linktr.ee/araubrunch" target="_blank" rel="noopener noreferrer" aria-label="ARAU en Linktree">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v18M12 8l6-4M12 8 6 4M12 12l7 3M12 12l-7 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <span>linktr.ee</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="visitanos__map reveal">
+          <button type="button" class="map-embed" id="map-embed"
+                  data-map="https://maps.google.com/maps?q=Carrer%20de%20Proven%C3%A7a%20322%20Barcelona&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  aria-label="Cargar el mapa de Google de ARAU en Provença 322">
+            <span class="map-embed__inner">
+              <svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></svg>
+              <span class="map-embed__title">Ver el mapa</span>
+              <span class="map-embed__sub">Carrer de Provença, 322 · Eixample, Barcelona</span>
+              <span class="map-embed__note">Se carga Google Maps al tocar (puede usar cookies)</span>
+            </span>
+          </button>
+          <p class="map-embed__alt">
+            <a class="inline-link" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener noreferrer">Abrir en Google Maps ↗</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESERVAR ===================== -->
+    <section class="reservar section" id="reservar" aria-labelledby="reservar-title">
+      <div class="container reservar__inner">
+        <div class="reservar__intro reveal">
+          <p class="section-eyebrow">Reservas</p>
+          <h2 class="section-title" id="reservar-title">Sumate a la <span class="ital">mesa</span></h2>
+          <p class="reservar__lead">
+            Contanos cuándo y cuántos son. Te confirmamos por mail o WhatsApp en el día.
+            Para grupos de más de 8 personas, escribinos directo.
+          </p>
+          <a class="reservar__wa" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
+            Reservar por WhatsApp
+          </a>
+        </div>
+
+        <form class="reserva-form reveal" id="reserva-form" name="reserva" method="POST"
+              data-netlify="true" netlify-honeypot="bot-field" action="/?reserva=ok#reservar" novalidate>
+          <input type="hidden" name="form-name" value="reserva" />
+          <p class="hp-field" hidden aria-hidden="true">
+            <label>No llenar si sos humano: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+          <div class="field">
+            <label for="rf-nombre">Nombre</label>
+            <input id="rf-nombre" name="nombre" type="text" autocomplete="name" placeholder="Ej.: Camila Pérez…" required />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="rf-fecha">Fecha</label>
+              <input id="rf-fecha" name="fecha" type="date" required />
+            </div>
+            <div class="field">
+              <label for="rf-hora">Hora</label>
+              <input id="rf-hora" name="hora" type="time" required />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="rf-personas">Comensales</label>
+              <input id="rf-personas" name="personas" type="number" inputmode="numeric" min="1" max="8" step="1" value="2" required />
+            </div>
+            <div class="field">
+              <label for="rf-tel">Teléfono</label>
+              <input id="rf-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="+34 6XX XXX XXX…" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="rf-email">Email</label>
+            <input id="rf-email" name="email" type="email" autocomplete="email" spellcheck="false" placeholder="hola@email.com…" required />
+          </div>
+
+          <div class="field">
+            <label for="rf-notas">Alergias o comentarios <span class="field__opt">(opcional)</span></label>
+            <textarea id="rf-notas" name="notas" rows="3" placeholder="Sin gluten, mesa junto a la ventana…"></textarea>
+          </div>
+
+          <button class="btn btn--terra btn--lg btn--block" type="submit">Solicitar reserva</button>
+          <p class="reserva-form__hint" id="rf-hint" aria-live="polite">
+            Te confirmamos por mail o WhatsApp en el día.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="#top" aria-label="ARAU · Inicio">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 100 104" width="32" height="33" role="img" aria-label="ARAU">
+              <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M43 20c-3-3-3-6 0-9"/>
+                <path d="M50 18c-3-3-3-6 0-9"/>
+                <path d="M57 20c-3-3-3-6 0-9"/>
+                <ellipse cx="50" cy="30" rx="17" ry="4.6"/>
+                <path d="M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37"/>
+                <path d="M35.5 39c6 2 23 2 29 0"/>
+                <path d="M44 60c4 3.5 8 3.5 12 0"/>
+                <path d="M33 47c-5 1-10-1-13-6"/>
+                <path d="M20 41l-3-19"/>
+                <path d="M67 47c5 1 10-1 13-6"/>
+                <path d="M80 41l3-19"/>
+                <path d="M80.4 26l-.5-5M83 26l.4-5"/>
+                <path d="M44 70l-2 13M42 83l-6 2"/>
+                <path d="M56 70l2 13M58 83l6 2"/>
+              </g>
+              <path d="M17 22l-2.6 4.5 5.4 0z" fill="currentColor"/>
+              <g fill="currentColor">
+                <rect x="37.5" y="45" width="10.5" height="7.4" rx="3.4"/>
+                <rect x="52" y="45" width="10.5" height="7.4" rx="3.4"/>
+                <rect x="47" y="47" width="6" height="2.2" rx="1"/>
+              </g>
+            </svg>
+          </span>
+          <span class="brand__word" translate="no">ARAU</span>
+        </a>
+        <p class="footer__tag">Aussie soul, Argentinian heart.<br />Grilled brunch &amp; specialty coffee.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Enlaces del pie">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#carta">La carta</a>
+        <a href="#cafe">Café</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#reservar">Reservar</a>
+      </nav>
+
+      <div class="footer__contact">
+        <p>{{ site.contacto.direccion }} · Barcelona</p>
+        <p><a href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a> · <a href="mailto:{{ site.contacto.email }}">{{ site.contacto.email }}</a></p>
+        <p class="footer__social-row">
+          <a href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+          <a href="https://tiktok.com/@araubrunch" target="_blank" rel="noopener noreferrer">TikTok</a> ·
+          <a href="https://linktr.ee/araubrunch" target="_blank" rel="noopener noreferrer">Linktree</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> <span translate="no">ARAU</span> · Hecho con fuego en Barcelona.</p>
+      <p class="footer__credit">Brunch a la brasa, todos los días menos los martes.</p>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp flotante -->
+  <a class="wa-float" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="Reservar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
+    <span class="wa-float__label">Reservar</span>
+  </a>
+
+  <!-- Barra de acción fija (móvil) -->
+  <div class="cta-bar" id="cta-bar" aria-hidden="true">
+    <a class="cta-bar__btn cta-bar__btn--wa" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
+    </a>
+    <a class="cta-bar__btn cta-bar__btn--primary" href="#reservar">Reservar mesa</a>
+  </div>
+
+  <!-- Lightbox reutilizable (galería + platos + eventos) -->
+  <dialog class="lightbox" id="lightbox" aria-label="Galería de fotos">
+    <button type="button" class="lightbox__close" data-lb="close" aria-label="Cerrar galería">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </button>
+    <button type="button" class="lightbox__nav lightbox__prev" data-lb="prev" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lightbox__fig">
+      <img class="lightbox__img" id="lightbox-img" alt="" />
+      <figcaption class="lightbox__cap" id="lightbox-cap"></figcaption>
+    </figure>
+    <button type="button" class="lightbox__nav lightbox__next" data-lb="next" aria-label="Foto siguiente">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <p class="lightbox__count" id="lightbox-count" aria-live="polite"></p>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

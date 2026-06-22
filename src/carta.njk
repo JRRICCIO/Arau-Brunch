@@ -1,0 +1,794 @@
+---
+permalink: "/carta.html"
+---
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f3e9d6" />
+
+  <title>Carta · ARAU — Grilled Brunch &amp; Specialty Coffee, Barcelona</title>
+  <meta name="description" content="La carta completa de ARAU: brunch a la brasa, huevos, parrilla argentina, dulces y café de especialidad en el Eixample, Barcelona. Aussie soul, Argentinian heart." />
+
+  <link rel="canonical" href="https://araubrunch.netlify.app/carta.html" />
+
+  <meta property="og:type" content="restaurant.menu" />
+  <meta property="og:site_name" content="ARAU" />
+  <meta property="og:title" content="Carta · ARAU — Grilled Brunch & Specialty Coffee" />
+  <meta property="og:description" content="La carta completa: brunch a la brasa y café de especialidad en Barcelona. Aussie soul, Argentinian heart." />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:url" content="https://araubrunch.netlify.app/carta.html" />
+  <meta property="og:image" content="https://araubrunch.netlify.app/img/spread.jpg" />
+  <meta property="og:image:alt" content="Mesa de ARAU con tostada de palta, eggs benedict y café de especialidad" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://araubrunch.netlify.app/img/spread.jpg" />
+
+  <!-- Favicon: logo ARAU (tacita con anteojos) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 104'%3E%3Crect width='100' height='104' rx='20' fill='%23f3e9d6'/%3E%3Cg fill='none' stroke='%23bd4b2b' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M43 20c-3-3-3-6 0-9'/%3E%3Cpath d='M50 18c-3-3-3-6 0-9'/%3E%3Cpath d='M57 20c-3-3-3-6 0-9'/%3E%3Cellipse cx='50' cy='30' rx='17' ry='4.6'/%3E%3Cpath d='M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37'/%3E%3Cpath d='M35.5 39c6 2 23 2 29 0'/%3E%3Cpath d='M44 60c4 3.5 8 3.5 12 0'/%3E%3Cpath d='M33 47c-5 1-10-1-13-6'/%3E%3Cpath d='M20 41l-3-19'/%3E%3Cpath d='M67 47c5 1 10-1 13-6'/%3E%3Cpath d='M80 41l3-19'/%3E%3Cpath d='M80.4 26l-.5-5M83 26l.4-5'/%3E%3Cpath d='M44 70l-2 13M42 83l-6 2'/%3E%3Cpath d='M56 70l2 13M58 83l6 2'/%3E%3C/g%3E%3Cpath d='M17 22l-2.6 4.5 5.4 0z' fill='%23bd4b2b'/%3E%3Cg fill='%23bd4b2b'%3E%3Crect x='37.5' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='52' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='47' y='47' width='6' height='2.2' rx='1'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <!-- Fuentes self-hosted (sin round-trip a Google) -->
+  <link rel="preload" as="font" type="font/woff2" href="fonts/fraunces-latin.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin.woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+
+  <!-- ===================== ESTILOS PROPIOS DE LA CARTA ===================== -->
+  <style>
+    /* La carta usa los tokens de styles.css (--terra, --cream, etc). No los redefinimos. */
+    :root { --header-h: 72px; }
+
+    /* En esta página el header es SÓLIDO crema desde arriba (no hay foto hero). */
+    .site-header {
+      background: rgba(243, 233, 214, .96);
+      backdrop-filter: blur(14px) saturate(1.2);
+      box-shadow: 0 1px 0 rgba(52, 37, 28, .08);
+    }
+    .site-header.scrolled {
+      box-shadow: 0 1px 0 rgba(52, 37, 28, .08), 0 10px 30px -24px rgba(52, 37, 28, .5);
+    }
+    /* Afordancia "volver al inicio" en el header */
+    .header__back {
+      display: inline-flex; align-items: center; gap: .4rem;
+      font-size: .9rem; font-weight: 500; color: var(--ink-soft);
+      transition: color .2s var(--ease);
+    }
+    .header__back:hover { color: var(--terra-deep); }
+    .header__back svg { transition: transform .2s var(--ease); }
+    .header__back:hover svg { transform: translateX(-3px); }
+    .nav__list a[aria-current="page"] { color: var(--ink); }
+    .nav__list a[aria-current="page"]::after { transform: scaleX(1); }
+
+    /* ---------- Banda intro ---------- */
+    .menu-intro {
+      background:
+        radial-gradient(110% 90% at 88% 0%, rgba(217, 99, 58, .12), transparent 55%),
+        radial-gradient(90% 80% at 0% 100%, rgba(217, 154, 62, .1), transparent 50%),
+        var(--cream);
+      padding-block: clamp(2.6rem, 6vw, 4.5rem) clamp(2rem, 4vw, 3rem);
+      text-align: center;
+    }
+    .menu-intro__inner { max-width: 720px; margin-inline: auto; }
+    .menu-intro__title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-optical-sizing: auto;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      line-height: 1.02;
+      letter-spacing: -.025em;
+      color: var(--ink);
+      margin-top: .4rem;
+      text-wrap: balance;
+    }
+    .menu-intro__title .ital { color: var(--terra); }
+    .menu-intro__sub {
+      margin-top: 1.1rem;
+      font-size: clamp(1.02rem, 2.2vw, 1.18rem);
+      color: var(--ink-soft);
+      max-width: 50ch;
+      margin-inline: auto;
+      text-wrap: pretty;
+    }
+    .menu-intro__sub strong { color: var(--ink); font-weight: 600; }
+    .menu-intro__dateline {
+      margin-top: 1.4rem;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: .98rem;
+      color: var(--terra-deep);
+    }
+    .menu-intro__disclaimer {
+      margin-top: .55rem;
+      font-size: .86rem;
+      color: var(--ink-soft);
+      max-width: 56ch;
+      margin-inline: auto;
+    }
+    .menu-intro__actions {
+      margin-top: 1.7rem;
+      display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center;
+    }
+
+    /* ---------- Tab bar pegajosa ---------- */
+    .menu-tabs {
+      position: sticky;
+      top: var(--header-h, 72px);
+      z-index: 80;
+      background: rgba(243, 233, 214, .95);
+      backdrop-filter: blur(12px) saturate(1.2);
+      border-block: 1px solid rgba(52, 37, 28, .1);
+    }
+    .menu-tabs__scroll {
+      display: flex;
+      gap: .55rem;
+      max-width: var(--maxw);
+      margin-inline: auto;
+      padding: .7rem var(--gutter);
+      overflow-x: auto;
+      scroll-snap-type: x proximity;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .menu-tabs__scroll::-webkit-scrollbar { display: none; }
+    .menu-tab {
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      font-size: .88rem;
+      font-weight: 600;
+      letter-spacing: .01em;
+      color: var(--ink-soft);
+      padding: .5rem 1rem;
+      border: 1px solid rgba(52, 37, 28, .16);
+      border-radius: 100px;
+      background: var(--cream-card);
+      white-space: nowrap;
+      transition: background-color .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+    }
+    .menu-tab:hover { color: var(--terra-deep); border-color: rgba(189, 75, 43, .4); }
+    .menu-tab.is-active {
+      background: var(--terra-deep);
+      color: #fff;
+      border-color: var(--terra-deep);
+    }
+    .menu-tab:focus-visible {
+      outline: 2px solid var(--terra);
+      outline-offset: 2px;
+    }
+
+    /* ---------- Leyenda dietética ---------- */
+    .menu-legend {
+      background: var(--cream-200);
+      border-bottom: 1px solid rgba(52, 37, 28, .08);
+      padding-block: 1.1rem;
+    }
+    .menu-legend__inner {
+      max-width: var(--maxw);
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .7rem 1.1rem;
+    }
+    .menu-legend__lead {
+      font-size: .9rem;
+      color: var(--ink);
+      font-weight: 500;
+    }
+    .menu-legend__lead strong { color: var(--terra-deep); font-weight: 700; }
+    .menu-legend__keys {
+      display: flex; flex-wrap: wrap; gap: .5rem;
+      list-style: none; padding: 0; margin: 0;
+    }
+    .menu-legend__keys li {
+      display: inline-flex; align-items: center; gap: .35rem;
+      font-size: .82rem; color: var(--ink-soft);
+    }
+    .menu-legend__price {
+      margin-left: auto;
+      font-size: .82rem; color: var(--ink-soft);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ---------- Pills dietéticas (con letra/ícono + color + aria-label) ---------- */
+    .diet {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-width: 1.55em;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      line-height: 1;
+      padding: .26em .5em;
+      border-radius: 6px;
+      border: 1px solid currentColor;
+      vertical-align: middle;
+    }
+    .diet--gf { color: #8a5a14; background: rgba(217, 154, 62, .16); }
+    .diet--vg { color: #45511f; background: rgba(124, 132, 86, .26); }
+    .diet--ve { color: #2c5329; background: rgba(76, 122, 64, .24); }
+    .diet--spicy { color: var(--terra-deep); background: rgba(189, 75, 43, .12); border-color: rgba(189, 75, 43, .5); }
+    .diet--house { color: #9c6a16; background: rgba(217, 154, 62, .14); border-color: rgba(217, 154, 62, .55); }
+
+    /* ---------- Secciones de la carta ---------- */
+    .menu-section {
+      scroll-margin-top: calc(var(--header-h, 72px) + 64px);
+      padding-block: clamp(3rem, 7vw, 5rem);
+    }
+    .menu-section:nth-of-type(even) { background: var(--cream-100); }
+    .menu-section:nth-of-type(odd) { background: var(--cream); }
+    .menu-section__head { margin-bottom: clamp(1.6rem, 3vw, 2.4rem); }
+    .menu-section__title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-optical-sizing: auto;
+      font-size: clamp(1.9rem, 4.5vw, 2.9rem);
+      line-height: 1.05;
+      letter-spacing: -.015em;
+      color: var(--ink);
+    }
+    .menu-section__title .ital { color: var(--terra); font-style: italic; font-weight: 500; }
+    .menu-section__sub {
+      margin-top: .5rem;
+      color: var(--ink-soft);
+      font-size: 1.02rem;
+      font-style: italic;
+      font-family: var(--font-display);
+    }
+
+    /* Foto hero de sección */
+    .menu-section__photo {
+      margin: 0 0 clamp(1.6rem, 3vw, 2.4rem);
+      border-radius: var(--radius);
+      overflow: hidden;
+      max-height: 320px;
+      border: 1px solid rgba(52, 37, 28, .1);
+      box-shadow: 0 28px 56px -38px rgba(52, 37, 28, .55);
+    }
+    .menu-section__photo img {
+      width: 100%; height: 320px;
+      object-fit: cover; display: block;
+    }
+
+    /* Filas de platos */
+    .menu-items { list-style: none; padding: 0; margin: 0; }
+    .menu-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      padding-block: clamp(1rem, 2.2vw, 1.35rem);
+      border-bottom: 1px solid rgba(52, 37, 28, .1);
+    }
+    .menu-item:first-child { border-top: 1px solid rgba(52, 37, 28, .1); }
+    .menu-item__main { flex: 1 1 auto; min-width: 0; }
+    .menu-item__name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.15rem;
+      line-height: 1.25;
+      color: var(--ink);
+      display: flex; flex-wrap: wrap; align-items: center; gap: .45rem;
+    }
+    .menu-item__name .diet { margin-top: 1px; }
+    .menu-item__desc {
+      margin-top: .4rem;
+      font-size: .92rem;
+      color: var(--ink-soft);
+      max-width: 60ch;
+      text-wrap: pretty;
+    }
+    .menu-item__price {
+      flex: 0 0 auto;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.18rem;
+      color: var(--terra-deep);
+      font-variant-numeric: tabular-nums;
+      padding-top: .1rem;
+      text-align: right;
+      min-width: 4ch;
+    }
+
+    /* Café: grid de 2 columnas más ligero */
+    .menu-coffee {
+      list-style: none; padding: 0; margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .1rem 2.5rem;
+    }
+    .menu-coffee li {
+      display: flex; align-items: baseline; gap: .75rem;
+      padding-block: .7rem;
+      border-bottom: 1px solid rgba(52, 37, 28, .08);
+    }
+    .menu-coffee__name {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 1.02rem;
+      color: var(--ink);
+    }
+    .menu-coffee__dots {
+      flex: 1 1 auto;
+      border-bottom: 1px dotted rgba(52, 37, 28, .22);
+      transform: translateY(-.25em);
+    }
+    .menu-coffee__price {
+      font-family: var(--font-display);
+      font-weight: 600;
+      color: var(--terra-deep);
+      font-variant-numeric: tabular-nums;
+    }
+    .menu-note {
+      margin-top: 1.2rem;
+      font-size: .9rem;
+      color: var(--ink-soft);
+      font-style: italic;
+    }
+    .menu-note strong { color: var(--ink); font-style: normal; }
+
+    /* Bebidas: grid de 2 columnas como café */
+    .menu-drinks { list-style: none; padding: 0; margin: 0;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: .1rem 2.5rem; }
+    .menu-drinks li {
+      display: flex; align-items: baseline; gap: .75rem;
+      padding-block: .7rem;
+      border-bottom: 1px solid rgba(52, 37, 28, .08);
+    }
+    .menu-drinks__name { font-family: var(--font-display); font-weight: 500; font-size: 1.02rem; color: var(--ink); }
+    .menu-drinks__dots { flex: 1 1 auto; border-bottom: 1px dotted rgba(52, 37, 28, .22); transform: translateY(-.25em); }
+    .menu-drinks__price { font-family: var(--font-display); font-weight: 600; color: var(--terra-deep); font-variant-numeric: tabular-nums; }
+
+    /* Cierre / volver */
+    .menu-outro {
+      background: var(--espresso);
+      color: var(--on-dark);
+      text-align: center;
+      padding-block: clamp(3rem, 7vw, 5rem);
+    }
+    .menu-outro__title {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+      color: var(--cream-100);
+      text-wrap: balance;
+    }
+    .menu-outro__title .ital { color: var(--gold); font-style: italic; }
+    .menu-outro__actions { margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: .9rem; justify-content: center; }
+    .menu-outro .btn--ghost { color: var(--cream-100); border-color: rgba(244, 234, 217, .3); }
+    .menu-outro .btn--ghost:hover { color: var(--gold); border-color: var(--gold); background: rgba(217, 154, 62, .1); }
+
+    /* ---------- Barra de acción móvil ---------- */
+    .menu-actionbar {
+      display: none;
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      z-index: 95;
+      gap: .7rem;
+      padding: .7rem var(--gutter) calc(.7rem + env(safe-area-inset-bottom));
+      background: rgba(243, 233, 214, .97);
+      backdrop-filter: blur(14px) saturate(1.2);
+      border-top: 1px solid rgba(52, 37, 28, .12);
+      box-shadow: 0 -10px 30px -24px rgba(52, 37, 28, .6);
+    }
+    .menu-actionbar .btn { flex: 1 1 0; min-height: 48px; }
+
+    @media (max-width: 900px) {
+      .menu-actionbar { display: flex; }
+      .menu-coffee, .menu-drinks { grid-template-columns: 1fr; }
+      /* dejar aire para que la barra no tape el footer */
+      .site-footer { padding-bottom: calc(2rem + 64px); }
+      .menu-section__photo img { height: 240px; }
+    }
+    @media (max-width: 540px) {
+      .menu-legend__price { margin-left: 0; }
+      .menu-item { gap: 1rem; }
+      .menu-section__photo img { height: 200px; }
+    }
+
+    /* ---------- Reveal opcional (respeta reduced-motion via styles.css) ---------- */
+    .js .menu-section .reveal { /* hereda de styles.css */ }
+
+    /* ---------- Print: carta limpia para el personal ---------- */
+    @media print {
+      .site-header, .menu-tabs, .menu-legend, .menu-actionbar,
+      .wa-float, .site-footer, .menu-intro__actions, .menu-outro,
+      .menu-section__photo { display: none !important; }
+      html, body { background: #fff !important; color: #000 !important; }
+      .menu-intro { background: #fff !important; padding-block: 1rem 0; text-align: left; }
+      .menu-intro__title { color: #000 !important; font-size: 1.8rem; }
+      .menu-intro__title .ital { color: #000 !important; }
+      .menu-section { background: #fff !important; padding-block: .8rem; break-inside: avoid; }
+      .menu-section__title, .menu-item__name, .menu-coffee__name, .menu-drinks__name { color: #000 !important; }
+      .menu-item__price, .menu-coffee__price, .menu-drinks__price { color: #000 !important; }
+      .menu-item__desc, .menu-section__sub { color: #333 !important; }
+      .menu-coffee, .menu-drinks { grid-template-columns: 1fr 1fr; }
+      .diet { border-color: #000 !important; color: #000 !important; background: none !important; }
+      a[href]::after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="ARAU · Inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 100 104" width="36" height="37" role="img" aria-label="ARAU">
+            <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <!-- vapor -->
+              <path d="M43 20c-3-3-3-6 0-9"/>
+              <path d="M50 18c-3-3-3-6 0-9"/>
+              <path d="M57 20c-3-3-3-6 0-9"/>
+              <!-- borde taza -->
+              <ellipse cx="50" cy="30" rx="17" ry="4.6"/>
+              <!-- cuerpo taza -->
+              <path d="M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37"/>
+              <!-- línea del café -->
+              <path d="M35.5 39c6 2 23 2 29 0"/>
+              <!-- sonrisa -->
+              <path d="M44 60c4 3.5 8 3.5 12 0"/>
+              <!-- brazo izq + cuchillo -->
+              <path d="M33 47c-5 1-10-1-13-6"/>
+              <path d="M20 41l-3-19"/>
+              <!-- brazo der + tenedor -->
+              <path d="M67 47c5 1 10-1 13-6"/>
+              <path d="M80 41l3-19"/>
+              <path d="M80.4 26l-.5-5M83 26l.4-5"/>
+              <!-- piernas -->
+              <path d="M44 70l-2 13M42 83l-6 2"/>
+              <path d="M56 70l2 13M58 83l6 2"/>
+            </g>
+            <!-- punta cuchillo -->
+            <path d="M17 22l-2.6 4.5 5.4 0z" fill="currentColor"/>
+            <!-- anteojos de sol -->
+            <g fill="currentColor">
+              <rect x="37.5" y="45" width="10.5" height="7.4" rx="3.4"/>
+              <rect x="52" y="45" width="10.5" height="7.4" rx="3.4"/>
+              <rect x="47" y="47" width="6" height="2.2" rx="1"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand__word" translate="no">ARAU</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list" id="primary-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#top" aria-current="page">Carta</a></li>
+          <li><a href="index.html#cafe">Café</a></li>
+          <li><a href="index.html#visitanos">Visitanos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__back" href="index.html">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Inicio
+        </a>
+        <a class="btn btn--terra" href="index.html#reservar">Reservar</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================== INTRO ===================== -->
+    <section class="menu-intro" aria-labelledby="menu-title">
+      <div class="container menu-intro__inner">
+        <p class="section-eyebrow">La carta</p>
+        <h1 class="menu-intro__title" id="menu-title">Comé como en <span class="ital" translate="no">ARAU</span></h1>
+        <p class="menu-intro__sub">
+          <strong>Aussie soul, Argentinian heart.</strong> Brunch a la brasa, huevos en su punto y café de
+          especialidad — la carta completa, de principio a fin.
+        </p>
+        <p class="menu-intro__dateline">Carta de temporada · actualizada junio 2026</p>
+        <p class="menu-intro__disclaimer">
+          Los precios son orientativos y la carta puede variar según temporada y disponibilidad.
+        </p>
+        <div class="menu-intro__actions">
+          <a class="btn btn--ghost" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">
+            Pedir y novedades en Instagram
+            <svg class="btn__arrow" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TABS PEGAJOSAS ===================== -->
+    <nav class="menu-tabs" aria-label="Categorías de la carta">
+      <div class="menu-tabs__scroll">
+        {%- for section in carta.sections %}
+        <a class="menu-tab" href="#{{ section | anchor }}" data-tab="{{ section | anchor }}">{{ section.label }}</a>
+        {%- endfor %}
+      </div>
+    </nav>
+
+    <!-- ===================== LEYENDA ===================== -->
+    <div class="menu-legend">
+      <div class="menu-legend__inner">
+        <p class="menu-legend__lead">
+          <strong>GF</strong> · versión sin gluten disponible en casi todos los platos. Avisanos.
+        </p>
+        <ul class="menu-legend__keys" aria-label="Significado de las etiquetas">
+          <li><span class="diet diet--gf" aria-label="Sin gluten">GF</span> sin gluten</li>
+          <li><span class="diet diet--vg" aria-label="Vegetariano">VG</span> vegetariano</li>
+          <li><span class="diet diet--ve" aria-label="Vegano">VE</span> vegano</li>
+          <li><span class="diet diet--spicy" aria-label="Picante">🌶</span> picante</li>
+          <li><span class="diet diet--house" aria-label="Especialidad de la casa">⭐</span> de la casa</li>
+        </ul>
+        <p class="menu-legend__price">Precios en € · IVA incluido</p>
+      </div>
+    </div>
+
+    {% include "carta-sections.njk" %}
+
+    <!-- ===================== CIERRE ===================== -->
+    <section class="menu-outro" aria-labelledby="outro-title">
+      <div class="container">
+        <h2 class="menu-outro__title" id="outro-title">¿Se te hizo <span class="ital">agua la boca?</span></h2>
+        <div class="menu-outro__actions">
+          <a class="btn btn--terra btn--lg" href="index.html#reservar">Reservá tu mesa</a>
+          <a class="btn btn--ghost btn--lg" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener">
+            Cómo llegar
+            <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== BARRA DE ACCIÓN MÓVIL ===================== -->
+  <div class="menu-actionbar" aria-label="Acciones rápidas">
+    <a class="btn btn--terra" href="index.html#reservar">Reservar</a>
+    <a class="btn btn--ghost" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener">Cómo llegar</a>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="index.html" aria-label="ARAU · Inicio">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 100 104" width="32" height="33" role="img" aria-label="ARAU">
+              <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M43 20c-3-3-3-6 0-9"/>
+                <path d="M50 18c-3-3-3-6 0-9"/>
+                <path d="M57 20c-3-3-3-6 0-9"/>
+                <ellipse cx="50" cy="30" rx="17" ry="4.6"/>
+                <path d="M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37"/>
+                <path d="M35.5 39c6 2 23 2 29 0"/>
+                <path d="M44 60c4 3.5 8 3.5 12 0"/>
+                <path d="M33 47c-5 1-10-1-13-6"/>
+                <path d="M20 41l-3-19"/>
+                <path d="M67 47c5 1 10-1 13-6"/>
+                <path d="M80 41l3-19"/>
+                <path d="M80.4 26l-.5-5M83 26l.4-5"/>
+                <path d="M44 70l-2 13M42 83l-6 2"/>
+                <path d="M56 70l2 13M58 83l6 2"/>
+              </g>
+              <path d="M17 22l-2.6 4.5 5.4 0z" fill="currentColor"/>
+              <g fill="currentColor">
+                <rect x="37.5" y="45" width="10.5" height="7.4" rx="3.4"/>
+                <rect x="52" y="45" width="10.5" height="7.4" rx="3.4"/>
+                <rect x="47" y="47" width="6" height="2.2" rx="1"/>
+              </g>
+            </svg>
+          </span>
+          <span class="brand__word" translate="no">ARAU</span>
+        </a>
+        <p class="footer__tag">Aussie soul, Argentinian heart.<br />Grilled brunch &amp; specialty coffee.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Enlaces del pie">
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="carta.html">La carta</a>
+        <a href="index.html#cafe">Café</a>
+        <a href="index.html#eventos">Eventos</a>
+        <a href="index.html#reservar">Reservar</a>
+      </nav>
+
+      <div class="footer__contact">
+        <p>Carrer de Provença, 322 · Barcelona</p>
+        <p><a href="tel:{{ site.contacto.telefonoLink }}">+34&nbsp;612&nbsp;123&nbsp;123</a> · <a href="mailto:{{ site.contacto.email }}">hola@araubrunch.com</a></p>
+        <p class="footer__social-row">
+          <a href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+          <a href="https://tiktok.com/@araubrunch" target="_blank" rel="noopener noreferrer">TikTok</a> ·
+          <a href="https://linktr.ee/araubrunch" target="_blank" rel="noopener noreferrer">Linktree</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> <span translate="no">ARAU</span> · Hecho con fuego en Barcelona.</p>
+      <p class="footer__credit">Brunch a la brasa, todos los días menos los martes.</p>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp flotante -->
+  <a class="wa-float" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="Reservar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
+    <span class="wa-float__label">Reservar</span>
+  </a>
+
+  <!-- ===================== PEDIDO EN LA MESA (QR: ?mesa=N) ===================== -->
+  <div class="order-bar" id="order-bar" data-wa="{{ site.contacto.whatsapp }}" hidden>
+    <button type="button" class="order-bar__call" id="order-call">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3l-2 3h16l-2-3V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 19a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      Llamar al mozo
+    </button>
+    <button type="button" class="order-bar__cart" id="order-open" aria-haspopup="dialog">
+      <span class="order-bar__count" id="order-count" aria-hidden="true">0</span>
+      <span>Ver pedido</span>
+      <span class="order-bar__total" id="order-total">€0,00</span>
+    </button>
+  </div>
+
+  <dialog class="order-dialog" id="order-dialog" aria-label="Tu pedido">
+    <div class="order-dialog__panel">
+      <header class="order-dialog__head">
+        <h2 class="order-dialog__title">Tu pedido <span class="order-dialog__mesa" id="order-mesa"></span></h2>
+        <button type="button" class="order-dialog__close" id="order-close" aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+      <ul class="order-list" id="order-list"></ul>
+      <p class="order-empty" id="order-empty">Tocá <strong>+ Agregar</strong> en los platos para armar tu pedido.</p>
+      <footer class="order-dialog__foot">
+        <div class="order-dialog__total"><span>Total aprox.</span><strong id="order-dtotal">€0,00</strong></div>
+        <a class="btn btn--terra btn--lg btn--block" id="order-send" href="#">Pedir por WhatsApp</a>
+        <p class="order-note">El mozo recibe tu pedido por WhatsApp y te lo confirma en la mesa. Precios orientativos.</p>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- Comportamientos compartidos: año del footer, header al scroll, nav móvil, reveal -->
+  <script src="script.js" defer></script>
+
+  <!-- Scroll-spy de la carta (mejora progresiva; sin librerías) -->
+  <script>
+    (function () {
+      'use strict';
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.menu-tab'));
+      if (!tabs.length || !('IntersectionObserver' in window)) return;
+
+      var byId = {};
+      tabs.forEach(function (t) { byId[t.getAttribute('data-tab')] = t; });
+
+      function setActive(id) {
+        tabs.forEach(function (t) {
+          var on = t.getAttribute('data-tab') === id;
+          t.classList.toggle('is-active', on);
+          if (on) { t.setAttribute('aria-current', 'true'); }
+          else { t.removeAttribute('aria-current'); }
+        });
+        // mantener visible la pill activa en la barra scrolleable
+        var active = byId[id];
+        if (active && active.scrollIntoView) {
+          try { active.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' }); } catch (e) {}
+        }
+      }
+
+      var sections = tabs
+        .map(function (t) { return document.getElementById(t.getAttribute('data-tab')); })
+        .filter(Boolean);
+
+      // rootMargin afinado: la sección que queda justo bajo la barra "gana".
+      var io = new IntersectionObserver(function (entries) {
+        // elegir la entrada visible más cercana al tope
+        var best = null;
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            if (!best || e.boundingClientRect.top < best.boundingClientRect.top) best = e;
+          }
+        });
+        if (best && best.target.id) setActive(best.target.id);
+      }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+      sections.forEach(function (s) { io.observe(s); });
+
+      // estado inicial
+      if (sections.length) setActive(sections[0].id);
+    })();
+  </script>
+
+  <!-- Pedido en la mesa: se activa con ?mesa=N o ?pedir (sin librerías) -->
+  <script>
+    (function () {
+      'use strict';
+      var bar = document.getElementById('order-bar');
+      if (!bar) return;
+      var params = new URLSearchParams(location.search);
+      var mesa = params.get('mesa');
+      if (mesa === null && !params.has('pedir')) return;
+
+      var wa = bar.getAttribute('data-wa');
+      var countEl = document.getElementById('order-count');
+      var totalEl = document.getElementById('order-total');
+      var dlg = document.getElementById('order-dialog');
+      var listEl = document.getElementById('order-list');
+      var emptyEl = document.getElementById('order-empty');
+      var dtotalEl = document.getElementById('order-dtotal');
+      var sendEl = document.getElementById('order-send');
+      var cart = {};
+
+      function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+      function price(s) { return parseFloat(String(s).replace(/[^0-9,.-]/g, '').replace(',', '.')) || 0; }
+      function fmt(n) { return '€' + n.toFixed(2).replace('.', ','); }
+      function totals() { var c = 0, t = 0; Object.keys(cart).forEach(function (k) { c += cart[k].qty; t += cart[k].qty * cart[k].precio; }); return { count: c, total: t }; }
+
+      function render() {
+        var tt = totals();
+        countEl.textContent = tt.count;
+        totalEl.textContent = fmt(tt.total);
+        dtotalEl.textContent = fmt(tt.total);
+        bar.classList.toggle('has-items', tt.count > 0);
+        var keys = Object.keys(cart);
+        emptyEl.hidden = keys.length > 0;
+        listEl.innerHTML = keys.map(function (k) {
+          var it = cart[k];
+          return '<li class="order-line"><span class="order-line__name">' + esc(it.nombre) + '</span>' +
+            '<span class="order-line__qty"><button type="button" class="order-qty" data-k="' + esc(k) + '" data-d="-1" aria-label="Quitar uno de ' + esc(it.nombre) + '">−</button>' +
+            '<b>' + it.qty + '</b>' +
+            '<button type="button" class="order-qty" data-k="' + esc(k) + '" data-d="1" aria-label="Agregar uno de ' + esc(it.nombre) + '">+</button></span>' +
+            '<span class="order-line__price">' + fmt(it.qty * it.precio) + '</span></li>';
+        }).join('');
+      }
+      function change(nombre, precio, d) {
+        if (!cart[nombre]) cart[nombre] = { nombre: nombre, precio: precio, qty: 0 };
+        cart[nombre].qty += d;
+        if (cart[nombre].qty <= 0) delete cart[nombre];
+        render();
+      }
+
+      var sel = '.menu-item[data-precio]:not([data-agotado]), .menu-coffee li[data-precio]:not([data-agotado]), .menu-drinks li[data-precio]:not([data-agotado])';
+      Array.prototype.forEach.call(document.querySelectorAll(sel), function (li) {
+        var nombre = li.getAttribute('data-nombre');
+        var precio = price(li.getAttribute('data-precio'));
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'add-btn'; b.setAttribute('aria-label', 'Agregar ' + nombre);
+        b.innerHTML = '<span aria-hidden="true">+</span> Agregar';
+        b.addEventListener('click', function () { change(nombre, precio, 1); b.classList.add('is-added'); setTimeout(function () { b.classList.remove('is-added'); }, 550); });
+        li.appendChild(b);
+      });
+
+      if (mesa) document.getElementById('order-mesa').textContent = '· Mesa ' + mesa;
+      bar.hidden = false;
+      document.body.classList.add('has-order-bar');
+
+      document.getElementById('order-open').addEventListener('click', function () { if (dlg.showModal) dlg.showModal(); });
+      document.getElementById('order-close').addEventListener('click', function () { dlg.close(); });
+      dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+      listEl.addEventListener('click', function (e) {
+        var q = e.target.closest('.order-qty'); if (!q) return;
+        var k = q.getAttribute('data-k');
+        if (cart[k]) change(k, cart[k].precio, parseInt(q.getAttribute('data-d'), 10));
+      });
+
+      sendEl.addEventListener('click', function (e) {
+        e.preventDefault();
+        var tt = totals();
+        if (tt.count === 0) { if (dlg.showModal && !dlg.open) dlg.showModal(); return; }
+        var lines = Object.keys(cart).map(function (k) { return '• ' + cart[k].qty + 'x ' + cart[k].nombre; });
+        var msg = '¡Hola ARAU! ' + (mesa ? ('Mesa ' + mesa + '. ') : '') + 'Quiero pedir:\n' + lines.join('\n') + '\n\nTotal aprox: ' + fmt(tt.total) + '\n¡Gracias!';
+        window.open('https://wa.me/' + wa + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+      });
+      document.getElementById('order-call').addEventListener('click', function () {
+        var msg = (mesa ? ('Mesa ' + mesa + ': ') : '') + '¿Pueden acercarse a la mesa, por favor? 🙋';
+        window.open('https://wa.me/' + wa + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

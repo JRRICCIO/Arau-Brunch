@@ -1,0 +1,41 @@
+{% macro diet(code) %}{% if code == 'gf' %}<span class="diet diet--gf" aria-label="Sin gluten">GF</span>{% elif code == 'vg' %}<span class="diet diet--vg" aria-label="Vegetariano">VG</span>{% elif code == 've' %}<span class="diet diet--ve" aria-label="Vegano">VE</span>{% elif code == 'picante' %}<span class="diet diet--spicy" aria-label="Picante">🌶</span>{% elif code == 'casa' %}<span class="diet diet--house" aria-label="Especialidad de la casa">⭐</span>{% endif %}{% endmacro %}
+{%- for section in carta.sections %}
+    <section class="menu-section" id="{{ section | anchor }}" aria-labelledby="{{ section | anchor }}-title">
+      <div class="container">
+        <div class="menu-section__head reveal">
+          <h2 class="menu-section__title" id="{{ section | anchor }}-title">{{ section.label }}</h2>
+          <p class="menu-section__sub">{{ section.subtitle }}</p>
+        </div>
+        {%- if section.photo %}
+        <figure class="menu-section__photo reveal">
+          <img src="{{ section.photo }}" alt="{{ section.photoAlt }}" width="1200" height="640" loading="lazy" />
+        </figure>
+        {%- endif %}
+        {%- if section.compact %}
+        {%- set base = 'menu-drinks' if section.id == 'bebidas' else 'menu-coffee' %}
+        <ul class="{{ base }}">
+          {%- for item in section.items %}
+          <li{% if not item.disponible %} class="is-agotado"{% endif %} data-nombre="{{ item.nombre }}" data-precio="{{ item.precio }}"{% if not item.disponible %} data-agotado="1"{% endif %}><span class="{{ base }}__name">{{ item.nombre }}{% if not item.disponible %} <span class="menu-soldout">Agotado</span>{% endif %}</span><span class="{{ base }}__dots" aria-hidden="true"></span><span class="{{ base }}__price">{{ item.precio }}</span></li>
+          {%- endfor %}
+        </ul>
+        {%- if section.id == 'cafe' %}
+        <p class="menu-note"><strong>Single origin:</strong> trabajamos grano de especialidad "Congo", tostado pensando en el grano, no en la prisa.</p>
+        {%- endif %}
+        {%- else %}
+        <ul class="menu-items">
+          {%- for item in section.items %}
+          <li class="menu-item{% if not item.disponible %} menu-item--agotado{% endif %}" data-nombre="{{ item.nombre }}" data-precio="{{ item.precio }}" data-diet="{{ item.etiquetas | join(' ') }}"{% if not item.disponible %} data-agotado="1"{% endif %}>
+            <div class="menu-item__main">
+              <p class="menu-item__name">{{ item.nombre }}{% for t in item.etiquetas %} {{ diet(t) }}{% endfor %}{% if not item.disponible %} <span class="menu-soldout">Agotado</span>{% endif %}</p>
+              {%- if item.desc %}
+              <p class="menu-item__desc">{{ item.desc }}</p>
+              {%- endif %}
+            </div>
+            <span class="menu-item__price">{{ item.precio }}</span>
+          </li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+      </div>
+    </section>
+{%- endfor %}

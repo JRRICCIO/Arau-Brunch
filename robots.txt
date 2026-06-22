@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://araubrunch.netlify.app/sitemap.xml

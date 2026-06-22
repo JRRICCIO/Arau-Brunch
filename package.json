@@ -1,0 +1,15 @@
+{
+  "name": "arau-brunch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio de ARAU — Grilled Brunch & Specialty Coffee (Eleventy + Sveltia CMS)",
+  "scripts": {
+    "dev": "eleventy --serve --port=8080",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^6.0.4",
+    "qrcode": "^1.5.4"
+  }
+}

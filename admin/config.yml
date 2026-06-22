@@ -1,0 +1,191 @@
+# Panel de edición de ARAU — Sveltia CMS (compatible con Decap)
+#
+# Backend: Netlify Identity + Git Gateway.
+# Los cambios que guarda Agustina se confirman como commits en la rama "main"
+# del repositorio de Git, y Netlify vuelve a publicar el sitio automáticamente.
+backend:
+  name: git-gateway
+  branch: main
+
+# Carpeta donde se suben las imágenes (en el repo) y ruta pública desde el sitio.
+media_folder: "img"
+public_folder: "/img"
+
+# Idioma del panel
+locale: es
+
+collections:
+  # ───────────────────────────── CARTA ─────────────────────────────
+  - name: "carta"
+    label: "Carta"
+    label_singular: "Carta"
+    description: "Platos, bebidas y textos de la carta del restaurante."
+    files:
+      - name: "carta"
+        label: "Carta"
+        file: "src/_data/carta.json"
+        fields:
+          - name: "intro"
+            label: "Encabezado de la carta"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Antetítulo", widget: "string", hint: "Texto pequeño arriba del título. Ej: La carta" }
+              - { name: "titleStart", label: "Título (primera parte)", widget: "string" }
+              - { name: "titleAccent", label: "Título (parte destacada)", widget: "string", hint: "Esta parte se muestra resaltada" }
+              - { name: "subtitle", label: "Subtítulo", widget: "text" }
+              - { name: "dateline", label: "Pie de fecha", widget: "string", hint: "Ej: Carta de temporada · actualizada junio 2026" }
+              - { name: "disclaimer", label: "Aviso legal", widget: "text", hint: "Ej: Los precios son orientativos…" }
+
+          - name: "sections"
+            label: "Secciones"
+            label_singular: "Sección"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { name: "label", label: "Nombre de la sección", widget: "string", hint: "Ej: Para empezar, De la parrilla, Postres" }
+              - { name: "id", label: "Identificador (opcional)", widget: "string", required: false, hint: "Dejalo VACÍO en secciones nuevas — se genera solo a partir del nombre. No lo cambies en las secciones que ya existen." }
+              - { name: "subtitle", label: "Subtítulo", widget: "string", required: false }
+              - { name: "photo", label: "Foto", widget: "image", required: false }
+              - { name: "photoAlt", label: "Texto alternativo de la foto", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
+              - { name: "compact", label: "Mostrar como lista compacta (café/bebidas)", widget: "boolean", default: false }
+              - name: "items"
+                label: "Platos"
+                label_singular: "Plato"
+                widget: "list"
+                summary: "{{fields.nombre}} — {{fields.precio}} €"
+                fields:
+                  - { name: "nombre", label: "Nombre", widget: "string" }
+                  - { name: "desc", label: "Descripción", widget: "text", required: false }
+                  - { name: "precio", label: "Precio", widget: "string", hint: "Sin el símbolo €, ej: 18,90" }
+                  - name: "etiquetas"
+                    label: "Etiquetas"
+                    widget: "select"
+                    multiple: true
+                    required: false
+                    options:
+                      - { value: "gf", label: "Sin gluten (GF)" }
+                      - { value: "vg", label: "Vegetariano (VG)" }
+                      - { value: "ve", label: "Vegano (VE)" }
+                      - { value: "picante", label: "Picante" }
+                      - { value: "casa", label: "De la casa ⭐" }
+                  - { name: "disponible", label: "Disponible (apagá si se agotó)", widget: "boolean", default: true }
+
+  # ──────────────────────────── EVENTOS ────────────────────────────
+  - name: "eventos"
+    label: "Eventos"
+    label_singular: "Eventos"
+    description: "Evento destacado y tarjetas de eventos."
+    files:
+      - name: "eventos"
+        label: "Eventos"
+        file: "src/_data/eventos.json"
+        fields:
+          - name: "feature"
+            label: "Evento destacado"
+            widget: "object"
+            fields:
+              - { name: "kicker", label: "Antetítulo", widget: "string" }
+              - { name: "titleStart", label: "Título (primera parte)", widget: "string" }
+              - { name: "titleAccent", label: "Título (parte destacada)", widget: "string" }
+              - { name: "chip", label: "Etiqueta / horario", widget: "string", hint: "Ej: Cada jueves · 20:30" }
+              - { name: "desc", label: "Descripción", widget: "text" }
+              - { name: "photo", label: "Foto", widget: "image", required: false }
+              - { name: "photoAlt", label: "Texto alternativo de la foto", widget: "string", required: false }
+              - name: "strip"
+                label: "Tira de fotos"
+                label_singular: "Foto"
+                widget: "list"
+                required: false
+                summary: "{{fields.caption}}"
+                fields:
+                  - { name: "src", label: "Foto", widget: "image" }
+                  - { name: "alt", label: "Texto alternativo", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
+                  - { name: "caption", label: "Pie de foto", widget: "string", required: false }
+
+          - name: "cards"
+            label: "Tarjetas de eventos"
+            label_singular: "Tarjeta"
+            widget: "list"
+            summary: "{{fields.kicker}}"
+            fields:
+              - { name: "kicker", label: "Antetítulo", widget: "string" }
+              - { name: "title", label: "Título", widget: "string" }
+              - { name: "chip", label: "Etiqueta / horario", widget: "string", hint: "Ej: Los 29 de cada mes" }
+              - { name: "desc", label: "Descripción", widget: "text" }
+              - { name: "photo", label: "Foto", widget: "image", required: false }
+              - { name: "photoAlt", label: "Texto alternativo de la foto", widget: "string", required: false }
+              - { name: "caption", label: "Pie de foto", widget: "string", required: false }
+
+  # ──────────────────────────── GALERÍA ────────────────────────────
+  - name: "galeria"
+    label: "Galería"
+    label_singular: "Galería"
+    description: "Fotos de la galería del sitio."
+    files:
+      - name: "galeria"
+        label: "Galería"
+        file: "src/_data/galeria.json"
+        fields:
+          - { name: "overline", label: "Antetítulo", widget: "string" }
+          - name: "items"
+            label: "Fotos"
+            label_singular: "Foto"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { name: "src", label: "Foto", widget: "image" }
+              - { name: "alt", label: "Texto alternativo", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
+              - { name: "caption", label: "Pie de foto", widget: "string", required: false }
+              - { name: "main", label: "Foto destacada (grande)", widget: "boolean", default: false }
+
+  # ───────────────────────── CONFIGURACIÓN ─────────────────────────
+  - name: "configuracion"
+    label: "Configuración"
+    label_singular: "Configuración"
+    description: "Portada, horarios y datos de contacto del restaurante."
+    files:
+      - name: "site"
+        label: "Datos del sitio"
+        file: "src/_data/site.json"
+        fields:
+          - { name: "baseUrl", label: "URL base", widget: "hidden", default: "https://araubrunch.netlify.app" }
+
+          - name: "hero"
+            label: "Portada (hero)"
+            widget: "object"
+            fields:
+              - { name: "titleStart", label: "Título (primera parte)", widget: "string" }
+              - { name: "titleAccent", label: "Título (parte destacada)", widget: "string", hint: "La palabra que se ve fija si alguien tiene animaciones desactivadas." }
+              - name: "accentSwap"
+                label: "Palabras que cambian (efecto AR×AU)"
+                widget: "list"
+                required: false
+                hint: "La parte destacada va alternando entre estas palabras. Poné una sola para que quede fija."
+                field: { name: "palabra", label: "Palabra", widget: "string" }
+              - { name: "lead", label: "Texto de entrada", widget: "text" }
+              - { name: "image", label: "Imagen", widget: "image", required: false }
+              - { name: "imageAlt", label: "Texto alternativo de la imagen", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
+
+          - name: "horarios"
+            label: "Horarios"
+            label_singular: "Horario"
+            widget: "list"
+            summary: "{{fields.dia}}"
+            fields:
+              - { name: "dia", label: "Día", widget: "string" }
+              - { name: "apertura", label: "Apertura", widget: "string", required: false, hint: "Ej: 9:00 — dejá vacío si cierra" }
+              - { name: "cierre", label: "Cierre", widget: "string", required: false }
+              - { name: "cerrado", label: "Cerrado ese día", widget: "boolean", default: false }
+
+          - name: "contacto"
+            label: "Contacto"
+            widget: "object"
+            fields:
+              - { name: "telefono", label: "Teléfono", widget: "string", required: false }
+              - { name: "telefonoLink", label: "Teléfono (enlace)", widget: "string", required: false, hint: "Con prefijo, sin espacios: +34612345678" }
+              - { name: "whatsapp", label: "WhatsApp", widget: "string", required: false, hint: "Solo números, ej: 34612345678" }
+              - { name: "email", label: "Email", widget: "string", required: false }
+              - { name: "instagram", label: "Instagram", widget: "string", required: false, hint: "Sin @" }
+              - { name: "tiktok", label: "TikTok", widget: "string", required: false }
+              - { name: "direccion", label: "Dirección", widget: "string", required: false }
+              - { name: "ciudad", label: "Ciudad", widget: "string", required: false }
