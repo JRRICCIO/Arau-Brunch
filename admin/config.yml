@@ -1,11 +1,26 @@
-# Panel de edición de ARAU — Sveltia CMS (compatible con Decap)
+# Panel de edición de ARAU — Decap CMS + DecapBridge
 #
-# Backend: Netlify Identity + Git Gateway.
+# Backend: DecapBridge (login con email + contraseña, sin Netlify Identity).
 # Los cambios que guarda Agustina se confirman como commits en la rama "main"
 # del repositorio de Git, y Netlify vuelve a publicar el sitio automáticamente.
 backend:
   name: git-gateway
+  repo: JRRICCIO/Arau-Brunch
   branch: main
+  identity_url: https://auth.decapbridge.com/sites/3d12bce7-8e58-402f-bef1-ab6ae333af9c
+  gateway_url: https://gateway.decapbridge.com
+
+# Mensajes de commit con el nombre del editor (DecapBridge)
+commit_messages:
+  create: 'Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+  update: 'Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+  delete: 'Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+  uploadMedia: 'Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+  deleteMedia: 'Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+
+# Logo y enlace al sitio en el panel (DecapBridge)
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://arau-brunch.netlify.app
 
 # Carpeta donde se suben las imágenes (en el repo) y ruta pública desde el sitio.
 media_folder: "img"
@@ -23,7 +38,7 @@ collections:
     files:
       - name: "carta"
         label: "Carta"
-        file: "src/_data/carta.json"
+        file: "src/_data/locales/es/carta.json"
         fields:
           - name: "intro"
             label: "Encabezado de la carta"
@@ -78,7 +93,7 @@ collections:
     files:
       - name: "eventos"
         label: "Eventos"
-        file: "src/_data/eventos.json"
+        file: "src/_data/locales/es/eventos.json"
         fields:
           - name: "feature"
             label: "Evento destacado"
@@ -124,7 +139,7 @@ collections:
     files:
       - name: "galeria"
         label: "Galería"
-        file: "src/_data/galeria.json"
+        file: "src/_data/locales/es/galeria.json"
         fields:
           - { name: "overline", label: "Antetítulo", widget: "string" }
           - name: "items"
@@ -146,7 +161,7 @@ collections:
     files:
       - name: "site"
         label: "Datos del sitio"
-        file: "src/_data/site.json"
+        file: "src/_data/locales/es/site.json"
         fields:
           - { name: "baseUrl", label: "URL base", widget: "hidden", default: "https://arau-brunch.netlify.app" }
 
