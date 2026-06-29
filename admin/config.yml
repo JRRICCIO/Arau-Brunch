@@ -33,13 +33,12 @@ collections:
   # ───────────────────────────── CARTA ─────────────────────────────
   - name: "carta"
     label: "Carta"
-    label_singular: "Carta"
-    description: "Platos, bebidas y textos de la carta del restaurante."
+    description: "Platos, bebidas y textos de la carta. Editá cada idioma por separado."
     files:
-      - name: "carta"
-        label: "Carta"
+      - name: "carta-es"
+        label: "Carta · Español"
         file: "src/_data/locales/es/carta.json"
-        fields:
+        fields: &cartaFields
           - name: "intro"
             label: "Encabezado de la carta"
             widget: "object"
@@ -50,7 +49,6 @@ collections:
               - { name: "subtitle", label: "Subtítulo", widget: "text" }
               - { name: "dateline", label: "Pie de fecha", widget: "string", hint: "Ej: Carta de temporada · actualizada junio 2026" }
               - { name: "disclaimer", label: "Aviso legal", widget: "text", hint: "Ej: Los precios son orientativos…" }
-
           - name: "sections"
             label: "Secciones"
             label_singular: "Sección"
@@ -84,17 +82,28 @@ collections:
                       - { value: "picante", label: "Picante" }
                       - { value: "casa", label: "De la casa ⭐" }
                   - { name: "disponible", label: "Disponible (apagá si se agotó)", widget: "boolean", default: true }
+      - name: "carta-en"
+        label: "Carta · English"
+        file: "src/_data/locales/en/carta.json"
+        fields: *cartaFields
+      - name: "carta-fr"
+        label: "Carta · Français"
+        file: "src/_data/locales/fr/carta.json"
+        fields: *cartaFields
+      - name: "carta-ca"
+        label: "Carta · Català"
+        file: "src/_data/locales/ca/carta.json"
+        fields: *cartaFields
 
   # ──────────────────────────── EVENTOS ────────────────────────────
   - name: "eventos"
     label: "Eventos"
-    label_singular: "Eventos"
-    description: "Evento destacado y tarjetas de eventos."
+    description: "Evento destacado y tarjetas de eventos. Editá cada idioma por separado."
     files:
-      - name: "eventos"
-        label: "Eventos"
+      - name: "eventos-es"
+        label: "Eventos · Español"
         file: "src/_data/locales/es/eventos.json"
-        fields:
+        fields: &eventosFields
           - name: "feature"
             label: "Evento destacado"
             widget: "object"
@@ -116,7 +125,6 @@ collections:
                   - { name: "src", label: "Foto", widget: "image" }
                   - { name: "alt", label: "Texto alternativo", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
                   - { name: "caption", label: "Pie de foto", widget: "string", required: false }
-
           - name: "cards"
             label: "Tarjetas de eventos"
             label_singular: "Tarjeta"
@@ -130,17 +138,28 @@ collections:
               - { name: "photo", label: "Foto", widget: "image", required: false }
               - { name: "photoAlt", label: "Texto alternativo de la foto", widget: "string", required: false }
               - { name: "caption", label: "Pie de foto", widget: "string", required: false }
+      - name: "eventos-en"
+        label: "Eventos · English"
+        file: "src/_data/locales/en/eventos.json"
+        fields: *eventosFields
+      - name: "eventos-fr"
+        label: "Eventos · Français"
+        file: "src/_data/locales/fr/eventos.json"
+        fields: *eventosFields
+      - name: "eventos-ca"
+        label: "Eventos · Català"
+        file: "src/_data/locales/ca/eventos.json"
+        fields: *eventosFields
 
   # ──────────────────────────── GALERÍA ────────────────────────────
   - name: "galeria"
     label: "Galería"
-    label_singular: "Galería"
-    description: "Fotos de la galería del sitio."
+    description: "Fotos de la galería del sitio. Editá cada idioma por separado."
     files:
-      - name: "galeria"
-        label: "Galería"
+      - name: "galeria-es"
+        label: "Galería · Español"
         file: "src/_data/locales/es/galeria.json"
-        fields:
+        fields: &galeriaFields
           - { name: "overline", label: "Antetítulo", widget: "string" }
           - name: "items"
             label: "Fotos"
@@ -152,19 +171,29 @@ collections:
               - { name: "alt", label: "Texto alternativo", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
               - { name: "caption", label: "Pie de foto", widget: "string", required: false }
               - { name: "main", label: "Foto destacada (grande)", widget: "boolean", default: false }
+      - name: "galeria-en"
+        label: "Galería · English"
+        file: "src/_data/locales/en/galeria.json"
+        fields: *galeriaFields
+      - name: "galeria-fr"
+        label: "Galería · Français"
+        file: "src/_data/locales/fr/galeria.json"
+        fields: *galeriaFields
+      - name: "galeria-ca"
+        label: "Galería · Català"
+        file: "src/_data/locales/ca/galeria.json"
+        fields: *galeriaFields
 
   # ───────────────────────── CONFIGURACIÓN ─────────────────────────
   - name: "configuracion"
     label: "Configuración"
-    label_singular: "Configuración"
-    description: "Portada, horarios y datos de contacto del restaurante."
+    description: "Portada, horarios y contacto. Ojo: el contacto y los horarios conviene mantenerlos iguales en los 4 idiomas."
     files:
-      - name: "site"
-        label: "Datos del sitio"
+      - name: "site-es"
+        label: "Configuración · Español"
         file: "src/_data/locales/es/site.json"
-        fields:
+        fields: &siteFields
           - { name: "baseUrl", label: "URL base", widget: "hidden", default: "https://arau-brunch.netlify.app" }
-
           - name: "hero"
             label: "Portada (hero)"
             widget: "object"
@@ -180,7 +209,6 @@ collections:
               - { name: "lead", label: "Texto de entrada", widget: "text" }
               - { name: "image", label: "Imagen", widget: "image", required: false }
               - { name: "imageAlt", label: "Texto alternativo de la imagen", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
-
           - name: "horarios"
             label: "Horarios"
             label_singular: "Horario"
@@ -191,7 +219,6 @@ collections:
               - { name: "apertura", label: "Apertura", widget: "string", required: false, hint: "Ej: 9:00 — dejá vacío si cierra" }
               - { name: "cierre", label: "Cierre", widget: "string", required: false }
               - { name: "cerrado", label: "Cerrado ese día", widget: "boolean", default: false }
-
           - name: "contacto"
             label: "Contacto"
             widget: "object"
@@ -204,3 +231,15 @@ collections:
               - { name: "tiktok", label: "TikTok", widget: "string", required: false }
               - { name: "direccion", label: "Dirección", widget: "string", required: false }
               - { name: "ciudad", label: "Ciudad", widget: "string", required: false }
+      - name: "site-en"
+        label: "Configuración · English"
+        file: "src/_data/locales/en/site.json"
+        fields: *siteFields
+      - name: "site-fr"
+        label: "Configuración · Français"
+        file: "src/_data/locales/fr/site.json"
+        fields: *siteFields
+      - name: "site-ca"
+        label: "Configuración · Català"
+        file: "src/_data/locales/ca/site.json"
+        fields: *siteFields
