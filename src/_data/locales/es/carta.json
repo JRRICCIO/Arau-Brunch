@@ -11,9 +11,9 @@
     {
       "id": "picoteo",
       "label": "Picoteo",
+      "compact": false,
       "photo": "img/spread.webp",
       "photoAlt": "Picoteo — ARAU",
-      "compact": false,
       "items": [
         {
           "nombre": "Bonnie & clyde",
@@ -33,7 +33,8 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provo_1b7f13b63d.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provo_1b7f13b63d.jpg",
+          "alergenos": "Lácteos"
         },
         {
           "nombre": "Chori con chimi",
@@ -43,16 +44,17 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_763b022d05.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_763b022d05.jpg",
+          "alergenos": "Gluten"
         }
       ]
     },
     {
       "id": "desayunos",
       "label": "Desayunos",
+      "compact": false,
       "photo": "img/cafe.webp",
       "photoAlt": "Desayunos — ARAU",
-      "compact": false,
       "items": [
         {
           "nombre": "Açaí bowl",
@@ -62,7 +64,8 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_901c933abf.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_901c933abf.jpg",
+          "alergenos": "Gluten · Cacahuete"
         },
         {
           "nombre": "Yogurt bowl",
@@ -72,7 +75,8 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_e826460907.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_e826460907.jpg",
+          "alergenos": "Gluten · Lácteos · Cacahuete"
         },
         {
           "nombre": "Los pancakes de Arau",
@@ -83,7 +87,8 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_pancakes_2_cbd72abb6b.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_pancakes_2_cbd72abb6b.jpg",
+          "alergenos": "Huevo · Gluten · Lácteos · Frutas con piel"
         },
         {
           "nombre": "Banana French Toast",
@@ -93,16 +98,18 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_french_toast_01970a720c.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_french_toast_01970a720c.jpg",
+          "alergenos": "Gluten"
         }
-      ]
+      ],
+      "extras": "Extras: Aguacate +2,50€ · Bacon +2,50€ · Salmón gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
     },
     {
       "id": "brunch",
       "label": "Brunch",
+      "compact": false,
       "photo": "img/eggs-benedict.webp",
       "photoAlt": "Brunch — ARAU",
-      "compact": false,
       "items": [
         {
           "nombre": "Smashed avo toast",
@@ -112,7 +119,8 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_smash_avo_3_ab97d36004.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_smash_avo_3_ab97d36004.jpg",
+          "alergenos": "Huevo · Gluten · Lácteos · Sésamo"
         },
         {
           "nombre": "Big brekky",
@@ -122,7 +130,8 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_add2e68113.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_add2e68113.jpg",
+          "alergenos": "Huevo"
         },
         {
           "nombre": "Benny & the eggs",
@@ -133,7 +142,8 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_bennys_1afde56066.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_bennys_1afde56066.jpg",
+          "alergenos": "Huevo · Lácteos · Mostaza · Soja"
         },
         {
           "nombre": "Omelette",
@@ -143,7 +153,8 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_72650059df.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_72650059df.jpg",
+          "alergenos": "Huevo · Gluten · Lácteos · Mostaza · Soja"
         },
         {
           "nombre": "Bagel Salmón Gravlax",
@@ -151,7 +162,8 @@
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Bagel_6420c4434a.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Bagel_6420c4434a.jpg",
+          "alergenos": "Pescado · Gluten · Lácteos"
         },
         {
           "nombre": "Pastrami Lover NUEVO!!",
@@ -159,17 +171,18 @@
           "precio": "15,50",
           "etiquetas": [],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Pastrami_Editada_5ac9cac2f8.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Pastrami_Editada_5ac9cac2f8.jpg",
+          "alergenos": "Gluten · Lácteos · Mostaza"
         }
       ],
-      "extras": "Extras: Aguacate +2,50€ · Bacon +2,50€ · Halloumi +2€ · Salmón gravlax +2,50€ · Huevo frito +1,50€"
+      "extras": "Extras: Aguacate +2,50€ · Bacon +2,50€ · Salmón gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
     },
     {
       "id": "almuerzos",
       "label": "Almuerzos",
+      "compact": false,
       "photo": "img/big-arau.webp",
       "photoAlt": "Almuerzos — ARAU",
-      "compact": false,
       "items": [
         {
           "nombre": "The tru mila",
@@ -179,7 +192,8 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_m_fd0552f8a3.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_m_fd0552f8a3.jpg",
+          "alergenos": "Huevo · Gluten · Lácteos"
         },
         {
           "nombre": "La Provocadora",
@@ -189,7 +203,8 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg",
+          "alergenos": "Gluten · Lácteos"
         },
         {
           "nombre": "Tru Mila Veggie",
@@ -199,7 +214,8 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_mila_2_0397dab4ac.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_mila_2_0397dab4ac.jpg",
+          "alergenos": "Huevo · Gluten · Lácteos"
         },
         {
           "nombre": "La Provocadora Veggie",
@@ -208,7 +224,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Gluten · Lácteos"
         },
         {
           "nombre": "NUEVO Ceasar Austral",
@@ -219,14 +236,14 @@
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg"
         }
       ],
-      "extras": "Extras: Huevo frito +1,50€ · Cambiá las patatas por boniatos o mix de verdes y tomates asados +1€"
+      "extras": "Extras: Aguacate +2,50€ · Bacon +2,50€ · Salmón gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
     },
     {
       "id": "pasteleria",
       "label": "Pastelería",
+      "compact": false,
       "photo": "img/medialunas.webp",
       "photoAlt": "Pastelería — ARAU",
-      "compact": false,
       "items": [
         {
           "nombre": "Banana bread vegano",
@@ -236,7 +253,8 @@
             "ve"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_111431cce5.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_111431cce5.jpg",
+          "alergenos": "Cacahuete"
         },
         {
           "nombre": "Alfajor de coco con dulce de leche",
@@ -258,16 +276,17 @@
             "gf"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_a29f8c66c0.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_a29f8c66c0.jpg",
+          "alergenos": "Huevo · Lácteos"
         }
       ]
     },
     {
       "id": "postres",
       "label": "Postres",
+      "compact": false,
       "photo": "img/flan.webp",
       "photoAlt": "Postres — ARAU",
-      "compact": false,
       "items": [
         {
           "nombre": "Flantástico",
@@ -278,7 +297,8 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_2119_bbcd7fedf9.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_2119_bbcd7fedf9.jpg",
+          "alergenos": "Huevo · Lácteos"
         },
         {
           "nombre": "Brownie húmedo",
@@ -287,14 +307,14 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Huevo · Gluten · Lácteos"
         }
       ]
     },
     {
       "id": "cafe",
       "label": "Cafés y bebidas calientes",
-      "photoAlt": "Cafés y bebidas calientes — ARAU",
       "compact": true,
       "items": [
         {
@@ -442,7 +462,6 @@
     {
       "id": "cafe-frio",
       "label": "Cafés fríos",
-      "photoAlt": "Cafés fríos — ARAU",
       "compact": true,
       "items": [
         {
@@ -506,7 +525,6 @@
     {
       "id": "zumos",
       "label": "Zumos naturales",
-      "photoAlt": "Zumos naturales — ARAU",
       "compact": true,
       "items": [
         {
@@ -549,7 +567,6 @@
     {
       "id": "bebidas",
       "label": "Bebidas frias y gaseosas",
-      "photoAlt": "Bebidas frias y gaseosas — ARAU",
       "compact": true,
       "items": [
         {
@@ -648,7 +665,6 @@
     {
       "id": "cocktails",
       "label": "Cocktails, Cerveza y Aperitivos",
-      "photoAlt": "Cocktails, Cerveza y Aperitivos — ARAU",
       "compact": true,
       "items": [
         {
@@ -737,7 +753,6 @@
     {
       "id": "vinos",
       "label": "Vinos",
-      "photoAlt": "Vinos — ARAU",
       "compact": true,
       "items": [
         {
