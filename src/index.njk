@@ -64,12 +64,12 @@ pageKey: "home"
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 104'%3E%3Crect width='100' height='104' rx='20' fill='%23f3e9d6'/%3E%3Cg fill='none' stroke='%23bd4b2b' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M43 20c-3-3-3-6 0-9'/%3E%3Cpath d='M50 18c-3-3-3-6 0-9'/%3E%3Cpath d='M57 20c-3-3-3-6 0-9'/%3E%3Cellipse cx='50' cy='30' rx='17' ry='4.6'/%3E%3Cpath d='M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37'/%3E%3Cpath d='M35.5 39c6 2 23 2 29 0'/%3E%3Cpath d='M44 60c4 3.5 8 3.5 12 0'/%3E%3Cpath d='M33 47c-5 1-10-1-13-6'/%3E%3Cpath d='M20 41l-3-19'/%3E%3Cpath d='M67 47c5 1 10-1 13-6'/%3E%3Cpath d='M80 41l3-19'/%3E%3Cpath d='M80.4 26l-.5-5M83 26l.4-5'/%3E%3Cpath d='M44 70l-2 13M42 83l-6 2'/%3E%3Cpath d='M56 70l2 13M58 83l6 2'/%3E%3C/g%3E%3Cpath d='M17 22l-2.6 4.5 5.4 0z' fill='%23bd4b2b'/%3E%3Cg fill='%23bd4b2b'%3E%3Crect x='37.5' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='52' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='47' y='47' width='6' height='2.2' rx='1'/%3E%3C/g%3E%3C/svg%3E" />
 
   <!-- Fuentes self-hosted (sin round-trip a Google) -->
-  <link rel="preload" as="font" type="font/woff2" href="fonts/fraunces-latin.woff2" crossorigin />
-  <link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/fraunces-latin.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin />
   <!-- Precarga del hero (LCP) -->
-  <link rel="preload" as="image" href="{{ site.hero.image }}" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="{{ site.hero.image | asset }}" type="image/webp" fetchpriority="high" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
   <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -145,7 +145,7 @@ pageKey: "home"
 
     <!-- ===================== HERO ===================== -->
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero__bg" src="{{ site.hero.image }}" alt="{{ site.hero.imageAlt }}" width="720" height="960" fetchpriority="high" />
+      <img class="hero__bg" src="{{ site.hero.image | asset }}" alt="{{ site.hero.imageAlt }}" width="720" height="960" fetchpriority="high" />
       <span class="hero__scrim" aria-hidden="true"></span>
 
       <div class="container hero__inner">
@@ -231,7 +231,7 @@ pageKey: "home"
         <figure class="historia__frame reveal">
           <button type="button" class="historia__photo thumb" data-gallery="lugar"
                   data-full="img/terrace.webp" data-caption="La terraza de ARAU en Provença 322 — brunch a la brasa al sol del Eixample">
-            <img src="img/terrace.webp" alt="Terraza de ARAU: mesa de terracota con eggs benedict y bloody mary, y la fachada con el cartel ARAU al fondo" width="720" height="900" loading="lazy" decoding="async" />
+            <img src="/img/terrace.webp" alt="Terraza de ARAU: mesa de terracota con eggs benedict y bloody mary, y la fachada con el cartel ARAU al fondo" width="720" height="900" loading="lazy" decoding="async" />
           </button>
           <figcaption class="historia__cap">Provença 322 · donde todo pasa</figcaption>
         </figure>
@@ -283,8 +283,8 @@ pageKey: "home"
       <div class="galeria__grid">
         {%- for item in galeria.items %}
         <button type="button" class="galeria__item{% if item.main %} galeria__item--main{% endif %} thumb" data-gallery="galeria"
-                data-full="{{ item.src }}" data-caption="{{ item.caption }}">
-          <img src="{{ item.src }}" alt="{{ item.alt }}" width="600" height="{% if item.main %}900{% else %}450{% endif %}" loading="lazy" decoding="async" />
+                data-full="{{ item.src | asset }}" data-caption="{{ item.caption }}">
+          <img src="{{ item.src | asset }}" alt="{{ item.alt }}" width="600" height="{% if item.main %}900{% else %}450{% endif %}" loading="lazy" decoding="async" />
         </button>
         {%- endfor %}
       </div>
@@ -304,7 +304,7 @@ pageKey: "home"
         <div class="dishes">
           <a class="dish dish--photo dish--link reveal" href="carta.html#huevos">
             <div class="dish__photo" aria-hidden="true">
-              <img src="img/big-arau.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
+              <img src="/img/big-arau.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
             </div>
             <div class="dish__text">
               <h3 class="dish__name">The Big <span translate="no">ARAU</span></h3>
@@ -315,7 +315,7 @@ pageKey: "home"
 
           <a class="dish dish--photo dish--link reveal" href="carta.html#huevos">
             <div class="dish__photo" aria-hidden="true">
-              <img src="img/eggs-benedict.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
+              <img src="/img/eggs-benedict.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
             </div>
             <div class="dish__text">
               <h3 class="dish__name">Eggs Benedict</h3>
@@ -326,7 +326,7 @@ pageKey: "home"
 
           <a class="dish dish--photo dish--link reveal" href="carta.html#parrilla">
             <div class="dish__photo" aria-hidden="true">
-              <img src="img/mushroom-skillet.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
+              <img src="/img/mushroom-skillet.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
             </div>
             <div class="dish__text">
               <h3 class="dish__name">De la parrilla</h3>
@@ -337,7 +337,7 @@ pageKey: "home"
 
           <a class="dish dish--photo dish--link reveal" href="carta.html#dulces">
             <div class="dish__photo" aria-hidden="true">
-              <img src="img/flan.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
+              <img src="/img/flan.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
             </div>
             <div class="dish__text">
               <h3 class="dish__name">Flantástico</h3>
@@ -370,7 +370,7 @@ pageKey: "home"
       <div class="container cafe__grid">
         <div class="cafe__art reveal" aria-hidden="true">
           <div class="cafe__photo">
-            <img src="img/cafe.webp" alt="Flat white de especialidad en taza de cerámica artesanal" width="600" height="800" loading="lazy" decoding="async" />
+            <img src="/img/cafe.webp" alt="Flat white de especialidad en taza de cerámica artesanal" width="600" height="800" loading="lazy" decoding="async" />
           </div>
         </div>
         <div class="cafe__copy reveal">
@@ -672,6 +672,6 @@ pageKey: "home"
     <p class="lightbox__count" id="lightbox-count" aria-live="polite"></p>
   </dialog>
 
-  <script src="script.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>

@@ -2,14 +2,14 @@
         <article class="event-feature reveal">
           <div class="event-feature__media">
             <button type="button" class="event-feature__photo thumb" data-gallery="evento-feature"
-                    data-full="{{ eventos.feature.photo }}" data-caption="{{ eventos.feature.kicker }} — {{ eventos.feature.titleStart }} {{ eventos.feature.titleAccent }}">
-              <img src="{{ eventos.feature.photo }}" alt="{{ eventos.feature.photoAlt }}" width="760" height="560" loading="lazy" decoding="async" />
+                    data-full="{{ eventos.feature.photo | asset }}" data-caption="{{ eventos.feature.kicker }} — {{ eventos.feature.titleStart }} {{ eventos.feature.titleAccent }}">
+              <img src="{{ eventos.feature.photo | asset }}" alt="{{ eventos.feature.photoAlt }}" width="760" height="560" loading="lazy" decoding="async" />
               <span class="event-feature__play" aria-hidden="true">Ver fotos</span>
             </button>
             <div class="event-strip" aria-label="Más fotos de {{ eventos.feature.kicker }}">
               {%- for s in eventos.feature.strip %}
-              <button type="button" class="event-strip__thumb thumb" data-gallery="evento-feature" data-full="{{ s.src }}" data-caption="{{ s.caption }}">
-                <img src="{{ s.src }}" alt="{{ s.alt }}" width="200" height="150" loading="lazy" decoding="async" />
+              <button type="button" class="event-strip__thumb thumb" data-gallery="evento-feature" data-full="{{ s.src | asset }}" data-caption="{{ s.caption }}">
+                <img src="{{ s.src | asset }}" alt="{{ s.alt }}" width="200" height="150" loading="lazy" decoding="async" />
               </button>
               {%- endfor %}
             </div>
@@ -31,8 +31,8 @@
           {%- for card in eventos.cards %}
           <article class="event-card reveal">
             <button type="button" class="event-card__photo thumb" data-gallery="evento-{{ loop.index }}"
-                    data-full="{{ card.photo }}" data-caption="{{ card.caption }}">
-              <img src="{{ card.photo }}" alt="{{ card.photoAlt }}" width="600" height="400" loading="lazy" decoding="async" />
+                    data-full="{{ card.photo | asset }}" data-caption="{{ card.caption }}">
+              <img src="{{ card.photo | asset }}" alt="{{ card.photoAlt }}" width="600" height="400" loading="lazy" decoding="async" />
               <span class="event-feature__play" aria-hidden="true">Ver fotos</span>
             </button>
             <div class="event-card__body">

@@ -12,6 +12,14 @@ module.exports = function (eleventyConfig) {
       .replace(/(^-|-$)/g, "") || "seccion";
   });
 
+  // Asegura ruta de asset absoluta (con "/" inicial) para que funcione
+  // desde subdirectorios de idioma (/en/, /fr/, /ca/). Idempotente.
+  eleventyConfig.addFilter("asset", function (p) {
+    if (!p) return p;
+    if (/^(https?:)?\/\//.test(p) || p.startsWith("/") || p.startsWith("data:")) return p;
+    return "/" + p;
+  });
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("styles.css");

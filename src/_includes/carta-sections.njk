@@ -8,7 +8,7 @@
         </div>
         {%- if section.photo %}
         <figure class="menu-section__photo reveal">
-          <img src="{{ section.photo }}" alt="{{ section.photoAlt }}" width="1200" height="640" loading="lazy" />
+          <img src="{{ section.photo | asset }}" alt="{{ section.photoAlt }}" width="1200" height="640" loading="lazy" />
         </figure>
         {%- endif %}
         {%- if section.compact %}
