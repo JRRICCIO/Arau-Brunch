@@ -4,28 +4,11 @@
    Aussie soul, Argentinian heart.
    ============================================================ */
 
-/* ----- Fuentes self-hosted (variable, subset latin) ----- */
-@font-face {
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(fonts/fraunces-latin.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Fraunces';
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(fonts/fraunces-italic-latin.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(fonts/inter-latin.woff2) format('woff2');
-}
+/* ----- Lato self-hosted (subset latin) ----- */
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; font-display: swap; src: url(fonts/lato-400.woff2) format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: italic; font-weight: 400; font-display: swap; src: url(fonts/lato-400i.woff2) format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; font-display: swap; src: url(fonts/lato-700.woff2) format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 900; font-display: swap; src: url(fonts/lato-900.woff2) format('woff2'); }
 
 :root {
   /* Terracota (marca) — paleta oficial ARAU */
@@ -63,8 +46,8 @@
   --radius-sm: 12px;
   --ease: cubic-bezier(.22, .61, .36, 1);
 
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   color-scheme: light;
 }
@@ -229,6 +212,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .brand__mark .logo-mark { width: 38px; height: 41px; }
 .brand--footer .brand__mark .logo-mark { width: 32px; height: 34px; }
 .hero__cue-mark .logo-mark { width: 30px; height: 32px; }
+/* Wordmark "ARAU" (letras del logo oficial) — reemplaza el texto ARAU */
+.arau-word { display: inline-block; height: .74em; width: auto; vertical-align: -0.04em; }
+.brand .arau-word { height: 1.45rem; vertical-align: middle; }
+.brand--footer .arau-word { height: 1.25rem; }
+.hero__lead .arau-word, p .arau-word { height: .82em; }
 .brand__word {
   font-family: var(--font-display);
   font-weight: 700;
