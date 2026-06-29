@@ -113,7 +113,7 @@
       "items": [
         {
           "nombre": "Torrada de color verd esmicolat",
-          "desc": "Pa de massa mare, alvocat, ruca silvestre, tomàquets rostits, formatge feta, ou escalfat, ceba escabetxada. <br />·Salmó gravlax casolà +3,50 €",
+          "desc": "Pa de massa mare, alvocat, ruca silvestre, tomàquets rostits, formatge feta, ou escalfat, ceba escabetxada.",
           "precio": "13,50",
           "etiquetas": [
             "vg"
@@ -147,7 +147,7 @@
         },
         {
           "nombre": "Truita",
-          "desc": "Truita amb bolets saltats, formatge Gouda, espinacs, i pa de massa mare *Cansalada extra + 2,50€ <br />",
+          "desc": "Truita amb bolets saltats, formatge Gouda, espinacs, i pa de massa mare *Cansalada extra + 2,50€",
           "precio": "13,00",
           "etiquetas": [
             "vg"
@@ -158,7 +158,7 @@
         },
         {
           "nombre": "Bagel de salmó Gravlax",
-          "desc": "Amb salmó gravlax casolà, tàperes, formatge crema, cibulet, cebes adobades, tomàquets rostits i ruca silvestre. Acompanyat de patates fregides. <br />-Alvocat extra +2,50€",
+          "desc": "Amb salmó gravlax casolà, tàperes, formatge crema, cibulet, cebes adobades, tomàquets rostits i ruca silvestre. Acompanyat de patates fregides.",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true,

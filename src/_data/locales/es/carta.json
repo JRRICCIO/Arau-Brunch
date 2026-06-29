@@ -113,7 +113,7 @@
       "items": [
         {
           "nombre": "Smashed avo toast",
-          "desc": "Pan de masa madre, aguacate, rúcula salvaje, tomates asados, queso feta, huevo pochado, cebolla encurtida.<br />·Salmón gravlax casero +€3.50",
+          "desc": "Pan de masa madre, aguacate, rúcula salvaje, tomates asados, queso feta, huevo pochado, cebolla encurtida.",
           "precio": "13,50",
           "etiquetas": [
             "vg"
@@ -147,7 +147,7 @@
         },
         {
           "nombre": "Omelette",
-          "desc": "Omelette con champiñones salteados, queso Gouda, espinaca, y pan de masa madre <br />*Extra bacon + 2.50 €",
+          "desc": "Omelette con champiñones salteados, queso Gouda, espinaca, y pan de masa madre",
           "precio": "13,00",
           "etiquetas": [
             "vg"
@@ -158,7 +158,7 @@
         },
         {
           "nombre": "Bagel Salmón Gravlax",
-          "desc": "Con salmón gravlax casero, alcaparras, queso crema, cebollino, cebolla encurtida, tomates asados y rúcula salvaje. Acompañado de patatas fritas.<br />-Extra aguacate +2,50€",
+          "desc": "Con salmón gravlax casero, alcaparras, queso crema, cebollino, cebolla encurtida, tomates asados y rúcula salvaje. Acompañado de patatas fritas.",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true,

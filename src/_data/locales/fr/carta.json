@@ -113,7 +113,7 @@
       "items": [
         {
           "nombre": "Toast d'avoine écrasée",
-          "desc": "Pain au levain, avocat, roquette sauvage, tomates rôties, feta, œuf poché, oignon mariné.<br />-Gravlax de saumon maison +€3.50",
+          "desc": "Pain au levain, avocat, roquette sauvage, tomates rôties, feta, œuf poché, oignon mariné.",
           "precio": "13,50",
           "etiquetas": [
             "vg"
@@ -147,7 +147,7 @@
         },
         {
           "nombre": "Omelette",
-          "desc": "Omelette aux champignons sautés, au gouda, aux épinards et au pain au levain <br />*Les lardons supplémentaires + €2.50",
+          "desc": "Omelette aux champignons sautés, au gouda, aux épinards et au pain au levain",
           "precio": "13,00",
           "etiquetas": [
             "vg"
@@ -158,7 +158,7 @@
         },
         {
           "nombre": "Bagel au saumon Gravlax",
-          "desc": "Avec fromage frais, ciboulette, oignon mariné, tomates rôties et roquette sauvage <br />Avocat supplémentaire +2,50€.",
+          "desc": "Avec fromage frais, ciboulette, oignon mariné, tomates rôties et roquette sauvage",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true,

@@ -113,7 +113,7 @@
       "items": [
         {
           "nombre": "Smashed avo toast",
-          "desc": "Sourdough bread, smashed avocado, wild arugula, roasted tomatoes, feta cheese, poached egg, pickled onions.<br />-Homemade salmon gravlax +€3.50",
+          "desc": "Sourdough bread, smashed avocado, wild arugula, roasted tomatoes, feta cheese, poached egg, pickled onions.",
           "precio": "13,50",
           "etiquetas": [
             "vg"
@@ -147,7 +147,7 @@
         },
         {
           "nombre": "Omelette",
-          "desc": "Omelette with sautéed mushrooms, Gouda cheese, spinach, and sourdough bread <br />*Extra bacon + 2.50 €.",
+          "desc": "Omelette with sautéed mushrooms, Gouda cheese, spinach, and sourdough bread",
           "precio": "13,00",
           "etiquetas": [
             "vg"
@@ -158,7 +158,7 @@
         },
         {
           "nombre": "Salmon Bagel Gravlax",
-          "desc": "With homemade salmon gravlax, capers, cream cheese, chives, pickled onions, roasted tomatoes and wild arugula. Served with french fries.<br />-Extra avocado +2,50€.",
+          "desc": "With homemade salmon gravlax, capers, cream cheese, chives, pickled onions, roasted tomatoes and wild arugula. Served with french fries.",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true,
