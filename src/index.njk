@@ -501,16 +501,9 @@ pageKey: "home"
         </div>
 
         <div class="visitanos__map reveal">
-          <button type="button" class="map-embed" id="map-embed"
-                  data-map="https://maps.google.com/maps?q=Carrer%20de%20Proven%C3%A7a%20322%20Barcelona&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  aria-label="Cargar el mapa de Google de ARAU en Provença 322">
-            <span class="map-embed__inner">
-              <svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></svg>
-              <span class="map-embed__title">Ver el mapa</span>
-              <span class="map-embed__sub">Carrer de Provença, 322 · Eixample, Barcelona</span>
-              <span class="map-embed__note">Se carga Google Maps al tocar (puede usar cookies)</span>
-            </span>
-          </button>
+          <iframe title="Mapa de ARAU en Carrer de Provença 322, Barcelona"
+                  src="https://maps.google.com/maps?q=Carrer%20de%20Proven%C3%A7a%20322%20Barcelona&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%" height="460" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <p class="map-embed__alt">
             <a class="inline-link" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener noreferrer">Abrir en Google Maps ↗</a>
           </p>
@@ -642,7 +635,7 @@ pageKey: "home"
     </div>
 
     <div class="container footer__bottom">
-      <p>© <span id="year">2026</span> <span translate="no">ARAU</span> · Hecho con fuego en Barcelona.</p>
+      <p>© <span id="year">{{ buildYear }}</span> <span translate="no">ARAU</span> · Hecho con fuego en Barcelona.</p>
       <p class="footer__credit">Brunch a la brasa, todos los días menos los martes.</p>
     </div>
   </footer>
