@@ -180,12 +180,13 @@ pageKey: "carta"
       align-items: center;
       gap: .7rem 1.1rem;
     }
-    .menu-legend__lead {
-      font-size: .9rem;
-      color: var(--ink);
-      font-weight: 500;
+    .menu-legend__note {
+      flex-basis: 100%;
+      font-size: .8rem;
+      line-height: 1.45;
+      color: var(--ink-soft);
+      margin: .15rem 0 0;
     }
-    .menu-legend__lead strong { color: var(--terra-deep); font-weight: 700; }
     .menu-legend__keys {
       display: flex; flex-wrap: wrap; gap: .5rem;
       list-style: none; padding: 0; margin: 0;
@@ -545,17 +546,15 @@ pageKey: "carta"
     <!-- ===================== LEYENDA ===================== -->
     <div class="menu-legend">
       <div class="menu-legend__inner">
-        <p class="menu-legend__lead">
-          <strong>GF</strong> · versión sin gluten disponible en casi todos los platos. Avisanos.
-        </p>
         <ul class="menu-legend__keys" aria-label="Significado de las etiquetas">
-          <li><span class="diet diet--gf" aria-label="Sin gluten">GF</span> sin gluten</li>
+          <li><span class="diet diet--gf" aria-label="Sin gluten">GF</span> versión sin gluten disponible en casi todos los platos. Avisanos.</li>
           <li><span class="diet diet--vg" aria-label="Vegetariano">VG</span> vegetariano</li>
           <li><span class="diet diet--ve" aria-label="Vegano">VE</span> vegano</li>
           <li><span class="diet diet--spicy" aria-label="Picante">🌶</span> picante</li>
           <li><span class="diet diet--house" aria-label="Especialidad de la casa">⭐</span> de la casa</li>
         </ul>
         <p class="menu-legend__price">Precios en € · IVA incluido</p>
+        <p class="menu-legend__note">⚠ Los platos pueden contener trazas por contaminación cruzada. Si tenés alergias o intolerancias, consultanos antes de pedir.</p>
       </div>
     </div>
 
