@@ -11,7 +11,7 @@ pageKey: "carta"
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f3e9d6" />
+  <meta name="theme-color" content="#e6dcc2" />
 
   <title>Carta · ARAU — Brunch &amp; Café de especialidad, Barcelona</title>
   <meta name="description" content="La carta completa de ARAU: huevos en su punto, milanesas, dulces caseros y café de especialidad en el Eixample, Barcelona. Sabores argentinos, espíritu australiano." />
@@ -31,7 +31,7 @@ pageKey: "carta"
   <meta name="twitter:image" content="https://arau-brunch.netlify.app/img/spread.jpg" />
 
   <!-- Favicon: logo ARAU (tacita con anteojos) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 104'%3E%3Crect width='100' height='104' rx='20' fill='%23f3e9d6'/%3E%3Cg fill='none' stroke='%23bd4b2b' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M43 20c-3-3-3-6 0-9'/%3E%3Cpath d='M50 18c-3-3-3-6 0-9'/%3E%3Cpath d='M57 20c-3-3-3-6 0-9'/%3E%3Cellipse cx='50' cy='30' rx='17' ry='4.6'/%3E%3Cpath d='M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37'/%3E%3Cpath d='M35.5 39c6 2 23 2 29 0'/%3E%3Cpath d='M44 60c4 3.5 8 3.5 12 0'/%3E%3Cpath d='M33 47c-5 1-10-1-13-6'/%3E%3Cpath d='M20 41l-3-19'/%3E%3Cpath d='M67 47c5 1 10-1 13-6'/%3E%3Cpath d='M80 41l3-19'/%3E%3Cpath d='M80.4 26l-.5-5M83 26l.4-5'/%3E%3Cpath d='M44 70l-2 13M42 83l-6 2'/%3E%3Cpath d='M56 70l2 13M58 83l6 2'/%3E%3C/g%3E%3Cpath d='M17 22l-2.6 4.5 5.4 0z' fill='%23bd4b2b'/%3E%3Cg fill='%23bd4b2b'%3E%3Crect x='37.5' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='52' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='47' y='47' width='6' height='2.2' rx='1'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 104'%3E%3Crect width='100' height='104' rx='20' fill='%23e6dcc2'/%3E%3Cg fill='none' stroke='%23af452e' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M43 20c-3-3-3-6 0-9'/%3E%3Cpath d='M50 18c-3-3-3-6 0-9'/%3E%3Cpath d='M57 20c-3-3-3-6 0-9'/%3E%3Cellipse cx='50' cy='30' rx='17' ry='4.6'/%3E%3Cpath d='M33 30c0 16 2 28 4 37a4 4 0 0 0 4 3h18a4 4 0 0 0 4-3c2-9 4-21 4-37'/%3E%3Cpath d='M35.5 39c6 2 23 2 29 0'/%3E%3Cpath d='M44 60c4 3.5 8 3.5 12 0'/%3E%3Cpath d='M33 47c-5 1-10-1-13-6'/%3E%3Cpath d='M20 41l-3-19'/%3E%3Cpath d='M67 47c5 1 10-1 13-6'/%3E%3Cpath d='M80 41l3-19'/%3E%3Cpath d='M80.4 26l-.5-5M83 26l.4-5'/%3E%3Cpath d='M44 70l-2 13M42 83l-6 2'/%3E%3Cpath d='M56 70l2 13M58 83l6 2'/%3E%3C/g%3E%3Cpath d='M17 22l-2.6 4.5 5.4 0z' fill='%23af452e'/%3E%3Cg fill='%23af452e'%3E%3Crect x='37.5' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='52' y='45' width='10.5' height='7.4' rx='3.4'/%3E%3Crect x='47' y='47' width='6' height='2.2' rx='1'/%3E%3C/g%3E%3C/svg%3E" />
 
   <!-- Fuentes self-hosted (sin round-trip a Google) -->
   <link rel="preload" as="font" type="font/woff2" href="/fonts/fraunces-latin.woff2" crossorigin />
@@ -49,10 +49,10 @@ pageKey: "carta"
     .site-header {
       background: rgba(243, 233, 214, .96);
       backdrop-filter: blur(14px) saturate(1.2);
-      box-shadow: 0 1px 0 rgba(52, 37, 28, .08);
+      box-shadow: 0 1px 0 rgba(51, 51, 51, .08);
     }
     .site-header.scrolled {
-      box-shadow: 0 1px 0 rgba(52, 37, 28, .08), 0 10px 30px -24px rgba(52, 37, 28, .5);
+      box-shadow: 0 1px 0 rgba(51, 51, 51, .08), 0 10px 30px -24px rgba(51, 51, 51, .5);
     }
     /* Afordancia "volver al inicio" en el header */
     .header__back {
@@ -69,8 +69,8 @@ pageKey: "carta"
     /* ---------- Banda intro ---------- */
     .menu-intro {
       background:
-        radial-gradient(110% 90% at 88% 0%, rgba(217, 99, 58, .12), transparent 55%),
-        radial-gradient(90% 80% at 0% 100%, rgba(217, 154, 62, .1), transparent 50%),
+        radial-gradient(110% 90% at 88% 0%, rgba(212, 123, 59, .12), transparent 55%),
+        radial-gradient(90% 80% at 0% 100%, rgba(212, 123, 59, .1), transparent 50%),
         var(--cream);
       padding-block: clamp(2.6rem, 6vw, 4.5rem) clamp(2rem, 4vw, 3rem);
       text-align: center;
@@ -123,7 +123,7 @@ pageKey: "carta"
       z-index: 80;
       background: rgba(243, 233, 214, .95);
       backdrop-filter: blur(12px) saturate(1.2);
-      border-block: 1px solid rgba(52, 37, 28, .1);
+      border-block: 1px solid rgba(51, 51, 51, .1);
     }
     .menu-tabs__scroll {
       display: flex;
@@ -148,13 +148,13 @@ pageKey: "carta"
       letter-spacing: .01em;
       color: var(--ink-soft);
       padding: .5rem 1rem;
-      border: 1px solid rgba(52, 37, 28, .16);
+      border: 1px solid rgba(51, 51, 51, .16);
       border-radius: 100px;
       background: var(--cream-card);
       white-space: nowrap;
       transition: background-color .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
     }
-    .menu-tab:hover { color: var(--terra-deep); border-color: rgba(189, 75, 43, .4); }
+    .menu-tab:hover { color: var(--terra-deep); border-color: rgba(175, 69, 46, .4); }
     .menu-tab.is-active {
       background: var(--terra-deep);
       color: #fff;
@@ -168,7 +168,7 @@ pageKey: "carta"
     /* ---------- Leyenda dietética ---------- */
     .menu-legend {
       background: var(--cream-200);
-      border-bottom: 1px solid rgba(52, 37, 28, .08);
+      border-bottom: 1px solid rgba(51, 51, 51, .08);
       padding-block: 1.1rem;
     }
     .menu-legend__inner {
@@ -187,8 +187,8 @@ pageKey: "carta"
       align-items: flex-start;
       margin: .6rem 0 0;
       padding: .7rem .95rem;
-      background: rgba(189, 75, 43, .1);
-      border: 1px solid rgba(189, 75, 43, .32);
+      background: rgba(175, 69, 46, .1);
+      border: 1px solid rgba(175, 69, 46, .32);
       border-radius: 10px;
       font-size: .9rem;
       line-height: 1.5;
@@ -223,11 +223,11 @@ pageKey: "carta"
       border: 1px solid currentColor;
       vertical-align: middle;
     }
-    .diet--gf { color: #8a5a14; background: rgba(217, 154, 62, .16); }
+    .diet--gf { color: #8a5a14; background: rgba(212, 123, 59, .16); }
     .diet--vg { color: #45511f; background: rgba(124, 132, 86, .26); }
     .diet--ve { color: #2c5329; background: rgba(76, 122, 64, .24); }
-    .diet--spicy { color: var(--terra-deep); background: rgba(189, 75, 43, .12); border-color: rgba(189, 75, 43, .5); }
-    .diet--house { color: #9c6a16; background: rgba(217, 154, 62, .14); border-color: rgba(217, 154, 62, .55); }
+    .diet--spicy { color: var(--terra-deep); background: rgba(175, 69, 46, .12); border-color: rgba(175, 69, 46, .5); }
+    .diet--house { color: #9c6a16; background: rgba(212, 123, 59, .14); border-color: rgba(212, 123, 59, .55); }
 
     /* ---------- Secciones de la carta ---------- */
     .menu-section {
@@ -261,8 +261,8 @@ pageKey: "carta"
       border-radius: var(--radius);
       overflow: hidden;
       max-height: 320px;
-      border: 1px solid rgba(52, 37, 28, .1);
-      box-shadow: 0 28px 56px -38px rgba(52, 37, 28, .55);
+      border: 1px solid rgba(51, 51, 51, .1);
+      box-shadow: 0 28px 56px -38px rgba(51, 51, 51, .55);
     }
     .menu-section__photo img {
       width: 100%; height: 320px;
@@ -276,16 +276,16 @@ pageKey: "carta"
       align-items: flex-start;
       gap: 1.5rem;
       padding-block: clamp(1rem, 2.2vw, 1.35rem);
-      border-bottom: 1px solid rgba(52, 37, 28, .1);
+      border-bottom: 1px solid rgba(51, 51, 51, .1);
     }
-    .menu-item:first-child { border-top: 1px solid rgba(52, 37, 28, .1); }
+    .menu-item:first-child { border-top: 1px solid rgba(51, 51, 51, .1); }
     .menu-item__thumb {
       flex: 0 0 clamp(64px, 18vw, 88px);
       width: clamp(64px, 18vw, 88px);
       height: clamp(64px, 18vw, 88px);
       border-radius: 14px;
       object-fit: cover;
-      background: rgba(52, 37, 28, .06);
+      background: rgba(51, 51, 51, .06);
     }
     .menu-item--agotado .menu-item__thumb { filter: grayscale(.7); opacity: .6; }
     .menu-item__allerg {
@@ -299,7 +299,7 @@ pageKey: "carta"
     .menu-section__extras {
       margin-top: 1.3rem;
       padding: .75rem 1rem;
-      background: rgba(189, 75, 43, .07);
+      background: rgba(175, 69, 46, .07);
       border-left: 3px solid var(--terra);
       border-radius: 8px;
       font-size: .9rem;
@@ -345,7 +345,7 @@ pageKey: "carta"
     .menu-coffee li {
       display: flex; align-items: baseline; gap: .75rem;
       padding-block: .7rem;
-      border-bottom: 1px solid rgba(52, 37, 28, .08);
+      border-bottom: 1px solid rgba(51, 51, 51, .08);
     }
     .menu-coffee__name {
       font-family: var(--font-display);
@@ -355,7 +355,7 @@ pageKey: "carta"
     }
     .menu-coffee__dots {
       flex: 1 1 auto;
-      border-bottom: 1px dotted rgba(52, 37, 28, .22);
+      border-bottom: 1px dotted rgba(51, 51, 51, .22);
       transform: translateY(-.25em);
     }
     .menu-coffee__price {
@@ -378,10 +378,10 @@ pageKey: "carta"
     .menu-drinks li {
       display: flex; align-items: baseline; gap: .75rem;
       padding-block: .7rem;
-      border-bottom: 1px solid rgba(52, 37, 28, .08);
+      border-bottom: 1px solid rgba(51, 51, 51, .08);
     }
     .menu-drinks__name { font-family: var(--font-display); font-weight: 500; font-size: 1.02rem; color: var(--ink); }
-    .menu-drinks__dots { flex: 1 1 auto; border-bottom: 1px dotted rgba(52, 37, 28, .22); transform: translateY(-.25em); }
+    .menu-drinks__dots { flex: 1 1 auto; border-bottom: 1px dotted rgba(51, 51, 51, .22); transform: translateY(-.25em); }
     .menu-drinks__price { font-family: var(--font-display); font-weight: 600; color: var(--terra-deep); font-variant-numeric: tabular-nums; }
 
     /* Cierre / volver */
@@ -401,7 +401,7 @@ pageKey: "carta"
     .menu-outro__title .ital { color: var(--gold); font-style: italic; }
     .menu-outro__actions { margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: .9rem; justify-content: center; }
     .menu-outro .btn--ghost { color: var(--cream-100); border-color: rgba(244, 234, 217, .3); }
-    .menu-outro .btn--ghost:hover { color: var(--gold); border-color: var(--gold); background: rgba(217, 154, 62, .1); }
+    .menu-outro .btn--ghost:hover { color: var(--gold); border-color: var(--gold); background: rgba(212, 123, 59, .1); }
 
     /* ---------- Barra de acción móvil ---------- */
     .menu-actionbar {
@@ -413,8 +413,8 @@ pageKey: "carta"
       padding: .7rem var(--gutter) calc(.7rem + env(safe-area-inset-bottom));
       background: rgba(243, 233, 214, .97);
       backdrop-filter: blur(14px) saturate(1.2);
-      border-top: 1px solid rgba(52, 37, 28, .12);
-      box-shadow: 0 -10px 30px -24px rgba(52, 37, 28, .6);
+      border-top: 1px solid rgba(51, 51, 51, .12);
+      box-shadow: 0 -10px 30px -24px rgba(51, 51, 51, .6);
     }
     .menu-actionbar .btn { flex: 1 1 0; min-height: 48px; }
 
