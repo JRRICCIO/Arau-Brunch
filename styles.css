@@ -224,6 +224,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .brand { display: inline-flex; align-items: center; gap: .5rem; color: var(--ink); }
 .brand__mark { color: var(--terra); display: inline-flex; }
+/* Isologo oficial (no encoger dentro de los flex) */
+.logo-mark { flex: none; display: block; }
+.brand__mark .logo-mark { width: 38px; height: 41px; }
+.brand--footer .brand__mark .logo-mark { width: 32px; height: 34px; }
+.hero__cue-mark .logo-mark { width: 30px; height: 32px; }
 .brand__word {
   font-family: var(--font-display);
   font-weight: 700;
