@@ -1,10 +1,10 @@
 {
-  "overline": "Directe de la brasa",
+  "overline": "Sabors de la casa",
   "items": [
-    { "src": "img/big-arau.webp", "alt": "The Big ARAU — brunch complet a la brasa amb ous, xoriço, rösti i mongetes", "caption": "The Big ARAU — la bèstia a la brasa: xoriço, cansalada, hash brown, mongetes i dos ous", "main": true },
-    { "src": "img/eggs-benedict.webp", "alt": "Eggs Benedict amb salsa holandesa i moniato rostit", "caption": "Eggs Benedict — ous escumats, holandesa cítrica i moniato a la brasa", "main": false },
+    { "src": "img/big-arau.webp", "alt": "The Big ARAU — brunch complet amb ous, xoriço, rösti i mongetes", "caption": "The Big ARAU — la bèstia: xoriço, cansalada, hash brown, mongetes i dos ous", "main": true },
+    { "src": "img/eggs-benedict.webp", "alt": "Eggs Benedict amb salsa holandesa i moniato rostit", "caption": "Benny & the eggs — ous escumats, holandesa cítrica i moniato rostit", "main": false },
     { "src": "img/cafe.webp", "alt": "Flat white d'especialitat — cafè Congo d'origen", "caption": "Flat white d'especialitat — gra Congo d'origen, torrat per al flat white", "main": false },
-    { "src": "img/spread.webp", "alt": "Taula per compartir amb torrada d'alvocat, eggs benedict i cafès d'especialitat", "caption": "La taula per compartir — torrada d'alvocat, benedictins i cafè per a tothom", "main": false },
-    { "src": "img/flan.webp", "alt": "Flantástico — flam de dulce de leche casolà amb nata", "caption": "Flantástico — flam de dulce de leche amb nata, el final feliç", "main": false }
+    { "src": "img/spread.webp", "alt": "Taula compartida amb torrada d'alvocat, eggs benedict i cafès d'especialitat", "caption": "La taula compartida — torrada d'alvocat, benedictins i cafè per a tothom", "main": false },
+    { "src": "img/flan.webp", "alt": "Flantástico — flam de dulce de leche casolà amb nata muntada", "caption": "Flantástico — flam de dulce de leche amb nata muntada, el final feliç", "main": false }
   ]
 }

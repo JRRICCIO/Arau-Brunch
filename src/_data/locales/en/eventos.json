@@ -1,15 +1,15 @@
 {
   "feature": {
     "kicker": "Argentine Night",
-    "titleStart": "Asado, Malbec and",
+    "titleStart": "Empanadas, Malbec and",
     "titleAccent": "nostalgia",
     "chip": "Once a month · follow the calendar",
-    "desc": "Tucumán-style empanadas, locro and live folk music. Our take on the national celebration, with the grill fired up late into the night.",
+    "desc": "Tucumán-style empanadas, locro and live folk music. Argentina's national celebration our way, with music late into the night.",
     "photo": "img/spread.webp",
     "photoAlt": "A shared Argentine Night table with dishes for the centre and coffee",
     "strip": [
       { "src": "img/terrace.webp", "alt": "ARAU's terrace with brunch and the facade behind", "caption": "ARAU's terrace as the afternoon winds down" },
-      { "src": "img/big-arau.webp", "alt": "The Big ARAU, a full grilled brunch", "caption": "The Big ARAU — to kick off the night in style" },
+      { "src": "img/big-arau.webp", "alt": "The Big ARAU, a full brunch", "caption": "The Big ARAU — to kick off the night in style" },
       { "src": "img/terrace-coffee.webp", "alt": "A flat white on ARAU's terrace at sunset", "caption": "Coffee on the terrace before the night gets going" }
     ]
   },

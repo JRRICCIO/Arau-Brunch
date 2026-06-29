@@ -3,7 +3,7 @@
     "eyebrow": "La carta",
     "titleStart": "Menja com a",
     "titleAccent": "ARAU",
-    "subtitle": "Aussie soul, Argentinian heart. Brunch a la brasa, ous al punt i cafè d'especialitat — la carta completa, de cap a cap.",
+    "subtitle": "Sabors argentins, esperit australià i cafè d'especialitat. Cuina amb arrels, ous al punt i dolços casolans — la carta completa, de cap a peus.",
     "dateline": "Carta de temporada · actualitzada el juny de 2026",
     "disclaimer": "Els preus són orientatius i la carta pot variar segons la temporada i la disponibilitat."
   },
@@ -13,12 +13,12 @@
       "label": "Per començar",
       "subtitle": "Per obrir la gana · to share",
       "photo": "img/spread.webp",
-      "photoAlt": "Taula per compartir d'ARAU amb torrada d'alvocat, pa de massa mare i cafè",
+      "photoAlt": "Taula compartida d'ARAU amb torrada d'alvocat, pa de massa mare i cafè",
       "compact": false,
       "items": [
         {
-          "nombre": "Provoleta a la brasa",
-          "desc": "Provolone fos a la brasa, orenga i pa de massa mare.",
+          "nombre": "Provoleta",
+          "desc": "Provolone fos, orenga i pa de massa mare.",
           "precio": "9,50",
           "etiquetas": [
             "casa"
@@ -36,15 +36,15 @@
           "disponible": true
         },
         {
-          "nombre": "Medialunes (x2)",
-          "desc": "De mantega, acabades de fornejar (croissants argentins).",
+          "nombre": "Medialunas (x2)",
+          "desc": "De mantega, acabades de fornejar.",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Pan de chipá",
-          "desc": "Panets de formatge, ben calentons.",
+          "desc": "Panets de formatge, ben calents.",
           "precio": "4,50",
           "etiquetas": [
             "vg",
@@ -57,14 +57,14 @@
     {
       "id": "huevos",
       "label": "Ous & torrades",
-      "subtitle": "El costat aussie · poached, grilled, golden",
+      "subtitle": "El costat aussie · poached & golden",
       "photo": "img/eggs-benedict.webp",
       "photoAlt": "Eggs Benedict d'ARAU: ous escumats amb salsa holandesa sobre pa de massa mare",
       "compact": false,
       "items": [
         {
-          "nombre": "Eggs Benedict",
-          "desc": "Ous escumats, pernil, holandesa cítrica, cibulet, sobre massa mare.",
+          "nombre": "Benny & the eggs",
+          "desc": "Ous escumats, pernil, holandesa cítrica i cibulet, sobre massa mare. Un dels més demanats.",
           "precio": "13,90",
           "etiquetas": [
             "casa"
@@ -79,8 +79,8 @@
           "disponible": true
         },
         {
-          "nombre": "Bolets a la brasa",
-          "desc": "Mescla de bolets a la brasa, ou, parmesà i pa torrat.",
+          "nombre": "Bolets saltats",
+          "desc": "Mescla de bolets saltats, ou, parmesà i pa torrat.",
           "precio": "14,50",
           "etiquetas": [
             "vg"
@@ -88,8 +88,8 @@
           "disponible": true
         },
         {
-          "nombre": "Ous remenats amb xistorra",
-          "desc": "Ous de pagès, patates i xistorra a la brasa.",
+          "nombre": "Ous trencats amb xistorra",
+          "desc": "Ous de pagès, patates i xistorra.",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true
@@ -97,27 +97,20 @@
       ]
     },
     {
-      "id": "parrilla",
-      "label": "De la brasa",
-      "subtitle": "Cor argentí · brasa de debò",
+      "id": "principales",
+      "label": "Per a la gana",
+      "subtitle": "Milanesas & entrepans · el més contundent",
       "photo": "img/mushroom-skillet.webp",
-      "photoAlt": "Plat a la brasa d'ARAU servit en paella de ferro, acabat de sortir del foc",
+      "photoAlt": "Plat principal d'ARAU acabat de sortir de la cuina, abundant i casolà",
       "compact": false,
       "items": [
         {
-          "nombre": "Entrañable",
-          "desc": "180 g d'entranya fumada a la brasa, reducció de Malbec i salsa criolla.",
-          "precio": "18,90",
+          "nombre": "The tru mila",
+          "desc": "Milanesa de vedella amb salsa de bolets trufada, Gouda fos i ou ferrat per sobre. Amb patates i maionesa de chipotle — la nostra versió de la milanesa a caballo.",
+          "precio": "15,90",
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Argentinian BBQ per a dos",
-          "desc": "Taula a la brasa per compartir: entranya, xoriço, provoleta i guarnicions.",
-          "precio": "36,00",
-          "etiquetas": [],
           "disponible": true
         },
         {
@@ -139,7 +132,7 @@
     {
       "id": "dulces",
       "label": "Dolços",
-      "subtitle": "El toc final · the sweet finish",
+      "subtitle": "El comiat · the sweet finish",
       "photo": "img/flan.webp",
       "photoAlt": "Flantástico d'ARAU: flam casolà de dulce de leche amb nata muntada",
       "compact": false,
@@ -154,7 +147,7 @@
           "disponible": true
         },
         {
-          "nombre": "French toast",
+          "nombre": "Banana French toast",
           "desc": "Pa brioix, fruits vermells, plàtan, coco i dulce de leche.",
           "precio": "10,50",
           "etiquetas": [],
@@ -171,9 +164,11 @@
         },
         {
           "nombre": "Flantástico",
-          "desc": "Flam casolà de dulce de leche amb nata.",
+          "desc": "Flam casolà de dulce de leche amb nata muntada. Per a molts, el millor flam de Barcelona.",
           "precio": "6,50",
-          "etiquetas": [],
+          "etiquetas": [
+            "casa"
+          ],
           "disponible": true
         },
         {
@@ -201,7 +196,7 @@
           "disponible": true
         },
         {
-          "nombre": "Tallat",
+          "nombre": "Cortado",
           "desc": "",
           "precio": "2,40",
           "etiquetas": [],

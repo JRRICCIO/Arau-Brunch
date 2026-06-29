@@ -3,7 +3,7 @@
     "eyebrow": "The menu",
     "titleStart": "Eat like you're at",
     "titleAccent": "ARAU",
-    "subtitle": "Aussie soul, Argentinian heart. Grilled brunch, eggs done just right and specialty coffee — the full menu, from first bite to last.",
+    "subtitle": "Argentine flavours, Aussie spirit, and specialty coffee. Cooking with roots, eggs done just right, and homemade sweets — the full menu, from start to finish.",
     "dateline": "Seasonal menu · updated June 2026",
     "disclaimer": "Prices are approximate and the menu may vary with the season and availability."
   },
@@ -17,8 +17,8 @@
       "compact": false,
       "items": [
         {
-          "nombre": "Grilled Provoleta",
-          "desc": "Provolone melted over the grill, oregano and sourdough.",
+          "nombre": "Provoleta",
+          "desc": "Melted provolone, oregano and sourdough.",
           "precio": "9,50",
           "etiquetas": [
             "casa"
@@ -36,15 +36,15 @@
           "disponible": true
         },
         {
-          "nombre": "Medialunas (x2) (Argentine croissants)",
-          "desc": "Buttery and freshly baked.",
+          "nombre": "Medialunas (x2)",
+          "desc": "Buttery Argentine croissants, freshly baked.",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Pan de chipá (cassava cheese rolls)",
-          "desc": "Little cheese rolls, served warm.",
+          "nombre": "Pan de chipá",
+          "desc": "Little cassava cheese rolls, served warm.",
           "precio": "4,50",
           "etiquetas": [
             "vg",
@@ -57,14 +57,14 @@
     {
       "id": "huevos",
       "label": "Eggs & toast",
-      "subtitle": "The Aussie side · poached, grilled, golden",
+      "subtitle": "The Aussie side · poached & golden",
       "photo": "img/eggs-benedict.webp",
       "photoAlt": "ARAU's Eggs Benedict: poached eggs with hollandaise on sourdough",
       "compact": false,
       "items": [
         {
-          "nombre": "Eggs Benedict",
-          "desc": "Poached eggs, ham, citrus hollandaise and chives on sourdough.",
+          "nombre": "Benny & the eggs",
+          "desc": "Poached eggs, ham, citrus hollandaise and chives on sourdough. One of our most-ordered plates.",
           "precio": "13,90",
           "etiquetas": [
             "casa"
@@ -79,8 +79,8 @@
           "disponible": true
         },
         {
-          "nombre": "Grilled mushrooms",
-          "desc": "Grilled mushroom mix, egg, parmesan and toasted bread.",
+          "nombre": "Sautéed mushrooms",
+          "desc": "Sautéed mushroom mix, egg, parmesan and toasted bread.",
           "precio": "14,50",
           "etiquetas": [
             "vg"
@@ -89,7 +89,7 @@
         },
         {
           "nombre": "Broken eggs with chistorra",
-          "desc": "Free-range eggs, potatoes and grilled chistorra sausage.",
+          "desc": "Free-range eggs, potatoes and chistorra sausage.",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true
@@ -97,27 +97,20 @@
       ]
     },
     {
-      "id": "parrilla",
-      "label": "From the grill",
-      "subtitle": "Argentinian heart · real live fire",
+      "id": "principales",
+      "label": "For the hungry",
+      "subtitle": "Milanesas & sandwiches · the hearty stuff",
       "photo": "img/mushroom-skillet.webp",
-      "photoAlt": "An ARAU grilled dish served in a cast-iron skillet, straight off the fire",
+      "photoAlt": "An ARAU main course fresh from the kitchen, generous and homemade",
       "compact": false,
       "items": [
         {
-          "nombre": "Entrañable",
-          "desc": "180g of grilled smoked skirt steak, Malbec reduction and salsa criolla.",
-          "precio": "18,90",
+          "nombre": "The tru mila",
+          "desc": "Beef milanesa with truffled mushroom sauce, melted Gouda and a fried egg on top. Served with fries and chipotle mayo — our take on the milanesa a caballo.",
+          "precio": "15,90",
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Argentinian BBQ for two",
-          "desc": "A grilled sharing board: skirt steak, chorizo, provoleta and sides.",
-          "precio": "36,00",
-          "etiquetas": [],
           "disponible": true
         },
         {
@@ -154,7 +147,7 @@
           "disponible": true
         },
         {
-          "nombre": "French toast",
+          "nombre": "Banana French toast",
           "desc": "Brioche, red berries, banana, coconut and dulce de leche.",
           "precio": "10,50",
           "etiquetas": [],
@@ -171,9 +164,11 @@
         },
         {
           "nombre": "Flantástico",
-          "desc": "Homemade dulce de leche flan with cream.",
+          "desc": "Homemade dulce de leche flan with whipped cream. For many, the best flan in Barcelona.",
           "precio": "6,50",
-          "etiquetas": [],
+          "etiquetas": [
+            "casa"
+          ],
           "disponible": true
         },
         {

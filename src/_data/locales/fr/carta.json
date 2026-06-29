@@ -1,24 +1,24 @@
 {
   "intro": {
     "eyebrow": "La carte",
-    "titleStart": "Mange comme à",
+    "titleStart": "Mangez comme chez",
     "titleAccent": "ARAU",
-    "subtitle": "Aussie soul, Argentinian heart. Brunch à la braise, œufs cuits à la perfection et café de spécialité — la carte complète, du début à la fin.",
-    "dateline": "Carte de saison · mise à jour en juin 2026",
+    "subtitle": "Saveurs argentines, esprit australien et café de spécialité. Une cuisine qui a des racines, des œufs cuits à la perfection et des douceurs maison — la carte complète, du début à la fin.",
+    "dateline": "Carte de saison · mise à jour juin 2026",
     "disclaimer": "Les prix sont donnés à titre indicatif et la carte peut varier selon la saison et les disponibilités."
   },
   "sections": [
     {
       "id": "empezar",
       "label": "Pour commencer",
-      "subtitle": "Pour ouvrir l'appétit · à partager",
+      "subtitle": "Pour ouvrir l'appétit · to share",
       "photo": "img/spread.webp",
-      "photoAlt": "Table à partager d'ARAU avec tartine d'avocat, pain au levain et café",
+      "photoAlt": "Table à partager d'ARAU avec toast à l'avocat, pain au levain et café",
       "compact": false,
       "items": [
         {
-          "nombre": "Provoleta a la brasa",
-          "desc": "Provolone fondu à la braise, origan et pain au levain.",
+          "nombre": "Provoleta",
+          "desc": "Provolone fondu, origan et pain au levain.",
           "precio": "9,50",
           "etiquetas": [
             "casa"
@@ -26,7 +26,7 @@
           "disponible": true
         },
         {
-          "nombre": "Tartine d'avocat (Avo toast)",
+          "nombre": "Toast à l'avocat (Avo toast)",
           "desc": "Avocat, tomate rôtie, radis, feta, graines, sur pain au levain.",
           "precio": "11,90",
           "etiquetas": [
@@ -36,14 +36,14 @@
           "disponible": true
         },
         {
-          "nombre": "Medialunas (croissants argentins) (x2)",
-          "desc": "Au beurre, tout juste sortis du four.",
+          "nombre": "Medialunas (x2)",
+          "desc": "Petits croissants au beurre, tout juste sortis du four.",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Pan de chipá",
+          "nombre": "Pain de chipá",
           "desc": "Petits pains au fromage, bien chauds.",
           "precio": "4,50",
           "etiquetas": [
@@ -56,15 +56,15 @@
     },
     {
       "id": "huevos",
-      "label": "Œufs & tartines",
-      "subtitle": "Le côté aussie · poached, grilled, golden",
+      "label": "Œufs & toasts",
+      "subtitle": "Le côté aussie · poached & golden",
       "photo": "img/eggs-benedict.webp",
       "photoAlt": "Eggs Benedict d'ARAU : œufs pochés et sauce hollandaise sur pain au levain",
       "compact": false,
       "items": [
         {
-          "nombre": "Eggs Benedict",
-          "desc": "Œufs pochés, jambon, hollandaise citronnée, ciboulette, sur pain au levain.",
+          "nombre": "Benny & the eggs",
+          "desc": "Œufs pochés, jambon, hollandaise citronnée et ciboulette, sur pain au levain. L'un de nos plats les plus demandés.",
           "precio": "13,90",
           "etiquetas": [
             "casa"
@@ -73,14 +73,14 @@
         },
         {
           "nombre": "The Big ARAU",
-          "desc": "Chorizo, poitrine fumée, champignons, tomate rôtie, hash brown, épinards, haricots et 2 œufs.",
+          "desc": "Chorizo, lard, champignons, tomate rôtie, hash brown, épinards, haricots et 2 œufs.",
           "precio": "16,90",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Champignons à la braise",
-          "desc": "Assortiment de champignons à la braise, œuf, parmesan et pain grillé.",
+          "nombre": "Champignons sautés",
+          "desc": "Assortiment de champignons sautés, œuf, parmesan et pain grillé.",
           "precio": "14,50",
           "etiquetas": [
             "vg"
@@ -88,8 +88,8 @@
           "disponible": true
         },
         {
-          "nombre": "Huevos rotos à la chistorra",
-          "desc": "Œufs fermiers, pommes de terre, chistorra (saucisse) à la braise.",
+          "nombre": "Œufs cassés à la chistorra",
+          "desc": "Œufs fermiers, pommes de terre et chistorra (saucisse épicée).",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true
@@ -97,39 +97,32 @@
       ]
     },
     {
-      "id": "parrilla",
-      "label": "Du grill",
-      "subtitle": "Cœur argentin · vraie braise",
+      "id": "principales",
+      "label": "Pour les gros appétits",
+      "subtitle": "Milanesas & sandwichs · le plus copieux",
       "photo": "img/mushroom-skillet.webp",
-      "photoAlt": "Plat à la braise d'ARAU servi en poêle en fonte, tout juste sorti du feu",
+      "photoAlt": "Plat principal d'ARAU tout juste sorti de la cuisine, généreux et fait maison",
       "compact": false,
       "items": [
         {
-          "nombre": "Entrañable",
-          "desc": "180g d'onglet fumé à la braise, réduction de Malbec et salsa criolla.",
-          "precio": "18,90",
+          "nombre": "The tru mila",
+          "desc": "Milanesa de bœuf (escalope panée) sauce aux champignons truffée, Gouda fondu et œuf au plat par-dessus. Avec frites et mayonnaise au chipotle — notre version de la milanesa a caballo.",
+          "precio": "15,90",
           "etiquetas": [
             "casa"
           ],
           "disponible": true
         },
         {
-          "nombre": "Argentinian BBQ pour deux",
-          "desc": "Planche à la braise à partager : onglet, chorizo, provoleta et garnitures.",
-          "precio": "36,00",
-          "etiquetas": [],
-          "disponible": true
-        },
-        {
-          "nombre": "Sandwich de milanesa au pan de chipá",
-          "desc": "Milanesa de bœuf croustillante dans un pain de chipá, avec frites.",
+          "nombre": "Sandwich de milanesa au pain de chipá",
+          "desc": "Milanesa de bœuf croustillante (escalope panée) dans un pain de chipá, avec frites.",
           "precio": "14,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Bagel au pastrami",
-          "desc": "Pastrami maison, cornichons, moutarde à l'ancienne et fromage.",
+          "desc": "Pastrami saumuré maison, cornichons, moutarde à l'ancienne et fromage.",
           "precio": "13,90",
           "etiquetas": [],
           "disponible": true
@@ -138,7 +131,7 @@
     },
     {
       "id": "dulces",
-      "label": "Desserts",
+      "label": "Douceurs",
       "subtitle": "La touche finale · the sweet finish",
       "photo": "img/flan.webp",
       "photoAlt": "Flantástico d'ARAU : flan maison au dulce de leche et crème fouettée",
@@ -146,7 +139,7 @@
       "items": [
         {
           "nombre": "Pancakes au dulce de leche",
-          "desc": "Moelleux, dulce de leche et crème fouettée.",
+          "desc": "Moelleux, dulce de leche (confiture de lait) et crème fouettée.",
           "precio": "9,90",
           "etiquetas": [
             "casa"
@@ -154,7 +147,7 @@
           "disponible": true
         },
         {
-          "nombre": "French toast",
+          "nombre": "Banana French toast",
           "desc": "Pain brioché, fruits rouges, banane, coco et dulce de leche.",
           "precio": "10,50",
           "etiquetas": [],
@@ -171,9 +164,11 @@
         },
         {
           "nombre": "Flantástico",
-          "desc": "Flan maison au dulce de leche, servi avec de la crème.",
+          "desc": "Flan maison au dulce de leche et crème fouettée. Pour beaucoup, le meilleur flan de Barcelone.",
           "precio": "6,50",
-          "etiquetas": [],
+          "etiquetas": [
+            "casa"
+          ],
           "disponible": true
         },
         {

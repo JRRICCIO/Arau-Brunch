@@ -3,8 +3,8 @@
   "hero": {
     "titleStart": "No som un brunch",
     "titleAccent": "qualsevol.",
-    "accentSwap": ["qualsevol.", "corrent.", "del munt.", "normal."],
-    "lead": "Ànima australiana i cor argentí. Brunch a la brasa, cafè d'especialitat i producte fresc — al cor de l'Eixample, Barcelona.",
+    "accentSwap": ["qualsevol.", "ordinary.", "del munt.", "avorrit."],
+    "lead": "Un brunch d'inspiració argentino-australiana al cor de l'Eixample, Barcelona. Receptes amb arrels, cafè d'especialitat i l'hospitalitat com a manera de rebre.",
     "image": "img/facade.webp",
     "imageAlt": "Façana d'ARAU al Carrer de Provença 322, amb el seu arc de terracota i el brunch acabat de servir"
   },
@@ -18,7 +18,7 @@
     "telefono": "+34 612 123 123",
     "telefonoLink": "+34612123123",
     "whatsapp": "34612123123",
-    "email": "hola@araubrunch.com",
+    "email": "hola@araubrunch.es",
     "instagram": "araubrunch",
     "tiktok": "araubrunch",
     "direccion": "Carrer de Provença, 322",
