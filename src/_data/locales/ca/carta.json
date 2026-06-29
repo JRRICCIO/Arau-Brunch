@@ -9,245 +9,598 @@
   },
   "sections": [
     {
-      "id": "empezar",
-      "label": "Per començar",
-      "subtitle": "Per obrir la gana · to share",
+      "id": "picoteo",
+      "label": "Piccoteo",
       "photo": "img/spread.webp",
-      "photoAlt": "Taula compartida d'ARAU amb torrada d'alvocat, pa de massa mare i cafè",
+      "photoAlt": "Piccoteo — ARAU",
       "compact": false,
       "items": [
         {
-          "nombre": "Provoleta",
-          "desc": "Provolone fos, orenga i pa de massa mare.",
-          "precio": "9,50",
-          "etiquetas": [
-            "casa"
-          ],
-          "disponible": true
-        },
-        {
-          "nombre": "Torrada d'alvocat (Avo toast)",
-          "desc": "Alvocat, tomàquet rostit, rave, feta, llavors, sobre massa mare.",
-          "precio": "11,90",
-          "etiquetas": [
-            "vg",
-            "gf"
-          ],
-          "disponible": true
-        },
-        {
-          "nombre": "Medialunas (x2)",
-          "desc": "De mantega, acabades de fornejar.",
-          "precio": "3,90",
-          "etiquetas": [],
-          "disponible": true
-        },
-        {
-          "nombre": "Pan de chipá",
-          "desc": "Panets de formatge, ben calents.",
-          "precio": "4,50",
-          "etiquetas": [
-            "vg",
-            "gf"
-          ],
-          "disponible": true
-        }
-      ]
-    },
-    {
-      "id": "huevos",
-      "label": "Ous & torrades",
-      "subtitle": "El costat aussie · poached & golden",
-      "photo": "img/eggs-benedict.webp",
-      "photoAlt": "Eggs Benedict d'ARAU: ous escumats amb salsa holandesa sobre pa de massa mare",
-      "compact": false,
-      "items": [
-        {
-          "nombre": "Benny & the eggs",
-          "desc": "Ous escumats, pernil, holandesa cítrica i cibulet, sobre massa mare. Un dels més demanats.",
-          "precio": "13,90",
-          "etiquetas": [
-            "casa"
-          ],
-          "disponible": true
-        },
-        {
-          "nombre": "The Big ARAU",
-          "desc": "Xoriço, cansalada, xampinyons, tomàquet rostit, hash brown, espinacs, mongetes i 2 ous.",
-          "precio": "16,90",
-          "etiquetas": [],
-          "disponible": true
-        },
-        {
-          "nombre": "Bolets saltats",
-          "desc": "Mescla de bolets saltats, ou, parmesà i pa torrat.",
-          "precio": "14,50",
+          "nombre": "Bonnie i Clyde",
+          "desc": "Patates dolces fregides amb maionesa de chipotle",
+          "precio": "5,00",
           "etiquetas": [
             "vg"
           ],
           "disponible": true
         },
         {
-          "nombre": "Ous trencats amb xistorra",
-          "desc": "Ous de pagès, patates i xistorra.",
+          "nombre": "Provaré amb campanes",
+          "desc": "Formatge provolone fos amb chimichurri, tomàquets confitats i pa de massa mare",
+          "precio": "11,90",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Chori amb chimi",
+          "desc": "Entrepà de botifarra a la planxa amb salsa chimichurri",
+          "precio": "6,00",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Patates de Chimi amb Mayo",
+          "desc": "Patates fregides amb maionesa de chimichurri",
+          "precio": "4,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": false
+        },
+        {
+          "nombre": "Tortilla de patata",
+          "desc": "Porció de truita de patata amb pa de tomàquet i maionesa de chipotle",
+          "precio": "3,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": false
+        },
+        {
+          "nombre": "Hummus de cigrons",
+          "desc": "Dip clàssic d'hummus casolà amb olives negres, crudités i pa",
+          "precio": "4,00",
+          "etiquetas": [
+            "ve"
+          ],
+          "disponible": false
+        }
+      ]
+    },
+    {
+      "id": "desayunos",
+      "label": "Esmorzar",
+      "photo": "img/cafe.webp",
+      "photoAlt": "Esmorzar — ARAU",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Bol de Açaí",
+          "desc": "Base d'açaí, granola casolana, fruites de temporada, coulis de fruits vermells, flocs de coco, mantega de cacauet i mel.",
+          "precio": "12,90",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Bol de iogurt",
+          "desc": "Iogurt grec, granola casolana, fruites de temporada, coulis de fruits vermells, baies de goji, flocs de coco, mantega de cacauet i mel.",
+          "precio": "10,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Creps d'Arau",
+          "desc": "Creps amb crema de mascarpone, fruites de temporada i salsa fudge.",
+          "precio": "10,50",
+          "etiquetas": [
+            "vg",
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Torrada francesa de plàtan",
+          "desc": "Torrada francesa de pa de plàtan amb crema de mascarpone cítrics, mel, flocs de coco, fruits vermells, nous i ratlladura de taronja",
+          "precio": "10,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "brunch",
+      "label": "Brunch",
+      "photo": "img/eggs-benedict.webp",
+      "photoAlt": "Brunch — ARAU",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Torrada de color verd esmicolat",
+          "desc": "Pa de massa mare, alvocat, ruca silvestre, tomàquets rostits, formatge feta, ou escalfat, ceba escabetxada. <br />·Salmó gravlax casolà +3,50 €",
+          "precio": "13,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Big Brekky",
+          "desc": "Salsitxa a la planxa, cansalada cruixent, mongetes blanques estofades, 2 ous (fregits o remenats) guarnits amb xili mòlt, tomàquets rostits, xampinyons saltats, hash brown i espinacs.",
+          "precio": "14,50",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Benny i els ous",
+          "desc": "Pa de chipa (GF), espinacs saltats, dos ous escalfats, salsa hollandaise i cansalada cruixent. Servit amb amanida verda amb tomàquets rostits i moniatos. <br />Substituir Cansalada per: Alvocat, Salmó Gravlax casolà (+2,50€), Halloumi (+2€)",
+          "precio": "14,00",
+          "etiquetas": [
+            "gf",
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Truita",
+          "desc": "Truita amb bolets saltats, formatge Gouda, espinacs, i pa de massa mare *Cansalada extra + 2,50€ <br />",
+          "precio": "13,00",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Bagel de salmó Gravlax",
+          "desc": "Amb salmó gravlax casolà, tàperes, formatge crema, cibulet, cebes adobades, tomàquets rostits i ruca silvestre. Acompanyat de patates fregides. <br />-Alvocat extra +2,50€",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true
-        }
-      ]
-    },
-    {
-      "id": "principales",
-      "label": "Per a la gana",
-      "subtitle": "Milanesas & entrepans · el més contundent",
-      "photo": "img/mushroom-skillet.webp",
-      "photoAlt": "Plat principal d'ARAU acabat de sortir de la cuina, abundant i casolà",
-      "compact": false,
-      "items": [
-        {
-          "nombre": "The tru mila",
-          "desc": "Milanesa de vedella amb salsa de bolets trufada, Gouda fos i ou ferrat per sobre. Amb patates i maionesa de chipotle — la nostra versió de la milanesa a caballo.",
-          "precio": "15,90",
-          "etiquetas": [
-            "casa"
-          ],
-          "disponible": true
         },
         {
-          "nombre": "Entrepà de milanesa en pan de chipá",
-          "desc": "Milanesa cruixent de vedella en pan de chipá, amb patates.",
-          "precio": "14,90",
-          "etiquetas": [],
-          "disponible": true
-        },
-        {
-          "nombre": "Bagel de pastrami",
-          "desc": "Pastrami curat a casa, cogombrets, mostassa a l'antiga i formatge.",
-          "precio": "13,90",
+          "nombre": "Pastrami Lover NOU!!",
+          "desc": "Bagel amb pastrami, escabetxos agredolços, ruca, gouda i salsa de mostassa dijon, crema de formatge i mel. Acompanyat de patates fregides",
+          "precio": "15,50",
           "etiquetas": [],
           "disponible": true
         }
       ]
     },
     {
-      "id": "dulces",
-      "label": "Dolços",
-      "subtitle": "El comiat · the sweet finish",
-      "photo": "img/flan.webp",
-      "photoAlt": "Flantástico d'ARAU: flam casolà de dulce de leche amb nata muntada",
+      "id": "almuerzos",
+      "label": "Dinars",
+      "photo": "img/big-arau.webp",
+      "photoAlt": "Dinars — ARAU",
       "compact": false,
       "items": [
         {
-          "nombre": "Pancakes de dulce de leche",
-          "desc": "Esponjosos, amb dulce de leche i nata muntada.",
-          "precio": "9,90",
+          "nombre": "La Tru Mila",
+          "desc": "Milanès de vedella amb salsa de bolets trufats, formatge Gouda fos i un ou fregit per sobre. <br />Acompanyat de patates fregides i maionesa de chipotle. (Canvieu les patates per patates dolces o una barreja de verds i tomàquets rostits+1 €)",
+          "precio": "17,00",
           "etiquetas": [
             "casa"
           ],
           "disponible": true
         },
         {
-          "nombre": "Banana French toast",
-          "desc": "Pa brioix, fruits vermells, plàtan, coco i dulce de leche.",
-          "precio": "10,50",
-          "etiquetas": [],
+          "nombre": "El provocador",
+          "desc": "Pa de brioche, hamburguesa de vedella de 180g, formatge provolone, cansalada, ceba caramel·litzada, tomàquet, enciam i maionesa de Chimichurri. (Ou fregit extra + 1,50€) <br /> acompanyat de patates fregides. (Intercanvi per patates dolces o mescles",
+          "precio": "17,90",
+          "etiquetas": [
+            "casa"
+          ],
           "disponible": true
         },
         {
-          "nombre": "Açaí Bowl",
-          "desc": "Açaí, granola casolana, fruita de temporada, coco, mantega de cacauet i mel.",
-          "precio": "9,50",
+          "nombre": "Tru Mila Veggie",
+          "desc": "Milanesa d'albergínia amb salsa de bolets trufats, formatge Gouda fos i un ou fregit per sobre. <br />Acompanyat de patates fregides i maionesa de chipotle. (Canvieu les patates per patates dolces o una barreja de verds i tomàquets rostits+1 €)",
+          "precio": "14,60",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "La Provocadora Veggie",
+          "desc": "Pa de brioche, hamburguesa vegetariana, formatge provolone, bolets saltats, ceba caramel·litzada, tomàquet, enciam i maionesa de Chimichurri. Ou fregit extra + 1,50€. Acompanyat de patates fregides (Intercanvi per patates dolces o amanida +1 €)",
+          "precio": "16,00",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "NOU Ceasar Austral",
+          "desc": "Enciam romaine, pollastre marinat i a la planxa, cansalada cruixent, rodanxes de parmesà, crostons fets a mà, llavors de carbassa i la nostra salsa Cèsar amb un toc de chimichurri.",
+          "precio": "14,50",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "pasteleria",
+      "label": "pastisseria",
+      "photo": "img/medialunas.webp",
+      "photoAlt": "pastisseria — ARAU",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Alfajor de blat de moro",
+          "desc": "",
+          "precio": "3,75",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Pa vegà de plàtan",
+          "desc": "Pa de plàtan vegà casolà amb fruits secs i xips de xocolata negra",
+          "precio": "3,50",
           "etiquetas": [
             "ve"
           ],
           "disponible": true
         },
         {
-          "nombre": "Flantástico",
-          "desc": "Flam casolà de dulce de leche amb nata muntada. Per a molts, el millor flam de Barcelona.",
-          "precio": "6,50",
+          "nombre": "Brownie",
+          "desc": "",
+          "precio": "3,75",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Caramel salat de galeta",
+          "desc": "",
+          "precio": "4,38",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Alfajor de coco amb Dulce de Leche",
+          "desc": "Sense gluten",
+          "precio": "4,50",
           "etiquetas": [
+            "gf",
             "casa"
           ],
           "disponible": true
         },
         {
-          "nombre": "Cheesecake del dia",
-          "desc": "Pastís de formatge cremós.",
-          "precio": "6,90",
+          "nombre": "Mitja Lluna",
+          "desc": "",
+          "precio": "2,38",
           "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Porció de pastís de pastanaga",
+          "desc": "",
+          "precio": "8,13",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Porció de Key Lime Pie",
+          "desc": "",
+          "precio": "8,13",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Chipá (pa de formatge GF)",
+          "desc": "Pa de formatge elaborat amb farina de mandioca i una gran varietat de formatges. GF",
+          "precio": "2,90",
+          "etiquetas": [
+            "vg",
+            "gf"
+          ],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "postres",
+      "label": "Postres",
+      "photo": "img/flan.webp",
+      "photoAlt": "Postres — ARAU",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Flantàstic",
+          "desc": "Flan casolà de Dulce de Leche acompanyat de nata muntada",
+          "precio": "5,50",
+          "etiquetas": [
+            "vg",
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Cítrics Pavlova",
+          "desc": "Cítrics Pavlova",
+          "precio": "6,88",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Brownie mullat",
+          "desc": "Brownie humit amb fudge i nata muntada",
+          "precio": "5,50",
+          "etiquetas": [
+            "vg"
+          ],
           "disponible": true
         }
       ]
     },
     {
       "id": "cafe",
-      "label": "Cafè d'especialitat",
-      "subtitle": "Aussie soul in a cup · torrat d'especialitat",
-      "photo": "img/cafe.webp",
-      "photoAlt": "Flat white d'especialitat d'ARAU en tassa de ceràmica artesanal",
+      "label": "Cafè i begudes calentes",
+      "photoAlt": "Cafè i begudes calentes — ARAU",
       "compact": true,
       "items": [
         {
-          "nombre": "Flat white",
+          "nombre": "Espresso",
           "desc": "",
-          "precio": "3,20",
+          "precio": "1,70",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Cortado",
+          "nombre": "Espresso doble",
           "desc": "",
           "precio": "2,40",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Espresso",
-          "desc": "",
-          "precio": "2,00",
+          "nombre": "picat",
+          "desc": "Un cop de cafè amb llet Llet vegetal + <br /> 0.20€",
+          "precio": "1,90",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Cappuccino",
-          "desc": "",
-          "precio": "3,00",
+          "nombre": "Macchiato",
+          "desc": "Un cop de cafè amb escuma de llet Escuma de llet vegetal + <br /> 0.20€",
+          "precio": "1,90",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Latte",
+          "nombre": "Americano",
           "desc": "",
+          "precio": "2,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Màgia",
+          "desc": "Doble ristretto amb llet, més petit i més intens que el blanc pla Llet veget <br /> al +0,20€",
+          "precio": "3,40",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Blanc pla",
+          "desc": "Espresso doble amb llet Llet vegetal + <br /> 0.20€",
+          "precio": "3,60",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Latte (cafè amb llet)",
+          "desc": "Un cop de cafè amb llet Llet vegetal + <br /> 0.20€",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Filtrat V60 (single origin)",
-          "desc": "",
-          "precio": "4,50",
+          "nombre": "Caputxino",
+          "desc": "Un tret de cafè amb llet (decorat amb cacau o canyella) Llet vegetal + <br /> 0,20€",
+          "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Cold brew",
+          "nombre": "Llet de caramel",
+          "desc": "Un cop de cafè amb llet i xarop de caramel Llet vegetal + <br /> 0.20€",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Latte de vainilla",
+          "desc": "Un cop de cafè amb llet i xarop de vainilla Llet vegetal + <br /> 0.20€",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "moca",
+          "desc": "Un cop de cafè amb llet i cacau Llet vegetal + <br /> 0.20€",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Babyccino",
+          "desc": "Llet escumosa en una tassa petita decorada amb cacau (per a nadons)",
+          "precio": "1,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Matcha latte",
+          "desc": "Te matcha en pols amb llet Llet vegetal 0.20 <br /> €",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Latte de cúrcuma",
+          "desc": "Llet vegetal 0.20€",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Chai Latte",
+          "desc": "Te Chai en pols amb llet Llet vegetal 0. <br /> 20€",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Chai brut",
+          "desc": "Chai latte amb un cop de cafè Llet vegetal 0.20 <br /> €",
+          "precio": "4,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Submarí",
+          "desc": "Xocolata calenta a l'estil argent <br /> í (Llet amb un tros de xocolata per fondre)",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Varietats de tes i infusions",
+          "desc": "Esmorzar anglès, Camamilla, Menta Ecològica, Bon Ànim, Secret de la Caputxeta Vermella, Gessamí de la Xina",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Dolç de Leche Latte",
+          "desc": "Un cop de cafè amb llet i llet vegetal Dulce de Leche +0.20€ <br />",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "cafe-frio",
+      "label": "Cafès freds",
+      "photoAlt": "Cafès freds — ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Latte gelat o capucciano gelat",
+          "desc": "Un cop de cafè amb llet i gel",
+          "precio": "3,30",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Moca gelada",
+          "desc": "Un cop de cafè amb llet i cacau + gel",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Chai latte gelat",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Matcha latte",
-          "desc": "",
-          "precio": "4,20",
+          "nombre": "Chai brut gelat",
+          "desc": "Chai latte gelat amb un espresso",
+          "precio": "5,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Xocolata calenta",
+          "nombre": "Cervesa freda",
+          "desc": "Cafè filtre infusionat en fred amb gel",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Te casolà gelat",
+          "desc": "Te gelat casolà",
+          "precio": "3,50",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Tònic Espresso",
+          "desc": "Espresso doble amb aigua tònica, gel i una rodanxa de llimona",
+          "precio": "4,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Caramel gelat o latte de vainilla",
+          "desc": "Un tret de cafè, caramel o xarop de vainilla, llet i gel -Llet vegetal +0.20€ <br />",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Dulce de Leche Latte gelat",
+          "desc": "Un cop de cafè, fudge, llet i gel <br /> -Llet vegetal +0.20€",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "zumos",
+      "label": "Sucs naturals",
+      "photoAlt": "Sucs naturals — ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Desintoxicació",
+          "desc": "Pinya natural, cogombre, menta, espinacs, poma verda i suc de llimona",
+          "precio": "7,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Estat d'ànim tropical",
+          "desc": "Suc natural de taronja, pinya, polpa de fruita de la passió i coulis de fruits vermells",
+          "precio": "6,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Rellotge Taronja",
+          "desc": "Taronja natural, pastanaga, cúrcuma fresca i suc de llimona",
+          "precio": "6,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Suc de taronja espremut",
           "desc": "",
           "precio": "3,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Pantera Rosa",
+          "desc": "Suc natural de taronja, remolatxa, gingebre i poma",
+          "precio": "6,00",
           "etiquetas": [],
           "disponible": true
         }
@@ -255,21 +608,118 @@
     },
     {
       "id": "bebidas",
-      "label": "Begudes",
-      "subtitle": "Begudes · per brindar el brunch",
-      "photo": "img/benedict-mimosa.webp",
-      "photoAlt": "Eggs Benedict amb una mimosa per acompanyar el brunch a ARAU",
+      "label": "Begudes fredes i carbonatades",
+      "photoAlt": "Begudes fredes i carbonatades — ARAU",
       "compact": true,
       "items": [
         {
-          "nombre": "Suc de taronja natural",
+          "nombre": "Coca-Cola",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Coca-Cola zero",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Aigua",
+          "desc": "Ampolla d'aigua filtrada",
+          "precio": "1,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Aigua escumosa",
+          "desc": "",
+          "precio": "2,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Vichy Català",
+          "desc": "",
+          "precio": "3,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Sprite",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Fanta llimona",
+          "desc": "",
+          "precio": "2,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Fanta Taronja",
+          "desc": "",
+          "precio": "2,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Tònica Shweppes",
+          "desc": "",
+          "precio": "3,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Cervesa de gingebre",
           "desc": "",
           "precio": "4,50",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Llimonada de la casa",
+          "nombre": "Kombucha",
+          "desc": "",
+          "precio": "5,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Llimonada casolana",
+          "desc": "Llimona, menta, gingebre i xarop",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Llimonada tropical NOVETAT!",
+          "desc": "suc de llimona, llet de coco, menta i xarop",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "cocktails",
+      "label": "Còctels, cervesa i aperitius",
+      "photoAlt": "Còctels, cervesa i aperitius — ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Cervesa de calat Alhambra",
+          "desc": "Copa de cervesa",
+          "precio": "3,30",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "vermut",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
@@ -277,43 +727,118 @@
         },
         {
           "nombre": "Mimosa",
-          "desc": "",
-          "precio": "6,50",
-          "etiquetas": [],
+          "desc": "Cava i suc de taronja espremut",
+          "precio": "5,00",
+          "etiquetas": [
+            "casa"
+          ],
           "disponible": true
         },
         {
-          "nombre": "Bloody Mary",
-          "desc": "",
-          "precio": "8,50",
+          "nombre": "Cola de Fernet",
+          "desc": "Fernet amb Coca-Cola (típic de l'Argentina)",
+          "precio": "7,50",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Aperol Spritz",
           "desc": "",
-          "precio": "7,50",
+          "precio": "7,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Canya",
+          "nombre": "Gin tònic",
           "desc": "",
-          "precio": "3,00",
+          "precio": "7,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Copa de vi",
-          "desc": "",
-          "precio": "4,50",
+          "nombre": "Maria sanguinolenta",
+          "desc": "Suc de tomàquet, vodka, suc de llima, sal, pebre, salsa Worcestershire i Tabasco",
+          "precio": "8,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Aigua",
+          "nombre": "Espresso Martini",
+          "desc": "Cafè, Kahlua, Vodka i Xarop",
+          "precio": "8,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Mojito de fruita de la passió",
+          "desc": "Ron, menta, suc de llima, xarop, polpa de fruita de la passió, tònic",
+          "precio": "9,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Caipiroska (fruita de la passió opcional)",
           "desc": "",
-          "precio": "2,00",
+          "precio": "7,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Caipi Malbec",
+          "desc": "Còctel de casa, una versió original i fresca de caipiroska amb Malbec",
+          "precio": "8,00",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "vinos",
+      "label": "Vins",
+      "photoAlt": "Vins — ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Abadal Cabernet fr. Ull de llebre",
+          "desc": "",
+          "precio": "22,50",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Abadal Alba Blanc",
+          "desc": "",
+          "precio": "22,50",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Abadal Picapoll Blanc",
+          "desc": "",
+          "precio": "25,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Cadena Malbec",
+          "desc": "",
+          "precio": "28,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Oyuc Malbec",
+          "desc": "Vi negre Malbec Argentino",
+          "precio": "19,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Mes que Paraules",
+          "desc": "",
+          "precio": "19,00",
           "etiquetas": [],
           "disponible": true
         }

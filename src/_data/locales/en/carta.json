@@ -9,245 +9,598 @@
   },
   "sections": [
     {
-      "id": "empezar",
-      "label": "To start",
-      "subtitle": "To whet the appetite · to share",
+      "id": "picoteo",
+      "label": "Picoteo",
       "photo": "img/spread.webp",
-      "photoAlt": "A shared ARAU table with avocado toast, sourdough bread and coffee",
+      "photoAlt": "Picoteo — ARAU",
       "compact": false,
       "items": [
         {
-          "nombre": "Provoleta",
-          "desc": "Melted provolone, oregano and sourdough.",
-          "precio": "9,50",
-          "etiquetas": [
-            "casa"
-          ],
-          "disponible": true
-        },
-        {
-          "nombre": "Avo toast",
-          "desc": "Avocado, roasted tomato, radish, feta and seeds on sourdough.",
-          "precio": "11,90",
-          "etiquetas": [
-            "vg",
-            "gf"
-          ],
-          "disponible": true
-        },
-        {
-          "nombre": "Medialunas (x2)",
-          "desc": "Buttery Argentine croissants, freshly baked.",
-          "precio": "3,90",
-          "etiquetas": [],
-          "disponible": true
-        },
-        {
-          "nombre": "Pan de chipá",
-          "desc": "Little cassava cheese rolls, served warm.",
-          "precio": "4,50",
-          "etiquetas": [
-            "vg",
-            "gf"
-          ],
-          "disponible": true
-        }
-      ]
-    },
-    {
-      "id": "huevos",
-      "label": "Eggs & toast",
-      "subtitle": "The Aussie side · poached & golden",
-      "photo": "img/eggs-benedict.webp",
-      "photoAlt": "ARAU's Eggs Benedict: poached eggs with hollandaise on sourdough",
-      "compact": false,
-      "items": [
-        {
-          "nombre": "Benny & the eggs",
-          "desc": "Poached eggs, ham, citrus hollandaise and chives on sourdough. One of our most-ordered plates.",
-          "precio": "13,90",
-          "etiquetas": [
-            "casa"
-          ],
-          "disponible": true
-        },
-        {
-          "nombre": "The Big ARAU",
-          "desc": "Chorizo, bacon, mushrooms, roasted tomato, hash brown, spinach, beans and 2 eggs.",
-          "precio": "16,90",
-          "etiquetas": [],
-          "disponible": true
-        },
-        {
-          "nombre": "Sautéed mushrooms",
-          "desc": "Sautéed mushroom mix, egg, parmesan and toasted bread.",
-          "precio": "14,50",
+          "nombre": "Bonnie & clyde",
+          "desc": "Fried sweet potatoes with chipotle mayonnaise",
+          "precio": "5,00",
           "etiquetas": [
             "vg"
           ],
           "disponible": true
         },
         {
-          "nombre": "Broken eggs with chistorra",
-          "desc": "Free-range eggs, potatoes and chistorra sausage.",
+          "nombre": "Provo with chimi",
+          "desc": "Melted provolone cheese with chimichurri, tomatoes confit and sourdough bread",
+          "precio": "11,90",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Chori with chimi",
+          "desc": "Grilled sausage sandwich with chimichurri sauce",
+          "precio": "6,00",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Potatoes with chimi mayo",
+          "desc": "French fries with chimichurri mayonnaise",
+          "precio": "4,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": false
+        },
+        {
+          "nombre": "Potato omelet",
+          "desc": "Portion of potato omelet with tomato bread and chipotle mayonnaise",
+          "precio": "3,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": false
+        },
+        {
+          "nombre": "Chickpea hummus",
+          "desc": "Homemade classic hummus dip with black olives, crudités and bread",
+          "precio": "4,00",
+          "etiquetas": [
+            "ve"
+          ],
+          "disponible": false
+        }
+      ]
+    },
+    {
+      "id": "desayunos",
+      "label": "Breakfast",
+      "photo": "img/cafe.webp",
+      "photoAlt": "Breakfast — ARAU",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Açaí bowl",
+          "desc": "Açai base, homemade granola, seasonal fruits, red fruit coulis, coconut slices, peanut butter and honey.",
+          "precio": "12,90",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Yogurt bowl",
+          "desc": "Greek yogurt, homemade granola, seasonal fruits, red fruit coulis, goji berries, coconut slices, peanut butter and honey.",
+          "precio": "10,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Arau pancakes",
+          "desc": "Pancakes with citric mascarpone cream, seasonal fruits and milk caramel sauce.",
+          "precio": "10,50",
+          "etiquetas": [
+            "vg",
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Banana French Toast",
+          "desc": "Banana bread French toast with citrus mascarpone cream, honey, coconut flakes, red fruits, nuts and orange zest",
+          "precio": "10,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "brunch",
+      "label": "Brunch",
+      "photo": "img/eggs-benedict.webp",
+      "photoAlt": "Brunch — ARAU",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Smashed avo toast",
+          "desc": "Sourdough bread, smashed avocado, wild arugula, roasted tomatoes, feta cheese, poached egg, pickled onions.<br />-Homemade salmon gravlax +€3.50",
           "precio": "13,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Big brekky",
+          "desc": "Grilled sausage, crispy bacon, stewed white beans, 2 eggs (fried or scrambled) garnished with ground chili, roasted tomatoes, sautéed mushrooms, hash brown and spinach.",
+          "precio": "14,50",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Benny & the eggs",
+          "desc": "Chipa bread (GF homemade cheese bread w/cassava flour), sautéed spinach, two poached eggs, hollandaise sauce, and crispy bacon. Served with salad greens with roasted tomatoes and sweet potatoes. <br />Replace the Bacon with: Avocado, Homemade salmon gravlax (+2,50€), Halloumi (+2€).",
+          "precio": "14,00",
+          "etiquetas": [
+            "gf",
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Omelette",
+          "desc": "Omelette with sautéed mushrooms, Gouda cheese, spinach, and sourdough bread <br />*Extra bacon + 2.50 €.",
+          "precio": "13,00",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Salmon Bagel Gravlax",
+          "desc": "With homemade salmon gravlax, capers, cream cheese, chives, pickled onions, roasted tomatoes and wild arugula. Served with french fries.<br />-Extra avocado +2,50€.",
+          "precio": "13,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Pastrami Lover NEW!",
+          "desc": "Bagel with pastrami, sweet and sour pickles, arugula, gouda and dijon mustard sauce, cream cheese and honey. Served with french fries",
+          "precio": "15,50",
           "etiquetas": [],
           "disponible": true
         }
       ]
     },
     {
-      "id": "principales",
-      "label": "For the hungry",
-      "subtitle": "Milanesas & sandwiches · the hearty stuff",
-      "photo": "img/mushroom-skillet.webp",
-      "photoAlt": "An ARAU main course fresh from the kitchen, generous and homemade",
+      "id": "almuerzos",
+      "label": "Lunch",
+      "photo": "img/big-arau.webp",
+      "photoAlt": "Lunch — ARAU",
       "compact": false,
       "items": [
         {
           "nombre": "The tru mila",
-          "desc": "Beef milanesa with truffled mushroom sauce, melted Gouda and a fried egg on top. Served with fries and chipotle mayo — our take on the milanesa a caballo.",
-          "precio": "15,90",
+          "desc": "Beef schnitzel with truffled mushroom sauce, melted Gouda cheese and a fried egg on top. <br />Served with french fries and chipotle mayonnaise (Change the potatoes for sweet potatoes or mixed greens and roasted tomatoes +1€).",
+          "precio": "17,00",
           "etiquetas": [
             "casa"
           ],
           "disponible": true
         },
         {
-          "nombre": "Milanesa sandwich on pan de chipá",
-          "desc": "Crispy breaded beef milanesa on pan de chipá, with fries.",
-          "precio": "14,90",
-          "etiquetas": [],
+          "nombre": "The Provoking",
+          "desc": "Brioche bread, 180gr beef hamburger, provolone cheese, bacon, caramelized onion, tomato, lettuce and Chimichurri mayonnaise (Extra fried egg + 1,50€)<br />Served with french fries (Change for sweet potatoes or green mix +1€).",
+          "precio": "17,90",
+          "etiquetas": [
+            "casa"
+          ],
           "disponible": true
         },
         {
-          "nombre": "Pastrami bagel",
-          "desc": "House-cured pastrami, pickles, wholegrain mustard and cheese.",
-          "precio": "13,90",
+          "nombre": "Tru Mila Veggie",
+          "desc": "Eggplant schnitzel with truffled mushroom sauce, melted Gouda cheese and a fried egg on top. <br />Served with french fries and chipotle mayonnaise (Change the potatoes for sweet potatoes or mixed greens and roasted tomatoes +1€).",
+          "precio": "14,60",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "The Veggie Provoking",
+          "desc": "Brioche bread, veggie burger, provolone cheese, sautéed mushrooms, caramelized onion, tomato, lettuce and Chimichurri mayonnaise. Extra fried egg + 1,50€. Served with french fries (Exchange for sweet potatoes or salad +1€).",
+          "precio": "16,00",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "NEW Ceasar Austral",
+          "desc": "Romaine lettuce, marinated and grilled chicken, crispy pancetta, thin slices of Parmesan, homemade croutons, pumpkin seeds, and our Caesar dressing with a hint of chimichurri.",
+          "precio": "14,50",
           "etiquetas": [],
           "disponible": true
         }
       ]
     },
     {
-      "id": "dulces",
-      "label": "Sweets",
-      "subtitle": "The finishing touch · the sweet finish",
-      "photo": "img/flan.webp",
-      "photoAlt": "ARAU's Flantástico: homemade dulce de leche flan with whipped cream",
+      "id": "pasteleria",
+      "label": "Pastry shop",
+      "photo": "img/medialunas.webp",
+      "photoAlt": "Pastry shop — ARAU",
       "compact": false,
       "items": [
         {
-          "nombre": "Dulce de leche pancakes",
-          "desc": "Fluffy stack with dulce de leche and whipped cream.",
-          "precio": "9,90",
-          "etiquetas": [
-            "casa"
-          ],
-          "disponible": true
-        },
-        {
-          "nombre": "Banana French toast",
-          "desc": "Brioche, red berries, banana, coconut and dulce de leche.",
-          "precio": "10,50",
+          "nombre": "Cornstarch Alfajor",
+          "desc": "",
+          "precio": "3,75",
           "etiquetas": [],
-          "disponible": true
+          "disponible": false
         },
         {
-          "nombre": "Açaí Bowl",
-          "desc": "Açaí, homemade granola, seasonal fruit, coconut, peanut butter and honey.",
-          "precio": "9,50",
+          "nombre": "Vegan banana bread",
+          "desc": "Vegan homemade banana bread with walnuts and dark chocolate chips",
+          "precio": "3,50",
           "etiquetas": [
             "ve"
           ],
           "disponible": true
         },
         {
-          "nombre": "Flantástico",
-          "desc": "Homemade dulce de leche flan with whipped cream. For many, the best flan in Barcelona.",
-          "precio": "6,50",
+          "nombre": "Brownie",
+          "desc": "",
+          "precio": "3,75",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Salted caramel cookie",
+          "desc": "",
+          "precio": "4,38",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Coconut Alfajor with milk caramel sauce",
+          "desc": "Gluten free",
+          "precio": "4,50",
           "etiquetas": [
+            "gf",
             "casa"
           ],
           "disponible": true
         },
         {
-          "nombre": "Cheesecake of the day",
-          "desc": "Creamy cheesecake.",
-          "precio": "6,90",
+          "nombre": "Medialunas",
+          "desc": "",
+          "precio": "2,38",
           "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Portion of carrot cake",
+          "desc": "",
+          "precio": "8,13",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Portion of key lime pie",
+          "desc": "",
+          "precio": "8,13",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Chipá (GF cheese bread)",
+          "desc": "Cheese bread made with cassava flour and a variety of cheeses. GF",
+          "precio": "2,90",
+          "etiquetas": [
+            "vg",
+            "gf"
+          ],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "postres",
+      "label": "Desserts",
+      "photo": "img/flan.webp",
+      "photoAlt": "Desserts — ARAU",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Flantastic",
+          "desc": "Homemade milk caramel flan served with whipped cream",
+          "precio": "5,50",
+          "etiquetas": [
+            "vg",
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Citrus Pavlova",
+          "desc": "Citrus Pavlova",
+          "precio": "6,88",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Moist brownie",
+          "desc": "Moist brownie with dulce de leche and whipped cream",
+          "precio": "5,50",
+          "etiquetas": [
+            "vg"
+          ],
           "disponible": true
         }
       ]
     },
     {
       "id": "cafe",
-      "label": "Specialty coffee",
-      "subtitle": "Aussie soul in a cup · specialty roast",
-      "photo": "img/cafe.webp",
-      "photoAlt": "ARAU's specialty flat white in a handmade ceramic cup",
+      "label": "Coffee and hot beverages",
+      "photoAlt": "Coffee and hot beverages — ARAU",
       "compact": true,
       "items": [
         {
-          "nombre": "Flat white",
+          "nombre": "Espresso",
           "desc": "",
-          "precio": "3,20",
+          "precio": "1,70",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Cortado",
+          "nombre": "Double espresso",
           "desc": "",
           "precio": "2,40",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Espresso",
-          "desc": "",
-          "precio": "2,00",
+          "nombre": "Cut",
+          "desc": "A shot of coffee with milk <br />Vegetable milk +0,20€.",
+          "precio": "1,90",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Cappuccino",
-          "desc": "",
-          "precio": "3,00",
+          "nombre": "Macchiato",
+          "desc": "A shot of coffee with milk foam <br />Vegetable milk foam +0,20€.",
+          "precio": "1,90",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Latte",
+          "nombre": "American",
           "desc": "",
+          "precio": "2,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Magic",
+          "desc": "Double ristretto with milk, smaller and more intense than the flat white<br />Vegetable milk +0,20€.",
+          "precio": "3,40",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Flat white",
+          "desc": "Double espresso with milk<br />Vegetable milk +0,20€.",
+          "precio": "3,60",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Latte (coffee with milk)",
+          "desc": "A shot of coffee with milk <br />Vegetable milk +0,20€.",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "V60 pour-over (single origin)",
-          "desc": "",
-          "precio": "4,50",
+          "nombre": "Cappuccino",
+          "desc": "A shot of coffee with milk (decorated with cocoa or cinnamon)<br />Vegetable milk +0,20€.",
+          "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Cold brew",
+          "nombre": "Caramel latte",
+          "desc": "A shot of coffee with milk and caramel syrup<br />Vegetable milk +0,20€.",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Vanilla latte",
+          "desc": "A shot of coffee with milk and vanilla syrup<br />Vegetable milk +0,20€.",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Mocha",
+          "desc": "A shot of coffee with milk and cocoa<br />Vegetable milk +0,20€.",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Babyccino",
+          "desc": "Frothed milk in a small cup decorated with cocoa (for babies)",
+          "precio": "1,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Matcha latte",
+          "desc": "Matcha tea powder with milk <br />Vegetable milk 0,20€.",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Turmeric latte",
+          "desc": "Vegetable milk 0,20€ 0,20",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Chai latte",
+          "desc": "Chai tea powder with milk<br />Vegetable milk 0,20€.",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Dirty chai",
+          "desc": "Chai latte with a shot of coffee<br />Vegetable milk 0,20€.",
+          "precio": "4,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Submarine",
+          "desc": "Argentinian style hot chocolate <br />(Milk with a piece of chocolate to melt)",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Varieties of teas and infusions",
+          "desc": "English breakfast, Chamomile, Organic Spearmint, Good Cheer, Little Red Riding Hood's Secret, China Jasmine",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Dulce de leche latte",
+          "desc": "A shot of coffee with milk and dulce de leche<br />Vegetable milk +0,20€.",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "cafe-frio",
+      "label": "Cold coffees",
+      "photoAlt": "Cold coffees — ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Iced latte or iced capucciono",
+          "desc": "A shot of coffee with milk and ice",
+          "precio": "3,30",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Iced mocha",
+          "desc": "Shot of coffee with milk and cocoa + ice",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Iced chai latte",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Matcha latte",
-          "desc": "",
-          "precio": "4,20",
+          "nombre": "Iced dirty chai",
+          "desc": "Iced chai latte with espresso",
+          "precio": "5,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Hot chocolate",
+          "nombre": "Cold brew",
+          "desc": "Cold infused filter coffee on ice",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Homemade Iced Tea",
+          "desc": "Homemade tea with ice",
+          "precio": "3,50",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Espresso Tonic",
+          "desc": "Double espresso with tonic water, ice and a lemon slice",
+          "precio": "4,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Iced caramel or vanilla latte",
+          "desc": "A shot of coffee, caramel or vanilla syrup, milk and ice<br />-Vegetable milk +0,20€.",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Iced dulce de leche latte",
+          "desc": "A shot of coffee, dulce de leche, milk and ice<br />-Vegetable milk +0,20€.",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "zumos",
+      "label": "Natural juices",
+      "photoAlt": "Natural juices — ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Detox",
+          "desc": "Fresh pineapple, cucumber, mint, spinach, green apple and lemon juice",
+          "precio": "7,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Tropical Mood",
+          "desc": "Fresh orange juice, pineapple, passion fruit pulp and red fruits coulis",
+          "precio": "6,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Clockwork Orange",
+          "desc": "Fresh orange, carrot, fresh turmeric and lemon juice",
+          "precio": "6,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Squeezed orange juice",
           "desc": "",
           "precio": "3,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Pink Panther",
+          "desc": "Orange, beet, ginger and apple fresh juice",
+          "precio": "6,00",
           "etiquetas": [],
           "disponible": true
         }
@@ -255,21 +608,118 @@
     },
     {
       "id": "bebidas",
-      "label": "Drinks",
-      "subtitle": "Drinks · to toast the brunch",
-      "photo": "img/benedict-mimosa.webp",
-      "photoAlt": "Eggs Benedict with a mimosa on the side at ARAU",
+      "label": "Cold beverages and soft drinks",
+      "photoAlt": "Cold beverages and soft drinks — ARAU",
       "compact": true,
       "items": [
         {
-          "nombre": "Fresh orange juice",
+          "nombre": "Coca cola",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Coke zero",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Water",
+          "desc": "Filtered water bottle",
+          "precio": "1,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Sparkling water",
+          "desc": "",
+          "precio": "2,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Vichy Catalan",
+          "desc": "",
+          "precio": "3,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Sprite",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Fanta lemon",
+          "desc": "",
+          "precio": "2,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Fanta Orange",
+          "desc": "",
+          "precio": "2,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Shweppes Tonic",
+          "desc": "",
+          "precio": "3,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Ginger Beer",
           "desc": "",
           "precio": "4,50",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "House lemonade",
+          "nombre": "Kombucha",
+          "desc": "",
+          "precio": "5,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Homemade lemonade",
+          "desc": "Lemon, mint, ginger and syrup",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Tropical Lemonade NEW!",
+          "desc": "lemon juice, coconut milk, mint, and simple syrup",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "cocktails",
+      "label": "Cocktails, Beer and Appetizers",
+      "photoAlt": "Cocktails, Beer and Appetizers — ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Draught beer Alhambra",
+          "desc": "Glass of beer",
+          "precio": "3,30",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Vermouth",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
@@ -277,43 +727,118 @@
         },
         {
           "nombre": "Mimosa",
-          "desc": "",
-          "precio": "6,50",
-          "etiquetas": [],
+          "desc": "Cava and squeezed orange juice",
+          "precio": "5,00",
+          "etiquetas": [
+            "casa"
+          ],
           "disponible": true
         },
         {
-          "nombre": "Bloody Mary",
-          "desc": "",
-          "precio": "8,50",
+          "nombre": "Fernet cola",
+          "desc": "Fernet with Coca Cola (Typical Argentinean)",
+          "precio": "7,50",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Aperol Spritz",
           "desc": "",
-          "precio": "7,50",
+          "precio": "7,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Draft beer",
+          "nombre": "Gin Tonic",
           "desc": "",
-          "precio": "3,00",
+          "precio": "7,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Glass of wine",
-          "desc": "",
-          "precio": "4,50",
+          "nombre": "Bloody Mary",
+          "desc": "Tomato juice, vodka, lime juice, salt, pepper, Worcestershire sauce and tabasco",
+          "precio": "8,00",
           "etiquetas": [],
           "disponible": true
         },
         {
-          "nombre": "Water",
+          "nombre": "Espresso Martini",
+          "desc": "Coffee, Kahlua, Vodka and syrup",
+          "precio": "8,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Passion fruit mojito",
+          "desc": "rum, mint, lime juice, syrup, passion fruit pulp, tonic",
+          "precio": "9,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Caipiroska (optional passion fruit)",
           "desc": "",
-          "precio": "2,00",
+          "precio": "7,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Caipi Malbec",
+          "desc": "House cocktail, an original and fresh version of caipiroska with Malbec.",
+          "precio": "8,00",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "vinos",
+      "label": "Wines",
+      "photoAlt": "Wines — ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Abadal cabernet fr. tempranillo",
+          "desc": "",
+          "precio": "22,50",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Abadal alba blanc",
+          "desc": "",
+          "precio": "22,50",
+          "etiquetas": [],
+          "disponible": false
+        },
+        {
+          "nombre": "Abadal picapoll blanc",
+          "desc": "",
+          "precio": "25,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Catena malbec",
+          "desc": "",
+          "precio": "28,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Oyuc Malbec",
+          "desc": "Argentine Malbec red wine",
+          "precio": "19,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "More than words",
+          "desc": "",
+          "precio": "19,00",
           "etiquetas": [],
           "disponible": true
         }
