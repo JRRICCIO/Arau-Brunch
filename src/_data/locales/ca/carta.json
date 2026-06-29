@@ -1,0 +1,328 @@
+{
+  "intro": {
+    "eyebrow": "La carta",
+    "titleStart": "Menja com a",
+    "titleAccent": "ARAU",
+    "subtitle": "Aussie soul, Argentinian heart. Brunch a la brasa, ous al punt i cafè d'especialitat — la carta completa, de cap a cap.",
+    "dateline": "Carta de temporada · actualitzada el juny de 2026",
+    "disclaimer": "Els preus són orientatius i la carta pot variar segons la temporada i la disponibilitat."
+  },
+  "sections": [
+    {
+      "id": "empezar",
+      "label": "Per començar",
+      "subtitle": "Per obrir la gana · to share",
+      "photo": "img/spread.webp",
+      "photoAlt": "Taula per compartir d'ARAU amb torrada d'alvocat, pa de massa mare i cafè",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Provoleta a la brasa",
+          "desc": "Provolone fos a la brasa, orenga i pa de massa mare.",
+          "precio": "9,50",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Torrada d'alvocat (Avo toast)",
+          "desc": "Alvocat, tomàquet rostit, rave, feta, llavors, sobre massa mare.",
+          "precio": "11,90",
+          "etiquetas": [
+            "vg",
+            "gf"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Medialunes (x2)",
+          "desc": "De mantega, acabades de fornejar (croissants argentins).",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Pan de chipá",
+          "desc": "Panets de formatge, ben calentons.",
+          "precio": "4,50",
+          "etiquetas": [
+            "vg",
+            "gf"
+          ],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "huevos",
+      "label": "Ous & torrades",
+      "subtitle": "El costat aussie · poached, grilled, golden",
+      "photo": "img/eggs-benedict.webp",
+      "photoAlt": "Eggs Benedict d'ARAU: ous escumats amb salsa holandesa sobre pa de massa mare",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Eggs Benedict",
+          "desc": "Ous escumats, pernil, holandesa cítrica, cibulet, sobre massa mare.",
+          "precio": "13,90",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "The Big ARAU",
+          "desc": "Xoriço, cansalada, xampinyons, tomàquet rostit, hash brown, espinacs, mongetes i 2 ous.",
+          "precio": "16,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Bolets a la brasa",
+          "desc": "Mescla de bolets a la brasa, ou, parmesà i pa torrat.",
+          "precio": "14,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Ous remenats amb xistorra",
+          "desc": "Ous de pagès, patates i xistorra a la brasa.",
+          "precio": "13,50",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "parrilla",
+      "label": "De la brasa",
+      "subtitle": "Cor argentí · brasa de debò",
+      "photo": "img/mushroom-skillet.webp",
+      "photoAlt": "Plat a la brasa d'ARAU servit en paella de ferro, acabat de sortir del foc",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Entrañable",
+          "desc": "180 g d'entranya fumada a la brasa, reducció de Malbec i salsa criolla.",
+          "precio": "18,90",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Argentinian BBQ per a dos",
+          "desc": "Taula a la brasa per compartir: entranya, xoriço, provoleta i guarnicions.",
+          "precio": "36,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Entrepà de milanesa en pan de chipá",
+          "desc": "Milanesa cruixent de vedella en pan de chipá, amb patates.",
+          "precio": "14,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Bagel de pastrami",
+          "desc": "Pastrami curat a casa, cogombrets, mostassa a l'antiga i formatge.",
+          "precio": "13,90",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "dulces",
+      "label": "Dolços",
+      "subtitle": "El toc final · the sweet finish",
+      "photo": "img/flan.webp",
+      "photoAlt": "Flantástico d'ARAU: flam casolà de dulce de leche amb nata muntada",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Pancakes de dulce de leche",
+          "desc": "Esponjosos, amb dulce de leche i nata muntada.",
+          "precio": "9,90",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "French toast",
+          "desc": "Pa brioix, fruits vermells, plàtan, coco i dulce de leche.",
+          "precio": "10,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Açaí Bowl",
+          "desc": "Açaí, granola casolana, fruita de temporada, coco, mantega de cacauet i mel.",
+          "precio": "9,50",
+          "etiquetas": [
+            "ve"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Flantástico",
+          "desc": "Flam casolà de dulce de leche amb nata.",
+          "precio": "6,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Cheesecake del dia",
+          "desc": "Pastís de formatge cremós.",
+          "precio": "6,90",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "cafe",
+      "label": "Cafè d'especialitat",
+      "subtitle": "Aussie soul in a cup · torrat d'especialitat",
+      "photo": "img/cafe.webp",
+      "photoAlt": "Flat white d'especialitat d'ARAU en tassa de ceràmica artesanal",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Flat white",
+          "desc": "",
+          "precio": "3,20",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Tallat",
+          "desc": "",
+          "precio": "2,40",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Espresso",
+          "desc": "",
+          "precio": "2,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Cappuccino",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Latte",
+          "desc": "",
+          "precio": "3,20",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Filtrat V60 (single origin)",
+          "desc": "",
+          "precio": "4,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Cold brew",
+          "desc": "",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Matcha latte",
+          "desc": "",
+          "precio": "4,20",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Xocolata calenta",
+          "desc": "",
+          "precio": "3,50",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "label": "Begudes",
+      "subtitle": "Begudes · per brindar el brunch",
+      "photo": "img/benedict-mimosa.webp",
+      "photoAlt": "Eggs Benedict amb una mimosa per acompanyar el brunch a ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Suc de taronja natural",
+          "desc": "",
+          "precio": "4,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Llimonada de la casa",
+          "desc": "",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Mimosa",
+          "desc": "",
+          "precio": "6,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Bloody Mary",
+          "desc": "",
+          "precio": "8,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Aperol Spritz",
+          "desc": "",
+          "precio": "7,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Canya",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Copa de vi",
+          "desc": "",
+          "precio": "4,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Aigua",
+          "desc": "",
+          "precio": "2,00",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    }
+  ]
+}

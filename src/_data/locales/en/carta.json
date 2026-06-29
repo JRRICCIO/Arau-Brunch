@@ -1,0 +1,328 @@
+{
+  "intro": {
+    "eyebrow": "The menu",
+    "titleStart": "Eat like you're at",
+    "titleAccent": "ARAU",
+    "subtitle": "Aussie soul, Argentinian heart. Grilled brunch, eggs done just right and specialty coffee — the full menu, from first bite to last.",
+    "dateline": "Seasonal menu · updated June 2026",
+    "disclaimer": "Prices are approximate and the menu may vary with the season and availability."
+  },
+  "sections": [
+    {
+      "id": "empezar",
+      "label": "To start",
+      "subtitle": "To whet the appetite · to share",
+      "photo": "img/spread.webp",
+      "photoAlt": "A shared ARAU table with avocado toast, sourdough bread and coffee",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Grilled Provoleta",
+          "desc": "Provolone melted over the grill, oregano and sourdough.",
+          "precio": "9,50",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Avo toast",
+          "desc": "Avocado, roasted tomato, radish, feta and seeds on sourdough.",
+          "precio": "11,90",
+          "etiquetas": [
+            "vg",
+            "gf"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Medialunas (x2) (Argentine croissants)",
+          "desc": "Buttery and freshly baked.",
+          "precio": "3,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Pan de chipá (cassava cheese rolls)",
+          "desc": "Little cheese rolls, served warm.",
+          "precio": "4,50",
+          "etiquetas": [
+            "vg",
+            "gf"
+          ],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "huevos",
+      "label": "Eggs & toast",
+      "subtitle": "The Aussie side · poached, grilled, golden",
+      "photo": "img/eggs-benedict.webp",
+      "photoAlt": "ARAU's Eggs Benedict: poached eggs with hollandaise on sourdough",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Eggs Benedict",
+          "desc": "Poached eggs, ham, citrus hollandaise and chives on sourdough.",
+          "precio": "13,90",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "The Big ARAU",
+          "desc": "Chorizo, bacon, mushrooms, roasted tomato, hash brown, spinach, beans and 2 eggs.",
+          "precio": "16,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Grilled mushrooms",
+          "desc": "Grilled mushroom mix, egg, parmesan and toasted bread.",
+          "precio": "14,50",
+          "etiquetas": [
+            "vg"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Broken eggs with chistorra",
+          "desc": "Free-range eggs, potatoes and grilled chistorra sausage.",
+          "precio": "13,50",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "parrilla",
+      "label": "From the grill",
+      "subtitle": "Argentinian heart · real live fire",
+      "photo": "img/mushroom-skillet.webp",
+      "photoAlt": "An ARAU grilled dish served in a cast-iron skillet, straight off the fire",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Entrañable",
+          "desc": "180g of grilled smoked skirt steak, Malbec reduction and salsa criolla.",
+          "precio": "18,90",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Argentinian BBQ for two",
+          "desc": "A grilled sharing board: skirt steak, chorizo, provoleta and sides.",
+          "precio": "36,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Milanesa sandwich on pan de chipá",
+          "desc": "Crispy breaded beef milanesa on pan de chipá, with fries.",
+          "precio": "14,90",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Pastrami bagel",
+          "desc": "House-cured pastrami, pickles, wholegrain mustard and cheese.",
+          "precio": "13,90",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "dulces",
+      "label": "Sweets",
+      "subtitle": "The finishing touch · the sweet finish",
+      "photo": "img/flan.webp",
+      "photoAlt": "ARAU's Flantástico: homemade dulce de leche flan with whipped cream",
+      "compact": false,
+      "items": [
+        {
+          "nombre": "Dulce de leche pancakes",
+          "desc": "Fluffy stack with dulce de leche and whipped cream.",
+          "precio": "9,90",
+          "etiquetas": [
+            "casa"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "French toast",
+          "desc": "Brioche, red berries, banana, coconut and dulce de leche.",
+          "precio": "10,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Açaí Bowl",
+          "desc": "Açaí, homemade granola, seasonal fruit, coconut, peanut butter and honey.",
+          "precio": "9,50",
+          "etiquetas": [
+            "ve"
+          ],
+          "disponible": true
+        },
+        {
+          "nombre": "Flantástico",
+          "desc": "Homemade dulce de leche flan with cream.",
+          "precio": "6,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Cheesecake of the day",
+          "desc": "Creamy cheesecake.",
+          "precio": "6,90",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "cafe",
+      "label": "Specialty coffee",
+      "subtitle": "Aussie soul in a cup · specialty roast",
+      "photo": "img/cafe.webp",
+      "photoAlt": "ARAU's specialty flat white in a handmade ceramic cup",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Flat white",
+          "desc": "",
+          "precio": "3,20",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Cortado",
+          "desc": "",
+          "precio": "2,40",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Espresso",
+          "desc": "",
+          "precio": "2,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Cappuccino",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Latte",
+          "desc": "",
+          "precio": "3,20",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "V60 pour-over (single origin)",
+          "desc": "",
+          "precio": "4,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Cold brew",
+          "desc": "",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Matcha latte",
+          "desc": "",
+          "precio": "4,20",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Hot chocolate",
+          "desc": "",
+          "precio": "3,50",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "label": "Drinks",
+      "subtitle": "Drinks · to toast the brunch",
+      "photo": "img/benedict-mimosa.webp",
+      "photoAlt": "Eggs Benedict with a mimosa on the side at ARAU",
+      "compact": true,
+      "items": [
+        {
+          "nombre": "Fresh orange juice",
+          "desc": "",
+          "precio": "4,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "House lemonade",
+          "desc": "",
+          "precio": "4,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Mimosa",
+          "desc": "",
+          "precio": "6,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Bloody Mary",
+          "desc": "",
+          "precio": "8,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Aperol Spritz",
+          "desc": "",
+          "precio": "7,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Draft beer",
+          "desc": "",
+          "precio": "3,00",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Glass of wine",
+          "desc": "",
+          "precio": "4,50",
+          "etiquetas": [],
+          "disponible": true
+        },
+        {
+          "nombre": "Water",
+          "desc": "",
+          "precio": "2,00",
+          "etiquetas": [],
+          "disponible": true
+        }
+      ]
+    }
+  ]
+}

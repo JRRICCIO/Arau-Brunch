@@ -1,0 +1,5 @@
+<div class="lang-switch" role="group" aria-label="Idioma / Language / Langue / Idioma">
+  {%- for l in languages %}
+  <a class="lang-switch__opt{% if l.code == lang %} is-on{% endif %}"{% if l.code == lang %} aria-current="true"{% endif %} hreflang="{{ l.htmlLang }}" href="/{{ l.dir }}{% if pageKey == 'carta' %}carta.html{% endif %}" title="{{ l.name }}">{{ l.label }}</a>
+  {%- endfor %}
+</div>

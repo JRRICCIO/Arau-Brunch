@@ -1,0 +1,27 @@
+{
+  "baseUrl": "https://araubrunch.netlify.app",
+  "hero": {
+    "titleStart": "We're not your average",
+    "titleAccent": "brunch.",
+    "accentSwap": ["brunch.", "coffee.", "morning.", "ordinary."],
+    "lead": "Aussie soul, Argentinian heart. Grilled brunch, specialty coffee and fresh produce — in the heart of the Eixample, Barcelona.",
+    "image": "img/facade.webp",
+    "imageAlt": "ARAU's facade at Carrer de Provença 322, with its terracotta arch and freshly served brunch"
+  },
+  "horarios": [
+    { "dia": "Monday", "apertura": "9:00", "cierre": "16:00", "cerrado": false },
+    { "dia": "Tuesday", "apertura": "", "cierre": "", "cerrado": true },
+    { "dia": "Wednesday to Friday", "apertura": "9:00", "cierre": "16:00", "cerrado": false },
+    { "dia": "Saturday & Sunday", "apertura": "9:30", "cierre": "17:00", "cerrado": false }
+  ],
+  "contacto": {
+    "telefono": "+34 612 123 123",
+    "telefonoLink": "+34612123123",
+    "whatsapp": "34612123123",
+    "email": "hola@araubrunch.com",
+    "instagram": "araubrunch",
+    "tiktok": "araubrunch",
+    "direccion": "Carrer de Provença, 322",
+    "ciudad": "08037 Barcelona · Eixample"
+  }
+}

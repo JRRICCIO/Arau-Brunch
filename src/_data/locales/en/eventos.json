@@ -1,0 +1,36 @@
+{
+  "feature": {
+    "kicker": "Argentine Night",
+    "titleStart": "Asado, Malbec and",
+    "titleAccent": "nostalgia",
+    "chip": "Once a month · follow the calendar",
+    "desc": "Tucumán-style empanadas, locro and live folk music. Our take on the national celebration, with the grill fired up late into the night.",
+    "photo": "img/spread.webp",
+    "photoAlt": "A shared Argentine Night table with dishes for the centre and coffee",
+    "strip": [
+      { "src": "img/terrace.webp", "alt": "ARAU's terrace with brunch and the facade behind", "caption": "ARAU's terrace as the afternoon winds down" },
+      { "src": "img/big-arau.webp", "alt": "The Big ARAU, a full grilled brunch", "caption": "The Big ARAU — to kick off the night in style" },
+      { "src": "img/terrace-coffee.webp", "alt": "A flat white on ARAU's terrace at sunset", "caption": "Coffee on the terrace before the night gets going" }
+    ]
+  },
+  "cards": [
+    {
+      "kicker": "Bingo Night",
+      "title": "Not your grandma's bingo",
+      "chip": "Themed night · follow the calendar",
+      "desc": "Three rounds with prizes and the house special: milanesa sandwich on pan de chipá.",
+      "photo": "img/benedict-mimosa.webp",
+      "photoAlt": "A brunch table with a mimosa on Bingo Night",
+      "caption": "Bingo Night — prizes, mimosas and the good kind of chaos"
+    },
+    {
+      "kicker": "Live music & ñoquis",
+      "title": "Ñoquis del 29",
+      "chip": "The 29th of every month",
+      "desc": "Live sessions with homemade ñoquis del 29. Argentine tradition, neighbourhood vibe.",
+      "photo": "img/terrace-coffee.webp",
+      "photoAlt": "A flat white on ARAU's terrace, an afternoon of live music",
+      "caption": "Live music and ñoquis del 29 on the terrace"
+    }
+  ]
+}

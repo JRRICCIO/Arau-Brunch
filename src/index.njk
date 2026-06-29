@@ -1,5 +1,13 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lng
+permalink: "/{{ lng.dir }}"
+pageKey: "home"
+---
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="{{ lng.htmlLang }}" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,7 +16,8 @@
   <title>ARAU · Grilled Brunch & Specialty Coffee — Barcelona</title>
   <meta name="description" content="No somos un brunch cualquiera. Alma australiana, corazón argentino: brunch a la brasa y café de especialidad en el Eixample, Barcelona." />
 
-  <link rel="canonical" href="https://araubrunch.netlify.app/" />
+  <link rel="canonical" href="{{ site.baseUrl }}/{{ lng.dir }}" />
+{% include "seo-hreflang.njk" %}
 
   <meta property="og:type" content="restaurant" />
   <meta property="og:site_name" content="ARAU" />
@@ -121,6 +130,7 @@
       </nav>
 
       <div class="header__actions">
+        {% include "lang-switcher.njk" %}
         <a class="btn btn--terra" href="#reservar">Reservar</a>
         <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
           <span class="nav-toggle__bar" aria-hidden="true"></span>

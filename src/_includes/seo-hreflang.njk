@@ -1,0 +1,4 @@
+  {%- for l in languages %}
+  <link rel="alternate" hreflang="{{ l.htmlLang }}" href="{{ site.baseUrl }}/{{ l.dir }}{% if pageKey == 'carta' %}carta.html{% endif %}" />
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.baseUrl }}/{% if pageKey == 'carta' %}carta.html{% endif %}" />

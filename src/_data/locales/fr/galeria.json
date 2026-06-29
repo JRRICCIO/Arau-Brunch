@@ -1,0 +1,10 @@
+{
+  "overline": "Tout droit sorti de la braise",
+  "items": [
+    { "src": "img/big-arau.webp", "alt": "The Big ARAU — brunch complet à la braise avec œufs, chorizo, rösti et haricots", "caption": "The Big ARAU — la bête à la braise : chorizo, poitrine fumée, hash brown, haricots et deux œufs", "main": true },
+    { "src": "img/eggs-benedict.webp", "alt": "Eggs Benedict avec sauce hollandaise et patate douce rôtie", "caption": "Eggs Benedict — œufs pochés, hollandaise citronnée et patate douce à la braise", "main": false },
+    { "src": "img/cafe.webp", "alt": "Flat white de spécialité — café Congo d'origine", "caption": "Flat white de spécialité — grain Congo d'origine, torréfié pour le flat white", "main": false },
+    { "src": "img/spread.webp", "alt": "Table à partager avec tartine d'avocat, eggs benedict et cafés de spécialité", "caption": "La table à partager — tartine d'avocat, eggs benedict et café pour toute la tablée", "main": false },
+    { "src": "img/flan.webp", "alt": "Flantástico — flan au dulce de leche maison avec crème", "caption": "Flantástico — flan au dulce de leche et crème, la fin heureuse", "main": false }
+  ]
+}

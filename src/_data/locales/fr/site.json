@@ -1,0 +1,27 @@
+{
+  "baseUrl": "https://araubrunch.netlify.app",
+  "hero": {
+    "titleStart": "Pas un brunch",
+    "titleAccent": "ordinaire.",
+    "accentSwap": ["ordinaire.", "banal.", "comme les autres.", "quelconque."],
+    "lead": "Âme australienne et cœur argentin. Brunch à la braise, café de spécialité et produit frais — au cœur de l'Eixample, à Barcelone.",
+    "image": "img/facade.webp",
+    "imageAlt": "Façade d'ARAU au Carrer de Provença 322, avec son arche en terre cuite et un brunch fraîchement servi"
+  },
+  "horarios": [
+    { "dia": "Lundi", "apertura": "9:00", "cierre": "16:00", "cerrado": false },
+    { "dia": "Mardi", "apertura": "", "cierre": "", "cerrado": true },
+    { "dia": "Mercredi au vendredi", "apertura": "9:00", "cierre": "16:00", "cerrado": false },
+    { "dia": "Samedi & dimanche", "apertura": "9:30", "cierre": "17:00", "cerrado": false }
+  ],
+  "contacto": {
+    "telefono": "+34 612 123 123",
+    "telefonoLink": "+34612123123",
+    "whatsapp": "34612123123",
+    "email": "hola@araubrunch.com",
+    "instagram": "araubrunch",
+    "tiktok": "araubrunch",
+    "direccion": "Carrer de Provença, 322",
+    "ciudad": "08037 Barcelone · Eixample"
+  }
+}

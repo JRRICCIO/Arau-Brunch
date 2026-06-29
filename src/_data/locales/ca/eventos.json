@@ -1,0 +1,36 @@
+{
+  "feature": {
+    "kicker": "Nit Argentina",
+    "titleStart": "Asado, Malbec i",
+    "titleAccent": "nostàlgia",
+    "chip": "Un cop al mes · segueix l'agenda",
+    "desc": "Empanades tucumanes, locro i folklore en directe. La festa nacional a la nostra manera, amb la brasa encesa fins tard.",
+    "photo": "img/spread.webp",
+    "photoAlt": "Taula per compartir de la Nit Argentina amb plats per al centre i cafè",
+    "strip": [
+      { "src": "img/terrace.webp", "alt": "Terrassa d'ARAU amb brunch i la façana al fons", "caption": "La terrassa d'ARAU en caure la tarda" },
+      { "src": "img/big-arau.webp", "alt": "The Big ARAU, brunch complet a la brasa", "caption": "The Big ARAU — per arrencar la nit amb tot" },
+      { "src": "img/terrace-coffee.webp", "alt": "Flat white a la terrassa d'ARAU a la posta de sol", "caption": "Cafè a la terrassa abans que arrenqui la nit" }
+    ]
+  },
+  "cards": [
+    {
+      "kicker": "Bingo Night",
+      "title": "No és el bingo de la teva àvia",
+      "chip": "Nit temàtica · segueix l'agenda",
+      "desc": "Tres rondes amb premis i l'especial de la casa: entrepà de milanesa en pan de chipá.",
+      "photo": "img/benedict-mimosa.webp",
+      "photoAlt": "Taula de brunch amb mimosa en una Bingo Night",
+      "caption": "Bingo Night — premis, mimoses i caos del bo"
+    },
+    {
+      "kicker": "Música en directe & ñoquis",
+      "title": "Els ñoquis del 29",
+      "chip": "Cada 29 del mes",
+      "desc": "Sessions en directe amb ñoquis casolans del 29. Tradició argentina, ambient de barri.",
+      "photo": "img/terrace-coffee.webp",
+      "photoAlt": "Flat white a la terrassa d'ARAU, tarda de música en directe",
+      "caption": "Música en directe i ñoquis del 29 a la terrassa"
+    }
+  ]
+}
