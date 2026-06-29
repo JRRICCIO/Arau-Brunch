@@ -1,15 +1,15 @@
 {
   "feature": {
     "kicker": "Noche Argentina",
-    "titleStart": "Asado, Malbec y",
+    "titleStart": "Empanadas, Malbec y",
     "titleAccent": "nostalgia",
     "chip": "Una vez al mes · seguí la agenda",
-    "desc": "Empanadas tucumanas, locro y folklore en vivo. La fiesta nacional a nuestra manera, con la brasa encendida hasta tarde.",
+    "desc": "Empanadas tucumanas, locro y folklore en vivo. La fiesta nacional a nuestra manera, con música hasta tarde.",
     "photo": "img/spread.webp",
     "photoAlt": "Mesa compartida de Noche Argentina con platos para el centro y café",
     "strip": [
       { "src": "img/terrace.webp", "alt": "Terraza de ARAU con brunch y la fachada al fondo", "caption": "La terraza de ARAU al caer la tarde" },
-      { "src": "img/big-arau.webp", "alt": "The Big ARAU, brunch completo a la brasa", "caption": "The Big ARAU — para arrancar la noche con todo" },
+      { "src": "img/big-arau.webp", "alt": "The Big ARAU, brunch completo", "caption": "The Big ARAU — para arrancar la noche con todo" },
       { "src": "img/terrace-coffee.webp", "alt": "Flat white en la terraza de ARAU al atardecer", "caption": "Café en la terraza antes de que arranque la noche" }
     ]
   },

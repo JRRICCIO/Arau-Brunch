@@ -1,10 +1,10 @@
 {
-  "overline": "Directo de la brasa",
+  "overline": "Sabores de la casa",
   "items": [
-    { "src": "img/big-arau.webp", "alt": "The Big ARAU — brunch completo a la brasa con huevos, chorizo, rösti y alubias", "caption": "The Big ARAU — la bestia a la brasa: chorizo, panceta, hash brown, alubias y dos huevos", "main": true },
-    { "src": "img/eggs-benedict.webp", "alt": "Eggs Benedict con salsa holandesa y batata asada", "caption": "Eggs Benedict — huevos pochados, holandesa cítrica y batata a la brasa", "main": false },
+    { "src": "img/big-arau.webp", "alt": "The Big ARAU — brunch completo con huevos, chorizo, rösti y alubias", "caption": "The Big ARAU — la bestia: chorizo, panceta, hash brown, alubias y dos huevos", "main": true },
+    { "src": "img/eggs-benedict.webp", "alt": "Eggs Benedict con salsa holandesa y batata asada", "caption": "Benny & the eggs — huevos pochados, holandesa cítrica y batata asada", "main": false },
     { "src": "img/cafe.webp", "alt": "Flat white de especialidad — café Congo de origen", "caption": "Flat white de especialidad — grano Congo de origen, tostado para el flat white", "main": false },
     { "src": "img/spread.webp", "alt": "Mesa compartida con tostada de palta, eggs benedict y cafés de especialidad", "caption": "La mesa compartida — tostada de palta, benedictinos y café para toda la mesa", "main": false },
-    { "src": "img/flan.webp", "alt": "Flantástico — flan de dulce de leche casero con crema", "caption": "Flantástico — flan de dulce de leche con crema, el final feliz", "main": false }
+    { "src": "img/flan.webp", "alt": "Flantástico — flan de dulce de leche casero con nata montada", "caption": "Flantástico — flan de dulce de leche con nata montada, el final feliz", "main": false }
   ]
 }

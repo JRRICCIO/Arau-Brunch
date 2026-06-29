@@ -3,7 +3,7 @@
     "eyebrow": "La carta",
     "titleStart": "Comé como en",
     "titleAccent": "ARAU",
-    "subtitle": "Aussie soul, Argentinian heart. Brunch a la brasa, huevos en su punto y café de especialidad — la carta completa, de principio a fin.",
+    "subtitle": "Sabores argentinos, espíritu australiano y café de especialidad. Cocina con raíces, huevos en su punto y dulces caseros — la carta completa, de principio a fin.",
     "dateline": "Carta de temporada · actualizada junio 2026",
     "disclaimer": "Los precios son orientativos y la carta puede variar según temporada y disponibilidad."
   },
@@ -17,8 +17,8 @@
       "compact": false,
       "items": [
         {
-          "nombre": "Provoleta a la brasa",
-          "desc": "Provolone fundido a la brasa, orégano y pan de masa madre.",
+          "nombre": "Provoleta",
+          "desc": "Provolone fundido, orégano y pan de masa madre.",
           "precio": "9,50",
           "etiquetas": [
             "casa"
@@ -57,14 +57,14 @@
     {
       "id": "huevos",
       "label": "Huevos & tostadas",
-      "subtitle": "El lado aussie · poached, grilled, golden",
+      "subtitle": "El lado aussie · poached & golden",
       "photo": "img/eggs-benedict.webp",
       "photoAlt": "Eggs Benedict de ARAU: huevos pochados con salsa holandesa sobre pan de masa madre",
       "compact": false,
       "items": [
         {
-          "nombre": "Eggs Benedict",
-          "desc": "Huevos pochados, jamón, holandesa cítrica, cebollín, sobre masa madre.",
+          "nombre": "Benny & the eggs",
+          "desc": "Huevos pochados, jamón, holandesa cítrica y cebollín, sobre masa madre. Uno de nuestros más pedidos.",
           "precio": "13,90",
           "etiquetas": [
             "casa"
@@ -79,8 +79,8 @@
           "disponible": true
         },
         {
-          "nombre": "Setas a la brasa",
-          "desc": "Mix de setas a la brasa, huevo, parmesano y pan tostado.",
+          "nombre": "Setas salteadas",
+          "desc": "Mix de setas salteadas, huevo, parmesano y pan tostado.",
           "precio": "14,50",
           "etiquetas": [
             "vg"
@@ -89,7 +89,7 @@
         },
         {
           "nombre": "Huevos rotos con chistorra",
-          "desc": "Huevos camperos, papas, chistorra a la brasa.",
+          "desc": "Huevos camperos, papas y chistorra.",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true
@@ -97,27 +97,20 @@
       ]
     },
     {
-      "id": "parrilla",
-      "label": "De la parrilla",
-      "subtitle": "Corazón argentino · brasa de verdad",
+      "id": "principales",
+      "label": "Para el hambre",
+      "subtitle": "Milanesas & sándwiches · lo más contundente",
       "photo": "img/mushroom-skillet.webp",
-      "photoAlt": "Plato a la brasa de ARAU servido en sartén de hierro, recién salido del fuego",
+      "photoAlt": "Plato principal de ARAU recién salido de la cocina, abundante y casero",
       "compact": false,
       "items": [
         {
-          "nombre": "Entrañable",
-          "desc": "180g de entraña ahumada a la brasa, reducción de Malbec y salsa criolla.",
-          "precio": "18,90",
+          "nombre": "The tru mila",
+          "desc": "Milanesa de ternera con salsa de hongos trufada, Gouda fundido y huevo frito por encima. Con papas y mayonesa de chipotle — nuestra versión de la milanesa a caballo.",
+          "precio": "15,90",
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Argentinian BBQ para dos",
-          "desc": "Tabla a la brasa para compartir: entraña, chorizo, provoleta y guarniciones.",
-          "precio": "36,00",
-          "etiquetas": [],
           "disponible": true
         },
         {
@@ -141,7 +134,7 @@
       "label": "Dulces",
       "subtitle": "El broche · the sweet finish",
       "photo": "img/flan.webp",
-      "photoAlt": "Flantástico de ARAU: flan casero de dulce de leche con crema batida",
+      "photoAlt": "Flantástico de ARAU: flan casero de dulce de leche con nata montada",
       "compact": false,
       "items": [
         {
@@ -154,7 +147,7 @@
           "disponible": true
         },
         {
-          "nombre": "French toast",
+          "nombre": "Banana French toast",
           "desc": "Pan brioche, frutos rojos, banana, coco y dulce de leche.",
           "precio": "10,50",
           "etiquetas": [],
@@ -171,9 +164,11 @@
         },
         {
           "nombre": "Flantástico",
-          "desc": "Flan casero de dulce de leche con crema.",
+          "desc": "Flan casero de dulce de leche con nata montada. Para muchos, el mejor flan de Barcelona.",
           "precio": "6,50",
-          "etiquetas": [],
+          "etiquetas": [
+            "casa"
+          ],
           "disponible": true
         },
         {

@@ -13,16 +13,16 @@ pageKey: "carta"
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f3e9d6" />
 
-  <title>Carta · ARAU — Grilled Brunch &amp; Specialty Coffee, Barcelona</title>
-  <meta name="description" content="La carta completa de ARAU: brunch a la brasa, huevos, parrilla argentina, dulces y café de especialidad en el Eixample, Barcelona. Aussie soul, Argentinian heart." />
+  <title>Carta · ARAU — Brunch &amp; Café de especialidad, Barcelona</title>
+  <meta name="description" content="La carta completa de ARAU: huevos en su punto, milanesas, dulces caseros y café de especialidad en el Eixample, Barcelona. Sabores argentinos, espíritu australiano." />
 
   <link rel="canonical" href="{{ site.baseUrl }}/{{ lng.dir }}carta.html" />
 {% include "seo-hreflang.njk" %}
 
   <meta property="og:type" content="restaurant.menu" />
   <meta property="og:site_name" content="ARAU" />
-  <meta property="og:title" content="Carta · ARAU — Grilled Brunch & Specialty Coffee" />
-  <meta property="og:description" content="La carta completa: brunch a la brasa y café de especialidad en Barcelona. Aussie soul, Argentinian heart." />
+  <meta property="og:title" content="Carta · ARAU — Brunch & Café de especialidad" />
+  <meta property="og:description" content="La carta completa: huevos, milanesas, dulces caseros y café de especialidad en Barcelona. Sabores argentinos, espíritu australiano." />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:url" content="https://arau-brunch.netlify.app/carta.html" />
   <meta property="og:image" content="https://arau-brunch.netlify.app/img/spread.jpg" />
@@ -492,16 +492,11 @@ pageKey: "carta"
     <!-- ===================== INTRO ===================== -->
     <section class="menu-intro" aria-labelledby="menu-title">
       <div class="container menu-intro__inner">
-        <p class="section-eyebrow">La carta</p>
-        <h1 class="menu-intro__title" id="menu-title">Comé como en <span class="ital" translate="no">ARAU</span></h1>
-        <p class="menu-intro__sub">
-          <strong>Aussie soul, Argentinian heart.</strong> Brunch a la brasa, huevos en su punto y café de
-          especialidad — la carta completa, de principio a fin.
-        </p>
-        <p class="menu-intro__dateline">Carta de temporada · actualizada junio 2026</p>
-        <p class="menu-intro__disclaimer">
-          Los precios son orientativos y la carta puede variar según temporada y disponibilidad.
-        </p>
+        <p class="section-eyebrow">{{ carta.intro.eyebrow }}</p>
+        <h1 class="menu-intro__title" id="menu-title">{{ carta.intro.titleStart }} <span class="ital" translate="no">{{ carta.intro.titleAccent }}</span></h1>
+        <p class="menu-intro__sub">{{ carta.intro.subtitle }}</p>
+        <p class="menu-intro__dateline">{{ carta.intro.dateline }}</p>
+        <p class="menu-intro__disclaimer">{{ carta.intro.disclaimer }}</p>
         <div class="menu-intro__actions">
           <a class="btn btn--ghost" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">
             Pedir y novedades en Instagram
@@ -593,7 +588,7 @@ pageKey: "carta"
           </span>
           <span class="brand__word" translate="no">ARAU</span>
         </a>
-        <p class="footer__tag">Aussie soul, Argentinian heart.<br />Grilled brunch &amp; specialty coffee.</p>
+        <p class="footer__tag">Brunch &amp; café de especialidad<br />en el corazón del Eixample, Barcelona.</p>
       </div>
 
       <nav class="footer__nav" aria-label="Enlaces del pie">
@@ -606,18 +601,17 @@ pageKey: "carta"
 
       <div class="footer__contact">
         <p>Carrer de Provença, 322 · Barcelona</p>
-        <p><a href="tel:{{ site.contacto.telefonoLink }}">+34&nbsp;612&nbsp;123&nbsp;123</a> · <a href="mailto:{{ site.contacto.email }}">hola@araubrunch.com</a></p>
+        <p><a href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a> · <a href="mailto:{{ site.contacto.email }}">{{ site.contacto.email }}</a></p>
         <p class="footer__social-row">
           <a href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">Instagram</a> ·
-          <a href="https://tiktok.com/@araubrunch" target="_blank" rel="noopener noreferrer">TikTok</a> ·
-          <a href="https://linktr.ee/araubrunch" target="_blank" rel="noopener noreferrer">Linktree</a>
+          <a href="https://tiktok.com/@araubrunch" target="_blank" rel="noopener noreferrer">TikTok</a>
         </p>
       </div>
     </div>
 
     <div class="container footer__bottom">
-      <p>© <span id="year">{{ buildYear }}</span> <span translate="no">ARAU</span> · Hecho con fuego en Barcelona.</p>
-      <p class="footer__credit">Brunch a la brasa, todos los días menos los martes.</p>
+      <p>© <span id="year">{{ buildYear }}</span> <span translate="no">ARAU</span> · Hecho con cariño en Barcelona.</p>
+      <p class="footer__credit">Brunch &amp; café de especialidad, todos los días menos los martes.</p>
     </div>
   </footer>
 
