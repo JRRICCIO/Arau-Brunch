@@ -4,7 +4,7 @@ const QRCode = require("qrcode");
 const fs = require("fs");
 const path = require("path");
 
-const BASE = (process.argv[2] || "https://araubrunch.netlify.app").replace(/\/$/, "");
+const BASE = (process.argv[2] || "https://arau-brunch.netlify.app").replace(/\/$/, "");
 const MESAS = parseInt(process.argv[3] || "12", 10);
 const OUT = path.join(__dirname, "..", "qr");
 fs.mkdirSync(OUT, { recursive: true });

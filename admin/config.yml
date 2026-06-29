@@ -148,7 +148,7 @@ collections:
         label: "Datos del sitio"
         file: "src/_data/site.json"
         fields:
-          - { name: "baseUrl", label: "URL base", widget: "hidden", default: "https://araubrunch.netlify.app" }
+          - { name: "baseUrl", label: "URL base", widget: "hidden", default: "https://arau-brunch.netlify.app" }
 
           - name: "hero"
             label: "Portada (hero)"
