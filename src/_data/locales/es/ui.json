@@ -1,0 +1,12 @@
+{
+  "legend": {
+    "keysLabel": "Significado de las etiquetas",
+    "gf": "versión sin gluten disponible en casi todos los platos. Avisanos.",
+    "vg": "vegetariano",
+    "ve": "vegano",
+    "spicy": "picante",
+    "house": "de la casa",
+    "price": "Precios en € · IVA incluido",
+    "allergens": "Los platos pueden contener trazas por contaminación cruzada. Si tenés alergias o intolerancias, consultanos antes de pedir."
+  }
+}

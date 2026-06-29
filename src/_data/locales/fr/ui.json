@@ -1,0 +1,12 @@
+{
+  "legend": {
+    "keysLabel": "Légende des pictogrammes",
+    "gf": "version sans gluten disponible sur presque tous les plats — demandez-nous.",
+    "vg": "végétarien",
+    "ve": "végan",
+    "spicy": "épicé",
+    "house": "spécialité maison",
+    "price": "Prix en € · TVA incluse",
+    "allergens": "Les plats peuvent contenir des traces dues à une contamination croisée. En cas d'allergies ou d'intolérances, demandez-nous avant de commander."
+  }
+}

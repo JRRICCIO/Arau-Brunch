@@ -1,0 +1,12 @@
+{
+  "legend": {
+    "keysLabel": "Dietary key",
+    "gf": "gluten-free version available on almost every dish — just ask us.",
+    "vg": "vegetarian",
+    "ve": "vegan",
+    "spicy": "spicy",
+    "house": "house favourite",
+    "price": "Prices in € · VAT included",
+    "allergens": "Dishes may contain traces through cross-contamination. If you have allergies or intolerances, please ask us before ordering."
+  }
+}

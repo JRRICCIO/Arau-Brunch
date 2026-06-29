@@ -1,0 +1,12 @@
+{
+  "legend": {
+    "keysLabel": "Llegenda de símbols",
+    "gf": "versió sense gluten disponible en gairebé tots els plats — aviseu-nos.",
+    "vg": "vegetarià",
+    "ve": "vegà",
+    "spicy": "picant",
+    "house": "especialitat de la casa",
+    "price": "Preus en € · IVA inclòs",
+    "allergens": "Els plats poden contenir traces per contaminació encreuada. Si teniu al·lèrgies o intoleràncies, consulteu-nos abans de demanar."
+  }
+}
