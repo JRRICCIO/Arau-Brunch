@@ -269,6 +269,25 @@ pageKey: "carta"
       border-bottom: 1px solid rgba(52, 37, 28, .1);
     }
     .menu-item:first-child { border-top: 1px solid rgba(52, 37, 28, .1); }
+    .menu-item__thumb {
+      flex: 0 0 clamp(64px, 18vw, 88px);
+      width: clamp(64px, 18vw, 88px);
+      height: clamp(64px, 18vw, 88px);
+      border-radius: 14px;
+      object-fit: cover;
+      background: rgba(52, 37, 28, .06);
+    }
+    .menu-item--agotado .menu-item__thumb { filter: grayscale(.7); opacity: .6; }
+    .menu-section__extras {
+      margin-top: 1.3rem;
+      padding: .75rem 1rem;
+      background: rgba(189, 75, 43, .07);
+      border-left: 3px solid var(--terra);
+      border-radius: 8px;
+      font-size: .9rem;
+      line-height: 1.55;
+      color: var(--ink-soft);
+    }
     .menu-item__main { flex: 1 1 auto; min-width: 0; }
     .menu-item__name {
       font-family: var(--font-display);

@@ -22,7 +22,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_3b726f57e4.jpg"
         },
         {
           "nombre": "Provaré amb campanes",
@@ -31,7 +32,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provo_1b7f13b63d.jpg"
         },
         {
           "nombre": "Chori amb chimi",
@@ -40,34 +42,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Patates de Chimi amb Mayo",
-          "desc": "Patates fregides amb maionesa de chimichurri",
-          "precio": "4,50",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": false
-        },
-        {
-          "nombre": "Tortilla de patata",
-          "desc": "Porció de truita de patata amb pa de tomàquet i maionesa de chipotle",
-          "precio": "3,50",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": false
-        },
-        {
-          "nombre": "Hummus de cigrons",
-          "desc": "Dip clàssic d'hummus casolà amb olives negres, crudités i pa",
-          "precio": "4,00",
-          "etiquetas": [
-            "ve"
-          ],
-          "disponible": false
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_763b022d05.jpg"
         }
       ]
     },
@@ -85,7 +61,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_901c933abf.jpg"
         },
         {
           "nombre": "Bol de iogurt",
@@ -94,7 +71,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_e826460907.jpg"
         },
         {
           "nombre": "Creps d'Arau",
@@ -104,7 +82,8 @@
             "vg",
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_pancakes_2_cbd72abb6b.jpg"
         },
         {
           "nombre": "Torrada francesa de plàtan",
@@ -113,7 +92,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_french_toast_01970a720c.jpg"
         }
       ]
     },
@@ -131,7 +111,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_smash_avo_3_ab97d36004.jpg"
         },
         {
           "nombre": "Big Brekky",
@@ -140,7 +121,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_add2e68113.jpg"
         },
         {
           "nombre": "Benny i els ous",
@@ -150,7 +132,8 @@
             "gf",
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_bennys_1afde56066.jpg"
         },
         {
           "nombre": "Truita",
@@ -159,23 +142,27 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_72650059df.jpg"
         },
         {
           "nombre": "Bagel de salmó Gravlax",
           "desc": "Amb salmó gravlax casolà, tàperes, formatge crema, cibulet, cebes adobades, tomàquets rostits i ruca silvestre. Acompanyat de patates fregides. <br />-Alvocat extra +2,50€",
           "precio": "13,50",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Bagel_6420c4434a.jpg"
         },
         {
           "nombre": "Pastrami Lover NOU!!",
           "desc": "Bagel amb pastrami, escabetxos agredolços, ruca, gouda i salsa de mostassa dijon, crema de formatge i mel. Acompanyat de patates fregides",
           "precio": "15,50",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Pastrami_Editada_5ac9cac2f8.jpg"
         }
-      ]
+      ],
+      "extras": "Extres: Alvocat +2,50€ · Bacon +2,50€ · Halloumi +2€ · Salmó gravlax +2,50€ · Ou ferrat +1,50€"
     },
     {
       "id": "almuerzos",
@@ -191,7 +178,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_m_fd0552f8a3.jpg"
         },
         {
           "nombre": "El provocador",
@@ -200,7 +188,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg"
         },
         {
           "nombre": "Tru Mila Veggie",
@@ -209,7 +198,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_mila_2_0397dab4ac.jpg"
         },
         {
           "nombre": "La Provocadora Veggie",
@@ -225,9 +215,11 @@
           "desc": "Enciam romaine, pollastre marinat i a la planxa, cansalada cruixent, rodanxes de parmesà, crostons fets a mà, llavors de carbassa i la nostra salsa Cèsar amb un toc de chimichurri.",
           "precio": "14,50",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg"
         }
-      ]
+      ],
+      "extras": "Extres: Ou ferrat +1,50€ · Canvieu les patates per moniato o mescla de verds i tomàquets rostits +1€"
     },
     {
       "id": "pasteleria",
@@ -237,34 +229,14 @@
       "compact": false,
       "items": [
         {
-          "nombre": "Alfajor de blat de moro",
-          "desc": "",
-          "precio": "3,75",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
           "nombre": "Pa vegà de plàtan",
           "desc": "Pa de plàtan vegà casolà amb fruits secs i xips de xocolata negra",
           "precio": "3,50",
           "etiquetas": [
             "ve"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Brownie",
-          "desc": "",
-          "precio": "3,75",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
-          "nombre": "Caramel salat de galeta",
-          "desc": "",
-          "precio": "4,38",
-          "etiquetas": [],
-          "disponible": false
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_111431cce5.jpg"
         },
         {
           "nombre": "Alfajor de coco amb Dulce de Leche",
@@ -274,28 +246,8 @@
             "gf",
             "casa"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Mitja Lluna",
-          "desc": "",
-          "precio": "2,38",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
-          "nombre": "Porció de pastís de pastanaga",
-          "desc": "",
-          "precio": "8,13",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
-          "nombre": "Porció de Key Lime Pie",
-          "desc": "",
-          "precio": "8,13",
-          "etiquetas": [],
-          "disponible": false
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_100874_arau_grilled_brunch_Food_alfajor_de_coco_y_dulce_de_leche_7d28162463.jpg"
         },
         {
           "nombre": "Chipá (pa de formatge GF)",
@@ -305,7 +257,8 @@
             "vg",
             "gf"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_a29f8c66c0.jpg"
         }
       ]
     },
@@ -324,14 +277,8 @@
             "vg",
             "casa"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Cítrics Pavlova",
-          "desc": "Cítrics Pavlova",
-          "precio": "6,88",
-          "etiquetas": [],
-          "disponible": false
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_2119_bbcd7fedf9.jpg"
         },
         {
           "nombre": "Brownie mullat",
@@ -532,13 +479,6 @@
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
-        },
-        {
-          "nombre": "Te casolà gelat",
-          "desc": "Te gelat casolà",
-          "precio": "3,50",
-          "etiquetas": [],
-          "disponible": false
         },
         {
           "nombre": "Tònic Espresso",
@@ -800,20 +740,6 @@
       "photoAlt": "Vins — ARAU",
       "compact": true,
       "items": [
-        {
-          "nombre": "Abadal Cabernet fr. Ull de llebre",
-          "desc": "",
-          "precio": "22,50",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
-          "nombre": "Abadal Alba Blanc",
-          "desc": "",
-          "precio": "22,50",
-          "etiquetas": [],
-          "disponible": false
-        },
         {
           "nombre": "Abadal Picapoll Blanc",
           "desc": "",

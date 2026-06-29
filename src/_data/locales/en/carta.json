@@ -22,7 +22,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_3b726f57e4.jpg"
         },
         {
           "nombre": "Provo with chimi",
@@ -31,7 +32,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provo_1b7f13b63d.jpg"
         },
         {
           "nombre": "Chori with chimi",
@@ -40,34 +42,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Potatoes with chimi mayo",
-          "desc": "French fries with chimichurri mayonnaise",
-          "precio": "4,50",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": false
-        },
-        {
-          "nombre": "Potato omelet",
-          "desc": "Portion of potato omelet with tomato bread and chipotle mayonnaise",
-          "precio": "3,50",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": false
-        },
-        {
-          "nombre": "Chickpea hummus",
-          "desc": "Homemade classic hummus dip with black olives, crudités and bread",
-          "precio": "4,00",
-          "etiquetas": [
-            "ve"
-          ],
-          "disponible": false
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_763b022d05.jpg"
         }
       ]
     },
@@ -85,7 +61,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_901c933abf.jpg"
         },
         {
           "nombre": "Yogurt bowl",
@@ -94,7 +71,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_e826460907.jpg"
         },
         {
           "nombre": "Arau pancakes",
@@ -104,7 +82,8 @@
             "vg",
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_pancakes_2_cbd72abb6b.jpg"
         },
         {
           "nombre": "Banana French Toast",
@@ -113,7 +92,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_french_toast_01970a720c.jpg"
         }
       ]
     },
@@ -131,7 +111,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_smash_avo_3_ab97d36004.jpg"
         },
         {
           "nombre": "Big brekky",
@@ -140,7 +121,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_add2e68113.jpg"
         },
         {
           "nombre": "Benny & the eggs",
@@ -150,7 +132,8 @@
             "gf",
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_bennys_1afde56066.jpg"
         },
         {
           "nombre": "Omelette",
@@ -159,23 +142,27 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_72650059df.jpg"
         },
         {
           "nombre": "Salmon Bagel Gravlax",
           "desc": "With homemade salmon gravlax, capers, cream cheese, chives, pickled onions, roasted tomatoes and wild arugula. Served with french fries.<br />-Extra avocado +2,50€.",
           "precio": "13,50",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Bagel_6420c4434a.jpg"
         },
         {
           "nombre": "Pastrami Lover NEW!",
           "desc": "Bagel with pastrami, sweet and sour pickles, arugula, gouda and dijon mustard sauce, cream cheese and honey. Served with french fries",
           "precio": "15,50",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Pastrami_Editada_5ac9cac2f8.jpg"
         }
-      ]
+      ],
+      "extras": "Add-ons: Avocado +€2.50 · Bacon +€2.50 · Halloumi +€2 · Gravlax salmon +€2.50 · Fried egg +€1.50"
     },
     {
       "id": "almuerzos",
@@ -191,7 +178,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_m_fd0552f8a3.jpg"
         },
         {
           "nombre": "The Provoking",
@@ -200,7 +188,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg"
         },
         {
           "nombre": "Tru Mila Veggie",
@@ -209,7 +198,8 @@
           "etiquetas": [
             "vg"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_mila_2_0397dab4ac.jpg"
         },
         {
           "nombre": "The Veggie Provoking",
@@ -225,9 +215,11 @@
           "desc": "Romaine lettuce, marinated and grilled chicken, crispy pancetta, thin slices of Parmesan, homemade croutons, pumpkin seeds, and our Caesar dressing with a hint of chimichurri.",
           "precio": "14,50",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg"
         }
-      ]
+      ],
+      "extras": "Add-ons: Fried egg +€1.50 · Swap fries for sweet potato or mixed greens & roasted tomatoes +€1"
     },
     {
       "id": "pasteleria",
@@ -237,34 +229,14 @@
       "compact": false,
       "items": [
         {
-          "nombre": "Cornstarch Alfajor",
-          "desc": "",
-          "precio": "3,75",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
           "nombre": "Vegan banana bread",
           "desc": "Vegan homemade banana bread with walnuts and dark chocolate chips",
           "precio": "3,50",
           "etiquetas": [
             "ve"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Brownie",
-          "desc": "",
-          "precio": "3,75",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
-          "nombre": "Salted caramel cookie",
-          "desc": "",
-          "precio": "4,38",
-          "etiquetas": [],
-          "disponible": false
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_111431cce5.jpg"
         },
         {
           "nombre": "Coconut Alfajor with milk caramel sauce",
@@ -274,28 +246,8 @@
             "gf",
             "casa"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Medialunas",
-          "desc": "",
-          "precio": "2,38",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
-          "nombre": "Portion of carrot cake",
-          "desc": "",
-          "precio": "8,13",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
-          "nombre": "Portion of key lime pie",
-          "desc": "",
-          "precio": "8,13",
-          "etiquetas": [],
-          "disponible": false
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_100874_arau_grilled_brunch_Food_alfajor_de_coco_y_dulce_de_leche_7d28162463.jpg"
         },
         {
           "nombre": "Chipá (GF cheese bread)",
@@ -305,7 +257,8 @@
             "vg",
             "gf"
           ],
-          "disponible": true
+          "disponible": true,
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_a29f8c66c0.jpg"
         }
       ]
     },
@@ -324,14 +277,8 @@
             "vg",
             "casa"
           ],
-          "disponible": true
-        },
-        {
-          "nombre": "Citrus Pavlova",
-          "desc": "Citrus Pavlova",
-          "precio": "6,88",
-          "etiquetas": [],
-          "disponible": false
+          "disponible": true,
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_2119_bbcd7fedf9.jpg"
         },
         {
           "nombre": "Moist brownie",
@@ -532,13 +479,6 @@
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
-        },
-        {
-          "nombre": "Homemade Iced Tea",
-          "desc": "Homemade tea with ice",
-          "precio": "3,50",
-          "etiquetas": [],
-          "disponible": false
         },
         {
           "nombre": "Espresso Tonic",
@@ -800,20 +740,6 @@
       "photoAlt": "Wines — ARAU",
       "compact": true,
       "items": [
-        {
-          "nombre": "Abadal cabernet fr. tempranillo",
-          "desc": "",
-          "precio": "22,50",
-          "etiquetas": [],
-          "disponible": false
-        },
-        {
-          "nombre": "Abadal alba blanc",
-          "desc": "",
-          "precio": "22,50",
-          "etiquetas": [],
-          "disponible": false
-        },
         {
           "nombre": "Abadal picapoll blanc",
           "desc": "",

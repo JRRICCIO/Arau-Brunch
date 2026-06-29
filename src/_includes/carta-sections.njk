@@ -24,7 +24,8 @@
         {%- else %}
         <ul class="menu-items">
           {%- for item in section.items %}
-          <li class="menu-item{% if not item.disponible %} menu-item--agotado{% endif %}" data-nombre="{{ item.nombre }}" data-precio="{{ item.precio }}" data-diet="{{ item.etiquetas | join(' ') }}"{% if not item.disponible %} data-agotado="1"{% endif %}>
+          <li class="menu-item{% if item.foto %} menu-item--haspic{% endif %}{% if not item.disponible %} menu-item--agotado{% endif %}" data-nombre="{{ item.nombre }}" data-precio="{{ item.precio }}" data-diet="{{ item.etiquetas | join(' ') }}"{% if not item.disponible %} data-agotado="1"{% endif %}>
+            {%- if item.foto %}<img class="menu-item__thumb" src="{{ item.foto }}" alt="" width="88" height="88" loading="lazy" />{%- endif %}
             <div class="menu-item__main">
               <p class="menu-item__name">{{ item.nombre }}{% for t in item.etiquetas %} {{ diet(t) }}{% endfor %}{% if not item.disponible %} <span class="menu-soldout">Agotado</span>{% endif %}</p>
               {%- if item.desc %}
@@ -35,6 +36,9 @@
           </li>
           {%- endfor %}
         </ul>
+        {%- endif %}
+        {%- if section.extras %}
+        <p class="menu-section__extras">{{ section.extras }}</p>
         {%- endif %}
       </div>
     </section>
