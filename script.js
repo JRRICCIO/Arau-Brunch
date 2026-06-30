@@ -188,7 +188,11 @@
         form.reset();
         var d = document.getElementById('rf-fecha');
         if (d) { try { d.min = new Date().toISOString().slice(0, 10); } catch (_) {} }
-        setHint('¡Listo! Recibimos tu solicitud. Te confirmamos por mail o WhatsApp en el día.', 'is-ok');
+        if (parseInt(personas, 10) <= 4) {
+          setHint('¡Reserva confirmada! Te esperamos el ' + fechaTxt + ' a las ' + hora + '. Cualquier cambio, escribinos por WhatsApp.', 'is-ok');
+        } else {
+          setHint('¡Recibimos tu solicitud para ' + personas + ' personas! Al ser un grupo grande, te confirmamos la disponibilidad por mail o WhatsApp en el día.', 'is-ok');
+        }
       }).catch(function () {
         window.location.href = mailto;
         setHint('Abrimos tu correo con la solicitud. Si no se abre, escribinos a hola@araubrunch.com.', 'is-ok');
@@ -364,75 +368,104 @@
     });
   })();
 
-  /* ---------- Galería: carrusel ---------- */
+  /* ---------- Galería: carrusel continuo y centrado ---------- */
   (function () {
     var carousel = document.querySelector('.galeria__carousel');
     var track = carousel && carousel.querySelector('[data-car="track"]');
     if (!carousel || !track) return;
-    var slides = Array.prototype.slice.call(track.querySelectorAll('.galeria__item'));
-    if (slides.length < 2) return;
+    var reals = Array.prototype.slice.call(track.querySelectorAll('.galeria__item'));
+    var N = reals.length;
+    if (N < 2) return;
     var prevBtn = carousel.querySelector('[data-car="prev"]');
     var nextBtn = carousel.querySelector('[data-car="next"]');
     var dots = Array.prototype.slice.call(document.querySelectorAll('.galeria__dots [data-car-go]'));
-    var behavior = reduceMotion ? 'auto' : 'smooth';
+    var smooth = reduceMotion ? 'auto' : 'smooth';
 
-    function activeIndex() {
+    // Clones para loop continuo: [cloneLast, S0..S(N-1), cloneFirst]
+    var cloneFirst = reals[0].cloneNode(true);
+    var cloneLast = reals[N - 1].cloneNode(true);
+    [cloneFirst, cloneLast].forEach(function (c) {
+      c.classList.remove('thumb');
+      c.classList.add('galeria__item--clone');
+      c.removeAttribute('data-gallery');
+      c.setAttribute('aria-hidden', 'true');
+      c.setAttribute('tabindex', '-1');
+    });
+    track.insertBefore(cloneLast, reals[0]);
+    track.appendChild(cloneFirst);
+    var slides = Array.prototype.slice.call(track.querySelectorAll('.galeria__item'));
+    // DOM: 0 = cloneLast · 1..N = reales · N+1 = cloneFirst
+
+    function centeredIndex() {
       var t = track.getBoundingClientRect();
-      var center = t.left + t.width / 2;
-      var best = 0, bestDist = Infinity;
+      var c = t.left + t.width / 2, best = 0, bd = Infinity;
       slides.forEach(function (s, i) {
         var r = s.getBoundingClientRect();
-        var d = Math.abs((r.left + r.width / 2) - center);
-        if (d < bestDist) { bestDist = d; best = i; }
+        var d = Math.abs((r.left + r.width / 2) - c);
+        if (d < bd) { bd = d; best = i; }
       });
       return best;
     }
-
-    function centerOn(i) {
+    function centerOn(i, behavior) {
       i = Math.max(0, Math.min(slides.length - 1, i));
       var t = track.getBoundingClientRect();
       var r = slides[i].getBoundingClientRect();
-      var delta = (r.left + r.width / 2) - (t.left + t.width / 2);
-      track.scrollTo({ left: track.scrollLeft + delta, behavior: behavior });
+      track.scrollTo({ left: track.scrollLeft + (r.left + r.width / 2) - (t.left + t.width / 2), behavior: behavior || smooth });
     }
-
-    function sync() {
-      var i = activeIndex();
+    function syncDots() {
+      var rd = ((centeredIndex() - 1) % N + N) % N;
       dots.forEach(function (d, k) {
-        var on = k === i;
+        var on = k === rd;
         d.classList.toggle('is-active', on);
-        if (on) d.setAttribute('aria-current', 'true');
-        else d.removeAttribute('aria-current');
+        if (on) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
       });
-      if (prevBtn) prevBtn.disabled = track.scrollLeft <= 2;
-      if (nextBtn) nextBtn.disabled = track.scrollLeft >= (track.scrollWidth - track.clientWidth - 2);
+    }
+    function reposition() {
+      var c = centeredIndex();
+      if (c === 0) centerOn(N, 'auto');                       // cloneLast -> último real
+      else if (c === slides.length - 1) centerOn(1, 'auto');  // cloneFirst -> primer real
     }
 
-    if (prevBtn) prevBtn.addEventListener('click', function () { centerOn(activeIndex() - 1); });
-    if (nextBtn) nextBtn.addEventListener('click', function () { centerOn(activeIndex() + 1); });
-    dots.forEach(function (d, k) {
-      d.addEventListener('click', function () { centerOn(k); });
-    });
+    var hovering = false, pauseUntil = 0;
+    function nudge() { pauseUntil = Date.now() + 8000; }
+    function go(delta) { nudge(); centerOn(centeredIndex() + delta); }
 
+    if (prevBtn) prevBtn.addEventListener('click', function () { go(-1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { go(1); });
+    dots.forEach(function (d, k) { d.addEventListener('click', function () { nudge(); centerOn(k + 1); }); });
     carousel.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowRight') { e.preventDefault(); centerOn(activeIndex() + 1); }
-      else if (e.key === 'ArrowLeft') { e.preventDefault(); centerOn(activeIndex() - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); go(1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
     });
 
-    var ticking = false;
+    var ticking = false, repoTimer = null;
     track.addEventListener('scroll', function () {
-      if (!ticking) {
-        ticking = true;
-        requestAnimationFrame(function () { sync(); ticking = false; });
-      }
+      if (!ticking) { ticking = true; requestAnimationFrame(function () { syncDots(); ticking = false; }); }
+      if (repoTimer) clearTimeout(repoTimer);
+      repoTimer = setTimeout(reposition, 140);
     }, { passive: true });
 
-    var rt = null;
+    var resizeTimer = null;
     window.addEventListener('resize', function () {
-      if (rt) clearTimeout(rt);
-      rt = setTimeout(sync, 150);
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () { centerOn(centeredIndex(), 'auto'); syncDots(); }, 150);
     }, { passive: true });
 
-    sync();
+    // Autoplay continuo (pausa con hover, foco, interacción o pestaña oculta)
+    carousel.addEventListener('mouseenter', function () { hovering = true; });
+    carousel.addEventListener('mouseleave', function () { hovering = false; });
+    carousel.addEventListener('focusin', function () { hovering = true; });
+    carousel.addEventListener('focusout', function () { hovering = false; });
+    carousel.addEventListener('touchstart', nudge, { passive: true });
+    if (!reduceMotion) {
+      setInterval(function () {
+        if (!hovering && !document.hidden && Date.now() >= pauseUntil) centerOn(centeredIndex() + 1);
+      }, 4500);
+    }
+
+    // Arranque centrado en el primer slide real
+    function init() { centerOn(1, 'auto'); syncDots(); }
+    init();
+    requestAnimationFrame(init);
   })();
 })();
