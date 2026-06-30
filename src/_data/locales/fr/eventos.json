@@ -5,6 +5,8 @@
     "titleAccent": "nostalgie",
     "chip": "Une fois par mois · suivez l'agenda",
     "desc": "Empanadas tucumanas, locro (ragoût argentin) et folklore en live. La fête nationale à notre façon, avec de la musique jusque tard.",
+    "id": "noche-argentina",
+    "inscripciones": true,
     "photo": "img/spread.webp",
     "photoAlt": "Table à partager de la Soirée Argentine avec des plats à poser au centre et du café",
     "strip": [
@@ -19,6 +21,8 @@
       "title": "Pas le bingo de votre grand-mère",
       "chip": "Soirée à thème · suivez l'agenda",
       "desc": "Trois manches avec des lots et la spécialité de la maison : sandwich de mila au pain de chipá.",
+      "id": "bingo-night",
+      "inscripciones": true,
       "photo": "img/benedict-mimosa.webp",
       "photoAlt": "Table de brunch avec une mimosa lors d'une Bingo Night",
       "caption": "Bingo Night — des lots, des mimosas et du beau chaos"
@@ -28,6 +32,8 @@
       "title": "Les ñoquis du 29",
       "chip": "Le 29 de chaque mois",
       "desc": "Sessions en live avec des ñoquis (gnocchis) maison du 29. Tradition argentine, ambiance de quartier.",
+      "id": "noquis-del-29",
+      "inscripciones": true,
       "photo": "img/terrace-coffee.webp",
       "photoAlt": "Flat white sur la terrasse d'ARAU, un après-midi de musique live",
       "caption": "Musique live et ñoquis du 29 sur la terrasse"

@@ -588,6 +588,49 @@ pageKey: "home"
     <p class="lightbox__count" id="lightbox-count" aria-live="polite"></p>
   </dialog>
 
+  <!-- Diálogo de inscripción a eventos (Netlify Forms) -->
+  <dialog class="inscripcion" id="inscripcion-dialog" aria-labelledby="insc-title">
+    <button type="button" class="inscripcion__close" data-insc="close" aria-label="{{ ui.inscripcion.cerrar }}">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </button>
+    <form class="inscripcion__form" id="inscripcion-form" name="inscripcion-evento" method="POST"
+          data-netlify="true" netlify-honeypot="bot-field"
+          data-msg-ok="{{ ui.inscripcion.success }}" data-msg-err="{{ ui.inscripcion.errorMsg }}">
+      <input type="hidden" name="form-name" value="inscripcion-evento" />
+      <p class="hp-field" hidden aria-hidden="true">
+        <label>{{ ui.form.honeypotLabel }} <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+      </p>
+      <input type="hidden" name="evento" id="insc-evento" />
+      <input type="hidden" name="evento_nombre" id="insc-evento-nombre" />
+
+      <h2 class="inscripcion__title" id="insc-title">{{ ui.inscripcion.title }} <span id="insc-evento-label"></span></h2>
+
+      <div class="field">
+        <label for="insc-nombre">{{ ui.inscripcion.nombreLabel }}</label>
+        <input id="insc-nombre" name="nombre" type="text" autocomplete="name" placeholder="{{ ui.form.nombrePlaceholder }}" required />
+      </div>
+
+      <div class="field">
+        <label for="insc-email">{{ ui.inscripcion.emailLabel }}</label>
+        <input id="insc-email" name="email" type="email" autocomplete="email" spellcheck="false" placeholder="{{ ui.form.emailPlaceholder }}" required />
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="insc-tel">{{ ui.inscripcion.telefonoLabel }}</label>
+          <input id="insc-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="{{ ui.form.telefonoPlaceholder }}" required />
+        </div>
+        <div class="field">
+          <label for="insc-personas">{{ ui.inscripcion.personasLabel }}</label>
+          <input id="insc-personas" name="personas" type="number" inputmode="numeric" min="1" max="20" step="1" value="2" required />
+        </div>
+      </div>
+
+      <button class="btn btn--terra btn--lg btn--block" type="submit">{{ ui.inscripcion.submit }}</button>
+      <p class="inscripcion__hint" id="insc-hint" aria-live="polite"></p>
+    </form>
+  </dialog>
+
   <script src="/script.js" defer></script>
   {% include "jmrr-credit.njk" %}
 </body>

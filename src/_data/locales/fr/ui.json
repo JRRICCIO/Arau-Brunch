@@ -206,6 +206,18 @@
     "submit": "Demander une réservation",
     "hint": "Jusqu'à 4 personnes, la réservation est confirmée immédiatement. Pour les groupes plus nombreux, on te confirme par mail ou WhatsApp dans la journée."
   },
+  "inscripcion": {
+    "cta": "Je m'inscris",
+    "title": "Inscription à",
+    "nombreLabel": "Nom",
+    "emailLabel": "Email",
+    "telefonoLabel": "Téléphone",
+    "personasLabel": "Personnes",
+    "submit": "Confirmer l'inscription",
+    "success": "C'est noté ! On t'a inscrit·e. On t'écrit pour confirmer.",
+    "errorMsg": "Impossible d'envoyer ton inscription. Réessaie ou écris-nous sur WhatsApp.",
+    "cerrar": "Fermer"
+  },
   "footer": {
     "tag": "Brunch & café de spécialité<br />au cœur de l'Eixample, à Barcelone.",
     "nav": {

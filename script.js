@@ -511,4 +511,79 @@
     init();
     requestAnimationFrame(init);
   })();
+
+  /* ---------- Inscripción a eventos (diálogo + Netlify Forms) ---------- */
+  (function () {
+    var dlg = document.getElementById('inscripcion-dialog');
+    if (!dlg || typeof dlg.showModal !== 'function') return;
+
+    var form = document.getElementById('inscripcion-form');
+    var hint = document.getElementById('insc-hint');
+    var eventoInput = document.getElementById('insc-evento');
+    var nombreInput = document.getElementById('insc-evento-nombre');
+    var label = document.getElementById('insc-evento-label');
+    var lastFocus = null;
+
+    var msgOk = form ? (form.getAttribute('data-msg-ok') || '') : '';
+    var msgErr = form ? (form.getAttribute('data-msg-err') || '') : '';
+
+    function setHint(msg, state) {
+      if (!hint) return;
+      hint.textContent = msg || '';
+      hint.classList.remove('is-error', 'is-ok');
+      if (state) hint.classList.add(state);
+    }
+
+    // Abrir desde cualquier botón de inscripción
+    document.querySelectorAll('.js-inscribirme').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-evento-id') || '';
+        var nombre = btn.getAttribute('data-evento-nombre') || '';
+        if (eventoInput) eventoInput.value = id;
+        if (nombreInput) nombreInput.value = nombre;
+        if (label) label.textContent = nombre;
+        setHint('');
+        lastFocus = btn;
+        dlg.showModal();
+        var firstField = document.getElementById('insc-nombre');
+        if (firstField) { try { firstField.focus(); } catch (_) {} }
+      });
+    });
+
+    // Cierre: botón, clic en el fondo (fuera del form). Escape lo maneja el <dialog>.
+    dlg.addEventListener('click', function (e) {
+      if (e.target.closest('[data-insc="close"]')) { dlg.close(); return; }
+      if (!e.target.closest('.inscripcion__form')) dlg.close();
+    });
+
+    dlg.addEventListener('close', function () {
+      if (lastFocus) { try { lastFocus.focus(); } catch (_) {} }
+    });
+
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        if (!form.checkValidity()) {
+          var firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) firstInvalid.focus();
+          setHint(msgErr, 'is-error');
+          return;
+        }
+
+        var body = new URLSearchParams(new FormData(form)).toString();
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: body
+        }).then(function (r) {
+          if (!r.ok) throw new Error('sin-netlify');
+          form.reset();
+          setHint(msgOk, 'is-ok');
+        }).catch(function () {
+          setHint(msgErr, 'is-error');
+        });
+      });
+    }
+  })();
 })();

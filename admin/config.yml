@@ -113,6 +113,8 @@ collections:
               - { name: "titleAccent", label: "Título (parte destacada)", widget: "string" }
               - { name: "chip", label: "Etiqueta / horario", widget: "string", hint: "Ej: Cada jueves · 20:30" }
               - { name: "desc", label: "Descripción", widget: "text" }
+              - { name: "id", label: "Identificador para inscripciones", widget: "string", required: false, hint: "Slug corto y estable, ej: noche-argentina. Usá el MISMO en los 4 idiomas para juntar bien los inscriptos." }
+              - { name: "inscripciones", label: "Abrir inscripciones para este evento", widget: "boolean", default: false }
               - { name: "photo", label: "Foto", widget: "image", required: false }
               - { name: "photoAlt", label: "Texto alternativo de la foto", widget: "string", required: false }
               - name: "strip"
@@ -135,6 +137,8 @@ collections:
               - { name: "title", label: "Título", widget: "string" }
               - { name: "chip", label: "Etiqueta / horario", widget: "string", hint: "Ej: Los 29 de cada mes" }
               - { name: "desc", label: "Descripción", widget: "text" }
+              - { name: "id", label: "Identificador para inscripciones", widget: "string", required: false, hint: "Slug corto y estable, ej: noche-argentina. Usá el MISMO en los 4 idiomas para juntar bien los inscriptos." }
+              - { name: "inscripciones", label: "Abrir inscripciones para este evento", widget: "boolean", default: false }
               - { name: "photo", label: "Foto", widget: "image", required: false }
               - { name: "photoAlt", label: "Texto alternativo de la foto", widget: "string", required: false }
               - { name: "caption", label: "Pie de foto", widget: "string", required: false }

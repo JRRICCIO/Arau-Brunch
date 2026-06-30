@@ -206,6 +206,18 @@
     "submit": "Request booking",
     "hint": "Up to 4 guests, your booking is confirmed instantly. For larger groups, we'll confirm by email or WhatsApp the same day."
   },
+  "inscripcion": {
+    "cta": "Sign up",
+    "title": "Sign up for",
+    "nombreLabel": "Name",
+    "emailLabel": "Email",
+    "telefonoLabel": "Phone",
+    "personasLabel": "People",
+    "submit": "Confirm sign-up",
+    "success": "You're in! We've added you. We'll be in touch to confirm.",
+    "errorMsg": "We couldn't send your sign-up. Try again or message us on WhatsApp.",
+    "cerrar": "Close"
+  },
   "footer": {
     "tag": "Brunch & specialty coffee<br />in the heart of the Eixample, Barcelona.",
     "nav": {

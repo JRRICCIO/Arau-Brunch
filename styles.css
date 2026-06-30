@@ -1176,6 +1176,53 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .lightbox__count { position: absolute; bottom: 1.1rem; left: 50%; transform: translateX(-50%); font-size: .85rem; letter-spacing: .08em; color: var(--on-dark-soft); font-variant-numeric: tabular-nums; }
 .lightbox__close:focus-visible, .lightbox__nav:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
+/* ---- Botón pequeño (inscripción en tarjetas) ---- */
+.btn--sm { padding: .5rem 1rem; font-size: .84rem; }
+
+/* ---- Diálogo de inscripción a eventos ---- */
+.inscripcion {
+  width: min(92vw, 460px);
+  max-height: 92dvh;
+  margin: auto;
+  padding: 0;
+  border: 1px solid rgba(51, 51, 51, .1);
+  border-radius: var(--radius);
+  background: var(--cream-card);
+  color: var(--ink);
+  box-shadow: 0 40px 90px -30px rgba(51, 51, 51, .75);
+  overflow: visible;
+}
+.inscripcion::backdrop { background: rgba(51, 51, 51, .7); backdrop-filter: blur(3px); }
+.inscripcion__form {
+  display: grid; gap: 1.1rem;
+  padding: clamp(1.5rem, 5vw, 2.2rem);
+  overflow-y: auto;
+  max-height: 92dvh;
+}
+.inscripcion__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3.5vw, 1.6rem);
+  line-height: 1.2; margin: 0;
+  color: var(--ink);
+}
+.inscripcion__title #insc-evento-label { font-style: italic; color: var(--terra-deep); }
+.inscripcion__close {
+  position: absolute; top: .7rem; right: .7rem; z-index: 2;
+  display: grid; place-items: center;
+  width: 40px; height: 40px;
+  border: 1px solid rgba(51, 51, 51, .18);
+  border-radius: 50%;
+  background: var(--cream-100);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background-color .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease);
+}
+.inscripcion__close:hover { border-color: var(--terra); color: var(--terra-deep); background: rgba(175, 69, 46, .06); }
+.inscripcion__close:focus-visible { outline: 2px solid var(--terra); outline-offset: 2px; }
+.inscripcion__hint { font-size: .82rem; color: var(--ink-soft); text-align: center; min-height: 1.1em; }
+.inscripcion__hint.is-error { color: var(--terra-deep); }
+.inscripcion__hint.is-ok { color: var(--olive-deep); }
+
 /* ---- Sticky mobile CTA bar ---- */
 .cta-bar {
   position: fixed; left: 0; right: 0; bottom: 0;

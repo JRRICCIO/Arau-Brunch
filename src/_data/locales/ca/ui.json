@@ -206,6 +206,18 @@
     "submit": "Sol·licitar reserva",
     "hint": "Fins a 4 persones, la reserva es confirma a l'instant. Per a grups més grans, t'ho confirmem per correu o WhatsApp el mateix dia."
   },
+  "inscripcion": {
+    "cta": "Inscriure'm",
+    "title": "Inscripció a",
+    "nombreLabel": "Nom",
+    "emailLabel": "Correu",
+    "telefonoLabel": "Telèfon",
+    "personasLabel": "Persones",
+    "submit": "Confirmar inscripció",
+    "success": "Fet! T'hem apuntat. T'escrivim per confirmar.",
+    "errorMsg": "No hem pogut enviar la teva inscripció. Torna-ho a provar o escriu-nos per WhatsApp.",
+    "cerrar": "Tancar"
+  },
   "footer": {
     "tag": "Brunch & cafè d'especialitat<br />al cor de l'Eixample, Barcelona.",
     "nav": {

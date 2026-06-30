@@ -20,7 +20,10 @@
             <span class="event__chip">{{ eventos.feature.chip }}</span>
             <p class="event-feature__desc">{{ eventos.feature.desc }}</p>
             <div class="event__actions">
-              <a class="btn btn--terra" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer">{{ ui.eventos.feature.waReservar }}</a>
+              {%- if eventos.feature.inscripciones %}
+              <button type="button" class="btn btn--terra js-inscribirme" data-evento-id="{{ eventos.feature.id }}" data-evento-nombre="{{ eventos.feature.kicker }}">{{ ui.inscripcion.cta }}</button>
+              {%- endif %}
+              <a class="btn btn--ghost" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer">{{ ui.eventos.feature.waReservar }}</a>
               <a class="inline-link" href="https://instagram.com/{{ site.contacto.instagram }}" target="_blank" rel="noopener noreferrer">{{ ui.eventos.feature.verFotosIg }}</a>
             </div>
           </div>
@@ -40,6 +43,9 @@
               <h3 class="event-card__title">{{ card.title }}</h3>
               <span class="event__chip">{{ card.chip }}</span>
               <p class="event-card__desc">{{ card.desc }}</p>
+              {%- if card.inscripciones %}
+              <button type="button" class="btn btn--ghost btn--sm js-inscribirme" data-evento-id="{{ card.id }}" data-evento-nombre="{{ card.title }}">{{ ui.inscripcion.cta }}</button>
+              {%- endif %}
             </div>
           </article>
           {%- endfor %}
