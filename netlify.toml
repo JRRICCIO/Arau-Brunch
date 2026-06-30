@@ -14,16 +14,18 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
 
-# Cache largo para los assets estáticos
+# CSS y JS cambian en cada deploy con la misma URL → siempre revalidar
+# (el navegador hace un check barato: 304 si no cambió, fresco tras deploy).
+# Así no hace falta Ctrl+Shift+R para ver los cambios.
 [[headers]]
   for = "/styles.css"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/script.js"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 # Fuentes self-hosted: cache muy largo e inmutable
 [[headers]]
