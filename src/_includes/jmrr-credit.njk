@@ -1,4 +1,11 @@
 {# Firma de diseño — JMRR Design · self-contained (HTML + CSS + SVG inline, sin requests externos) #}
+{%- set L = {
+  es: { by: "Diseñado por",  tab: "se abre en una pestaña nueva" },
+  en: { by: "Designed by",   tab: "opens in a new tab" },
+  fr: { by: "Conçu par",     tab: "s'ouvre dans un nouvel onglet" },
+  ca: { by: "Dissenyat per", tab: "s'obre en una pestanya nova" }
+} -%}
+{%- set t = L[lang] or L.es -%}
 <aside class="jmrr-credit jmrr-credit--dark">
   <style>
     .jmrr-credit{margin:0;padding:14px 20px;display:flex;justify-content:center;align-items:center;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.45}
@@ -10,13 +17,13 @@
     .jmrr-credit__link:focus-visible{outline:2px solid #FF4D1C;outline-offset:3px}
   </style>
   <a class="jmrr-credit__link" href="https://jmrr-design.vercel.app" target="_blank" rel="noopener noreferrer"
-     aria-label="{% if lang == 'es' %}Diseñado por JMRR — Design — jmrr-design.vercel.app (se abre en una pestaña nueva){% else %}Designed by JMRR — Design — jmrr-design.vercel.app (opens in a new tab){% endif %}">
+     aria-label="{{ t.by }} JMRR — Design — jmrr-design.vercel.app ({{ t.tab }})">
     <span class="jmrr-credit__icon" aria-hidden="true">
       <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <rect width="24" height="24" rx="6" fill="#FF4D1C"/>
         <text x="12" y="12.5" text-anchor="middle" dominant-baseline="central" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-weight="800" font-size="14.5" fill="#F2EFE9">J</text>
       </svg>
     </span>
-    <span>{% if lang == 'es' %}Diseñado por{% else %}Designed by{% endif %} <span class="jmrr-credit__name">JMRR — Design</span></span>
+    <span>{{ t.by }} <span class="jmrr-credit__name">JMRR — Design</span></span>
   </a>
 </aside>
