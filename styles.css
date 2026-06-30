@@ -399,6 +399,28 @@ button { font: inherit; color: inherit; cursor: pointer; }
   font-size: 1.05rem;
 }
 
+/* ---- Cierre con el corazón de manos (sello de marca) ---- */
+.heart-close {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .55rem;
+  text-align: center;
+  margin-top: clamp(2.6rem, 5vw, 4.2rem);
+}
+.heart-close__img {
+  width: clamp(140px, 20vw, 210px);
+  height: auto;
+  display: block;
+}
+.heart-close__line {
+  margin: 0;
+  font: 600 .8rem/1.4 var(--font-body);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+
 /* ----------------------------- Pull quote ----------------------------- */
 .pullquote {
   background: var(--terra);
