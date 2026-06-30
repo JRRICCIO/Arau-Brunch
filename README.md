@@ -44,7 +44,7 @@ Todo el texto está en **`index.html`**, en español y bien señalizado por secc
 > ⚠️ **A confirmar antes de publicar:**
 > - El teléfono `+34 612 123 123` y el WhatsApp `wa.me/34612123123` son **de ejemplo** —
 >   cambialos por los reales (header, Reservas, Visitanos y footer).
-> - **Día de cierre:** puse *martes cerrado*, pero algunos agregadores dicen *miércoles*. Confirmá el real.
+> - **Día de cierre:** martes cerrado (confirmado por el dueño).
 > - **Logo:** la mascota (tacita sonriente) es una versión original en SVG inspirada en la suya.
 >   Si tenés el logo oficial en SVG/PNG, se reemplaza fácil en el header, el hero y el footer.
 
