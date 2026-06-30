@@ -213,10 +213,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .brand--footer .brand__mark .logo-mark { width: 32px; height: 34px; }
 .hero__cue-mark .logo-mark { width: 30px; height: 32px; }
 /* Wordmark "ARAU" (letras del logo oficial) — reemplaza el texto ARAU */
-.arau-word { display: inline-block; height: .74em; width: auto; vertical-align: -0.04em; }
-.brand .arau-word { height: 1.45rem; vertical-align: middle; }
-.brand--footer .arau-word { height: 1.25rem; }
-.hero__lead .arau-word, p .arau-word { height: .82em; }
+.arau-word { display: inline-block; height: .74em; width: 2.95em; max-width: none; vertical-align: -0.04em; }
+.brand .arau-word { height: 1.45rem; width: 5.78rem; vertical-align: middle; }
+.brand--footer .arau-word { height: 1.25rem; width: 4.98rem; }
+.hero__lead .arau-word, p .arau-word { height: .82em; width: 3.27em; }
 .brand__word {
   font-family: var(--font-display);
   font-weight: 700;
