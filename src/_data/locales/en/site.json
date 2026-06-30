@@ -2,7 +2,7 @@
   "baseUrl": "https://arau-brunch.netlify.app",
   "hero": {
     "titleStart": "We're not just any",
-    "titleAccent": "cualquiera.",
+    "titleAccent": "brunch.",
     "accentSwap": ["brunch.", "ordinary.", "basic.", "boring."],
     "lead": "An Argentine-Australian inspired brunch in the heart of the Eixample, Barcelona. Recipes with roots, specialty coffee, and hospitality as our way of welcoming you.",
     "image": "img/facade.webp",

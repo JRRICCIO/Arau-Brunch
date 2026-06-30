@@ -34,7 +34,7 @@
 
   /* Texto */
   --ink: #333333;
-  --ink-soft: #6f675e;
+  --ink-soft: #5e564d;
   --on-dark: #efe7d5;
   --on-dark-soft: #cabb9f;
 
@@ -694,7 +694,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
   outline: none;
   border-color: var(--terra);
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(175, 69, 46, .16);
+  box-shadow: 0 0 0 3px rgba(175, 69, 46, .45);
+}
+.field input:focus-visible, .field textarea:focus-visible {
+  outline: 2px solid var(--terra);
+  outline-offset: 2px;
 }
 .reserva-form__hint { font-size: .82rem; color: var(--ink-soft); text-align: center; }
 .reserva-form__hint.is-error { color: var(--terra-deep); }
