@@ -1,0 +1,22 @@
+{# Firma de diseño — JMRR Design · self-contained (HTML + CSS + SVG inline, sin requests externos) #}
+<aside class="jmrr-credit jmrr-credit--dark">
+  <style>
+    .jmrr-credit{margin:0;padding:14px 20px;display:flex;justify-content:center;align-items:center;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.45}
+    .jmrr-credit--dark{background:#161616;color:#9a9a9a}
+    .jmrr-credit__link{display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:inherit;padding:5px 9px;border-radius:9px;transition:color .15s ease}
+    .jmrr-credit__icon{display:inline-flex;flex:0 0 auto;line-height:0}
+    .jmrr-credit__name{color:#FF4D1C;font-weight:700;white-space:nowrap}
+    .jmrr-credit__link:hover,.jmrr-credit__link:focus-visible{color:#FF4D1C}
+    .jmrr-credit__link:focus-visible{outline:2px solid #FF4D1C;outline-offset:3px}
+  </style>
+  <a class="jmrr-credit__link" href="https://jmrr-design.vercel.app" target="_blank" rel="noopener noreferrer"
+     aria-label="{% if lang == 'es' %}Diseñado por JMRR — Design — jmrr-design.vercel.app (se abre en una pestaña nueva){% else %}Designed by JMRR — Design — jmrr-design.vercel.app (opens in a new tab){% endif %}">
+    <span class="jmrr-credit__icon" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" rx="6" fill="#FF4D1C"/>
+        <text x="12" y="12.5" text-anchor="middle" dominant-baseline="central" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-weight="800" font-size="14.5" fill="#F2EFE9">J</text>
+      </svg>
+    </span>
+    <span>{% if lang == 'es' %}Diseñado por{% else %}Designed by{% endif %} <span class="jmrr-credit__name">JMRR — Design</span></span>
+  </a>
+</aside>
