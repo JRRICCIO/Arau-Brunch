@@ -6,6 +6,7 @@ pagination:
 permalink: "/{{ lng.dir }}"
 pageKey: "home"
 ---
+{%- set arauWord %}{% include "arau-word.njk" %}{% endset -%}
 <!DOCTYPE html>
 <html lang="{{ lng.htmlLang }}" class="no-js">
 <head>
@@ -73,33 +74,33 @@ pageKey: "home"
   <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido">{{ ui.a11y.skipToContent }}</a>
   <div class="scroll-progress" aria-hidden="true"></div>
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header site-header--overlay" id="top">
     <div class="container header__inner">
-      <a class="brand" href="#top" aria-label="ARAU · Inicio">
+      <a class="brand" href="#top" aria-label="{{ ui.a11y.brandHomeLabel }}">
         <span class="brand__mark" aria-hidden="true">
           {% include "logo-mark.njk" %}
         </span>
         <span class="brand__word" translate="no">{% include "arau-word.njk" %}</span>
       </a>
 
-      <nav class="nav" aria-label="Navegación principal">
+      <nav class="nav" aria-label="{{ ui.a11y.navLabel }}">
         <ul class="nav__list" id="primary-nav">
-          <li><a href="carta.html">Carta</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#cafe">Café</a></li>
-          <li><a href="#eventos">Eventos</a></li>
-          <li><a href="#visitanos">Visitanos</a></li>
+          <li><a href="carta.html">{{ ui.nav.carta }}</a></li>
+          <li><a href="#nosotros">{{ ui.nav.nosotros }}</a></li>
+          <li><a href="#cafe">{{ ui.nav.cafe }}</a></li>
+          <li><a href="#eventos">{{ ui.nav.eventos }}</a></li>
+          <li><a href="#visitanos">{{ ui.nav.visitanos }}</a></li>
         </ul>
       </nav>
 
       <div class="header__actions">
         {% include "lang-switcher.njk" %}
-        <a class="btn btn--terra" href="#reservar">Reservar</a>
-        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
+        <a class="btn btn--terra" href="#reservar">{{ ui.cta.reservar }}</a>
+        <button class="nav-toggle" type="button" aria-label="{{ ui.a11y.openMenu }}" aria-expanded="false" aria-controls="primary-nav">
           <span class="nav-toggle__bar" aria-hidden="true"></span>
           <span class="nav-toggle__bar" aria-hidden="true"></span>
           <span class="nav-toggle__bar" aria-hidden="true"></span>
@@ -119,7 +120,7 @@ pageKey: "home"
         <div class="hero__copy">
           <p class="eyebrow">
             <span class="eyebrow__dot" aria-hidden="true"></span>
-            Sabores argentinos · espíritu australiano · corazón barcelonés
+            {{ ui.hero.eyebrow }}
           </p>
           <span id="open-status" class="open-badge" aria-live="polite"></span>
 
@@ -131,32 +132,32 @@ pageKey: "home"
 
           <div class="hero__cta">
             <a class="btn btn--terra btn--lg" href="carta.html">
-              Ver la carta
+              {{ ui.cta.verLaCarta }}
               <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a class="btn btn--ghost btn--lg btn--on-photo" href="#reservar">Reservar mesa</a>
+            <a class="btn btn--ghost btn--lg btn--on-photo" href="#reservar">{{ ui.cta.reservarMesa }}</a>
           </div>
 
-          <ul class="hero__trust" aria-label="Lo que nos define">
+          <ul class="hero__trust" aria-label="{{ ui.a11y.heroTrustLabel }}">
             <li>
               <span class="hero__trust-num">4.8<span class="hero__trust-star" aria-hidden="true">★</span></span>
-              <span class="hero__trust-label">en reseñas de Google</span>
+              <span class="hero__trust-label">{{ ui.hero.trust.reviews }}</span>
             </li>
             <li aria-hidden="true" class="hero__trust-sep"></li>
             <li>
               <span class="hero__trust-num">100%</span>
-              <span class="hero__trust-label">producto local y fresco</span>
+              <span class="hero__trust-label">{{ ui.hero.trust.local }}</span>
             </li>
             <li aria-hidden="true" class="hero__trust-sep"></li>
             <li>
               <span class="hero__trust-num">1500+</span>
-              <span class="hero__trust-label">cafés de especialidad al mes</span>
+              <span class="hero__trust-label">{{ ui.hero.trust.coffee }}</span>
             </li>
           </ul>
         </div>
       </div>
 
-      <a class="hero__cue" href="#nosotros" aria-label="Bajar a nuestra historia">
+      <a class="hero__cue" href="#nosotros" aria-label="{{ ui.a11y.heroCue }}">
         <span class="hero__cue-mark" aria-hidden="true">
           {% include "logo-mark.njk" %}
         </span>
@@ -186,57 +187,50 @@ pageKey: "home"
         <figure class="historia__frame reveal">
           <button type="button" class="historia__photo thumb" data-gallery="lugar"
                   data-full="/img/fachada.webp" data-caption="La fachada de ARAU en Carrer de Provença 322, Eixample">
-            <img src="/img/fachada.webp" alt="Fachada de ARAU en Carrer de Provença 322: toldo terracota con el cartel «ARAU · Grilled Brunch» y Agustina, la fundadora, en la entrada" width="720" height="900" loading="lazy" decoding="async" />
+            <img src="/img/fachada.webp" alt="{{ ui.historia.imgAlt }}" width="720" height="900" loading="lazy" decoding="async" />
           </button>
-          <figcaption class="historia__cap">Provença 322 · donde todo pasa</figcaption>
+          <figcaption class="historia__cap">{{ ui.historia.cap }}</figcaption>
         </figure>
 
         <div class="historia__body reveal">
-          <p class="section-eyebrow">Nuestra historia</p>
+          <p class="section-eyebrow">{{ ui.historia.eyebrow }}</p>
           <h2 class="section-title" id="hist-title">
-            Arau nació de <span class="ital">una idea simple.</span>
+            {{ ui.historia.title | safe }}
           </h2>
           <p>
-            Reunir en un mismo lugar los sabores, experiencias y culturas que dejaron huella a lo largo de un
-            viaje. Con raíces argentinas, inspiración australiana y corazón barcelonés, {% include "arau-word.njk" %}
-            fusiona la tradición de Argentina, la creatividad del brunch australiano y la pasión por el café de especialidad.
+            {{ ui.historia.p1 | replace("[[ARAU]]", arauWord) | safe }}
           </p>
           <p>
-            Un espacio donde diferentes culturas se encuentran alrededor de la mesa para crear algo nuevo, cercano y
-            auténtico. Porque creemos que algunas de las mejores cosas <em>nacen de la mezcla</em>.
+            {{ ui.historia.p2 | safe }}
           </p>
           <p>
-            Nos inspira la cocina casera, los productos de calidad y esos pequeños detalles que convierten una comida
-            en una experiencia. Para nosotros la hospitalidad no es solo un servicio: es nuestra forma de recibir a
-            quienes cruzan la puerta.
+            {{ ui.historia.p3 }}
           </p>
           <p>
-            Barcelona es hoy nuestro hogar, y {% include "arau-word.njk" %} es nuestra forma de compartir con la ciudad
-            todo lo que nos inspiró durante años de viajes, aprendizaje y descubrimiento.
-            <strong>Bienvenidos a Arau. Bienvenidos a nuestra historia.</strong>
+            {{ ui.historia.p4 | replace("[[ARAU]]", arauWord) | safe }}
           </p>
-          <p class="historia__sign">— Agustina, fundadora de {% include "arau-word.njk" %}</p>
+          <p class="historia__sign">{{ ui.historia.sign | replace("[[ARAU]]", arauWord) | safe }}</p>
         </div>
       </div>
 
-      <div class="container stats reveal" aria-label="ARAU en números">
+      <div class="container stats reveal" aria-label="{{ ui.a11y.statsLabel }}">
         <div class="stat">
           <span class="stat__num">100%</span>
-          <span class="stat__label">ingredientes locales y frescos</span>
+          <span class="stat__label">{{ ui.stats.local.label }}</span>
         </div>
         <div class="stat">
           <span class="stat__num">1500+</span>
-          <span class="stat__label">cafés de especialidad servidos al mes</span>
+          <span class="stat__label">{{ ui.stats.coffee.label }}</span>
         </div>
         <div class="stat">
           <span class="stat__num">4.8<span class="stat__star" aria-hidden="true">★</span></span>
-          <span class="stat__label">estrellas en reseñas de clientes</span>
+          <span class="stat__label">{{ ui.stats.reviews.label }}</span>
         </div>
       </div>
 
       <div class="container heart-close reveal">
-        <img class="heart-close__img" src="/img/manos-corazon.webp" alt="Dos manos formando un corazón, el sello de ARAU" width="240" height="100" loading="lazy" decoding="async" />
-        <p class="heart-close__line">corazón barcelonés</p>
+        <img class="heart-close__img" src="/img/manos-corazon.webp" alt="{{ ui.historia.heartImgAlt }}" width="240" height="100" loading="lazy" decoding="async" />
+        <p class="heart-close__line">{{ ui.historia.heartLine }}</p>
       </div>
     </section>
 
@@ -270,11 +264,11 @@ pageKey: "home"
     <section class="carta section" id="carta" aria-labelledby="carta-title">
       <div class="container">
         <div class="carta__head reveal">
-          <p class="section-eyebrow">Los favoritos de la casa</p>
+          <p class="section-eyebrow">{{ ui.carta.home.eyebrow }}</p>
           <h2 class="section-title" id="carta-title">
-            Descubrí los <span class="ital">favoritos de la casa</span>
+            {{ ui.carta.home.title | safe }}
           </h2>
-          <p class="carta__sub">Platos preparados con dedicación, ingredientes frescos y una combinación de sabores inspirada en nuestras raíces argentinas y la cultura del brunch australiano. La carta completa está a un clic.</p>
+          <p class="carta__sub">{{ ui.carta.home.sub }}</p>
         </div>
 
         <div class="dishes">
@@ -283,9 +277,9 @@ pageKey: "home"
               <img src="/img/big-arau.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
             </div>
             <div class="dish__text">
-              <h3 class="dish__name">Big brekky</h3>
-              <p class="dish__desc">Chorizo, panceta, alubias, dos huevos, champiñones, hash brown y espinaca.</p>
-              <span class="dish__tag">La bestia</span>
+              <h3 class="dish__name">{{ ui.carta.home.dish1.name }}</h3>
+              <p class="dish__desc">{{ ui.carta.home.dish1.desc }}</p>
+              <span class="dish__tag">{{ ui.carta.home.dish1.tag }}</span>
             </div>
           </a>
 
@@ -294,9 +288,9 @@ pageKey: "home"
               <img src="/img/eggs-benedict.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
             </div>
             <div class="dish__text">
-              <h3 class="dish__name">Benny &amp; the eggs</h3>
-              <p class="dish__desc">Pan de chipá (GF), huevos pochados, holandesa y bacon crocante.</p>
-              <span class="dish__tag">De los más pedidos</span>
+              <h3 class="dish__name">{{ ui.carta.home.dish2.name }}</h3>
+              <p class="dish__desc">{{ ui.carta.home.dish2.desc }}</p>
+              <span class="dish__tag">{{ ui.carta.home.dish2.tag }}</span>
             </div>
           </a>
 
@@ -305,9 +299,9 @@ pageKey: "home"
               <img src="/img/tru-mila.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
             </div>
             <div class="dish__text">
-              <h3 class="dish__name">The tru mila</h3>
-              <p class="dish__desc">Milanesa con salsa de hongos trufada, Gouda fundido y huevo frito. Con papas y mayo de chipotle.</p>
-              <span class="dish__tag">Más vendido</span>
+              <h3 class="dish__name">{{ ui.carta.home.dish3.name }}</h3>
+              <p class="dish__desc">{{ ui.carta.home.dish3.desc }}</p>
+              <span class="dish__tag">{{ ui.carta.home.dish3.tag }}</span>
             </div>
           </a>
 
@@ -316,20 +310,20 @@ pageKey: "home"
               <img src="/img/flan.webp" alt="" width="600" height="380" loading="lazy" decoding="async" />
             </div>
             <div class="dish__text">
-              <h3 class="dish__name">Flantástico</h3>
-              <p class="dish__desc">Flan casero de dulce de leche con nata montada. Para muchos, el mejor flan de Barcelona.</p>
-              <span class="dish__tag">Para el dulce</span>
+              <h3 class="dish__name">{{ ui.carta.home.dish4.name }}</h3>
+              <p class="dish__desc">{{ ui.carta.home.dish4.desc }}</p>
+              <span class="dish__tag">{{ ui.carta.home.dish4.tag }}</span>
             </div>
           </a>
         </div>
 
         <div class="carta__cta reveal">
           <a class="btn btn--terra btn--lg" href="carta.html">
-            Ver la carta completa
+            {{ ui.carta.home.ctaFull }}
             <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a class="btn btn--ghost btn--lg" href="#reservar">Reservá tu mesa</a>
-          <p class="carta__note">¿Alergias o dieta especial? Avisanos al reservar y lo resolvemos.</p>
+          <a class="btn btn--ghost btn--lg" href="#reservar">{{ ui.cta.reservaTuMesa }}</a>
+          <p class="carta__note">{{ ui.carta.home.note }}</p>
         </div>
       </div>
     </section>
@@ -339,25 +333,23 @@ pageKey: "home"
       <div class="container cafe__grid">
         <div class="cafe__art reveal" aria-hidden="true">
           <div class="cafe__photo">
-            <img src="/img/cafe.webp" alt="Flat white de especialidad en taza de cerámica artesanal" width="600" height="800" loading="lazy" decoding="async" />
+            <img src="/img/cafe.webp" alt="{{ ui.cafe.imgAlt }}" width="600" height="800" loading="lazy" decoding="async" />
           </div>
         </div>
         <div class="cafe__copy reveal">
-          <p class="section-eyebrow section-eyebrow--cream">Café de especialidad</p>
+          <p class="section-eyebrow section-eyebrow--cream">{{ ui.cafe.eyebrow }}</p>
           <h2 class="section-title section-title--cream" id="cafe-title">
-            El <span class="ital">flat white</span> es religión
+            {{ ui.cafe.title | safe }}
           </h2>
           <p class="cafe__lead">
-            Tostamos pensando en el grano, no en la prisa. Trabajamos cafés de especialidad
-            seleccionados uno a uno y los servimos como en Australia: flat white, cortado largo,
-            filtrado del día. Más de <strong>1500 tazas</strong> salen de la barra cada mes.
+            {{ ui.cafe.lead | safe }}
           </p>
           <ul class="cafe__chips">
-            <li>Flat white</li>
-            <li>Single origin</li>
-            <li>Filtrado V60</li>
-            <li>Cold brew</li>
-            <li>Matcha</li>
+            <li>{{ ui.cafe.chip1 }}</li>
+            <li>{{ ui.cafe.chip2 }}</li>
+            <li>{{ ui.cafe.chip3 }}</li>
+            <li>{{ ui.cafe.chip4 }}</li>
+            <li>{{ ui.cafe.chip5 }}</li>
           </ul>
         </div>
       </div>
@@ -367,9 +359,9 @@ pageKey: "home"
     <section class="eventos section" id="eventos" aria-labelledby="eventos-title">
       <div class="container">
         <div class="eventos__head reveal">
-          <p class="section-eyebrow">Más que un brunch</p>
-          <h2 class="section-title" id="eventos-title">Pasan <span class="ital">cosas</span> en {% include "arau-word.njk" %}</h2>
-          <p class="carta__sub">Bingo, folklore y música en vivo. Tocá una foto para verla en grande, o seguinos en <a class="inline-link" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">@araubrunch</a> para la agenda y las fotos de la última edición.</p>
+          <p class="section-eyebrow">{{ ui.eventos.eyebrow }}</p>
+          <h2 class="section-title" id="eventos-title">{{ ui.eventos.title | replace("[[ARAU]]", arauWord) | safe }}</h2>
+          <p class="carta__sub">{{ ui.eventos.sub | safe }}</p>
         </div>
 
         {% include "eventos.njk" %}
@@ -377,8 +369,7 @@ pageKey: "home"
         <div class="loyalty reveal">
           <span class="loyalty__badge" aria-hidden="true">★</span>
           <p class="loyalty__text">
-            <strong>Tu 6º brunch, gratis.</strong> Sumá puntos con cada visita en nuestra app de fidelidad
-            y el sexto corre por cuenta de la casa.
+            {{ ui.loyalty.text | safe }}
           </p>
         </div>
       </div>
@@ -388,16 +379,16 @@ pageKey: "home"
     <section class="experiencia section" id="experiencia" aria-labelledby="exp-title">
       <div class="container">
         <div class="experiencia__head reveal">
-          <p class="section-eyebrow">Brunch lovers</p>
-          <h2 class="section-title" id="exp-title">Lo que dicen nuestros <span class="ital">Brunch Lovers</span></h2>
-          <p class="carta__sub">Así disfrutan nuestros clientes de la experiencia {% include "arau-word.njk" %}.</p>
+          <p class="section-eyebrow">{{ ui.experiencia.eyebrow }}</p>
+          <h2 class="section-title" id="exp-title">{{ ui.experiencia.title | safe }}</h2>
+          <p class="carta__sub">{{ ui.experiencia.sub | replace("[[ARAU]]", arauWord) | safe }}</p>
         </div>
 
         <div class="reviews-summary reveal">
           <p class="reviews-summary__score">4,8 <span class="reviews-summary__stars" aria-hidden="true">★★★★★</span></p>
-          <p class="reviews-summary__text">Cientos de reseñas de clientes en Google avalan la experiencia {% include "arau-word.njk" %}.</p>
+          <p class="reviews-summary__text">{{ ui.experiencia.reviewsText | replace("[[ARAU]]", arauWord) | safe }}</p>
           <a class="btn btn--terra btn--lg" href="https://www.google.com/maps/search/?api=1&amp;query=ARAU%20brunch%20Carrer%20de%20Proven%C3%A7a%20322%20Barcelona" target="_blank" rel="noopener noreferrer">
-            Leé las reseñas en Google
+            {{ ui.experiencia.readReviews }}
             <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -408,29 +399,29 @@ pageKey: "home"
     <section class="visitanos section" id="visitanos" aria-labelledby="visit-title">
       <div class="container visitanos__grid">
         <div class="visitanos__info reveal">
-          <p class="section-eyebrow section-eyebrow--cream">Visitanos</p>
-          <h2 class="section-title section-title--cream" id="visit-title">Te esperamos en el <span class="ital">corazón del Eixample</span></h2>
+          <p class="section-eyebrow section-eyebrow--cream">{{ ui.visitanos.eyebrow }}</p>
+          <h2 class="section-title section-title--cream" id="visit-title">{{ ui.visitanos.title | safe }}</h2>
 
           <dl class="info">
             <div class="info__row">
-              <dt>Dónde</dt>
+              <dt>{{ ui.visitanos.dondeLabel }}</dt>
               <dd>
                 {{ site.contacto.direccion }}<br />
                 {{ site.contacto.ciudad }}
               </dd>
             </div>
             <div class="info__row">
-              <dt>Horario</dt>
+              <dt>{{ ui.visitanos.horarioLabel }}</dt>
               <dd>
                 <ul class="hours">
                   {%- for h in site.horarios %}
-                  <li{% if h.cerrado %} class="hours--closed"{% endif %}><span>{{ h.dia }}</span><span>{% if h.cerrado %}Cerrado{% else %}{{ h.apertura }} – {{ h.cierre }}{% endif %}</span></li>
+                  <li{% if h.cerrado %} class="hours--closed"{% endif %}><span>{{ h.dia }}</span><span>{% if h.cerrado %}{{ ui.visitanos.cerrado }}{% else %}{{ h.apertura }} – {{ h.cierre }}{% endif %}</span></li>
                   {%- endfor %}
                 </ul>
               </dd>
             </div>
             <div class="info__row">
-              <dt>Contacto</dt>
+              <dt>{{ ui.visitanos.contactoLabel }}</dt>
               <dd>
                 <a class="info__link" href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a><br />
                 <a class="info__link" href="mailto:{{ site.contacto.email }}">{{ site.contacto.email }}</a>
@@ -438,12 +429,12 @@ pageKey: "home"
             </div>
           </dl>
 
-          <div class="socials" aria-label="Redes sociales">
-            <a class="social" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer" aria-label="ARAU en Instagram">
+          <div class="socials" aria-label="{{ ui.a11y.socialsLabel }}">
+            <a class="social" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer" aria-label="{{ ui.a11y.instagramLabel }}">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.4" fill="currentColor"/></svg>
               <span>@araubrunch</span>
             </a>
-            <a class="social" href="https://tiktok.com/@araubrunch" target="_blank" rel="noopener noreferrer" aria-label="ARAU en TikTok">
+            <a class="social" href="https://tiktok.com/@araubrunch" target="_blank" rel="noopener noreferrer" aria-label="{{ ui.a11y.tiktokLabel }}">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 4c.5 2.7 2.3 4.4 5 4.6v3c-1.8 0-3.5-.6-5-1.6V16a5.5 5.5 0 1 1-5.5-5.5c.3 0 .6 0 .9.1v3.1a2.5 2.5 0 1 0 1.6 2.3V4z" fill="currentColor"/></svg>
               <span>@araubrunch</span>
             </a>
@@ -451,11 +442,11 @@ pageKey: "home"
         </div>
 
         <div class="visitanos__map reveal">
-          <iframe title="Mapa de ARAU en Carrer de Provença 322, Barcelona"
+          <iframe title="{{ ui.visitanos.mapTitle }}"
                   src="https://maps.google.com/maps?q=Carrer%20de%20Proven%C3%A7a%20322%20Barcelona&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%" height="460" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <p class="map-embed__alt">
-            <a class="inline-link" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener noreferrer">Abrir en Google Maps ↗</a>
+            <a class="inline-link" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener noreferrer">{{ ui.visitanos.openInMaps }}</a>
           </p>
         </div>
       </div>
@@ -465,15 +456,14 @@ pageKey: "home"
     <section class="reservar section" id="reservar" aria-labelledby="reservar-title">
       <div class="container reservar__inner">
         <div class="reservar__intro reveal">
-          <p class="section-eyebrow">Reservas</p>
-          <h2 class="section-title" id="reservar-title">Sumate a la <span class="ital">mesa</span></h2>
+          <p class="section-eyebrow">{{ ui.reservar.eyebrow }}</p>
+          <h2 class="section-title" id="reservar-title">{{ ui.reservar.title | safe }}</h2>
           <p class="reservar__lead">
-            Contanos cuándo y cuántos son. Te confirmamos por mail o WhatsApp en el día.
-            Para grupos de más de 8 personas, escribinos directo.
+            {{ ui.reservar.lead }}
           </p>
           <a class="reservar__wa" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
-            Reservar por WhatsApp
+            {{ ui.reservar.waButton }}
           </a>
         </div>
 
@@ -481,48 +471,48 @@ pageKey: "home"
               data-netlify="true" netlify-honeypot="bot-field" action="/?reserva=ok#reservar" novalidate>
           <input type="hidden" name="form-name" value="reserva" />
           <p class="hp-field" hidden aria-hidden="true">
-            <label>No llenar si sos humano: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+            <label>{{ ui.form.honeypotLabel }} <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
           </p>
           <div class="field">
-            <label for="rf-nombre">Nombre</label>
-            <input id="rf-nombre" name="nombre" type="text" autocomplete="name" placeholder="Ej.: Camila Pérez…" required />
+            <label for="rf-nombre">{{ ui.form.nombreLabel }}</label>
+            <input id="rf-nombre" name="nombre" type="text" autocomplete="name" placeholder="{{ ui.form.nombrePlaceholder }}" required />
           </div>
 
           <div class="field-row">
             <div class="field">
-              <label for="rf-fecha">Fecha</label>
+              <label for="rf-fecha">{{ ui.form.fechaLabel }}</label>
               <input id="rf-fecha" name="fecha" type="date" required />
             </div>
             <div class="field">
-              <label for="rf-hora">Hora</label>
+              <label for="rf-hora">{{ ui.form.horaLabel }}</label>
               <input id="rf-hora" name="hora" type="time" required />
             </div>
           </div>
 
           <div class="field-row">
             <div class="field">
-              <label for="rf-personas">Comensales</label>
+              <label for="rf-personas">{{ ui.form.personasLabel }}</label>
               <input id="rf-personas" name="personas" type="number" inputmode="numeric" min="1" max="8" step="1" value="2" required />
             </div>
             <div class="field">
-              <label for="rf-tel">Teléfono</label>
-              <input id="rf-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="+34 6XX XXX XXX…" required />
+              <label for="rf-tel">{{ ui.form.telefonoLabel }}</label>
+              <input id="rf-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="{{ ui.form.telefonoPlaceholder }}" required />
             </div>
           </div>
 
           <div class="field">
-            <label for="rf-email">Email</label>
-            <input id="rf-email" name="email" type="email" autocomplete="email" spellcheck="false" placeholder="hola@email.com…" required />
+            <label for="rf-email">{{ ui.form.emailLabel }}</label>
+            <input id="rf-email" name="email" type="email" autocomplete="email" spellcheck="false" placeholder="{{ ui.form.emailPlaceholder }}" required />
           </div>
 
           <div class="field">
-            <label for="rf-notas">Alergias o comentarios <span class="field__opt">(opcional)</span></label>
-            <textarea id="rf-notas" name="notas" rows="3" placeholder="Sin gluten, mesa junto a la ventana…"></textarea>
+            <label for="rf-notas">{{ ui.form.notasLabel | safe }}</label>
+            <textarea id="rf-notas" name="notas" rows="3" placeholder="{{ ui.form.notasPlaceholder }}"></textarea>
           </div>
 
-          <button class="btn btn--terra btn--lg btn--block" type="submit">Solicitar reserva</button>
+          <button class="btn btn--terra btn--lg btn--block" type="submit">{{ ui.form.submit }}</button>
           <p class="reserva-form__hint" id="rf-hint" aria-live="polite">
-            Hasta 4 personas, la reserva se confirma al instante. Para grupos más grandes, te confirmamos por mail o WhatsApp en el día.
+            {{ ui.form.hint }}
           </p>
         </form>
       </div>
@@ -533,21 +523,21 @@ pageKey: "home"
   <footer class="site-footer">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <a class="brand brand--footer" href="#top" aria-label="ARAU · Inicio">
+        <a class="brand brand--footer" href="#top" aria-label="{{ ui.a11y.brandHomeLabel }}">
           <span class="brand__mark" aria-hidden="true">
             {% include "logo-mark.njk" %}
           </span>
           <span class="brand__word" translate="no">{% include "arau-word.njk" %}</span>
         </a>
-        <p class="footer__tag">Brunch &amp; café de especialidad<br />en el corazón del Eixample, Barcelona.</p>
+        <p class="footer__tag">{{ ui.footer.tag | safe }}</p>
       </div>
 
-      <nav class="footer__nav" aria-label="Enlaces del pie">
-        <a href="#nosotros">Nosotros</a>
-        <a href="#carta">La carta</a>
-        <a href="#cafe">Café</a>
-        <a href="#eventos">Eventos</a>
-        <a href="#reservar">Reservar</a>
+      <nav class="footer__nav" aria-label="{{ ui.a11y.footerNavLabel }}">
+        <a href="#nosotros">{{ ui.footer.nav.nosotros }}</a>
+        <a href="#carta">{{ ui.footer.nav.laCarta }}</a>
+        <a href="#cafe">{{ ui.footer.nav.cafe }}</a>
+        <a href="#eventos">{{ ui.footer.nav.eventos }}</a>
+        <a href="#reservar">{{ ui.footer.nav.reservar }}</a>
       </nav>
 
       <div class="footer__contact">
@@ -561,38 +551,38 @@ pageKey: "home"
     </div>
 
     <div class="container footer__bottom">
-      <p>© <span id="year">{{ buildYear }}</span> {% include "arau-word.njk" %} · Hecho con cariño en Barcelona.</p>
-      <p class="footer__credit">Brunch &amp; café de especialidad, todos los días menos los martes.</p>
+      <p>{{ ui.footer.copyright | replace("[[YEAR]]", buildYear) | replace("[[ARAU]]", arauWord) | safe }}</p>
+      <p class="footer__credit">{{ ui.footer.credit | safe }}</p>
     </div>
   </footer>
 
   <!-- Botón WhatsApp flotante -->
-  <a class="wa-float" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="Reservar por WhatsApp">
+  <a class="wa-float" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="{{ ui.a11y.waFloatLabel }}">
     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
-    <span class="wa-float__label">Reservar</span>
+    <span class="wa-float__label">{{ ui.waFloat.label }}</span>
   </a>
 
   <!-- Barra de acción fija (móvil) -->
   <div class="cta-bar" id="cta-bar" aria-hidden="true">
-    <a class="cta-bar__btn cta-bar__btn--wa" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+    <a class="cta-bar__btn cta-bar__btn--wa" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="{{ ui.a11y.ctaBarWa }}">
       <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
     </a>
-    <a class="cta-bar__btn cta-bar__btn--primary" href="#reservar">Reservar mesa</a>
+    <a class="cta-bar__btn cta-bar__btn--primary" href="#reservar">{{ ui.ctaBar.reservarMesa }}</a>
   </div>
 
   <!-- Lightbox reutilizable (galería + platos + eventos) -->
-  <dialog class="lightbox" id="lightbox" aria-label="Galería de fotos">
-    <button type="button" class="lightbox__close" data-lb="close" aria-label="Cerrar galería">
+  <dialog class="lightbox" id="lightbox" aria-label="{{ ui.a11y.lightboxLabel }}">
+    <button type="button" class="lightbox__close" data-lb="close" aria-label="{{ ui.a11y.lightboxClose }}">
       <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
     </button>
-    <button type="button" class="lightbox__nav lightbox__prev" data-lb="prev" aria-label="Foto anterior">
+    <button type="button" class="lightbox__nav lightbox__prev" data-lb="prev" aria-label="{{ ui.a11y.prevPhoto }}">
       <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
     <figure class="lightbox__fig">
       <img class="lightbox__img" id="lightbox-img" alt="" />
       <figcaption class="lightbox__cap" id="lightbox-cap"></figcaption>
     </figure>
-    <button type="button" class="lightbox__nav lightbox__next" data-lb="next" aria-label="Foto siguiente">
+    <button type="button" class="lightbox__nav lightbox__next" data-lb="next" aria-label="{{ ui.a11y.lightboxNext }}">
       <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
     <p class="lightbox__count" id="lightbox-count" aria-live="polite"></p>

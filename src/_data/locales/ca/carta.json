@@ -26,7 +26,7 @@
           "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_3b726f57e4.jpg"
         },
         {
-          "nombre": "Provaré amb campanes",
+          "nombre": "Provo con chimi",
           "desc": "Formatge provolone fos amb chimichurri, tomàquets confitats i pa de massa mare",
           "precio": "11,90",
           "etiquetas": [
@@ -112,7 +112,7 @@
       "photoAlt": "Brunch — ARAU",
       "items": [
         {
-          "nombre": "Torrada de color verd esmicolat",
+          "nombre": "Smashed avo toast",
           "desc": "Pa de massa mare, alvocat, ruca silvestre, tomàquets rostits, formatge feta, ou escalfat, ceba escabetxada.",
           "precio": "13,50",
           "etiquetas": [
@@ -332,15 +332,15 @@
           "disponible": true
         },
         {
-          "nombre": "picat",
-          "desc": "Un cop de cafè amb llet Llet vegetal + <br /> 0.20€",
+          "nombre": "Tallat",
+          "desc": "Un cop de cafè amb llet. Llet vegetal +0,20€",
           "precio": "1,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Macchiato",
-          "desc": "Un cop de cafè amb escuma de llet Escuma de llet vegetal + <br /> 0.20€",
+          "desc": "Un cop de cafè amb escuma de llet. Escuma de llet vegetal +0,20€",
           "precio": "1,90",
           "etiquetas": [],
           "disponible": true
@@ -354,49 +354,49 @@
         },
         {
           "nombre": "Màgia",
-          "desc": "Doble ristretto amb llet, més petit i més intens que el blanc pla Llet veget <br /> al +0,20€",
+          "desc": "Doble ristretto amb llet, més petit i més intens que el blanc pla. Llet vegetal +0,20€",
           "precio": "3,40",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Blanc pla",
-          "desc": "Espresso doble amb llet Llet vegetal + <br /> 0.20€",
+          "desc": "Espresso doble amb llet. Llet vegetal +0,20€",
           "precio": "3,60",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Latte (cafè amb llet)",
-          "desc": "Un cop de cafè amb llet Llet vegetal + <br /> 0.20€",
+          "desc": "Un cop de cafè amb llet. Llet vegetal +0,20€",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Caputxino",
-          "desc": "Un tret de cafè amb llet (decorat amb cacau o canyella) Llet vegetal + <br /> 0,20€",
+          "desc": "Un tret de cafè amb llet (decorat amb cacau o canyella). Llet vegetal +0,20€",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Llet de caramel",
-          "desc": "Un cop de cafè amb llet i xarop de caramel Llet vegetal + <br /> 0.20€",
+          "desc": "Un cop de cafè amb llet i xarop de caramel. Llet vegetal +0,20€",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Latte de vainilla",
-          "desc": "Un cop de cafè amb llet i xarop de vainilla Llet vegetal + <br /> 0.20€",
+          "desc": "Un cop de cafè amb llet i xarop de vainilla. Llet vegetal +0,20€",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "moca",
-          "desc": "Un cop de cafè amb llet i cacau Llet vegetal + <br /> 0.20€",
+          "desc": "Un cop de cafè amb llet i cacau. Llet vegetal +0,20€",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
@@ -410,7 +410,7 @@
         },
         {
           "nombre": "Matcha latte",
-          "desc": "Te matcha en pols amb llet Llet vegetal 0.20 <br /> €",
+          "desc": "Te matcha en pols amb llet. Llet vegetal +0,20€",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
@@ -424,21 +424,21 @@
         },
         {
           "nombre": "Chai Latte",
-          "desc": "Te Chai en pols amb llet Llet vegetal 0. <br /> 20€",
+          "desc": "Te Chai en pols amb llet. Llet vegetal +0,20€",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Chai brut",
-          "desc": "Chai latte amb un cop de cafè Llet vegetal 0.20 <br /> €",
+          "desc": "Chai latte amb un cop de cafè. Llet vegetal +0,20€",
           "precio": "4,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Submarí",
-          "desc": "Xocolata calenta a l'estil argent <br /> í (Llet amb un tros de xocolata per fondre)",
+          "desc": "Xocolata calenta a l'estil argentí (Llet amb un tros de xocolata per fondre)",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
@@ -452,7 +452,7 @@
         },
         {
           "nombre": "Dolç de Leche Latte",
-          "desc": "Un cop de cafè amb llet i llet vegetal Dulce de Leche +0.20€ <br />",
+          "desc": "Un cop de cafè amb llet. Llet vegetal +0,20€",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
@@ -493,7 +493,7 @@
           "disponible": true
         },
         {
-          "nombre": "Cervesa freda",
+          "nombre": "Cold brew",
           "desc": "Cafè filtre infusionat en fred amb gel",
           "precio": "4,00",
           "etiquetas": [],
@@ -508,14 +508,14 @@
         },
         {
           "nombre": "Caramel gelat o latte de vainilla",
-          "desc": "Un tret de cafè, caramel o xarop de vainilla, llet i gel -Llet vegetal +0.20€ <br />",
+          "desc": "Un tret de cafè, caramel o xarop de vainilla, llet i gel. Llet vegetal +0,20€",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Dulce de Leche Latte gelat",
-          "desc": "Un cop de cafè, fudge, llet i gel <br /> -Llet vegetal +0.20€",
+          "desc": "Un cop de cafè, fudge, llet i gel. Llet vegetal +0,20€",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
@@ -712,7 +712,7 @@
           "disponible": true
         },
         {
-          "nombre": "Maria sanguinolenta",
+          "nombre": "Bloody Mary",
           "desc": "Suc de tomàquet, vodka, suc de llima, sal, pebre, salsa Worcestershire i Tabasco",
           "precio": "8,00",
           "etiquetas": [],
@@ -763,7 +763,7 @@
           "disponible": true
         },
         {
-          "nombre": "Cadena Malbec",
+          "nombre": "Catena Malbec",
           "desc": "",
           "precio": "28,00",
           "etiquetas": [],

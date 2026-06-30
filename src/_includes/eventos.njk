@@ -4,7 +4,7 @@
             <button type="button" class="event-feature__photo thumb" data-gallery="evento-feature"
                     data-full="{{ eventos.feature.photo | asset }}" data-caption="{{ eventos.feature.kicker }} — {{ eventos.feature.titleStart }} {{ eventos.feature.titleAccent }}">
               <img src="{{ eventos.feature.photo | asset }}" alt="{{ eventos.feature.photoAlt }}" width="760" height="560" loading="lazy" decoding="async" />
-              <span class="event-feature__play" aria-hidden="true">Ver fotos</span>
+              <span class="event-feature__play" aria-hidden="true">{{ ui.eventos.feature.play }}</span>
             </button>
             <div class="event-strip" aria-label="Más fotos de {{ eventos.feature.kicker }}">
               {%- for s in eventos.feature.strip %}
@@ -20,8 +20,8 @@
             <span class="event__chip">{{ eventos.feature.chip }}</span>
             <p class="event-feature__desc">{{ eventos.feature.desc }}</p>
             <div class="event__actions">
-              <a class="btn btn--terra" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer">Reservar por WhatsApp</a>
-              <a class="inline-link" href="https://instagram.com/{{ site.contacto.instagram }}" target="_blank" rel="noopener noreferrer">Ver fotos en Instagram →</a>
+              <a class="btn btn--terra" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer">{{ ui.eventos.feature.waReservar }}</a>
+              <a class="inline-link" href="https://instagram.com/{{ site.contacto.instagram }}" target="_blank" rel="noopener noreferrer">{{ ui.eventos.feature.verFotosIg }}</a>
             </div>
           </div>
         </article>
@@ -33,7 +33,7 @@
             <button type="button" class="event-card__photo thumb" data-gallery="evento-{{ loop.index }}"
                     data-full="{{ card.photo | asset }}" data-caption="{{ card.caption }}">
               <img src="{{ card.photo | asset }}" alt="{{ card.photoAlt }}" width="600" height="400" loading="lazy" decoding="async" />
-              <span class="event-feature__play" aria-hidden="true">Ver fotos</span>
+              <span class="event-feature__play" aria-hidden="true">{{ ui.eventos.card.play }}</span>
             </button>
             <div class="event-card__body">
               <p class="event__kicker">{{ card.kicker }}</p>

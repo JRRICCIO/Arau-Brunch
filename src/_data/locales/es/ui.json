@@ -14,5 +14,237 @@
     "prev": "Foto anterior",
     "next": "Foto siguiente",
     "goto": "Ir a la foto"
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido",
+    "navLabel": "Navegación principal",
+    "brandHomeLabel": "ARAU · Inicio",
+    "openMenu": "Abrir menú",
+    "heroTrustLabel": "Lo que nos define",
+    "heroCue": "Bajar a nuestra historia",
+    "statsLabel": "ARAU en números",
+    "prevPhoto": "Foto anterior",
+    "socialsLabel": "Redes sociales",
+    "instagramLabel": "ARAU en Instagram",
+    "tiktokLabel": "ARAU en TikTok",
+    "footerNavLabel": "Enlaces del pie",
+    "waFloatLabel": "Reservar por WhatsApp",
+    "ctaBarWa": "Escribir por WhatsApp",
+    "lightboxLabel": "Galería de fotos",
+    "lightboxClose": "Cerrar galería",
+    "lightboxNext": "Foto siguiente",
+    "cartaTabsLabel": "Categorías de la carta",
+    "cartaActionbar": "Acciones rápidas",
+    "orderDialogLabel": "Tu pedido",
+    "orderClose": "Cerrar"
+  },
+  "nav": {
+    "carta": "Carta",
+    "nosotros": "Nosotros",
+    "cafe": "Café",
+    "eventos": "Eventos",
+    "visitanos": "Visitanos"
+  },
+  "cta": {
+    "reservar": "Reservar",
+    "verLaCarta": "Ver la carta",
+    "reservarMesa": "Reservar mesa",
+    "reservaTuMesa": "Reservá tu mesa"
+  },
+  "hero": {
+    "eyebrow": "Sabores argentinos · espíritu australiano · corazón barcelonés",
+    "trust": {
+      "reviews": "en reseñas de Google",
+      "local": "producto local y fresco",
+      "coffee": "cafés de especialidad al mes"
+    }
+  },
+  "historia": {
+    "cap": "Provença 322 · donde todo pasa",
+    "imgAlt": "Fachada de ARAU en Carrer de Provença 322: toldo terracota con el cartel «ARAU · Grilled Brunch» y Agustina, la fundadora, en la entrada",
+    "eyebrow": "Nuestra historia",
+    "title": "Arau nació de <span class=\"ital\">una idea simple.</span>",
+    "p1": "Reunir en un mismo lugar los sabores, experiencias y culturas que dejaron huella a lo largo de un viaje. Con raíces argentinas, inspiración australiana y corazón barcelonés, [[ARAU]] fusiona la tradición de Argentina, la creatividad del brunch australiano y la pasión por el café de especialidad.",
+    "p2": "Un espacio donde diferentes culturas se encuentran alrededor de la mesa para crear algo nuevo, cercano y auténtico. Porque creemos que algunas de las mejores cosas <em>nacen de la mezcla</em>.",
+    "p3": "Nos inspira la cocina casera, los productos de calidad y esos pequeños detalles que convierten una comida en una experiencia. Para nosotros la hospitalidad no es solo un servicio: es nuestra forma de recibir a quienes cruzan la puerta.",
+    "p4": "Barcelona es hoy nuestro hogar, y [[ARAU]] es nuestra forma de compartir con la ciudad todo lo que nos inspiró durante años de viajes, aprendizaje y descubrimiento. <strong>Bienvenidos a Arau. Bienvenidos a nuestra historia.</strong>",
+    "sign": "— Agustina, fundadora de [[ARAU]]",
+    "heartImgAlt": "Dos manos formando un corazón, el sello de ARAU",
+    "heartLine": "corazón barcelonés"
+  },
+  "stats": {
+    "local": {
+      "label": "ingredientes locales y frescos"
+    },
+    "coffee": {
+      "label": "cafés de especialidad servidos al mes"
+    },
+    "reviews": {
+      "label": "estrellas en reseñas de clientes"
+    }
+  },
+  "carta": {
+    "home": {
+      "eyebrow": "Los favoritos de la casa",
+      "title": "Descubrí los <span class=\"ital\">favoritos de la casa</span>",
+      "sub": "Platos preparados con dedicación, ingredientes frescos y una combinación de sabores inspirada en nuestras raíces argentinas y la cultura del brunch australiano. La carta completa está a un clic.",
+      "dish1": {
+        "name": "Big brekky",
+        "desc": "Chorizo, panceta, alubias, dos huevos, champiñones, hash brown y espinaca.",
+        "tag": "La bestia"
+      },
+      "dish2": {
+        "name": "Benny & the eggs",
+        "desc": "Pan de chipá (GF), huevos pochados, holandesa y bacon crocante.",
+        "tag": "De los más pedidos"
+      },
+      "dish3": {
+        "name": "The tru mila",
+        "desc": "Milanesa con salsa de hongos trufada, Gouda fundido y huevo frito. Con papas y mayo de chipotle.",
+        "tag": "Más vendido"
+      },
+      "dish4": {
+        "name": "Flantástico",
+        "desc": "Flan casero de dulce de leche con nata montada. Para muchos, el mejor flan de Barcelona.",
+        "tag": "Para el dulce"
+      },
+      "ctaFull": "Ver la carta completa",
+      "note": "¿Alergias o dieta especial? Avisanos al reservar y lo resolvemos."
+    },
+    "intro": {
+      "actionInstagram": "Pedir y novedades en Instagram"
+    },
+    "nav": {
+      "inicio": "Inicio",
+      "carta": "Carta",
+      "cafe": "Café",
+      "visitanos": "Visitanos"
+    },
+    "header": {
+      "backInicio": "Inicio"
+    },
+    "outro": {
+      "title": "¿Se te hizo <span class=\"ital\">agua la boca?</span>",
+      "comoLlegar": "Cómo llegar"
+    },
+    "actionbar": {
+      "comoLlegar": "Cómo llegar"
+    },
+    "footer": {
+      "nav": {
+        "nosotros": "Nosotros",
+        "laCarta": "La carta",
+        "cafe": "Café",
+        "eventos": "Eventos",
+        "reservar": "Reservar"
+      }
+    }
+  },
+  "cafe": {
+    "imgAlt": "Flat white de especialidad en taza de cerámica artesanal",
+    "eyebrow": "Café de especialidad",
+    "title": "El <span class=\"ital\">flat white</span> es religión",
+    "lead": "Tostamos pensando en el grano, no en la prisa. Trabajamos cafés de especialidad seleccionados uno a uno y los servimos como en Australia: flat white, cortado largo, filtrado del día. Más de <strong>1500 tazas</strong> salen de la barra cada mes.",
+    "chip1": "Flat white",
+    "chip2": "Single origin",
+    "chip3": "Filtrado V60",
+    "chip4": "Cold brew",
+    "chip5": "Matcha"
+  },
+  "eventos": {
+    "eyebrow": "Más que un brunch",
+    "title": "Pasan <span class=\"ital\">cosas</span> en [[ARAU]]",
+    "sub": "Bingo, folklore y música en vivo. Tocá una foto para verla en grande, o seguinos en <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> para la agenda y las fotos de la última edición.",
+    "feature": {
+      "play": "Ver fotos",
+      "waReservar": "Reservar por WhatsApp",
+      "verFotosIg": "Ver fotos en Instagram →"
+    },
+    "card": {
+      "play": "Ver fotos"
+    }
+  },
+  "loyalty": {
+    "text": "<strong>Tu 6º brunch, gratis.</strong> Sumá puntos con cada visita en nuestra app de fidelidad y el sexto corre por cuenta de la casa."
+  },
+  "experiencia": {
+    "eyebrow": "Brunch lovers",
+    "title": "Lo que dicen nuestros <span class=\"ital\">Brunch Lovers</span>",
+    "sub": "Así disfrutan nuestros clientes de la experiencia [[ARAU]].",
+    "reviewsText": "Cientos de reseñas de clientes en Google avalan la experiencia [[ARAU]].",
+    "readReviews": "Leé las reseñas en Google"
+  },
+  "visitanos": {
+    "eyebrow": "Visitanos",
+    "title": "Te esperamos en el <span class=\"ital\">corazón del Eixample</span>",
+    "dondeLabel": "Dónde",
+    "horarioLabel": "Horario",
+    "cerrado": "Cerrado",
+    "contactoLabel": "Contacto",
+    "mapTitle": "Mapa de ARAU en Carrer de Provença 322, Barcelona",
+    "openInMaps": "Abrir en Google Maps ↗"
+  },
+  "reservar": {
+    "eyebrow": "Reservas",
+    "title": "Sumate a la <span class=\"ital\">mesa</span>",
+    "lead": "Contanos cuándo y cuántos son. Te confirmamos por mail o WhatsApp en el día. Para grupos de más de 8 personas, escribinos directo.",
+    "waButton": "Reservar por WhatsApp"
+  },
+  "form": {
+    "honeypotLabel": "No llenar si sos humano:",
+    "nombreLabel": "Nombre",
+    "nombrePlaceholder": "Ej.: Camila Pérez…",
+    "fechaLabel": "Fecha",
+    "horaLabel": "Hora",
+    "personasLabel": "Comensales",
+    "telefonoLabel": "Teléfono",
+    "telefonoPlaceholder": "+34 6XX XXX XXX…",
+    "emailLabel": "Email",
+    "emailPlaceholder": "hola@email.com…",
+    "notasLabel": "Alergias o comentarios <span class=\"field__opt\">(opcional)</span>",
+    "notasPlaceholder": "Sin gluten, mesa junto a la ventana…",
+    "submit": "Solicitar reserva",
+    "hint": "Hasta 4 personas, la reserva se confirma al instante. Para grupos más grandes, te confirmamos por mail o WhatsApp en el día."
+  },
+  "footer": {
+    "tag": "Brunch & café de especialidad<br />en el corazón del Eixample, Barcelona.",
+    "nav": {
+      "nosotros": "Nosotros",
+      "laCarta": "La carta",
+      "cafe": "Café",
+      "eventos": "Eventos",
+      "reservar": "Reservar"
+    },
+    "copyright": "© <span id=\"year\">[[YEAR]]</span> [[ARAU]] · Hecho con cariño en Barcelona.",
+    "credit": "Brunch & café de especialidad, todos los días menos los martes."
+  },
+  "waFloat": {
+    "label": "Reservar"
+  },
+  "ctaBar": {
+    "reservarMesa": "Reservar mesa"
+  },
+  "order": {
+    "call": "Llamar al mozo",
+    "verPedido": "Ver pedido",
+    "title": "Tu pedido",
+    "empty": "Tocá <strong>+ Agregar</strong> en los platos para armar tu pedido.",
+    "totalAprox": "Total aprox.",
+    "send": "Pedir por WhatsApp",
+    "note": "El mozo recibe tu pedido por WhatsApp y te lo confirma en la mesa. Precios orientativos.",
+    "js": {
+      "agregar": "Agregar",
+      "agregarAria": "Agregar",
+      "quitarUnoAria": "Quitar uno de",
+      "agregarUnoAria": "Agregar uno de",
+      "mesaPrefix": "· Mesa",
+      "waGreeting": "¡Hola ARAU!",
+      "waMesa": "Mesa",
+      "waQuiero": "Quiero pedir:",
+      "waTotal": "Total aprox:",
+      "waGracias": "¡Gracias!",
+      "callMesaPrefix": "Mesa",
+      "callMsg": "¿Pueden acercarse a la mesa, por favor? 🙋"
+    }
   }
 }

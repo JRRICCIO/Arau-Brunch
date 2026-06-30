@@ -6,6 +6,7 @@ pagination:
 permalink: "/{{ lng.dir }}carta.html"
 pageKey: "carta"
 ---
+{%- set arauWord %}{% include "arau-word.njk" %}{% endset -%}
 <!DOCTYPE html>
 <html lang="{{ lng.htmlLang }}" class="no-js">
 <head>
@@ -454,24 +455,24 @@ pageKey: "carta"
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido">{{ ui.a11y.skipToContent }}</a>
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="ARAU · Inicio">
+      <a class="brand" href="index.html" aria-label="{{ ui.a11y.brandHomeLabel }}">
         <span class="brand__mark" aria-hidden="true">
           {% include "logo-mark.njk" %}
         </span>
         <span class="brand__word" translate="no">{% include "arau-word.njk" %}</span>
       </a>
 
-      <nav class="nav" aria-label="Navegación principal">
+      <nav class="nav" aria-label="{{ ui.a11y.navLabel }}">
         <ul class="nav__list" id="primary-nav">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#top" aria-current="page">Carta</a></li>
-          <li><a href="index.html#cafe">Café</a></li>
-          <li><a href="index.html#visitanos">Visitanos</a></li>
+          <li><a href="index.html">{{ ui.carta.nav.inicio }}</a></li>
+          <li><a href="#top" aria-current="page">{{ ui.carta.nav.carta }}</a></li>
+          <li><a href="index.html#cafe">{{ ui.carta.nav.cafe }}</a></li>
+          <li><a href="index.html#visitanos">{{ ui.carta.nav.visitanos }}</a></li>
         </ul>
       </nav>
 
@@ -479,10 +480,10 @@ pageKey: "carta"
         {% include "lang-switcher.njk" %}
         <a class="header__back" href="index.html">
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Inicio
+          {{ ui.carta.header.backInicio }}
         </a>
-        <a class="btn btn--terra" href="index.html#reservar">Reservar</a>
-        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
+        <a class="btn btn--terra" href="index.html#reservar">{{ ui.cta.reservar }}</a>
+        <button class="nav-toggle" type="button" aria-label="{{ ui.a11y.openMenu }}" aria-expanded="false" aria-controls="primary-nav">
           <span class="nav-toggle__bar" aria-hidden="true"></span>
           <span class="nav-toggle__bar" aria-hidden="true"></span>
           <span class="nav-toggle__bar" aria-hidden="true"></span>
@@ -503,7 +504,7 @@ pageKey: "carta"
         <p class="menu-intro__disclaimer">{{ carta.intro.disclaimer }}</p>
         <div class="menu-intro__actions">
           <a class="btn btn--ghost" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">
-            Pedir y novedades en Instagram
+            {{ ui.carta.intro.actionInstagram }}
             <svg class="btn__arrow" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -511,7 +512,7 @@ pageKey: "carta"
     </section>
 
     <!-- ===================== TABS PEGAJOSAS ===================== -->
-    <nav class="menu-tabs" aria-label="Categorías de la carta">
+    <nav class="menu-tabs" aria-label="{{ ui.a11y.cartaTabsLabel }}">
       <div class="menu-tabs__scroll">
         {%- for section in carta.sections %}
         <a class="menu-tab" href="#{{ section | anchor }}" data-tab="{{ section | anchor }}">{{ section.label }}</a>
@@ -539,11 +540,11 @@ pageKey: "carta"
     <!-- ===================== CIERRE ===================== -->
     <section class="menu-outro" aria-labelledby="outro-title">
       <div class="container">
-        <h2 class="menu-outro__title" id="outro-title">¿Se te hizo <span class="ital">agua la boca?</span></h2>
+        <h2 class="menu-outro__title" id="outro-title">{{ ui.carta.outro.title | safe }}</h2>
         <div class="menu-outro__actions">
-          <a class="btn btn--terra btn--lg" href="index.html#reservar">Reservá tu mesa</a>
+          <a class="btn btn--terra btn--lg" href="index.html#reservar">{{ ui.cta.reservaTuMesa }}</a>
           <a class="btn btn--ghost btn--lg" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener">
-            Cómo llegar
+            {{ ui.carta.outro.comoLlegar }}
             <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -552,30 +553,30 @@ pageKey: "carta"
   </main>
 
   <!-- ===================== BARRA DE ACCIÓN MÓVIL ===================== -->
-  <div class="menu-actionbar" aria-label="Acciones rápidas">
-    <a class="btn btn--terra" href="index.html#reservar">Reservar</a>
-    <a class="btn btn--ghost" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener">Cómo llegar</a>
+  <div class="menu-actionbar" aria-label="{{ ui.a11y.cartaActionbar }}">
+    <a class="btn btn--terra" href="index.html#reservar">{{ ui.cta.reservar }}</a>
+    <a class="btn btn--ghost" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener">{{ ui.carta.actionbar.comoLlegar }}</a>
   </div>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <a class="brand brand--footer" href="index.html" aria-label="ARAU · Inicio">
+        <a class="brand brand--footer" href="index.html" aria-label="{{ ui.a11y.brandHomeLabel }}">
           <span class="brand__mark" aria-hidden="true">
             {% include "logo-mark.njk" %}
           </span>
           <span class="brand__word" translate="no">{% include "arau-word.njk" %}</span>
         </a>
-        <p class="footer__tag">Brunch &amp; café de especialidad<br />en el corazón del Eixample, Barcelona.</p>
+        <p class="footer__tag">{{ ui.footer.tag | safe }}</p>
       </div>
 
-      <nav class="footer__nav" aria-label="Enlaces del pie">
-        <a href="index.html#nosotros">Nosotros</a>
-        <a href="carta.html">La carta</a>
-        <a href="index.html#cafe">Café</a>
-        <a href="index.html#eventos">Eventos</a>
-        <a href="index.html#reservar">Reservar</a>
+      <nav class="footer__nav" aria-label="{{ ui.a11y.footerNavLabel }}">
+        <a href="index.html#nosotros">{{ ui.carta.footer.nav.nosotros }}</a>
+        <a href="carta.html">{{ ui.carta.footer.nav.laCarta }}</a>
+        <a href="index.html#cafe">{{ ui.carta.footer.nav.cafe }}</a>
+        <a href="index.html#eventos">{{ ui.carta.footer.nav.eventos }}</a>
+        <a href="index.html#reservar">{{ ui.carta.footer.nav.reservar }}</a>
       </nav>
 
       <div class="footer__contact">
@@ -589,44 +590,44 @@ pageKey: "carta"
     </div>
 
     <div class="container footer__bottom">
-      <p>© <span id="year">{{ buildYear }}</span> {% include "arau-word.njk" %} · Hecho con cariño en Barcelona.</p>
-      <p class="footer__credit">Brunch &amp; café de especialidad, todos los días menos los martes.</p>
+      <p>{{ ui.footer.copyright | replace("[[YEAR]]", buildYear) | replace("[[ARAU]]", arauWord) | safe }}</p>
+      <p class="footer__credit">{{ ui.footer.credit | safe }}</p>
     </div>
   </footer>
 
   <!-- Botón WhatsApp flotante -->
-  <a class="wa-float" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="Reservar por WhatsApp">
+  <a class="wa-float" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="{{ ui.a11y.waFloatLabel }}">
     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
-    <span class="wa-float__label">Reservar</span>
+    <span class="wa-float__label">{{ ui.waFloat.label }}</span>
   </a>
 
   <!-- ===================== PEDIDO EN LA MESA (QR: ?mesa=N) ===================== -->
   <div class="order-bar" id="order-bar" data-wa="{{ site.contacto.whatsapp }}" hidden>
     <button type="button" class="order-bar__call" id="order-call">
       <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3l-2 3h16l-2-3V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 19a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      Llamar al mozo
+      {{ ui.order.call }}
     </button>
     <button type="button" class="order-bar__cart" id="order-open" aria-haspopup="dialog">
       <span class="order-bar__count" id="order-count" aria-hidden="true">0</span>
-      <span>Ver pedido</span>
+      <span>{{ ui.order.verPedido }}</span>
       <span class="order-bar__total" id="order-total">€0,00</span>
     </button>
   </div>
 
-  <dialog class="order-dialog" id="order-dialog" aria-label="Tu pedido">
+  <dialog class="order-dialog" id="order-dialog" aria-label="{{ ui.a11y.orderDialogLabel }}">
     <div class="order-dialog__panel">
       <header class="order-dialog__head">
-        <h2 class="order-dialog__title">Tu pedido <span class="order-dialog__mesa" id="order-mesa"></span></h2>
-        <button type="button" class="order-dialog__close" id="order-close" aria-label="Cerrar">
+        <h2 class="order-dialog__title">{{ ui.order.title }} <span class="order-dialog__mesa" id="order-mesa"></span></h2>
+        <button type="button" class="order-dialog__close" id="order-close" aria-label="{{ ui.a11y.orderClose }}">
           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
         </button>
       </header>
       <ul class="order-list" id="order-list"></ul>
-      <p class="order-empty" id="order-empty">Tocá <strong>+ Agregar</strong> en los platos para armar tu pedido.</p>
+      <p class="order-empty" id="order-empty">{{ ui.order.empty | safe }}</p>
       <footer class="order-dialog__foot">
-        <div class="order-dialog__total"><span>Total aprox.</span><strong id="order-dtotal">€0,00</strong></div>
-        <a class="btn btn--terra btn--lg btn--block" id="order-send" href="#">Pedir por WhatsApp</a>
-        <p class="order-note">El mozo recibe tu pedido por WhatsApp y te lo confirma en la mesa. Precios orientativos.</p>
+        <div class="order-dialog__total"><span>{{ ui.order.totalAprox }}</span><strong id="order-dtotal">€0,00</strong></div>
+        <a class="btn btn--terra btn--lg btn--block" id="order-send" href="#">{{ ui.order.send }}</a>
+        <p class="order-note">{{ ui.order.note }}</p>
       </footer>
     </div>
   </dialog>

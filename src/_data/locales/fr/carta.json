@@ -112,7 +112,7 @@
       "photoAlt": "Brunch — ARAU",
       "items": [
         {
-          "nombre": "Toast d'avoine écrasée",
+          "nombre": "Toast à l'avocat écrasé",
           "desc": "Pain au levain, avocat, roquette sauvage, tomates rôties, feta, œuf poché, oignon mariné.",
           "precio": "13,50",
           "etiquetas": [
@@ -135,7 +135,7 @@
         },
         {
           "nombre": "Benny et les œufs",
-          "desc": "Pain de chia (GF), épinards sautés, deux œufs pochés, sauce hollandaise et bacon croustillant. Servi avec de la salade verte, des tomates rôties et des patates douces. <br />Remplacer le bacon par : Avocat, saumon gravlax maison (+2,50€), Halloumi (+",
+          "desc": "Pain de chipá (GF), épinards sautés, deux œufs pochés, sauce hollandaise et bacon croustillant. Servi avec une salade verte, des tomates rôties et des patates douces. <br />Remplacer le bacon par : Avocat, saumon gravlax maison (+2,50€), Halloumi (+2€)",
           "precio": "14,00",
           "etiquetas": [
             "gf",
@@ -166,8 +166,8 @@
           "alergenos": "Poisson · Gluten · Lactose"
         },
         {
-          "nombre": "Pastrami Lover NUEVO!!",
-          "desc": "Bagel con pastrami, pepinillos agridulces, rúcula, gouda y salsa de mostaza dijon, queso crema y miel. Acompañado de patatas fritas",
+          "nombre": "Pastrami Lover NOUVEAU!!",
+          "desc": "Bagel au pastrami, cornichons aigres-doux, roquette, gouda et sauce à la moutarde de Dijon, fromage frais et miel. Servi avec des frites",
           "precio": "15,50",
           "etiquetas": [],
           "disponible": true,
@@ -186,7 +186,7 @@
       "items": [
         {
           "nombre": "Le tru mila",
-          "desc": "Milanesa de bœuf avec une sauce aux champignons truffée, du fromage Gouda fondu et un œuf au plat sur le dessus. <Servi avec des frites et une mayonnaise au chipotle (remplacez les pommes de terre par des patates douces ou des légumes verts mélangés",
+          "desc": "Milanesa de bœuf avec une sauce aux champignons truffée, du fromage Gouda fondu et un œuf au plat sur le dessus. <br />Servi avec des frites et une mayonnaise au chipotle (remplacez les pommes de terre par des patates douces ou un mélange de verdures et de tomates rôties +1€)",
           "precio": "17,00",
           "etiquetas": [
             "casa"
@@ -208,7 +208,7 @@
         },
         {
           "nombre": "Tru Mila Veggie",
-          "desc": "Milanesa d'aubergine avec une sauce aux champignons truffée, du fromage Gouda fondu et un œuf au plat sur le dessus. <Servie avec des frites et une mayonnaise au chipotle (remplacez les pommes de terre par des patates douces ou des salades mélangées",
+          "desc": "Milanesa d'aubergine avec une sauce aux champignons truffée, du fromage Gouda fondu et un œuf au plat sur le dessus. <br />Servie avec des frites et une mayonnaise au chipotle (remplacez les pommes de terre par des patates douces ou un mélange de verdures et de tomates rôties +1€)",
           "precio": "14,60",
           "etiquetas": [
             "vg"
@@ -228,8 +228,8 @@
           "alergenos": "Gluten · Lactose"
         },
         {
-          "nombre": "NUEVO Ceasar Austral",
-          "desc": "Lechuga romana, pollo marinado y grillado, panceta crocante, láminas de parmesano, croutons artesanales, pipas de calabaza y nuestra salsa César con un toque de chimichurri.",
+          "nombre": "NOUVEAU Ceasar Austral",
+          "desc": "Laitue romaine, poulet mariné et grillé, bacon croustillant, copeaux de parmesan, croûtons artisanaux, graines de courge et notre sauce César avec une touche de chimichurri.",
           "precio": "14,50",
           "etiquetas": [],
           "disponible": true,
@@ -247,7 +247,7 @@
       "items": [
         {
           "nombre": "Pain aux bananes",
-          "desc": "Pan de banana casero vegano con nueces y chips de chocolate amargo",
+          "desc": "Pain à la banane maison végan avec noix et pépites de chocolat noir",
           "precio": "3,50",
           "etiquetas": [
             "ve"
@@ -654,8 +654,8 @@
           "disponible": true
         },
         {
-          "nombre": "Limonada tropical NUEVO!",
-          "desc": "zumo de limón, leche de coco, menta y almíbar",
+          "nombre": "Limonade tropicale NOUVEAU!",
+          "desc": "jus de citron, lait de coco, menthe et sirop",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
@@ -668,7 +668,7 @@
       "compact": true,
       "items": [
         {
-          "nombre": "BRUTUS bière pression",
+          "nombre": "Alhambra bière pression",
           "desc": "Verre de bière",
           "precio": "3,30",
           "etiquetas": [],
@@ -771,7 +771,7 @@
         },
         {
           "nombre": "Oyuc Malbec",
-          "desc": "Vin rouge Malbec Argentino",
+          "desc": "Vin rouge Malbec argentin",
           "precio": "19,00",
           "etiquetas": [],
           "disponible": true

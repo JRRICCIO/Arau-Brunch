@@ -14,5 +14,237 @@
     "prev": "Foto anterior",
     "next": "Foto següent",
     "goto": "Anar a la foto"
+  },
+  "a11y": {
+    "skipToContent": "Salta al contingut",
+    "navLabel": "Navegació principal",
+    "brandHomeLabel": "ARAU · Inici",
+    "openMenu": "Obrir menú",
+    "heroTrustLabel": "El que ens defineix",
+    "heroCue": "Baixar a la nostra història",
+    "statsLabel": "ARAU en xifres",
+    "prevPhoto": "Foto anterior",
+    "socialsLabel": "Xarxes socials",
+    "instagramLabel": "ARAU a Instagram",
+    "tiktokLabel": "ARAU a TikTok",
+    "footerNavLabel": "Enllaços del peu",
+    "waFloatLabel": "Reservar per WhatsApp",
+    "ctaBarWa": "Escriure per WhatsApp",
+    "lightboxLabel": "Galeria de fotos",
+    "lightboxClose": "Tancar galeria",
+    "lightboxNext": "Foto següent",
+    "cartaTabsLabel": "Categories de la carta",
+    "cartaActionbar": "Accions ràpides",
+    "orderDialogLabel": "La teva comanda",
+    "orderClose": "Tancar"
+  },
+  "nav": {
+    "carta": "Carta",
+    "nosotros": "Nosaltres",
+    "cafe": "Cafè",
+    "eventos": "Esdeveniments",
+    "visitanos": "Visita'ns"
+  },
+  "cta": {
+    "reservar": "Reservar",
+    "verLaCarta": "Veure la carta",
+    "reservarMesa": "Reservar taula",
+    "reservaTuMesa": "Reserva la teva taula"
+  },
+  "hero": {
+    "eyebrow": "Sabors argentins · esperit australià · cor barceloní",
+    "trust": {
+      "reviews": "en ressenyes de Google",
+      "local": "producte local i fresc",
+      "coffee": "cafès d'especialitat al mes"
+    }
+  },
+  "historia": {
+    "cap": "Provença 322 · on tot passa",
+    "imgAlt": "Façana d'ARAU al Carrer de Provença 322: tendal de terracota amb el cartell «ARAU · Grilled Brunch» i l'Agustina, la fundadora, a l'entrada",
+    "eyebrow": "La nostra història",
+    "title": "L'Arau va néixer d'<span class=\"ital\">una idea senzilla.</span>",
+    "p1": "Reunir en un mateix lloc els sabors, les experiències i les cultures que van deixar petjada al llarg d'un viatge. Amb arrels argentines, inspiració australiana i cor barceloní, [[ARAU]] fusiona la tradició de l'Argentina, la creativitat del brunch australià i la passió pel cafè d'especialitat.",
+    "p2": "Un espai on diferents cultures es troben al voltant de la taula per crear quelcom nou, proper i autèntic. Perquè creiem que algunes de les millors coses <em>neixen de la barreja</em>.",
+    "p3": "Ens inspira la cuina casolana, els productes de qualitat i aquells petits detalls que converteixen un àpat en una experiència. Per a nosaltres l'hospitalitat no és només un servei: és la nostra manera de rebre tothom qui creua la porta.",
+    "p4": "Barcelona és avui la nostra llar, i [[ARAU]] és la nostra manera de compartir amb la ciutat tot allò que ens va inspirar durant anys de viatges, aprenentatge i descoberta. <strong>Benvinguts a l'Arau. Benvinguts a la nostra història.</strong>",
+    "sign": "— Agustina, fundadora d'[[ARAU]]",
+    "heartImgAlt": "Dues mans formant un cor, el segell d'ARAU",
+    "heartLine": "cor barceloní"
+  },
+  "stats": {
+    "local": {
+      "label": "ingredients locals i frescos"
+    },
+    "coffee": {
+      "label": "cafès d'especialitat servits al mes"
+    },
+    "reviews": {
+      "label": "estrelles en ressenyes de clients"
+    }
+  },
+  "carta": {
+    "home": {
+      "eyebrow": "Els favorits de la casa",
+      "title": "Descobreix els <span class=\"ital\">favorits de la casa</span>",
+      "sub": "Plats preparats amb dedicació, ingredients frescos i una combinació de sabors inspirada en les nostres arrels argentines i la cultura del brunch australià. La carta completa és a un clic.",
+      "dish1": {
+        "name": "Big brekky",
+        "desc": "Xoriço, cansalada, mongetes, dos ous, xampinyons, hash brown i espinacs.",
+        "tag": "La bèstia"
+      },
+      "dish2": {
+        "name": "Benny & the eggs",
+        "desc": "Pa de chipá (GF), ous escumats, holandesa i bacon cruixent.",
+        "tag": "Dels més demanats"
+      },
+      "dish3": {
+        "name": "The tru mila",
+        "desc": "Milanesa amb salsa de bolets trufada, Gouda fos i ou ferrat. Amb patates i maionesa de chipotle.",
+        "tag": "El més venut"
+      },
+      "dish4": {
+        "name": "Flantástico",
+        "desc": "Flam casolà de dulce de leche amb nata muntada. Per a molts, el millor flam de Barcelona.",
+        "tag": "Per al dolç"
+      },
+      "ctaFull": "Veure la carta completa",
+      "note": "Al·lèrgies o dieta especial? Aviseu-nos en reservar i ho resolem."
+    },
+    "intro": {
+      "actionInstagram": "Demanar i novetats a Instagram"
+    },
+    "nav": {
+      "inicio": "Inici",
+      "carta": "Carta",
+      "cafe": "Cafè",
+      "visitanos": "Visita'ns"
+    },
+    "header": {
+      "backInicio": "Inici"
+    },
+    "outro": {
+      "title": "Se't ha fet <span class=\"ital\">la boca aigua?</span>",
+      "comoLlegar": "Com arribar"
+    },
+    "actionbar": {
+      "comoLlegar": "Com arribar"
+    },
+    "footer": {
+      "nav": {
+        "nosotros": "Nosaltres",
+        "laCarta": "La carta",
+        "cafe": "Cafè",
+        "eventos": "Esdeveniments",
+        "reservar": "Reservar"
+      }
+    }
+  },
+  "cafe": {
+    "imgAlt": "Flat white d'especialitat en tassa de ceràmica artesanal",
+    "eyebrow": "Cafè d'especialitat",
+    "title": "El <span class=\"ital\">flat white</span> és religió",
+    "lead": "Torrem pensant en el gra, no en la pressa. Treballem cafès d'especialitat seleccionats un a un i els servim com a Austràlia: flat white, cortado llarg, filtrat del dia. Més de <strong>1500 tasses</strong> surten de la barra cada mes.",
+    "chip1": "Flat white",
+    "chip2": "Single origin",
+    "chip3": "Filtrat V60",
+    "chip4": "Cold brew",
+    "chip5": "Matcha"
+  },
+  "eventos": {
+    "eyebrow": "Més que un brunch",
+    "title": "Passen <span class=\"ital\">coses</span> a [[ARAU]]",
+    "sub": "Bingo, folklore i música en directe. Toca una foto per veure-la en gran, o segueix-nos a <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> per a l'agenda i les fotos de l'última edició.",
+    "feature": {
+      "play": "Veure fotos",
+      "waReservar": "Reservar per WhatsApp",
+      "verFotosIg": "Veure fotos a Instagram →"
+    },
+    "card": {
+      "play": "Veure fotos"
+    }
+  },
+  "loyalty": {
+    "text": "<strong>El teu 6è brunch, gratis.</strong> Suma punts amb cada visita a la nostra app de fidelitat i el sisè va a càrrec de la casa."
+  },
+  "experiencia": {
+    "eyebrow": "Brunch lovers",
+    "title": "El que diuen els nostres <span class=\"ital\">Brunch Lovers</span>",
+    "sub": "Així gaudeixen els nostres clients de l'experiència [[ARAU]].",
+    "reviewsText": "Centenars de ressenyes de clients a Google avalen l'experiència [[ARAU]].",
+    "readReviews": "Llegeix les ressenyes a Google"
+  },
+  "visitanos": {
+    "eyebrow": "Visita'ns",
+    "title": "T'esperem al <span class=\"ital\">cor de l'Eixample</span>",
+    "dondeLabel": "On",
+    "horarioLabel": "Horari",
+    "cerrado": "Tancat",
+    "contactoLabel": "Contacte",
+    "mapTitle": "Mapa d'ARAU al Carrer de Provença 322, Barcelona",
+    "openInMaps": "Obrir a Google Maps ↗"
+  },
+  "reservar": {
+    "eyebrow": "Reserves",
+    "title": "Suma't a la <span class=\"ital\">taula</span>",
+    "lead": "Explica'ns quan i quants sou. T'ho confirmem per correu o WhatsApp el mateix dia. Per a grups de més de 8 persones, escriu-nos directament.",
+    "waButton": "Reservar per WhatsApp"
+  },
+  "form": {
+    "honeypotLabel": "No omplir si ets humà:",
+    "nombreLabel": "Nom",
+    "nombrePlaceholder": "Ex.: Camila Pérez…",
+    "fechaLabel": "Data",
+    "horaLabel": "Hora",
+    "personasLabel": "Comensals",
+    "telefonoLabel": "Telèfon",
+    "telefonoPlaceholder": "+34 6XX XXX XXX…",
+    "emailLabel": "Correu electrònic",
+    "emailPlaceholder": "hola@email.com…",
+    "notasLabel": "Al·lèrgies o comentaris <span class=\"field__opt\">(opcional)</span>",
+    "notasPlaceholder": "Sense gluten, taula al costat de la finestra…",
+    "submit": "Sol·licitar reserva",
+    "hint": "Fins a 4 persones, la reserva es confirma a l'instant. Per a grups més grans, t'ho confirmem per correu o WhatsApp el mateix dia."
+  },
+  "footer": {
+    "tag": "Brunch & cafè d'especialitat<br />al cor de l'Eixample, Barcelona.",
+    "nav": {
+      "nosotros": "Nosaltres",
+      "laCarta": "La carta",
+      "cafe": "Cafè",
+      "eventos": "Esdeveniments",
+      "reservar": "Reservar"
+    },
+    "copyright": "© <span id=\"year\">[[YEAR]]</span> [[ARAU]] · Fet amb estima a Barcelona.",
+    "credit": "Brunch & cafè d'especialitat, tots els dies excepte els dimarts."
+  },
+  "waFloat": {
+    "label": "Reservar"
+  },
+  "ctaBar": {
+    "reservarMesa": "Reservar taula"
+  },
+  "order": {
+    "call": "Cridar el cambrer",
+    "verPedido": "Veure comanda",
+    "title": "La teva comanda",
+    "empty": "Toca <strong>+ Afegir</strong> als plats per fer la teva comanda.",
+    "totalAprox": "Total aprox.",
+    "send": "Demanar per WhatsApp",
+    "note": "El cambrer rep la teva comanda per WhatsApp i te la confirma a la taula. Preus orientatius.",
+    "js": {
+      "agregar": "Afegir",
+      "agregarAria": "Afegir",
+      "quitarUnoAria": "Treure'n un de",
+      "agregarUnoAria": "Afegir-ne un de",
+      "mesaPrefix": "· Taula",
+      "waGreeting": "Hola ARAU!",
+      "waMesa": "Taula",
+      "waQuiero": "Vull demanar:",
+      "waTotal": "Total aprox:",
+      "waGracias": "Gràcies!",
+      "callMesaPrefix": "Taula",
+      "callMsg": "Us podeu acostar a la taula, si us plau? 🙋"
+    }
   }
 }

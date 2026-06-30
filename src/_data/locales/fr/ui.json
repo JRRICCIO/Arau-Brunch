@@ -14,5 +14,237 @@
     "prev": "Photo précédente",
     "next": "Photo suivante",
     "goto": "Aller à la photo"
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "navLabel": "Navigation principale",
+    "brandHomeLabel": "ARAU · Accueil",
+    "openMenu": "Ouvrir le menu",
+    "heroTrustLabel": "Ce qui nous définit",
+    "heroCue": "Découvrir notre histoire",
+    "statsLabel": "ARAU en chiffres",
+    "prevPhoto": "Photo précédente",
+    "socialsLabel": "Réseaux sociaux",
+    "instagramLabel": "ARAU sur Instagram",
+    "tiktokLabel": "ARAU sur TikTok",
+    "footerNavLabel": "Liens du pied de page",
+    "waFloatLabel": "Réserver par WhatsApp",
+    "ctaBarWa": "Écrire sur WhatsApp",
+    "lightboxLabel": "Galerie photos",
+    "lightboxClose": "Fermer la galerie",
+    "lightboxNext": "Photo suivante",
+    "cartaTabsLabel": "Catégories de la carte",
+    "cartaActionbar": "Actions rapides",
+    "orderDialogLabel": "Ta commande",
+    "orderClose": "Fermer"
+  },
+  "nav": {
+    "carta": "Carte",
+    "nosotros": "Qui sommes-nous",
+    "cafe": "Café",
+    "eventos": "Événements",
+    "visitanos": "Nous trouver"
+  },
+  "cta": {
+    "reservar": "Réserver",
+    "verLaCarta": "Voir la carte",
+    "reservarMesa": "Réserver une table",
+    "reservaTuMesa": "Réserve ta table"
+  },
+  "hero": {
+    "eyebrow": "Saveurs argentines · esprit australien · cœur barcelonais",
+    "trust": {
+      "reviews": "sur les avis Google",
+      "local": "produits locaux et frais",
+      "coffee": "cafés de spécialité par mois"
+    }
+  },
+  "historia": {
+    "cap": "Provença 322 · là où tout se passe",
+    "imgAlt": "Façade d'ARAU au Carrer de Provença 322 : auvent terre cuite avec l'enseigne « ARAU · Grilled Brunch » et Agustina, la fondatrice, sur le pas de la porte",
+    "eyebrow": "Notre histoire",
+    "title": "Arau est né d'<span class=\"ital\">une idée toute simple.</span>",
+    "p1": "Réunir en un seul lieu les saveurs, les expériences et les cultures qui ont marqué tout un voyage. Avec des racines argentines, une inspiration australienne et un cœur barcelonais, [[ARAU]] mêle la tradition argentine, la créativité du brunch australien et la passion du café de spécialité.",
+    "p2": "Un endroit où des cultures différentes se rencontrent autour de la table pour créer quelque chose de neuf, de chaleureux et d'authentique. Parce que nous croyons que certaines des plus belles choses <em>naissent du mélange</em>.",
+    "p3": "Nous puisons notre inspiration dans la cuisine maison, les produits de qualité et ces petits détails qui transforment un repas en une véritable expérience. Pour nous, l'hospitalité n'est pas un simple service : c'est notre façon d'accueillir celles et ceux qui franchissent la porte.",
+    "p4": "Barcelone est aujourd'hui notre maison, et [[ARAU]] est notre manière de partager avec la ville tout ce qui nous a inspirés au fil de tant d'années de voyages, d'apprentissage et de découverte. <strong>Bienvenue chez Arau. Bienvenue dans notre histoire.</strong>",
+    "sign": "— Agustina, fondatrice d'[[ARAU]]",
+    "heartImgAlt": "Deux mains formant un cœur, la signature d'ARAU",
+    "heartLine": "cœur barcelonais"
+  },
+  "stats": {
+    "local": {
+      "label": "ingrédients locaux et frais"
+    },
+    "coffee": {
+      "label": "cafés de spécialité servis par mois"
+    },
+    "reviews": {
+      "label": "étoiles dans les avis de nos clients"
+    }
+  },
+  "carta": {
+    "home": {
+      "eyebrow": "Les coups de cœur de la maison",
+      "title": "Découvre les <span class=\"ital\">coups de cœur de la maison</span>",
+      "sub": "Des plats préparés avec soin, des ingrédients frais et un mariage de saveurs inspiré de nos racines argentines et de la culture du brunch australien. La carte complète n'est qu'à un clic.",
+      "dish1": {
+        "name": "Big brekky",
+        "desc": "Chorizo, lard, haricots, deux œufs, champignons, hash brown et épinards.",
+        "tag": "La bête"
+      },
+      "dish2": {
+        "name": "Benny & the eggs",
+        "desc": "Pain de chipá (sans gluten), œufs pochés, sauce hollandaise et bacon croustillant.",
+        "tag": "Parmi les plus demandés"
+      },
+      "dish3": {
+        "name": "The tru mila",
+        "desc": "Milanesa, sauce aux champignons truffée, Gouda fondu et œuf au plat. Servie avec frites et mayo au chipotle.",
+        "tag": "Le plus vendu"
+      },
+      "dish4": {
+        "name": "Flantástico",
+        "desc": "Flan maison au dulce de leche et chantilly. Pour beaucoup, le meilleur flan de Barcelone.",
+        "tag": "Pour les gourmands"
+      },
+      "ctaFull": "Voir la carte complète",
+      "note": "Allergies ou régime particulier ? Dis-le-nous au moment de réserver et on s'en occupe."
+    },
+    "intro": {
+      "actionInstagram": "Commander et actus sur Instagram"
+    },
+    "nav": {
+      "inicio": "Accueil",
+      "carta": "Carte",
+      "cafe": "Café",
+      "visitanos": "Nous trouver"
+    },
+    "header": {
+      "backInicio": "Accueil"
+    },
+    "outro": {
+      "title": "L'eau t'en vient <span class=\"ital\">à la bouche ?</span>",
+      "comoLlegar": "Comment venir"
+    },
+    "actionbar": {
+      "comoLlegar": "Comment venir"
+    },
+    "footer": {
+      "nav": {
+        "nosotros": "Qui sommes-nous",
+        "laCarta": "La carte",
+        "cafe": "Café",
+        "eventos": "Événements",
+        "reservar": "Réserver"
+      }
+    }
+  },
+  "cafe": {
+    "imgAlt": "Flat white de spécialité dans une tasse en céramique artisanale",
+    "eyebrow": "Café de spécialité",
+    "title": "Le <span class=\"ital\">flat white</span>, c'est sacré",
+    "lead": "On torréfie en pensant au grain, pas à la montre. On travaille des cafés de spécialité sélectionnés un à un, et on les sert comme en Australie : flat white, cortado allongé, filtre du jour. Plus de <strong>1500 tasses</strong> sortent du comptoir chaque mois.",
+    "chip1": "Flat white",
+    "chip2": "Single origin",
+    "chip3": "Filtre V60",
+    "chip4": "Cold brew",
+    "chip5": "Matcha"
+  },
+  "eventos": {
+    "eyebrow": "Bien plus qu'un brunch",
+    "title": "Il se passe des <span class=\"ital\">choses</span> chez [[ARAU]]",
+    "sub": "Bingo, folklore et musique live. Touche une photo pour l'agrandir, ou suis-nous sur <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> pour l'agenda et les photos de la dernière édition.",
+    "feature": {
+      "play": "Voir les photos",
+      "waReservar": "Réserver par WhatsApp",
+      "verFotosIg": "Voir les photos sur Instagram →"
+    },
+    "card": {
+      "play": "Voir les photos"
+    }
+  },
+  "loyalty": {
+    "text": "<strong>Ton 6ᵉ brunch, offert.</strong> Cumule des points à chaque visite avec notre appli de fidélité, et le sixième est pour la maison."
+  },
+  "experiencia": {
+    "eyebrow": "Brunch lovers",
+    "title": "Ce que disent nos <span class=\"ital\">Brunch Lovers</span>",
+    "sub": "Voici comment nos clients vivent l'expérience [[ARAU]].",
+    "reviewsText": "Des centaines d'avis clients sur Google témoignent de l'expérience [[ARAU]].",
+    "readReviews": "Lire les avis sur Google"
+  },
+  "visitanos": {
+    "eyebrow": "Nous trouver",
+    "title": "On t'attend au <span class=\"ital\">cœur de l'Eixample</span>",
+    "dondeLabel": "Où",
+    "horarioLabel": "Horaires",
+    "cerrado": "Fermé",
+    "contactoLabel": "Contact",
+    "mapTitle": "Carte d'ARAU au Carrer de Provença 322, Barcelone",
+    "openInMaps": "Ouvrir dans Google Maps ↗"
+  },
+  "reservar": {
+    "eyebrow": "Réservations",
+    "title": "Rejoins la <span class=\"ital\">table</span>",
+    "lead": "Dis-nous quand et combien vous êtes. On te confirme par mail ou WhatsApp dans la journée. Pour les groupes de plus de 8 personnes, écris-nous directement.",
+    "waButton": "Réserver par WhatsApp"
+  },
+  "form": {
+    "honeypotLabel": "À ne pas remplir si tu es humain :",
+    "nombreLabel": "Nom",
+    "nombrePlaceholder": "Ex. : Camila Pérez…",
+    "fechaLabel": "Date",
+    "horaLabel": "Heure",
+    "personasLabel": "Convives",
+    "telefonoLabel": "Téléphone",
+    "telefonoPlaceholder": "+34 6XX XXX XXX…",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "bonjour@email.com…",
+    "notasLabel": "Allergies ou commentaires <span class=\"field__opt\">(facultatif)</span>",
+    "notasPlaceholder": "Sans gluten, table près de la fenêtre…",
+    "submit": "Demander une réservation",
+    "hint": "Jusqu'à 4 personnes, la réservation est confirmée immédiatement. Pour les groupes plus nombreux, on te confirme par mail ou WhatsApp dans la journée."
+  },
+  "footer": {
+    "tag": "Brunch & café de spécialité<br />au cœur de l'Eixample, à Barcelone.",
+    "nav": {
+      "nosotros": "Qui sommes-nous",
+      "laCarta": "La carte",
+      "cafe": "Café",
+      "eventos": "Événements",
+      "reservar": "Réserver"
+    },
+    "copyright": "© <span id=\"year\">[[YEAR]]</span> [[ARAU]] · Fait avec amour à Barcelone.",
+    "credit": "Brunch & café de spécialité, tous les jours sauf le mardi."
+  },
+  "waFloat": {
+    "label": "Réserver"
+  },
+  "ctaBar": {
+    "reservarMesa": "Réserver une table"
+  },
+  "order": {
+    "call": "Appeler le serveur",
+    "verPedido": "Voir la commande",
+    "title": "Ta commande",
+    "empty": "Touche <strong>+ Ajouter</strong> sur les plats pour composer ta commande.",
+    "totalAprox": "Total approx.",
+    "send": "Commander par WhatsApp",
+    "note": "Le serveur reçoit ta commande par WhatsApp et te la confirme à table. Prix indicatifs.",
+    "js": {
+      "agregar": "Ajouter",
+      "agregarAria": "Ajouter",
+      "quitarUnoAria": "Retirer un",
+      "agregarUnoAria": "Ajouter un",
+      "mesaPrefix": "· Table",
+      "waGreeting": "Bonjour ARAU !",
+      "waMesa": "Table",
+      "waQuiero": "Je voudrais commander :",
+      "waTotal": "Total approx. :",
+      "waGracias": "Merci !",
+      "callMesaPrefix": "Table",
+      "callMsg": "Pouvez-vous venir à la table, s'il vous plaît ? 🙋"
+    }
   }
 }
