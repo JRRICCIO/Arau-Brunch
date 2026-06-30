@@ -10,23 +10,66 @@
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  /* ---------- Badge abierto / cerrado ---------- */
+  /* ---------- Badge abierto / cerrado (hora de Barcelona) ---------- */
   (function () {
     var badge = document.getElementById('open-status');
     if (!badge) return;
-    var now = new Date();
-    var day = now.getDay(); // 0=Dom, 1=Lun, 2=Mar, 3=Mie, 4=Jue, 5=Vie, 6=Sab
-    var h = now.getHours() + now.getMinutes() / 60;
-    var open = false;
-    if (day === 2) {
-      open = false; // martes cerrado
-    } else if (day === 0 || day === 6) {
-      open = h >= 9.5 && h < 17; // sab/dom 9:30-17
-    } else {
-      open = h >= 9 && h < 16; // lun/mie-vie 9-16
+
+    // Horario en hora de Barcelona. 0=Dom … 6=Sáb. null = cerrado.
+    var horario = {
+      0: [9.5, 17],   // Domingo 9:30–17
+      1: [9, 16],     // Lunes 9–16
+      2: null,        // Martes cerrado
+      3: [9, 16],     // Miércoles 9–16
+      4: [9, 16],     // Jueves 9–16
+      5: [9, 16],     // Viernes 9–16
+      6: [9.5, 17]    // Sábado 9:30–17
+    };
+    var dias = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+
+    function fmt(t) {
+      var hh = Math.floor(t), mm = Math.round((t - hh) * 60);
+      return hh + ':' + (mm < 10 ? '0' + mm : mm);
     }
-    var nextOpen = day === 2 ? '9:00' : (day === 5 || day === 6) ? '9:30' : '9:00';
-    badge.textContent = open ? 'Abierto ahora' : ('Abre a las ' + nextOpen);
+
+    // Día y hora actuales EN BARCELONA (no en la zona horaria del visitante)
+    function ahoraBcn() {
+      try {
+        var p = new Intl.DateTimeFormat('en-US', {
+          timeZone: 'Europe/Madrid', weekday: 'short',
+          hour: '2-digit', minute: '2-digit', hour12: false
+        }).formatToParts(new Date());
+        var m = {};
+        p.forEach(function (x) { m[x.type] = x.value; });
+        var idx = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+        return { day: idx[m.weekday], h: (parseInt(m.hour, 10) % 24) + parseInt(m.minute, 10) / 60 };
+      } catch (_) {
+        var n = new Date();
+        return { day: n.getDay(), h: n.getHours() + n.getMinutes() / 60 };
+      }
+    }
+
+    var t = ahoraBcn();
+    var hoy = horario[t.day];
+    var open = !!hoy && t.h >= hoy[0] && t.h < hoy[1];
+
+    var texto;
+    if (open) {
+      texto = 'Abierto · cierra a las ' + fmt(hoy[1]);
+    } else if (hoy && t.h < hoy[0]) {
+      texto = 'Abre a las ' + fmt(hoy[0]); // abre hoy, más tarde
+    } else {
+      texto = 'Cerrado';
+      for (var i = 1; i <= 7; i++) {
+        var d = (t.day + i) % 7;
+        if (horario[d]) {
+          texto = 'Abre ' + (i === 1 ? 'mañana' : 'el ' + dias[d]) + ' a las ' + fmt(horario[d][0]);
+          break;
+        }
+      }
+    }
+
+    badge.textContent = texto;
     badge.className = 'open-badge is-ready open-badge--' + (open ? 'open' : 'closed');
   })();
 
