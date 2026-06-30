@@ -8,5 +8,11 @@
     "house": "de la casa",
     "price": "Precios en € · IVA incluido",
     "allergens": "Los platos pueden contener trazas por contaminación cruzada. Si tenés alergias o intolerancias, consultanos antes de pedir."
+  },
+  "carousel": {
+    "region": "carrusel",
+    "prev": "Foto anterior",
+    "next": "Foto siguiente",
+    "goto": "Ir a la foto"
   }
 }

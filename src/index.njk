@@ -235,15 +235,28 @@ pageKey: "home"
       </div>
     </section>
 
-    <!-- ===================== GALERÍA ===================== -->
+    <!-- ===================== GALERÍA (carrusel) ===================== -->
     <section class="galeria" aria-labelledby="galeria-label">
       <h2 class="galeria__overline" id="galeria-label">{{ galeria.overline }}</h2>
-      <div class="galeria__grid">
-        {%- for item in galeria.items %}
-        <button type="button" class="galeria__item{% if item.main %} galeria__item--main{% endif %} thumb" data-gallery="galeria"
-                data-full="{{ item.src | asset }}" data-caption="{{ item.caption }}">
-          <img src="{{ item.src | asset }}" alt="{{ item.alt }}" width="600" height="{% if item.main %}900{% else %}450{% endif %}" loading="lazy" decoding="async" />
+      <div class="galeria__carousel" role="group" aria-roledescription="{{ ui.carousel.region }}" aria-labelledby="galeria-label">
+        <button type="button" class="galeria__arrow galeria__arrow--prev" data-car="prev" aria-label="{{ ui.carousel.prev }}">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 4l-8 8 8 8" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
+        <div class="galeria__track" data-car="track">
+          {%- for item in galeria.items %}
+          <button type="button" class="galeria__item thumb" data-gallery="galeria"
+                  data-full="{{ item.src | asset }}" data-caption="{{ item.caption }}">
+            <img src="{{ item.src | asset }}" alt="{{ item.alt }}" width="760" height="520" loading="lazy" decoding="async" />
+          </button>
+          {%- endfor %}
+        </div>
+        <button type="button" class="galeria__arrow galeria__arrow--next" data-car="next" aria-label="{{ ui.carousel.next }}">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M9 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="galeria__dots" data-car="dots" role="group" aria-label="{{ galeria.overline }}">
+        {%- for item in galeria.items %}
+        <button type="button" class="galeria__dot{% if loop.first %} is-active{% endif %}" data-car-go="{{ loop.index0 }}" aria-label="{{ ui.carousel.goto }} {{ loop.index }}"{% if loop.first %} aria-current="true"{% endif %}></button>
         {%- endfor %}
       </div>
     </section>

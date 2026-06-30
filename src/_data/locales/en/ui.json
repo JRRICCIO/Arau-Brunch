@@ -8,5 +8,11 @@
     "house": "house favourite",
     "price": "Prices in € · VAT included",
     "allergens": "Dishes may contain traces through cross-contamination. If you have allergies or intolerances, please ask us before ordering."
+  },
+  "carousel": {
+    "region": "carousel",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "goto": "Go to photo"
   }
 }

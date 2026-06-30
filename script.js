@@ -363,4 +363,76 @@
       if (document.hidden) stop(); else start();
     });
   })();
+
+  /* ---------- Galería: carrusel ---------- */
+  (function () {
+    var carousel = document.querySelector('.galeria__carousel');
+    var track = carousel && carousel.querySelector('[data-car="track"]');
+    if (!carousel || !track) return;
+    var slides = Array.prototype.slice.call(track.querySelectorAll('.galeria__item'));
+    if (slides.length < 2) return;
+    var prevBtn = carousel.querySelector('[data-car="prev"]');
+    var nextBtn = carousel.querySelector('[data-car="next"]');
+    var dots = Array.prototype.slice.call(document.querySelectorAll('.galeria__dots [data-car-go]'));
+    var behavior = reduceMotion ? 'auto' : 'smooth';
+
+    function activeIndex() {
+      var t = track.getBoundingClientRect();
+      var center = t.left + t.width / 2;
+      var best = 0, bestDist = Infinity;
+      slides.forEach(function (s, i) {
+        var r = s.getBoundingClientRect();
+        var d = Math.abs((r.left + r.width / 2) - center);
+        if (d < bestDist) { bestDist = d; best = i; }
+      });
+      return best;
+    }
+
+    function centerOn(i) {
+      i = Math.max(0, Math.min(slides.length - 1, i));
+      var t = track.getBoundingClientRect();
+      var r = slides[i].getBoundingClientRect();
+      var delta = (r.left + r.width / 2) - (t.left + t.width / 2);
+      track.scrollTo({ left: track.scrollLeft + delta, behavior: behavior });
+    }
+
+    function sync() {
+      var i = activeIndex();
+      dots.forEach(function (d, k) {
+        var on = k === i;
+        d.classList.toggle('is-active', on);
+        if (on) d.setAttribute('aria-current', 'true');
+        else d.removeAttribute('aria-current');
+      });
+      if (prevBtn) prevBtn.disabled = track.scrollLeft <= 2;
+      if (nextBtn) nextBtn.disabled = track.scrollLeft >= (track.scrollWidth - track.clientWidth - 2);
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function () { centerOn(activeIndex() - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { centerOn(activeIndex() + 1); });
+    dots.forEach(function (d, k) {
+      d.addEventListener('click', function () { centerOn(k); });
+    });
+
+    carousel.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); centerOn(activeIndex() + 1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); centerOn(activeIndex() - 1); }
+    });
+
+    var ticking = false;
+    track.addEventListener('scroll', function () {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(function () { sync(); ticking = false; });
+      }
+    }, { passive: true });
+
+    var rt = null;
+    window.addEventListener('resize', function () {
+      if (rt) clearTimeout(rt);
+      rt = setTimeout(sync, 150);
+    }, { passive: true });
+
+    sync();
+  })();
 })();

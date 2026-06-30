@@ -8,5 +8,11 @@
     "house": "spécialité maison",
     "price": "Prix en € · TVA incluse",
     "allergens": "Les plats peuvent contenir des traces dues à une contamination croisée. En cas d'allergies ou d'intolérances, demandez-nous avant de commander."
+  },
+  "carousel": {
+    "region": "carrousel",
+    "prev": "Photo précédente",
+    "next": "Photo suivante",
+    "goto": "Aller à la photo"
   }
 }

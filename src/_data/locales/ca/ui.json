@@ -8,5 +8,11 @@
     "house": "especialitat de la casa",
     "price": "Preus en € · IVA inclòs",
     "allergens": "Els plats poden contenir traces per contaminació encreuada. Si teniu al·lèrgies o intoleràncies, consulteu-nos abans de demanar."
+  },
+  "carousel": {
+    "region": "carrusel",
+    "prev": "Foto anterior",
+    "next": "Foto següent",
+    "goto": "Anar a la foto"
   }
 }
