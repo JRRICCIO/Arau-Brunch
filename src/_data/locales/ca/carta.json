@@ -53,7 +53,7 @@
       "id": "desayunos",
       "label": "Esmorzar",
       "compact": false,
-      "photo": "img/cafe.webp",
+      "photo": "img/cafe-v2.webp",
       "photoAlt": "Esmorzar — ARAU",
       "items": [
         {
@@ -108,7 +108,7 @@
       "id": "brunch",
       "label": "Brunch",
       "compact": false,
-      "photo": "img/eggs-benedict.webp",
+      "photo": "img/eggs-benedict-v2.webp",
       "photoAlt": "Brunch — ARAU",
       "items": [
         {
@@ -285,7 +285,7 @@
       "id": "postres",
       "label": "Postres",
       "compact": false,
-      "photo": "img/flan.webp",
+      "photo": "img/flan-v2.webp",
       "photoAlt": "Postres — ARAU",
       "items": [
         {
