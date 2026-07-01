@@ -1,10 +1,11 @@
 {
   "overline": "Sabores de la casa",
   "items": [
-    { "src": "img/big-arau.webp", "alt": "The Big ARAU — brunch completo con huevos, chorizo, rösti y alubias", "caption": "The Big ARAU — la bestia: chorizo, panceta, hash brown, alubias y dos huevos", "main": true },
-    { "src": "img/eggs-benedict.webp", "alt": "Eggs Benedict con salsa holandesa y batata asada", "caption": "Benny & the eggs — huevos pochados, holandesa cítrica y batata asada", "main": false },
-    { "src": "img/cafe.webp", "alt": "Flat white de especialidad — café Congo de origen", "caption": "Flat white de especialidad — grano Congo de origen, tostado para el flat white", "main": false },
-    { "src": "img/spread.webp", "alt": "Mesa compartida con tostada de palta, eggs benedict y cafés de especialidad", "caption": "La mesa compartida — tostada de palta, benedictinos y café para toda la mesa", "main": false },
-    { "src": "img/flan.webp", "alt": "Flantástico — flan de dulce de leche casero con nata montada", "caption": "Flantástico — flan de dulce de leche con nata montada, el final feliz", "main": false }
+    { "src": "img/g-bagel.webp", "alt": "Bagel de ARAU servido en tabla de madera", "caption": "El bagel de la casa", "main": true },
+    { "src": "img/g-latteart.webp", "alt": "Flat white con arte latte en taza de cerámica verde", "caption": "Flat white · café de especialidad", "main": false },
+    { "src": "img/g-smashavo.webp", "alt": "Tostada de palta con huevo pochado, vista de arriba", "caption": "Smashed avo con huevo pochado", "main": false },
+    { "src": "img/g-pancakes.webp", "alt": "Pancakes con frutos rojos mientras cae el sirope", "caption": "Pancakes con sirope", "main": false },
+    { "src": "img/g-mesa.webp", "alt": "Mesa compartida de ARAU con varios platos y café", "caption": "La mesa compartida", "main": false },
+    { "src": "img/g-frenchtoast.webp", "alt": "French toast con frutos rojos y crema", "caption": "French toast, frutos rojos y crema", "main": false }
   ]
 }

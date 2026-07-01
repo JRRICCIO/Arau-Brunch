@@ -1,10 +1,11 @@
 {
   "overline": "Sabors de la casa",
   "items": [
-    { "src": "img/big-arau.webp", "alt": "The Big ARAU — brunch complet amb ous, xoriço, rösti i mongetes", "caption": "The Big ARAU — la bèstia: xoriço, cansalada, hash brown, mongetes i dos ous", "main": true },
-    { "src": "img/eggs-benedict.webp", "alt": "Eggs Benedict amb salsa holandesa i moniato rostit", "caption": "Benny & the eggs — ous escumats, holandesa cítrica i moniato rostit", "main": false },
-    { "src": "img/cafe.webp", "alt": "Flat white d'especialitat — cafè Congo d'origen", "caption": "Flat white d'especialitat — gra Congo d'origen, torrat per al flat white", "main": false },
-    { "src": "img/spread.webp", "alt": "Taula compartida amb torrada d'alvocat, eggs benedict i cafès d'especialitat", "caption": "La taula compartida — torrada d'alvocat, benedictins i cafè per a tothom", "main": false },
-    { "src": "img/flan.webp", "alt": "Flantástico — flam de dulce de leche casolà amb nata muntada", "caption": "Flantástico — flam de dulce de leche amb nata muntada, el final feliç", "main": false }
+    { "src": "img/g-bagel.webp", "alt": "Bagel d'ARAU servit en una taula de fusta", "caption": "El bagel de la casa", "main": true },
+    { "src": "img/g-latteart.webp", "alt": "Flat white amb art latte en una tassa de ceràmica verda", "caption": "Flat white · cafè d'especialitat", "main": false },
+    { "src": "img/g-smashavo.webp", "alt": "Torrada d'alvocat aixafat amb ou poché, vista de dalt", "caption": "Alvocat aixafat amb ou poché", "main": false },
+    { "src": "img/g-pancakes.webp", "alt": "Pancakes amb fruits vermells mentre cau el sirope", "caption": "Pancakes amb sirope", "main": false },
+    { "src": "img/g-mesa.webp", "alt": "Taula compartida d'ARAU amb diversos plats i cafè", "caption": "La taula compartida", "main": false },
+    { "src": "img/g-frenchtoast.webp", "alt": "French toast amb fruits vermells i nata", "caption": "French toast, fruits vermells i nata", "main": false }
   ]
 }

@@ -1,10 +1,11 @@
 {
   "overline": "House flavours",
   "items": [
-    { "src": "img/big-arau.webp", "alt": "The Big ARAU — a full brunch with eggs, chorizo, hash brown and beans", "caption": "The Big ARAU — the beast: chorizo, bacon, hash brown, beans and two eggs", "main": true },
-    { "src": "img/eggs-benedict.webp", "alt": "Eggs Benedict with hollandaise and roasted sweet potato", "caption": "Benny & the eggs — poached eggs, citrus hollandaise and roasted sweet potato", "main": false },
-    { "src": "img/cafe.webp", "alt": "Specialty flat white — single-origin Congo coffee", "caption": "Specialty flat white — single-origin Congo beans, roasted for the flat white", "main": false },
-    { "src": "img/spread.webp", "alt": "A shared table with avocado toast, eggs benedict and specialty coffees", "caption": "The shared table — avocado toast, benedicts and coffee for everyone", "main": false },
-    { "src": "img/flan.webp", "alt": "Flantástico — homemade dulce de leche flan with whipped cream", "caption": "Flantástico — dulce de leche flan with whipped cream, the happy ending", "main": false }
+    { "src": "img/g-bagel.webp", "alt": "ARAU bagel served on a wooden board", "caption": "The house bagel", "main": true },
+    { "src": "img/g-latteart.webp", "alt": "Flat white with latte art in a green ceramic cup", "caption": "Flat white · specialty coffee", "main": false },
+    { "src": "img/g-smashavo.webp", "alt": "Smashed avocado toast with a poached egg, top view", "caption": "Smashed avo with poached egg", "main": false },
+    { "src": "img/g-pancakes.webp", "alt": "Pancakes with berries as the syrup is poured", "caption": "Pancakes with syrup", "main": false },
+    { "src": "img/g-mesa.webp", "alt": "ARAU shared table with several dishes and coffee", "caption": "The shared table", "main": false },
+    { "src": "img/g-frenchtoast.webp", "alt": "French toast with berries and cream", "caption": "French toast, berries & cream", "main": false }
   ]
 }

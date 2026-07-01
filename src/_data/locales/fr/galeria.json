@@ -1,10 +1,11 @@
 {
   "overline": "Les saveurs de la maison",
   "items": [
-    { "src": "img/big-arau.webp", "alt": "The Big ARAU — brunch complet avec œufs, chorizo, rösti et haricots", "caption": "The Big ARAU — la bête : chorizo, lard, hash brown, haricots et deux œufs", "main": true },
-    { "src": "img/eggs-benedict.webp", "alt": "Eggs Benedict avec sauce hollandaise et patate douce rôtie", "caption": "Benny & the eggs — œufs pochés, hollandaise citronnée et patate douce rôtie", "main": false },
-    { "src": "img/cafe.webp", "alt": "Flat white de spécialité — café Congo d'origine", "caption": "Flat white de spécialité — grain Congo d'origine, torréfié pour le flat white", "main": false },
-    { "src": "img/spread.webp", "alt": "Table à partager avec toast à l'avocat, eggs benedict et cafés de spécialité", "caption": "La table à partager — toast à l'avocat, eggs benedict et café pour toute la tablée", "main": false },
-    { "src": "img/flan.webp", "alt": "Flantástico — flan au dulce de leche maison avec crème fouettée", "caption": "Flantástico — flan au dulce de leche et crème fouettée, la fin heureuse", "main": false }
+    { "src": "img/g-bagel.webp", "alt": "Bagel d'ARAU servi sur une planche en bois", "caption": "Le bagel maison", "main": true },
+    { "src": "img/g-latteart.webp", "alt": "Flat white avec latte art dans une tasse en céramique verte", "caption": "Flat white · café de spécialité", "main": false },
+    { "src": "img/g-smashavo.webp", "alt": "Toast à l'avocat écrasé avec œuf poché, vue de dessus", "caption": "Avocat écrasé et œuf poché", "main": false },
+    { "src": "img/g-pancakes.webp", "alt": "Pancakes aux fruits rouges pendant qu'on verse le sirop", "caption": "Pancakes au sirop", "main": false },
+    { "src": "img/g-mesa.webp", "alt": "Table partagée d'ARAU avec plusieurs plats et café", "caption": "La table partagée", "main": false },
+    { "src": "img/g-frenchtoast.webp", "alt": "French toast aux fruits rouges et crème", "caption": "French toast, fruits rouges et crème", "main": false }
   ]
 }
