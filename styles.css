@@ -452,7 +452,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(1rem, 2.2vw, 1.4rem);
 }
-.dishes .dish__photo { height: 220px; }
+.dishes .dish__photo { height: 290px; }
 .dish {
   display: flex; flex-direction: column;
   gap: 1rem;
