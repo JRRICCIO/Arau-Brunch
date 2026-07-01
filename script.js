@@ -232,9 +232,9 @@
         var d = document.getElementById('rf-fecha');
         if (d) { try { d.min = new Date().toISOString().slice(0, 10); } catch (_) {} }
         if (parseInt(personas, 10) <= 4) {
-          setHint('¡Reserva confirmada! Te esperamos el ' + fechaTxt + ' a las ' + hora + '. Cualquier cambio, escribinos por WhatsApp.', 'is-ok');
+          setHint('¡Reserva confirmada! Te esperamos el ' + fechaTxt + ' a las ' + hora + '. Te enviamos los detalles por mail.', 'is-ok');
         } else {
-          setHint('¡Recibimos tu solicitud para ' + personas + ' personas! Al ser un grupo grande, te confirmamos la disponibilidad por mail o WhatsApp en el día.', 'is-ok');
+          setHint('¡Recibimos tu solicitud para ' + personas + ' personas! Al ser un grupo grande, te confirmamos la disponibilidad por mail en el día.', 'is-ok');
         }
       }).catch(function () {
         window.location.href = mailto;

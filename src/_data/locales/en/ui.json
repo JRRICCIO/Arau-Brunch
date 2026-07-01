@@ -28,7 +28,7 @@
     "instagramLabel": "ARAU on Instagram",
     "tiktokLabel": "ARAU on TikTok",
     "footerNavLabel": "Footer links",
-    "waFloatLabel": "Book via WhatsApp",
+    "waFloatLabel": "Book a table",
     "ctaBarWa": "Message us on WhatsApp",
     "lightboxLabel": "Photo gallery",
     "lightboxClose": "Close gallery",
@@ -187,7 +187,7 @@
   "reservar": {
     "eyebrow": "Bookings",
     "title": "Join the <span class=\"ital\">table</span>",
-    "lead": "Tell us when and how many. We'll confirm by email or WhatsApp the same day. For groups of more than 8, get in touch with us directly.",
+    "lead": "Tell us when and how many. We'll confirm by email the same day. For groups of more than 8, get in touch with us directly.",
     "waButton": "Book via WhatsApp"
   },
   "form": {
@@ -204,7 +204,7 @@
     "notasLabel": "Allergies or comments <span class=\"field__opt\">(optional)</span>",
     "notasPlaceholder": "Gluten-free, table by the window…",
     "submit": "Request booking",
-    "hint": "Up to 4 guests, your booking is confirmed instantly. For larger groups, we'll confirm by email or WhatsApp the same day."
+    "hint": "Up to 4 guests, your booking is confirmed instantly. For larger groups, we'll confirm by email the same day."
   },
   "inscripcion": {
     "cta": "Sign up",

@@ -227,11 +227,6 @@ pageKey: "home"
           <span class="stat__label">{{ ui.stats.reviews.label }}</span>
         </div>
       </div>
-
-      <div class="container heart-close reveal">
-        <img class="heart-close__img" src="/img/manos-corazon.webp" alt="{{ ui.historia.heartImgAlt }}" width="240" height="100" loading="lazy" decoding="async" />
-        <p class="heart-close__line">{{ ui.historia.heartLine }}</p>
-      </div>
     </section>
 
     <!-- ===================== GALERÍA (carrusel) ===================== -->
@@ -461,10 +456,6 @@ pageKey: "home"
           <p class="reservar__lead">
             {{ ui.reservar.lead }}
           </p>
-          <a class="reservar__wa" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
-            {{ ui.reservar.waButton }}
-          </a>
         </div>
 
         <form class="reserva-form reveal" id="reserva-form" name="reserva" method="POST"
@@ -556,17 +547,14 @@ pageKey: "home"
     </div>
   </footer>
 
-  <!-- Botón WhatsApp flotante -->
-  <a class="wa-float" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="{{ ui.a11y.waFloatLabel }}">
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
+  <!-- Botón Reservar flotante (lleva al formulario) -->
+  <a class="wa-float" href="#reservar" aria-label="{{ ui.a11y.waFloatLabel }}">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M7 2.5v3M17 2.5v3M3.5 9h17M5.5 4.5h13A1.5 1.5 0 0 1 20 6v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19V6a1.5 1.5 0 0 1 1.5-1.5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <span class="wa-float__label">{{ ui.waFloat.label }}</span>
   </a>
 
   <!-- Barra de acción fija (móvil) -->
   <div class="cta-bar" id="cta-bar" aria-hidden="true">
-    <a class="cta-bar__btn cta-bar__btn--wa" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="{{ ui.a11y.ctaBarWa }}">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
-    </a>
     <a class="cta-bar__btn cta-bar__btn--primary" href="#reservar">{{ ui.ctaBar.reservarMesa }}</a>
   </div>
 

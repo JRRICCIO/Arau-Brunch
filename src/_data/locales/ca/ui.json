@@ -28,7 +28,7 @@
     "instagramLabel": "ARAU a Instagram",
     "tiktokLabel": "ARAU a TikTok",
     "footerNavLabel": "Enllaços del peu",
-    "waFloatLabel": "Reservar per WhatsApp",
+    "waFloatLabel": "Reservar taula",
     "ctaBarWa": "Escriure per WhatsApp",
     "lightboxLabel": "Galeria de fotos",
     "lightboxClose": "Tancar galeria",
@@ -187,7 +187,7 @@
   "reservar": {
     "eyebrow": "Reserves",
     "title": "Suma't a la <span class=\"ital\">taula</span>",
-    "lead": "Explica'ns quan i quants sou. T'ho confirmem per correu o WhatsApp el mateix dia. Per a grups de més de 8 persones, escriu-nos directament.",
+    "lead": "Explica'ns quan i quants sou. T'ho confirmem per correu el mateix dia. Per a grups de més de 8 persones, escriu-nos directament.",
     "waButton": "Reservar per WhatsApp"
   },
   "form": {
@@ -204,7 +204,7 @@
     "notasLabel": "Al·lèrgies o comentaris <span class=\"field__opt\">(opcional)</span>",
     "notasPlaceholder": "Sense gluten, taula al costat de la finestra…",
     "submit": "Sol·licitar reserva",
-    "hint": "Fins a 4 persones, la reserva es confirma a l'instant. Per a grups més grans, t'ho confirmem per correu o WhatsApp el mateix dia."
+    "hint": "Fins a 4 persones, la reserva es confirma a l'instant. Per a grups més grans, t'ho confirmem per correu el mateix dia."
   },
   "inscripcion": {
     "cta": "Inscriure'm",

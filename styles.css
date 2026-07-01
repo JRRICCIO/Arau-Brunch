@@ -707,6 +707,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
     border-bottom: 1px solid rgba(51, 51, 51, .1);
   }
   .nav.is-open .nav__list a::after { display: none; }
+  /* El desplegable móvil tiene fondo crema: forzar texto oscuro aunque el header esté en overlay */
+  .site-header--overlay:not(.scrolled) .nav.is-open .nav__list a,
+  .site-header--overlay:not(.scrolled) .nav.is-open .nav__list a[aria-current="true"] { color: var(--ink); }
 
   .historia__grid,
   .cafe__grid,
@@ -894,7 +897,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   bottom: 1.6rem; right: 1.6rem;
   z-index: 90;
   display: inline-flex; align-items: center; gap: .5rem;
-  background: #25D366;
+  background: var(--terra);
   color: #fff;
   padding: .85rem 1.3rem .85rem 1rem;
   border-radius: 100px;
@@ -905,7 +908,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .wa-float:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 36px -8px rgba(37, 211, 102, .75);
+  box-shadow: 0 14px 36px -8px rgba(175, 69, 46, .7);
   color: #fff;
 }
 

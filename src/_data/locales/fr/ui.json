@@ -28,7 +28,7 @@
     "instagramLabel": "ARAU sur Instagram",
     "tiktokLabel": "ARAU sur TikTok",
     "footerNavLabel": "Liens du pied de page",
-    "waFloatLabel": "Réserver par WhatsApp",
+    "waFloatLabel": "Réserver une table",
     "ctaBarWa": "Écrire sur WhatsApp",
     "lightboxLabel": "Galerie photos",
     "lightboxClose": "Fermer la galerie",
@@ -187,7 +187,7 @@
   "reservar": {
     "eyebrow": "Réservations",
     "title": "Rejoins la <span class=\"ital\">table</span>",
-    "lead": "Dis-nous quand et combien vous êtes. On te confirme par mail ou WhatsApp dans la journée. Pour les groupes de plus de 8 personnes, écris-nous directement.",
+    "lead": "Dis-nous quand et combien vous êtes. On te confirme par mail dans la journée. Pour les groupes de plus de 8 personnes, écris-nous directement.",
     "waButton": "Réserver par WhatsApp"
   },
   "form": {
@@ -204,7 +204,7 @@
     "notasLabel": "Allergies ou commentaires <span class=\"field__opt\">(facultatif)</span>",
     "notasPlaceholder": "Sans gluten, table près de la fenêtre…",
     "submit": "Demander une réservation",
-    "hint": "Jusqu'à 4 personnes, la réservation est confirmée immédiatement. Pour les groupes plus nombreux, on te confirme par mail ou WhatsApp dans la journée."
+    "hint": "Jusqu'à 4 personnes, la réservation est confirmée immédiatement. Pour les groupes plus nombreux, on te confirme par mail dans la journée."
   },
   "inscripcion": {
     "cta": "Je m'inscris",
