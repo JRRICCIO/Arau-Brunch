@@ -581,7 +581,7 @@ pageKey: "carta"
 
       <div class="footer__contact">
         <p>Carrer de Provença, 322 · Barcelona</p>
-        <p><a href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a> · <a href="mailto:{{ site.contacto.email }}">{{ site.contacto.email }}</a></p>
+        <p>{% if site.contacto.telefono %}<a href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a> · {% endif %}<a href="mailto:{{ site.contacto.email }}">{{ site.contacto.email }}</a></p>
         <p class="footer__social-row">
           <a href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">Instagram</a> ·
           <a href="https://tiktok.com/@araubrunch" target="_blank" rel="noopener noreferrer">TikTok</a>
@@ -595,42 +595,11 @@ pageKey: "carta"
     </div>
   </footer>
 
-  <!-- Botón WhatsApp flotante -->
-  <a class="wa-float" href="https://wa.me/{{ site.contacto.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="{{ ui.a11y.waFloatLabel }}">
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.7-1.2A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.5.6.7-2.4-.2-.3A8 8 0 0 1 12 4zm4.5 9.6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5 0a6.5 6.5 0 0 1-3.2-2.8c-.2-.3.2-.4.4-.8.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z" fill="currentColor"/></svg>
+  <!-- Botón Reservar flotante (lleva al formulario) -->
+  <a class="wa-float" href="index.html#reservar" aria-label="{{ ui.a11y.waFloatLabel }}">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M7 2.5v3M17 2.5v3M3.5 9h17M5.5 4.5h13A1.5 1.5 0 0 1 20 6v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19V6a1.5 1.5 0 0 1 1.5-1.5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <span class="wa-float__label">{{ ui.waFloat.label }}</span>
   </a>
-
-  <!-- ===================== PEDIDO EN LA MESA (QR: ?mesa=N) ===================== -->
-  <div class="order-bar" id="order-bar" data-wa="{{ site.contacto.whatsapp }}" hidden>
-    <button type="button" class="order-bar__call" id="order-call">
-      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3l-2 3h16l-2-3V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 19a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      {{ ui.order.call }}
-    </button>
-    <button type="button" class="order-bar__cart" id="order-open" aria-haspopup="dialog">
-      <span class="order-bar__count" id="order-count" aria-hidden="true">0</span>
-      <span>{{ ui.order.verPedido }}</span>
-      <span class="order-bar__total" id="order-total">€0,00</span>
-    </button>
-  </div>
-
-  <dialog class="order-dialog" id="order-dialog" aria-label="{{ ui.a11y.orderDialogLabel }}">
-    <div class="order-dialog__panel">
-      <header class="order-dialog__head">
-        <h2 class="order-dialog__title">{{ ui.order.title }} <span class="order-dialog__mesa" id="order-mesa"></span></h2>
-        <button type="button" class="order-dialog__close" id="order-close" aria-label="{{ ui.a11y.orderClose }}">
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-        </button>
-      </header>
-      <ul class="order-list" id="order-list"></ul>
-      <p class="order-empty" id="order-empty">{{ ui.order.empty | safe }}</p>
-      <footer class="order-dialog__foot">
-        <div class="order-dialog__total"><span>{{ ui.order.totalAprox }}</span><strong id="order-dtotal">€0,00</strong></div>
-        <a class="btn btn--terra btn--lg btn--block" id="order-send" href="#">{{ ui.order.send }}</a>
-        <p class="order-note">{{ ui.order.note }}</p>
-      </footer>
-    </div>
-  </dialog>
 
   <!-- Comportamientos compartidos: año del footer, header al scroll, nav móvil, reveal -->
   <script src="/script.js" defer></script>
@@ -682,95 +651,8 @@ pageKey: "carta"
     })();
   </script>
 
-  <!-- Pedido en la mesa: se activa con ?mesa=N o ?pedir (sin librerías) -->
-  <script>
-    (function () {
-      'use strict';
-      var bar = document.getElementById('order-bar');
-      if (!bar) return;
-      var params = new URLSearchParams(location.search);
-      var mesa = params.get('mesa');
-      if (mesa === null && !params.has('pedir')) return;
+  <!-- Pedido en la mesa por WhatsApp: función retirada -->
 
-      var wa = bar.getAttribute('data-wa');
-      var countEl = document.getElementById('order-count');
-      var totalEl = document.getElementById('order-total');
-      var dlg = document.getElementById('order-dialog');
-      var listEl = document.getElementById('order-list');
-      var emptyEl = document.getElementById('order-empty');
-      var dtotalEl = document.getElementById('order-dtotal');
-      var sendEl = document.getElementById('order-send');
-      var cart = {};
-
-      function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
-      function price(s) { return parseFloat(String(s).replace(/[^0-9,.-]/g, '').replace(',', '.')) || 0; }
-      function fmt(n) { return '€' + n.toFixed(2).replace('.', ','); }
-      function totals() { var c = 0, t = 0; Object.keys(cart).forEach(function (k) { c += cart[k].qty; t += cart[k].qty * cart[k].precio; }); return { count: c, total: t }; }
-
-      function render() {
-        var tt = totals();
-        countEl.textContent = tt.count;
-        totalEl.textContent = fmt(tt.total);
-        dtotalEl.textContent = fmt(tt.total);
-        bar.classList.toggle('has-items', tt.count > 0);
-        var keys = Object.keys(cart);
-        emptyEl.hidden = keys.length > 0;
-        listEl.innerHTML = keys.map(function (k) {
-          var it = cart[k];
-          return '<li class="order-line"><span class="order-line__name">' + esc(it.nombre) + '</span>' +
-            '<span class="order-line__qty"><button type="button" class="order-qty" data-k="' + esc(k) + '" data-d="-1" aria-label="Quitar uno de ' + esc(it.nombre) + '">−</button>' +
-            '<b>' + it.qty + '</b>' +
-            '<button type="button" class="order-qty" data-k="' + esc(k) + '" data-d="1" aria-label="Agregar uno de ' + esc(it.nombre) + '">+</button></span>' +
-            '<span class="order-line__price">' + fmt(it.qty * it.precio) + '</span></li>';
-        }).join('');
-      }
-      function change(nombre, precio, d) {
-        if (!cart[nombre]) cart[nombre] = { nombre: nombre, precio: precio, qty: 0 };
-        cart[nombre].qty += d;
-        if (cart[nombre].qty <= 0) delete cart[nombre];
-        render();
-      }
-
-      var sel = '.menu-item[data-precio]:not([data-agotado]), .menu-coffee li[data-precio]:not([data-agotado]), .menu-drinks li[data-precio]:not([data-agotado])';
-      Array.prototype.forEach.call(document.querySelectorAll(sel), function (li) {
-        var nombre = li.getAttribute('data-nombre');
-        var precio = price(li.getAttribute('data-precio'));
-        var b = document.createElement('button');
-        b.type = 'button'; b.className = 'add-btn'; b.setAttribute('aria-label', 'Agregar ' + nombre);
-        b.innerHTML = '<span aria-hidden="true">+</span> Agregar';
-        b.addEventListener('click', function () { change(nombre, precio, 1); b.classList.add('is-added'); setTimeout(function () { b.classList.remove('is-added'); }, 550); });
-        li.appendChild(b);
-      });
-
-      if (mesa) document.getElementById('order-mesa').textContent = '· Mesa ' + mesa;
-      bar.hidden = false;
-      document.body.classList.add('has-order-bar');
-
-      document.getElementById('order-open').addEventListener('click', function () { if (dlg.showModal) dlg.showModal(); });
-      document.getElementById('order-close').addEventListener('click', function () { dlg.close(); });
-      dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
-      listEl.addEventListener('click', function (e) {
-        var q = e.target.closest('.order-qty'); if (!q) return;
-        var k = q.getAttribute('data-k');
-        if (cart[k]) change(k, cart[k].precio, parseInt(q.getAttribute('data-d'), 10));
-      });
-
-      sendEl.addEventListener('click', function (e) {
-        e.preventDefault();
-        var tt = totals();
-        if (tt.count === 0) { if (dlg.showModal && !dlg.open) dlg.showModal(); return; }
-        var lines = Object.keys(cart).map(function (k) { return '• ' + cart[k].qty + 'x ' + cart[k].nombre; });
-        var msg = '¡Hola ARAU! ' + (mesa ? ('Mesa ' + mesa + '. ') : '') + 'Quiero pedir:\n' + lines.join('\n') + '\n\nTotal aprox: ' + fmt(tt.total) + '\n¡Gracias!';
-        window.open('https://wa.me/' + wa + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
-      });
-      document.getElementById('order-call').addEventListener('click', function () {
-        var msg = (mesa ? ('Mesa ' + mesa + ': ') : '') + '¿Pueden acercarse a la mesa, por favor? 🙋';
-        window.open('https://wa.me/' + wa + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
-      });
-
-      render();
-    })();
-  </script>
   {% include "jmrr-credit.njk" %}
 </body>
 </html>

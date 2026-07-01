@@ -418,7 +418,7 @@ pageKey: "home"
             <div class="info__row">
               <dt>{{ ui.visitanos.contactoLabel }}</dt>
               <dd>
-                <a class="info__link" href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a><br />
+                {% if site.contacto.telefono %}<a class="info__link" href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a><br />{% endif %}
                 <a class="info__link" href="mailto:{{ site.contacto.email }}">{{ site.contacto.email }}</a>
               </dd>
             </div>
@@ -533,7 +533,7 @@ pageKey: "home"
 
       <div class="footer__contact">
         <p>{{ site.contacto.direccion }} · Barcelona</p>
-        <p><a href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a> · <a href="mailto:{{ site.contacto.email }}">{{ site.contacto.email }}</a></p>
+        <p>{% if site.contacto.telefono %}<a href="tel:{{ site.contacto.telefonoLink }}">{{ site.contacto.telefono }}</a> · {% endif %}<a href="mailto:{{ site.contacto.email }}">{{ site.contacto.email }}</a></p>
         <p class="footer__social-row">
           <a href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">Instagram</a> ·
           <a href="https://tiktok.com/@araubrunch" target="_blank" rel="noopener noreferrer">TikTok</a>

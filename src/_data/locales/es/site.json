@@ -15,10 +15,10 @@
     { "dia": "Sábado y domingo", "apertura": "9:30", "cierre": "17:00", "cerrado": false }
   ],
   "contacto": {
-    "telefono": "+34 612 123 123",
-    "telefonoLink": "+34612123123",
-    "whatsapp": "34612123123",
-    "email": "hola@araubrunch.es",
+    "telefono": "",
+    "telefonoLink": "",
+    "whatsapp": "",
+    "email": "araubrunch@gmail.com",
     "instagram": "araubrunch",
     "tiktok": "araubrunch",
     "direccion": "Carrer de Provença, 322",

@@ -214,7 +214,7 @@
         (notas ? 'Notas: ' + notas + '\n' : '') +
         '\n¡Gracias!';
 
-      var mailto = 'mailto:hola@araubrunch.es'
+      var mailto = 'mailto:araubrunch@gmail.com'
         + '?subject=' + encodeURIComponent(asunto)
         + '&body=' + encodeURIComponent(cuerpo);
 
@@ -238,7 +238,7 @@
         }
       }).catch(function () {
         window.location.href = mailto;
-        setHint('Abrimos tu correo con la solicitud. Si no se abre, escribinos a hola@araubrunch.es.', 'is-ok');
+        setHint('Abrimos tu correo con la solicitud. Si no se abre, escribinos a araubrunch@gmail.com.', 'is-ok');
       });
     });
   }
