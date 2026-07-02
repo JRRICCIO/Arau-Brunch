@@ -641,6 +641,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .reserva-form__hint.is-error { color: var(--terra-deep); }
 .reserva-form__hint.is-ok { color: var(--olive-deep); }
 
+.reserva-embed {
+  background: var(--cream-card);
+  border: 1px solid rgba(51, 51, 51, .1);
+  border-radius: var(--radius);
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+  box-shadow: 0 30px 60px -42px rgba(51, 51, 51, .6);
+}
+.reserva-embed iframe { display: block; width: 100%; border: 0; min-height: 420px; }
+
 /* ----------------------------- Footer ----------------------------- */
 .site-footer {
   background: var(--espresso);

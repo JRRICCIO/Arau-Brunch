@@ -458,54 +458,14 @@ pageKey: "home"
           </p>
         </div>
 
-        <form class="reserva-form reveal" id="reserva-form" name="reserva" method="POST"
-              data-netlify="true" netlify-honeypot="bot-field" action="/?reserva=ok#reservar" novalidate>
-          <input type="hidden" name="form-name" value="reserva" />
-          <p class="hp-field" hidden aria-hidden="true">
-            <label>{{ ui.form.honeypotLabel }} <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
-          </p>
-          <div class="field">
-            <label for="rf-nombre">{{ ui.form.nombreLabel }}</label>
-            <input id="rf-nombre" name="nombre" type="text" autocomplete="name" placeholder="{{ ui.form.nombrePlaceholder }}" required />
-          </div>
-
-          <div class="field-row">
-            <div class="field">
-              <label for="rf-fecha">{{ ui.form.fechaLabel }}</label>
-              <input id="rf-fecha" name="fecha" type="date" required />
-            </div>
-            <div class="field">
-              <label for="rf-hora">{{ ui.form.horaLabel }}</label>
-              <input id="rf-hora" name="hora" type="time" required />
-            </div>
-          </div>
-
-          <div class="field-row">
-            <div class="field">
-              <label for="rf-personas">{{ ui.form.personasLabel }}</label>
-              <input id="rf-personas" name="personas" type="number" inputmode="numeric" min="1" max="8" step="1" value="2" required />
-            </div>
-            <div class="field">
-              <label for="rf-tel">{{ ui.form.telefonoLabel }}</label>
-              <input id="rf-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="{{ ui.form.telefonoPlaceholder }}" required />
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="rf-email">{{ ui.form.emailLabel }}</label>
-            <input id="rf-email" name="email" type="email" autocomplete="email" spellcheck="false" placeholder="{{ ui.form.emailPlaceholder }}" required />
-          </div>
-
-          <div class="field">
-            <label for="rf-notas">{{ ui.form.notasLabel | safe }}</label>
-            <textarea id="rf-notas" name="notas" rows="3" placeholder="{{ ui.form.notasPlaceholder }}"></textarea>
-          </div>
-
-          <button class="btn btn--terra btn--lg btn--block" type="submit">{{ ui.form.submit }}</button>
-          <p class="reserva-form__hint" id="rf-hint" aria-live="polite">
-            {{ ui.form.hint }}
-          </p>
-        </form>
+        <div class="reserva-embed reveal">
+          <iframe data-tally-src="https://tally.so/embed/mJG9L7?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                  loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"
+                  title="Formulario de reservas de ARAU"></iframe>
+        </div>
+        <script>
+        (function(){var d=document,w="https://tally.so/widgets/embed.js",v=function(){if("undefined"!=typeof Tally){Tally.loadEmbeds();}else{d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc;});}};if("undefined"!=typeof Tally){v();}else if(null==d.querySelector('script[src="'+w+'"]')){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}})();
+        </script>
       </div>
     </section>
   </main>
