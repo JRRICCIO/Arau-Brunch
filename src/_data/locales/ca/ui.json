@@ -185,6 +185,7 @@
     "openInMaps": "Obrir a Google Maps ↗"
   },
   "reservar": {
+    "formId": "mJG9L7",
     "eyebrow": "Reserves",
     "title": "Suma't a la <span class=\"ital\">taula</span>",
     "lead": "Explica'ns quan i quants sou. T'ho confirmem per correu el mateix dia. Per a grups de més de 8 persones, escriu-nos directament.",

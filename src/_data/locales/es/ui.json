@@ -185,6 +185,7 @@
     "openInMaps": "Abrir en Google Maps ↗"
   },
   "reservar": {
+    "formId": "mJG9L7",
     "eyebrow": "Reservas",
     "title": "Sumate a la <span class=\"ital\">mesa</span>",
     "lead": "Contanos cuándo y cuántos son. Te confirmamos por mail en el día. Para grupos de más de 8 personas, escribinos directo.",
