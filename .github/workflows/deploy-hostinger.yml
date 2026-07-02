@@ -1,0 +1,53 @@
+name: Deploy a Hostinger
+
+# Compila el sitio (Eleventy) y sube la carpeta _site a Hostinger por FTP.
+# Reemplaza al auto-deploy de Netlify: cuando Agustina guarda un cambio en el
+# panel (Decap), se hace un commit en main y este workflow republica en Hostinger.
+#
+# ANTES de usarlo, cargar en el repo de GitHub:
+#   Settings -> Secrets and variables -> Actions -> New repository secret
+#     FTP_SERVER    -> host FTP de Hostinger (ej: ftp.tudominio.com o la IP que da hPanel)
+#     FTP_USERNAME  -> usuario FTP
+#     FTP_PASSWORD  -> contraseña FTP
+#
+# Recomendado: crear en Hostinger una cuenta FTP dedicada cuyo directorio raíz
+# sea el public_html del dominio de ARAU. Así "server-dir: ./" apunta a la web.
+# Si se usa la cuenta FTP principal, cambiar server-dir a /public_html/ (dominio
+# principal) o /domains/TUDOMINIO/public_html/ (dominio adicional).
+
+on:
+  workflow_dispatch: {}
+  # push:
+  #   branches: [ main ]   # <- descomentar cuando los secrets FTP estén cargados y probados
+
+concurrency:
+  group: deploy-hostinger
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Traer el código
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Compilar el sitio (Eleventy)
+        run: npm run build
+
+      - name: Subir _site a Hostinger por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./_site/
+          server-dir: ./
