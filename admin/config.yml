@@ -20,7 +20,7 @@ commit_messages:
 
 # Logo y enlace al sitio en el panel (DecapBridge)
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
-site_url: https://arau-brunch.netlify.app
+site_url: https://araubrunch.es
 
 # Carpeta donde se suben las imágenes (en el repo) y ruta pública desde el sitio.
 media_folder: "img"
@@ -197,7 +197,7 @@ collections:
         label: "Configuración · Español"
         file: "src/_data/locales/es/site.json"
         fields: &siteFields
-          - { name: "baseUrl", label: "URL base", widget: "hidden", default: "https://arau-brunch.netlify.app" }
+          - { name: "baseUrl", label: "URL base", widget: "hidden", default: "https://araubrunch.es" }
           - name: "hero"
             label: "Portada (hero)"
             widget: "object"
