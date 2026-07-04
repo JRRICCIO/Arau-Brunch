@@ -165,7 +165,8 @@
     }
   },
   "loyalty": {
-    "text": "<strong>Your 6th brunch, on us.</strong> Earn points with every visit in our loyalty app and the sixth one is on the house."
+    "text": "<strong>Your 6th brunch, on us.</strong> Earn points with every visit in our loyalty app and the sixth one is on the house.",
+    "cta": "Collect your points"
   },
   "experiencia": {
     "eyebrow": "Brunch lovers",

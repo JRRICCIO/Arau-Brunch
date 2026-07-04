@@ -537,6 +537,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .loyalty__text { font-size: 1.02rem; }
 .loyalty__text strong { color: #fff; font-weight: 600; }
+.loyalty__cta {
+  flex: 0 0 auto; margin-left: auto;
+  display: inline-flex; align-items: center;
+  padding: .7rem 1.35rem;
+  background: var(--cream-100); color: var(--terra-deep);
+  font-weight: 600; border-radius: 999px; white-space: nowrap;
+  transition: transform .2s var(--ease), background-color .2s var(--ease);
+}
+.loyalty__cta:hover { background: #fff; transform: translateY(-1px); }
 
 /* ----------------------------- Experiencia ----------------------------- */
 .experiencia { background: var(--cream-200); }
@@ -742,6 +751,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .footer__grid { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; }
   .loyalty { flex-direction: column; text-align: center; }
+  .loyalty__cta { margin-left: 0; }
 }
 
 /* ----------------------------- Galería ----------------------------- */

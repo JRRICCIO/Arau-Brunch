@@ -165,7 +165,8 @@
     }
   },
   "loyalty": {
-    "text": "<strong>Tu 6º brunch, gratis.</strong> Sumá puntos con cada visita en nuestra app de fidelidad y el sexto corre por cuenta de la casa."
+    "text": "<strong>Tu 6º brunch, gratis.</strong> Sumá puntos con cada visita en nuestra app de fidelidad y el sexto corre por cuenta de la casa.",
+    "cta": "Sumá tus puntos"
   },
   "experiencia": {
     "eyebrow": "Brunch lovers",

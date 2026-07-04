@@ -165,7 +165,8 @@
     }
   },
   "loyalty": {
-    "text": "<strong>El teu 6è brunch, gratis.</strong> Suma punts amb cada visita a la nostra app de fidelitat i el sisè va a càrrec de la casa."
+    "text": "<strong>El teu 6è brunch, gratis.</strong> Suma punts amb cada visita a la nostra app de fidelitat i el sisè va a càrrec de la casa.",
+    "cta": "Suma els teus punts"
   },
   "experiencia": {
     "eyebrow": "Brunch lovers",

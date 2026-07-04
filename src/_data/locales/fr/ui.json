@@ -165,7 +165,8 @@
     }
   },
   "loyalty": {
-    "text": "<strong>Ton 6ᵉ brunch, offert.</strong> Cumule des points à chaque visite avec notre appli de fidélité, et le sixième est pour la maison."
+    "text": "<strong>Ton 6ᵉ brunch, offert.</strong> Cumule des points à chaque visite avec notre appli de fidélité, et le sixième est pour la maison.",
+    "cta": "Cumule tes points"
   },
   "experiencia": {
     "eyebrow": "Brunch lovers",
