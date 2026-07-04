@@ -6,11 +6,6 @@
           <h2 class="menu-section__title" id="{{ section | anchor }}-title">{{ section.label }}</h2>
           {%- if section.subtitle %}<p class="menu-section__sub">{{ section.subtitle }}</p>{%- endif %}
         </div>
-        {%- if section.photo %}
-        <figure class="menu-section__photo reveal">
-          <img src="{{ section.photo | asset }}" alt="{{ section.photoAlt }}" width="1200" height="640" loading="lazy" />
-        </figure>
-        {%- endif %}
         {%- if section.compact %}
         {%- set base = 'menu-drinks' if section.id == 'bebidas' else 'menu-coffee' %}
         <ul class="{{ base }}">
