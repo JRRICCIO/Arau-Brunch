@@ -198,7 +198,7 @@ pageKey: "home"
             {{ ui.historia.title | safe }}
           </h2>
           <p>
-            {{ ui.historia.p1 | replace("[[ARAU]]", arauWord) | safe }}
+            {{ ui.historia.p1 | replace("[[ARAU]]", "ARAU") | safe }}
           </p>
           <p>
             {{ ui.historia.p2 | safe }}
@@ -207,9 +207,9 @@ pageKey: "home"
             {{ ui.historia.p3 }}
           </p>
           <p>
-            {{ ui.historia.p4 | replace("[[ARAU]]", arauWord) | safe }}
+            {{ ui.historia.p4 | replace("[[ARAU]]", "ARAU") | safe }}
           </p>
-          <p class="historia__sign">{{ ui.historia.sign | replace("[[ARAU]]", arauWord) | safe }}</p>
+          <p class="historia__sign">{{ ui.historia.sign | replace("[[ARAU]]", "ARAU") | safe }}</p>
         </div>
       </div>
 
@@ -342,7 +342,6 @@ pageKey: "home"
           <ul class="cafe__chips">
             <li>{{ ui.cafe.chip1 }}</li>
             <li>{{ ui.cafe.chip2 }}</li>
-            <li>{{ ui.cafe.chip3 }}</li>
             <li>{{ ui.cafe.chip4 }}</li>
             <li>{{ ui.cafe.chip5 }}</li>
           </ul>
@@ -355,7 +354,7 @@ pageKey: "home"
       <div class="container">
         <div class="eventos__head reveal">
           <p class="section-eyebrow">{{ ui.eventos.eyebrow }}</p>
-          <h2 class="section-title" id="eventos-title">{{ ui.eventos.title | replace("[[ARAU]]", arauWord) | safe }}</h2>
+          <h2 class="section-title" id="eventos-title">{{ ui.eventos.title | replace("[[ARAU]]", "ARAU") | safe }}</h2>
           <p class="carta__sub">{{ ui.eventos.sub | safe }}</p>
         </div>
 
@@ -376,12 +375,12 @@ pageKey: "home"
         <div class="experiencia__head reveal">
           <p class="section-eyebrow">{{ ui.experiencia.eyebrow }}</p>
           <h2 class="section-title" id="exp-title">{{ ui.experiencia.title | safe }}</h2>
-          <p class="carta__sub">{{ ui.experiencia.sub | replace("[[ARAU]]", arauWord) | safe }}</p>
+          <p class="carta__sub">{{ ui.experiencia.sub | replace("[[ARAU]]", "ARAU") | safe }}</p>
         </div>
 
         <div class="reviews-summary reveal">
           <p class="reviews-summary__score">4,8 <span class="reviews-summary__stars" aria-hidden="true">★★★★★</span></p>
-          <p class="reviews-summary__text">{{ ui.experiencia.reviewsText | replace("[[ARAU]]", arauWord) | safe }}</p>
+          <p class="reviews-summary__text">{{ ui.experiencia.reviewsText | replace("[[ARAU]]", "ARAU") | safe }}</p>
           <a class="btn btn--terra btn--lg" href="https://www.google.com/maps/search/?api=1&amp;query=ARAU%20brunch%20Carrer%20de%20Proven%C3%A7a%20322%20Barcelona" target="_blank" rel="noopener noreferrer">
             {{ ui.experiencia.readReviews }}
             <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -502,7 +501,7 @@ pageKey: "home"
     </div>
 
     <div class="container footer__bottom">
-      <p>{{ ui.footer.copyright | replace("[[YEAR]]", buildYear) | replace("[[ARAU]]", arauWord) | safe }}</p>
+      <p>{{ ui.footer.copyright | replace("[[YEAR]]", buildYear) | replace("[[ARAU]]", "ARAU") | safe }}</p>
       <p class="footer__credit">{{ ui.footer.credit | safe }}</p>
     </div>
   </footer>

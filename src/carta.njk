@@ -590,7 +590,7 @@ pageKey: "carta"
     </div>
 
     <div class="container footer__bottom">
-      <p>{{ ui.footer.copyright | replace("[[YEAR]]", buildYear) | replace("[[ARAU]]", arauWord) | safe }}</p>
+      <p>{{ ui.footer.copyright | replace("[[YEAR]]", buildYear) | replace("[[ARAU]]", "ARAU") | safe }}</p>
       <p class="footer__credit">{{ ui.footer.credit | safe }}</p>
     </div>
   </footer>

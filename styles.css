@@ -136,6 +136,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .section-title--cream { color: var(--cream-100); }
 .section-title .ital { color: var(--terra); }
+#hist-title { font-size: clamp(1.7rem, 4vw, 2.6rem); }
 .section-title--cream .ital { color: var(--gold); }
 
 /* ----------------------------- Buttons ----------------------------- */

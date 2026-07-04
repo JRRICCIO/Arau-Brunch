@@ -1,14 +1,14 @@
 {
   "feature": {
-    "kicker": "Noche Argentina",
-    "titleStart": "Empanadas, Malbec y",
-    "titleAccent": "nostalgia",
-    "chip": "Una vez al mes · seguí la agenda",
-    "desc": "Empanadas tucumanas, locro y folklore en vivo. La fiesta nacional a nuestra manera, con música hasta tarde.",
-    "id": "noche-argentina",
+    "kicker": "Bingo Night",
+    "titleStart": "No es el bingo de tu",
+    "titleAccent": "abuela",
+    "chip": "Noche temática · seguí la agenda",
+    "desc": "Tres rondas con premios y el especial de la casa: sándwich de mila en pan de chipá.",
+    "id": "bingo-night",
     "inscripciones": true,
-    "photo": "img/spread.webp",
-    "photoAlt": "Mesa compartida de Noche Argentina con platos para el centro y café",
+    "photo": "img/benedict-mimosa.webp",
+    "photoAlt": "Mesa de brunch con mimosa en una Bingo Night",
     "strip": [
       { "src": "img/terrace.webp", "alt": "Terraza de ARAU con brunch y la fachada al fondo", "caption": "La terraza de ARAU al caer la tarde" },
       { "src": "img/big-arau.webp", "alt": "The Big ARAU, brunch completo", "caption": "The Big ARAU — para arrancar la noche con todo" },
@@ -17,21 +17,21 @@
   },
   "cards": [
     {
-      "kicker": "Bingo Night",
-      "title": "No es el bingo de tu abuela",
-      "chip": "Noche temática · seguí la agenda",
-      "desc": "Tres rondas con premios y el especial de la casa: sándwich de mila en pan de chipá.",
-      "id": "bingo-night",
+      "kicker": "Noche Argentina",
+      "title": "25 de mayo en Arau",
+      "chip": "Una vez al mes · seguí la agenda",
+      "desc": "Empanadas tucumanas, locro y folklore en vivo. La fiesta nacional a nuestra manera, con música hasta tarde.",
+      "id": "noche-argentina",
       "inscripciones": true,
-      "photo": "img/benedict-mimosa.webp",
-      "photoAlt": "Mesa de brunch con mimosa en una Bingo Night",
-      "caption": "Bingo Night — premios, mimosas y caos del bueno"
+      "photo": "img/spread.webp",
+      "photoAlt": "Mesa compartida de Noche Argentina con platos para el centro y café",
+      "caption": "Noche Argentina — empanadas, Malbec y folklore"
     },
     {
       "kicker": "Música en vivo & ñoquis",
       "title": "Los ñoquis del 29",
       "chip": "Los 29 de cada mes",
-      "desc": "Sesiones en vivo con ñoquis caseros del 29. Tradición argentina, ambiente de barrio.",
+      "desc": "Música en vivo y ñoquis caseros con diferentes salsas para elegir.",
       "id": "noquis-del-29",
       "inscripciones": true,
       "photo": "img/terrace-coffee.webp",

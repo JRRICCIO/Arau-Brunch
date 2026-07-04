@@ -1,10 +1,10 @@
 {
   "intro": {
     "eyebrow": "La carta",
-    "titleStart": "Comé como en",
-    "titleAccent": "ARAU",
+    "titleStart": "Nuestra",
+    "titleAccent": "carta",
     "subtitle": "Sabores argentinos, espíritu australiano y café de especialidad. Cocina con raíces, huevos en su punto y dulces caseros — la carta completa, de principio a fin.",
-    "dateline": "Carta de temporada · actualizada junio 2026",
+    "dateline": "",
     "disclaimer": "Los precios son orientativos y la carta puede variar según temporada y disponibilidad."
   },
   "sections": [
@@ -147,7 +147,7 @@
         },
         {
           "nombre": "Omelette",
-          "desc": "Omelette con champiñones salteados, queso Gouda, espinaca, y pan de masa madre",
+          "desc": "Omelette de tres huevos con champiñones salteados, queso Gouda, espinaca y pan de masa madre",
           "precio": "13,00",
           "etiquetas": [
             "vg"
@@ -158,7 +158,7 @@
         },
         {
           "nombre": "Bagel Salmón Gravlax",
-          "desc": "Con salmón gravlax casero, alcaparras, queso crema, cebollino, cebolla encurtida, tomates asados y rúcula salvaje. Acompañado de patatas fritas.",
+          "desc": "Con salmón gravlax casero, alcaparras, queso crema con cebollino, tomates asados, rúcula salvaje y cebolla encurtida. Acompañado de patatas fritas.",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true,
@@ -167,7 +167,7 @@
         },
         {
           "nombre": "Pastrami Lover NUEVO!!",
-          "desc": "Bagel con pastrami, pepinillos agridulces, rúcula, gouda y salsa de mostaza dijon, queso crema y miel. Acompañado de patatas fritas",
+          "desc": "Bagel con pastrami, pepinillos agridulces, rúcula, Gouda y nuestra salsa de mostaza de Dijon, queso crema y miel. Acompañado de patatas fritas",
           "precio": "15,50",
           "etiquetas": [],
           "disponible": true,
@@ -186,7 +186,7 @@
       "items": [
         {
           "nombre": "The tru mila",
-          "desc": "Milanesa de ternera con salsa de hongos trufada, queso Gouda fundido y un huevo frito por encima. <br />Acompañado de patatas fritas y mayonesa de chipotle. (Cambiar las patatas por boniatos o mix de verdes y tomates asados +1€)",
+          "desc": "Milanesa de ternera (opción veggie de berenjena 14,60€) con salsa de hongos trufada, queso Gouda fundido y un huevo frito por encima. <br />Acompañado de patatas fritas y mayonesa de chipotle. (Cambiar las patatas por boniatos o mix de verdes y tomates asados +1€)",
           "precio": "17,00",
           "etiquetas": [
             "casa"
@@ -197,34 +197,13 @@
         },
         {
           "nombre": "La Provocadora",
-          "desc": "Pan brioche, hamburguesa de 180gr de carne vacuna, queso provolone, panceta, cebolla caramelizada, tomate, lechuga y mayonesa de Chimichurri. (Extra huevo frito + 1,50€)<br />Acompañado de patatas fritas. (Cambiar por boniatos o mix verdes +1€)",
+          "desc": "Pan brioche, hamburguesa de 180gr de carne vacuna (opción veggie Heura 16€), queso provolone, panceta, cebolla caramelizada, tomate, lechuga y mayonesa de Chimichurri. (Extra huevo frito + 1,50€)<br />Acompañado de patatas fritas. (Cambiar por boniatos o mix verdes +1€)",
           "precio": "17,90",
           "etiquetas": [
             "casa"
           ],
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg",
-          "alergenos": "Gluten · Lácteos"
-        },
-        {
-          "nombre": "Tru Mila Veggie",
-          "desc": "Milanesa de berenjena con salsa de hongos trufada, queso Gouda fundido y un huevo frito por encima. <br />Acompañado de patatas fritas y mayonesa de chipotle. (Cambiar las patatas por boniatos o mix de verdes y tomates asados +1€)",
-          "precio": "14,60",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_mila_2_0397dab4ac.jpg",
-          "alergenos": "Huevo · Gluten · Lácteos"
-        },
-        {
-          "nombre": "La Provocadora Veggie",
-          "desc": "Pan brioche, hamburguesa vegetariana, queso provolone, setas salteadas, cebolla caramelizada, tomate, lechuga y mayonesa de Chimichurri. Extra huevo frito + 1,50€. Acompañado de patatas fritas (Cambio por boniatos o ensalada +1€)",
-          "precio": "16,00",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": true,
           "alergenos": "Gluten · Lácteos"
         },
         {
@@ -269,7 +248,7 @@
         },
         {
           "nombre": "Chipá (pan de queso GF)",
-          "desc": "Pan de queso hecho con harina de yuca y variedad de quesos. GF",
+          "desc": "Pan de queso casero hecho con harina de yuca y variedad de quesos. GF",
           "precio": "2,90",
           "etiquetas": [
             "vg",
@@ -299,16 +278,6 @@
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_2119_bbcd7fedf9.jpg",
           "alergenos": "Huevo · Lácteos"
-        },
-        {
-          "nombre": "Brownie húmedo",
-          "desc": "Brownie húmedo con dulce de leche y nata montada",
-          "precio": "5,50",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": true,
-          "alergenos": "Huevo · Gluten · Lácteos"
         }
       ]
     },
@@ -333,14 +302,14 @@
         },
         {
           "nombre": "Cortado",
-          "desc": "Un shot de café con leche <br />Leche vegetal +0,20€",
+          "desc": "Un shot de café con leche ",
           "precio": "1,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Macchiato",
-          "desc": "Un shot de café con espuma de leche <br />Espuma de leche vegetal +0,20€",
+          "desc": "Un shot de café con espuma de leche ",
           "precio": "1,90",
           "etiquetas": [],
           "disponible": true
@@ -354,49 +323,49 @@
         },
         {
           "nombre": "Magic",
-          "desc": "Doble ristretto con leche, más pequeño y más intenso que el flat white<br />Leche vegetal +0,20€",
+          "desc": "Doble ristretto con leche, más pequeño y más intenso que el flat white",
           "precio": "3,40",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Flat white",
-          "desc": "Doble espresso con leche<br />Leche vegetal +0,20€",
+          "desc": "Doble espresso con leche",
           "precio": "3,60",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Latte (café con leche)",
-          "desc": "Un shot de café con leche <br />Leche vegetal +0,20€",
+          "desc": "Un shot de café con leche ",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Cappuccino",
-          "desc": "Un shot de café con leche (decorado con cacao o canela)<br />Leche vegetal +0,20€",
+          "desc": "Un shot de café con leche (decorado con cacao o canela)",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Caramel latte",
-          "desc": "Un shot de café con leche y sirope de caramelo<br />Leche vegetal +0,20€",
+          "desc": "Un shot de café con leche y sirope de caramelo",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Vainilla latte",
-          "desc": "Un shot de café con leche y sirope de vainilla<br />Leche vegetal +0,20€",
+          "desc": "Un shot de café con leche y sirope de vainilla",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Mocha",
-          "desc": "Un shot de café con leche y cacao<br />Leche vegetal +0,20€",
+          "desc": "Un shot de café con leche y cacao",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
@@ -410,28 +379,28 @@
         },
         {
           "nombre": "Matcha latte",
-          "desc": "Polvo de té matcha con leche <br />Leche vegetal 0,20€",
+          "desc": "Polvo de té matcha con leche ",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Cúrcuma latte",
-          "desc": "Leche vegetal 0,20€",
+          "desc": "",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Chai latte",
-          "desc": "Polvo de té chai con leche<br />Leche vegetal 0,20€",
+          "desc": "Polvo de té chai con leche",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Dirty chai",
-          "desc": "Chai latte con un shot de café<br />Leche vegetal 0,20€",
+          "desc": "Chai latte con un shot de café",
           "precio": "4,90",
           "etiquetas": [],
           "disponible": true
@@ -452,7 +421,7 @@
         },
         {
           "nombre": "Dulce de leche latte",
-          "desc": "Un shot de café con leche y dulce de leche<br />Leche vegetal +0,20€",
+          "desc": "Un shot de café con leche y dulce de leche",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
@@ -508,14 +477,14 @@
         },
         {
           "nombre": "Iced caramel o vainilla latte",
-          "desc": "Un shot de café, sirope de caramelo o vainilla, leche y hielo<br />-Leche vegetal +0,20€",
+          "desc": "Un shot de café, sirope de caramelo o vainilla, leche y hielo",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Iced dulce de leche latte",
-          "desc": "Un shot de café, dulce de leche, leche y hielo<br />-Leche vegetal +0,20€",
+          "desc": "Un shot de café, dulce de leche, leche y hielo",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true

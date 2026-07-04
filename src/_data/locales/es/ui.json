@@ -60,13 +60,13 @@
     }
   },
   "historia": {
-    "cap": "Provença 322 · donde todo pasa",
+    "cap": "Provença 322 · donde todo sucede",
     "imgAlt": "Fachada de ARAU en Carrer de Provença 322: toldo terracota con el cartel «ARAU · Grilled Brunch» y Agustina, la fundadora, en la entrada",
     "eyebrow": "Nuestra historia",
     "title": "Arau nació de <span class=\"ital\">una idea simple.</span>",
     "p1": "Reunir en un mismo lugar los sabores, experiencias y culturas que dejaron huella a lo largo de un viaje. Con raíces argentinas, inspiración australiana y corazón barcelonés, [[ARAU]] fusiona la tradición de Argentina, la creatividad del brunch australiano y la pasión por el café de especialidad.",
     "p2": "Un espacio donde diferentes culturas se encuentran alrededor de la mesa para crear algo nuevo, cercano y auténtico. Porque creemos que algunas de las mejores cosas <em>nacen de la mezcla</em>.",
-    "p3": "Nos inspira la cocina casera, los productos de calidad y esos pequeños detalles que convierten una comida en una experiencia. Para nosotros la hospitalidad no es solo un servicio: es nuestra forma de recibir a quienes cruzan la puerta.",
+    "p3": "Nos inspira la cocina casera, los productos de calidad y esos pequeños detalles que convierten una comida en una experiencia. Para nosotros la hospitalidad no es solo un servicio: es nuestra forma de hacerlos sentir como en casa.",
     "p4": "Barcelona es hoy nuestro hogar, y [[ARAU]] es nuestra forma de compartir con la ciudad todo lo que nos inspiró durante años de viajes, aprendizaje y descubrimiento. <strong>Bienvenidos a Arau. Bienvenidos a nuestra historia.</strong>",
     "sign": "— Agustina, fundadora de [[ARAU]]",
     "heartImgAlt": "Dos manos formando un corazón, el sello de ARAU",
@@ -86,7 +86,7 @@
   "carta": {
     "home": {
       "eyebrow": "Los favoritos de la casa",
-      "title": "Descubrí los <span class=\"ital\">favoritos de la casa</span>",
+      "title": "Descubre los <span class=\"ital\">favoritos de la casa</span>",
       "sub": "Platos preparados con dedicación, ingredientes frescos y una combinación de sabores inspirada en nuestras raíces argentinas y la cultura del brunch australiano. La carta completa está a un clic.",
       "dish1": {
         "name": "Big brekky",
@@ -112,7 +112,7 @@
       "note": "¿Alergias o dieta especial? Avisanos al reservar y lo resolvemos."
     },
     "intro": {
-      "actionInstagram": "Pedir y novedades en Instagram"
+      "actionInstagram": "Novedades en Instagram"
     },
     "nav": {
       "inicio": "Inicio",
@@ -144,7 +144,7 @@
     "imgAlt": "Flat white de especialidad en taza de cerámica artesanal",
     "eyebrow": "Café de especialidad",
     "title": "El <span class=\"ital\">flat white</span> es religión",
-    "lead": "Trabajamos cafés de especialidad seleccionados uno a uno y los servimos como en Australia: flat white, cortado largo, filtrado del día. Más de <strong>1500 tazas</strong> salen de la barra cada mes.",
+    "lead": "El brunch nos trae hasta aquí; el café hace que quieras volver. Trabajamos con café de especialidad y rendimos homenaje a la cultura cafetera australiana con clásicos como el Flat White, Magic y el Long Black. Más de <strong>1.500 tazas</strong> salen de nuestra barra cada mes.",
     "chip1": "Flat white",
     "chip2": "Single origin",
     "chip3": "Filtrado V60",
@@ -154,7 +154,7 @@
   "eventos": {
     "eyebrow": "Más que un brunch",
     "title": "Pasan <span class=\"ital\">cosas</span> en [[ARAU]]",
-    "sub": "Bingo, folklore y música en vivo. Tocá una foto para verla en grande, o seguinos en <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> para la agenda y las fotos de la última edición.",
+    "sub": "Bingo, música en vivo, noche de ñoquis y más. Seguinos en Instagram <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> para ver el calendario y más información.",
     "feature": {
       "play": "Ver fotos",
       "waReservar": "Reservar por WhatsApp",
@@ -188,7 +188,7 @@
     "formId": "mJG9L7",
     "eyebrow": "Reservas",
     "title": "Sumate a la <span class=\"ital\">mesa</span>",
-    "lead": "Contanos cuándo y cuántos son. Te confirmamos por mail en el día. Para grupos de más de 8 personas, escribinos directo.",
+    "lead": "Reservá tu lugar o tu mesa. Para grupos de 5 personas o más, te confirmamos la reserva por mail luego de que la realicen.",
     "waButton": "Reservar por WhatsApp"
   },
   "form": {
