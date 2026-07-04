@@ -66,7 +66,7 @@
     "title": "Arau est né d'<span class=\"ital\">une idée toute simple.</span>",
     "p1": "Réunir en un seul lieu les saveurs, les expériences et les cultures qui ont marqué tout un voyage. Avec des racines argentines, une inspiration australienne et un cœur barcelonais, [[ARAU]] mêle la tradition argentine, la créativité du brunch australien et la passion du café de spécialité.",
     "p2": "Un endroit où des cultures différentes se rencontrent autour de la table pour créer quelque chose de neuf, de chaleureux et d'authentique. Parce que nous croyons que certaines des plus belles choses <em>naissent du mélange</em>.",
-    "p3": "Nous puisons notre inspiration dans la cuisine maison, les produits de qualité et ces petits détails qui transforment un repas en une véritable expérience. Pour nous, l'hospitalité n'est pas un simple service : c'est notre façon d'accueillir celles et ceux qui franchissent la porte.",
+    "p3": "Nous puisons notre inspiration dans la cuisine maison, les produits de qualité et ces petits détails qui transforment un repas en une véritable expérience. Pour nous, l'hospitalité n'est pas un simple service : c'est notre façon de les faire se sentir comme chez eux.",
     "p4": "Barcelone est aujourd'hui notre maison, et [[ARAU]] est notre manière de partager avec la ville tout ce qui nous a inspirés au fil de tant d'années de voyages, d'apprentissage et de découverte. <strong>Bienvenue chez Arau. Bienvenue dans notre histoire.</strong>",
     "sign": "— Agustina, fondatrice d'[[ARAU]]",
     "heartImgAlt": "Deux mains formant un cœur, la signature d'ARAU",
@@ -112,7 +112,7 @@
       "note": "Allergies ou régime particulier ? Dis-le-nous au moment de réserver et on s'en occupe."
     },
     "intro": {
-      "actionInstagram": "Commander et actus sur Instagram"
+      "actionInstagram": "Nouveautés sur Instagram"
     },
     "nav": {
       "inicio": "Accueil",
@@ -144,7 +144,7 @@
     "imgAlt": "Flat white de spécialité dans une tasse en céramique artisanale",
     "eyebrow": "Café de spécialité",
     "title": "Le <span class=\"ital\">flat white</span>, c'est sacré",
-    "lead": "On travaille des cafés de spécialité sélectionnés un à un, et on les sert comme en Australie : flat white, cortado allongé, filtre du jour. Plus de <strong>1500 tasses</strong> sortent du comptoir chaque mois.",
+    "lead": "Le brunch nous amène jusqu'ici ; le café donne envie de revenir. On travaille des cafés de spécialité et on rend hommage à la culture caféière australienne avec des classiques comme le Flat White, le Magic et le Long Black. Plus de <strong>1 500 tasses</strong> sortent de notre comptoir chaque mois.",
     "chip1": "Flat white",
     "chip2": "Single origin",
     "chip3": "Filtre V60",
@@ -154,7 +154,7 @@
   "eventos": {
     "eyebrow": "Bien plus qu'un brunch",
     "title": "Il se passe des <span class=\"ital\">choses</span> chez [[ARAU]]",
-    "sub": "Bingo, folklore et musique live. Touche une photo pour l'agrandir, ou suis-nous sur <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> pour l'agenda et les photos de la dernière édition.",
+    "sub": "Bingo, musique live, soirée ñoquis et plus encore. Suis-nous sur Instagram <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> pour voir l'agenda et en savoir plus.",
     "feature": {
       "play": "Voir les photos",
       "waReservar": "Réserver par WhatsApp",
@@ -188,7 +188,7 @@
     "formId": "mJG9L7",
     "eyebrow": "Réservations",
     "title": "Rejoins la <span class=\"ital\">table</span>",
-    "lead": "Dis-nous quand et combien vous êtes. On te confirme par mail dans la journée. Pour les groupes de plus de 8 personnes, écris-nous directement.",
+    "lead": "Réserve ta place ou ta table. Pour les groupes de 5 personnes ou plus, on te confirme la réservation par mail une fois que tu l'as faite.",
     "waButton": "Réserver par WhatsApp"
   },
   "form": {

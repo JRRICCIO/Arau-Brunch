@@ -1,37 +1,37 @@
 {
   "feature": {
-    "kicker": "Nit Argentina",
-    "titleStart": "Empanadas, Malbec i",
-    "titleAccent": "nostàlgia",
-    "chip": "Un cop al mes · segueix l'agenda",
-    "desc": "Empanadas tucumanas, locro i folklore en directe. La festa nacional a la nostra manera, amb música fins tard.",
-    "id": "noche-argentina",
+    "kicker": "Bingo Night",
+    "titleStart": "No és el bingo de la teva",
+    "titleAccent": "àvia",
+    "chip": "Nit temàtica · segueix l'agenda",
+    "desc": "Tres rondes amb premis i l'especial de la casa: entrepà de mila en pa de chipá.",
+    "id": "bingo-night",
     "inscripciones": true,
-    "photo": "img/spread.webp",
-    "photoAlt": "Taula compartida de la Nit Argentina amb plats per al centre i cafè",
+    "photo": "img/benedict-mimosa.webp",
+    "photoAlt": "Taula de brunch amb mimosa en una Bingo Night",
     "strip": [
-      { "src": "img/terrace.webp", "alt": "Terrassa d'ARAU amb brunch i la façana al fons", "caption": "La terrassa d'ARAU en caure la tarda" },
-      { "src": "img/big-arau.webp", "alt": "The Big ARAU, brunch complet", "caption": "The Big ARAU — per arrencar la nit amb tot" },
+      { "src": "img/terrace.webp", "alt": "Terrassa d'ARAU en una nit d'esdeveniment", "caption": "La terrassa d'ARAU en caure la tarda" },
+      { "src": "img/big-arau.webp", "alt": "The Big ARAU, brunch complet per començar la nit", "caption": "The Big ARAU — per arrencar la nit amb tot" },
       { "src": "img/terrace-coffee.webp", "alt": "Flat white a la terrassa d'ARAU a la posta de sol", "caption": "Cafè a la terrassa abans que arrenqui la nit" }
     ]
   },
   "cards": [
     {
-      "kicker": "Bingo Night",
-      "title": "No és el bingo de la teva àvia",
-      "chip": "Nit temàtica · segueix l'agenda",
-      "desc": "Tres rondes amb premis i l'especial de la casa: entrepà de mila en pan de chipá.",
-      "id": "bingo-night",
+      "kicker": "Nit Argentina",
+      "title": "25 de maig a l'Arau",
+      "chip": "Un cop al mes · segueix l'agenda",
+      "desc": "Empanadas tucumanas, locro i folklore en directe. La festa nacional a la nostra manera, amb música fins tard.",
+      "id": "noche-argentina",
       "inscripciones": true,
-      "photo": "img/benedict-mimosa.webp",
-      "photoAlt": "Taula de brunch amb mimosa en una Bingo Night",
-      "caption": "Bingo Night — premis, mimoses i caos del bo"
+      "photo": "img/spread.webp",
+      "photoAlt": "Taula compartida de la Nit Argentina amb plats per al centre i cafè",
+      "caption": "Nit Argentina — empanadas, Malbec i folklore"
     },
     {
       "kicker": "Música en directe & ñoquis",
       "title": "Els ñoquis del 29",
       "chip": "Els 29 de cada mes",
-      "desc": "Sessions en directe amb ñoquis casolans del 29. Tradició argentina, ambient de barri.",
+      "desc": "Música en directe i ñoquis casolans amb diferents salses per triar.",
       "id": "noquis-del-29",
       "inscripciones": true,
       "photo": "img/terrace-coffee.webp",

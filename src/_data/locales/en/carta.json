@@ -1,10 +1,10 @@
 {
   "intro": {
     "eyebrow": "The menu",
-    "titleStart": "Eat like you're at",
-    "titleAccent": "ARAU",
+    "titleStart": "Our",
+    "titleAccent": "menu",
     "subtitle": "Argentine flavours, Aussie spirit, and specialty coffee. Cooking with roots, eggs done just right, and homemade sweets — the full menu, from start to finish.",
-    "dateline": "Seasonal menu · updated June 2026",
+    "dateline": "",
     "disclaimer": "Prices are approximate and the menu may vary with the season and availability."
   },
   "sections": [
@@ -147,7 +147,7 @@
         },
         {
           "nombre": "Omelette",
-          "desc": "Omelette with sautéed mushrooms, Gouda cheese, spinach, and sourdough bread",
+          "desc": "Three-egg omelette with sautéed mushrooms, Gouda cheese, spinach, and sourdough bread",
           "precio": "13,00",
           "etiquetas": [
             "vg"
@@ -158,7 +158,7 @@
         },
         {
           "nombre": "Salmon Bagel Gravlax",
-          "desc": "With homemade salmon gravlax, capers, cream cheese, chives, pickled onions, roasted tomatoes and wild arugula. Served with french fries.",
+          "desc": "With homemade salmon gravlax, capers, cream cheese with chives, roasted tomatoes, wild arugula and pickled onion. Served with french fries.",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true,
@@ -167,7 +167,7 @@
         },
         {
           "nombre": "Pastrami Lover NEW!",
-          "desc": "Bagel with pastrami, sweet and sour pickles, arugula, gouda and dijon mustard sauce, cream cheese and honey. Served with french fries",
+          "desc": "Bagel with pastrami, sweet and sour pickles, arugula, Gouda and our Dijon mustard, cream cheese and honey sauce. Served with french fries",
           "precio": "15,50",
           "etiquetas": [],
           "disponible": true,
@@ -186,7 +186,7 @@
       "items": [
         {
           "nombre": "The tru mila",
-          "desc": "Beef schnitzel with truffled mushroom sauce, melted Gouda cheese and a fried egg on top. <br />Served with french fries and chipotle mayonnaise (Change the potatoes for sweet potatoes or mixed greens and roasted tomatoes +1€).",
+          "desc": "Beef schnitzel (eggplant veggie option 14,60€) with truffled mushroom sauce, melted Gouda cheese and a fried egg on top. <br />Served with french fries and chipotle mayonnaise. (Change the potatoes for sweet potatoes or mixed greens and roasted tomatoes +1€)",
           "precio": "17,00",
           "etiquetas": [
             "casa"
@@ -197,34 +197,13 @@
         },
         {
           "nombre": "The Provoking",
-          "desc": "Brioche bread, 180gr beef hamburger, provolone cheese, bacon, caramelized onion, tomato, lettuce and Chimichurri mayonnaise (Extra fried egg + 1,50€)<br />Served with french fries (Change for sweet potatoes or green mix +1€).",
+          "desc": "Brioche bread, 180gr beef hamburger (Heura veggie option 16€), provolone cheese, bacon, caramelized onion, tomato, lettuce and Chimichurri mayonnaise. (Extra fried egg + 1,50€)<br />Served with french fries. (Change for sweet potatoes or green mix +1€)",
           "precio": "17,90",
           "etiquetas": [
             "casa"
           ],
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg",
-          "alergenos": "Gluten · Dairy"
-        },
-        {
-          "nombre": "Tru Mila Veggie",
-          "desc": "Eggplant schnitzel with truffled mushroom sauce, melted Gouda cheese and a fried egg on top. <br />Served with french fries and chipotle mayonnaise (Change the potatoes for sweet potatoes or mixed greens and roasted tomatoes +1€).",
-          "precio": "14,60",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_mila_2_0397dab4ac.jpg",
-          "alergenos": "Egg · Gluten · Dairy"
-        },
-        {
-          "nombre": "The Veggie Provoking",
-          "desc": "Brioche bread, veggie burger, provolone cheese, sautéed mushrooms, caramelized onion, tomato, lettuce and Chimichurri mayonnaise. Extra fried egg + 1,50€. Served with french fries (Exchange for sweet potatoes or salad +1€).",
-          "precio": "16,00",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": true,
           "alergenos": "Gluten · Dairy"
         },
         {
@@ -269,7 +248,7 @@
         },
         {
           "nombre": "Chipá (GF cheese bread)",
-          "desc": "Cheese bread made with cassava flour and a variety of cheeses. GF",
+          "desc": "Homemade cheese bread made with cassava flour and a variety of cheeses. GF",
           "precio": "2,90",
           "etiquetas": [
             "vg",
@@ -299,16 +278,6 @@
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_2119_bbcd7fedf9.jpg",
           "alergenos": "Egg · Dairy"
-        },
-        {
-          "nombre": "Moist brownie",
-          "desc": "Moist brownie with dulce de leche and whipped cream",
-          "precio": "5,50",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": true,
-          "alergenos": "Egg · Gluten · Dairy"
         }
       ]
     },
@@ -333,14 +302,14 @@
         },
         {
           "nombre": "Cut",
-          "desc": "A shot of coffee with milk <br />Vegetable milk +0,20€.",
+          "desc": "A shot of coffee with milk",
           "precio": "1,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Macchiato",
-          "desc": "A shot of coffee with milk foam <br />Vegetable milk foam +0,20€.",
+          "desc": "A shot of coffee with milk foam",
           "precio": "1,90",
           "etiquetas": [],
           "disponible": true
@@ -354,49 +323,49 @@
         },
         {
           "nombre": "Magic",
-          "desc": "Double ristretto with milk, smaller and more intense than the flat white<br />Vegetable milk +0,20€.",
+          "desc": "Double ristretto with milk, smaller and more intense than the flat white",
           "precio": "3,40",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Flat white",
-          "desc": "Double espresso with milk<br />Vegetable milk +0,20€.",
+          "desc": "Double espresso with milk",
           "precio": "3,60",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Latte (coffee with milk)",
-          "desc": "A shot of coffee with milk <br />Vegetable milk +0,20€.",
+          "desc": "A shot of coffee with milk",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Cappuccino",
-          "desc": "A shot of coffee with milk (decorated with cocoa or cinnamon)<br />Vegetable milk +0,20€.",
+          "desc": "A shot of coffee with milk (decorated with cocoa or cinnamon)",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Caramel latte",
-          "desc": "A shot of coffee with milk and caramel syrup<br />Vegetable milk +0,20€.",
+          "desc": "A shot of coffee with milk and caramel syrup",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Vanilla latte",
-          "desc": "A shot of coffee with milk and vanilla syrup<br />Vegetable milk +0,20€.",
+          "desc": "A shot of coffee with milk and vanilla syrup",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Mocha",
-          "desc": "A shot of coffee with milk and cocoa<br />Vegetable milk +0,20€.",
+          "desc": "A shot of coffee with milk and cocoa",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
@@ -410,28 +379,28 @@
         },
         {
           "nombre": "Matcha latte",
-          "desc": "Matcha tea powder with milk <br />Vegetable milk 0,20€.",
+          "desc": "Matcha tea powder with milk ",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Turmeric latte",
-          "desc": "Vegetable milk 0,20€ 0,20",
+          "desc": "",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Chai latte",
-          "desc": "Chai tea powder with milk<br />Vegetable milk 0,20€.",
+          "desc": "Chai tea powder with milk",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Dirty chai",
-          "desc": "Chai latte with a shot of coffee<br />Vegetable milk 0,20€.",
+          "desc": "Chai latte with a shot of coffee",
           "precio": "4,90",
           "etiquetas": [],
           "disponible": true
@@ -452,7 +421,7 @@
         },
         {
           "nombre": "Dulce de leche latte",
-          "desc": "A shot of coffee with milk and dulce de leche<br />Vegetable milk +0,20€.",
+          "desc": "A shot of coffee with milk and dulce de leche",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
@@ -508,14 +477,14 @@
         },
         {
           "nombre": "Iced caramel or vanilla latte",
-          "desc": "A shot of coffee, caramel or vanilla syrup, milk and ice<br />-Vegetable milk +0,20€.",
+          "desc": "A shot of coffee, caramel or vanilla syrup, milk and ice",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Iced dulce de leche latte",
-          "desc": "A shot of coffee, dulce de leche, milk and ice<br />-Vegetable milk +0,20€.",
+          "desc": "A shot of coffee, dulce de leche, milk and ice",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true

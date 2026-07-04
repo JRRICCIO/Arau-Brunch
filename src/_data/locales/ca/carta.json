@@ -1,10 +1,10 @@
 {
   "intro": {
     "eyebrow": "La carta",
-    "titleStart": "Menja com a",
-    "titleAccent": "ARAU",
+    "titleStart": "La nostra",
+    "titleAccent": "carta",
     "subtitle": "Sabors argentins, esperit australià i cafè d'especialitat. Cuina amb arrels, ous al punt i dolços casolans — la carta completa, de cap a peus.",
-    "dateline": "Carta de temporada · actualitzada el juny de 2026",
+    "dateline": "",
     "disclaimer": "Els preus són orientatius i la carta pot variar segons la temporada i la disponibilitat."
   },
   "sections": [
@@ -147,7 +147,7 @@
         },
         {
           "nombre": "Truita",
-          "desc": "Truita amb bolets saltats, formatge Gouda, espinacs, i pa de massa mare *Cansalada extra + 2,50€",
+          "desc": "Truita de tres ous amb bolets saltats, formatge Gouda, espinacs i pa de massa mare",
           "precio": "13,00",
           "etiquetas": [
             "vg"
@@ -158,7 +158,7 @@
         },
         {
           "nombre": "Bagel de salmó Gravlax",
-          "desc": "Amb salmó gravlax casolà, tàperes, formatge crema, cibulet, cebes adobades, tomàquets rostits i ruca silvestre. Acompanyat de patates fregides.",
+          "desc": "Amb salmó gravlax casolà, tàperes, formatge crema amb cibulet, tomàquets rostits, ruca silvestre i ceba adobada. Acompanyat de patates fregides.",
           "precio": "13,50",
           "etiquetas": [],
           "disponible": true,
@@ -167,7 +167,7 @@
         },
         {
           "nombre": "Pastrami Lover NOU!!",
-          "desc": "Bagel amb pastrami, escabetxos agredolços, ruca, gouda i salsa de mostassa dijon, crema de formatge i mel. Acompanyat de patates fregides",
+          "desc": "Bagel amb pastrami, cogombrets agredolços, ruca, Gouda i la nostra salsa de mostassa de Dijon, formatge crema i mel. Acompanyat de patates fregides",
           "precio": "15,50",
           "etiquetas": [],
           "disponible": true,
@@ -186,7 +186,7 @@
       "items": [
         {
           "nombre": "La Tru Mila",
-          "desc": "Milanès de vedella amb salsa de bolets trufats, formatge Gouda fos i un ou fregit per sobre. <br />Acompanyat de patates fregides i maionesa de chipotle. (Canvieu les patates per patates dolces o una barreja de verds i tomàquets rostits+1 €)",
+          "desc": "Milanesa de vedella (opció vegetariana d'albergínia 14,60€) amb salsa de bolets trufada, formatge Gouda fos i un ou fregit per sobre. <br />Acompanyat de patates fregides i maionesa de chipotle. (Canvia les patates per moniato o mescla de verds i tomàquets rostits +1€)",
           "precio": "17,00",
           "etiquetas": [
             "casa"
@@ -197,34 +197,13 @@
         },
         {
           "nombre": "El provocador",
-          "desc": "Pa de brioche, hamburguesa de vedella de 180g, formatge provolone, cansalada, ceba caramel·litzada, tomàquet, enciam i maionesa de Chimichurri. (Ou fregit extra + 1,50€) <br /> acompanyat de patates fregides. (Intercanvi per patates dolces o mescles",
+          "desc": "Pa de brioche, hamburguesa de 180g de vedella (opció vegetariana Heura 16€), formatge provolone, cansalada, ceba caramel·litzada, tomàquet, enciam i maionesa de Chimichurri. (Ou fregit extra + 1,50€)<br />Acompanyat de patates fregides. (Canvia per moniato o mescla de verds +1€)",
           "precio": "17,90",
           "etiquetas": [
             "casa"
           ],
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg",
-          "alergenos": "Gluten · Lactis"
-        },
-        {
-          "nombre": "Tru Mila Veggie",
-          "desc": "Milanesa d'albergínia amb salsa de bolets trufats, formatge Gouda fos i un ou fregit per sobre. <br />Acompanyat de patates fregides i maionesa de chipotle. (Canvieu les patates per patates dolces o una barreja de verds i tomàquets rostits+1 €)",
-          "precio": "14,60",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_tru_mila_2_0397dab4ac.jpg",
-          "alergenos": "Ou · Gluten · Lactis"
-        },
-        {
-          "nombre": "La Provocadora Veggie",
-          "desc": "Pa de brioche, hamburguesa vegetariana, formatge provolone, bolets saltats, ceba caramel·litzada, tomàquet, enciam i maionesa de Chimichurri. Ou fregit extra + 1,50€. Acompanyat de patates fregides (Intercanvi per patates dolces o amanida +1 €)",
-          "precio": "16,00",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": true,
           "alergenos": "Gluten · Lactis"
         },
         {
@@ -269,7 +248,7 @@
         },
         {
           "nombre": "Chipá (pa de formatge GF)",
-          "desc": "Pa de formatge elaborat amb farina de mandioca i una gran varietat de formatges. GF",
+          "desc": "Pa de formatge casolà elaborat amb farina de mandioca i una varietat de formatges. GF",
           "precio": "2,90",
           "etiquetas": [
             "vg",
@@ -299,16 +278,6 @@
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_2119_bbcd7fedf9.jpg",
           "alergenos": "Ou · Lactis"
-        },
-        {
-          "nombre": "Brownie mullat",
-          "desc": "Brownie humit amb fudge i nata muntada",
-          "precio": "5,50",
-          "etiquetas": [
-            "vg"
-          ],
-          "disponible": true,
-          "alergenos": "Ou · Gluten · Lactis"
         }
       ]
     },
@@ -333,14 +302,14 @@
         },
         {
           "nombre": "Tallat",
-          "desc": "Un cop de cafè amb llet. Llet vegetal +0,20€",
+          "desc": "Un cop de cafè amb llet.",
           "precio": "1,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Macchiato",
-          "desc": "Un cop de cafè amb escuma de llet. Escuma de llet vegetal +0,20€",
+          "desc": "Un cop de cafè amb escuma de llet.",
           "precio": "1,90",
           "etiquetas": [],
           "disponible": true
@@ -354,49 +323,49 @@
         },
         {
           "nombre": "Màgia",
-          "desc": "Doble ristretto amb llet, més petit i més intens que el blanc pla. Llet vegetal +0,20€",
+          "desc": "Doble ristretto amb llet, més petit i més intens que el blanc pla.",
           "precio": "3,40",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Blanc pla",
-          "desc": "Espresso doble amb llet. Llet vegetal +0,20€",
+          "desc": "Espresso doble amb llet.",
           "precio": "3,60",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Latte (cafè amb llet)",
-          "desc": "Un cop de cafè amb llet. Llet vegetal +0,20€",
+          "desc": "Un cop de cafè amb llet.",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Caputxino",
-          "desc": "Un tret de cafè amb llet (decorat amb cacau o canyella). Llet vegetal +0,20€",
+          "desc": "Un tret de cafè amb llet (decorat amb cacau o canyella).",
           "precio": "3,20",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Llet de caramel",
-          "desc": "Un cop de cafè amb llet i xarop de caramel. Llet vegetal +0,20€",
+          "desc": "Un cop de cafè amb llet i xarop de caramel.",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Latte de vainilla",
-          "desc": "Un cop de cafè amb llet i xarop de vainilla. Llet vegetal +0,20€",
+          "desc": "Un cop de cafè amb llet i xarop de vainilla.",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "moca",
-          "desc": "Un cop de cafè amb llet i cacau. Llet vegetal +0,20€",
+          "desc": "Un cop de cafè amb llet i cacau.",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
@@ -410,28 +379,28 @@
         },
         {
           "nombre": "Matcha latte",
-          "desc": "Te matcha en pols amb llet. Llet vegetal +0,20€",
+          "desc": "Te matcha en pols amb llet.",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Latte de cúrcuma",
-          "desc": "Llet vegetal 0.20€",
+          "desc": "",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Chai Latte",
-          "desc": "Te Chai en pols amb llet. Llet vegetal +0,20€",
+          "desc": "Te Chai en pols amb llet.",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Chai brut",
-          "desc": "Chai latte amb un cop de cafè. Llet vegetal +0,20€",
+          "desc": "Chai latte amb un cop de cafè.",
           "precio": "4,90",
           "etiquetas": [],
           "disponible": true
@@ -452,7 +421,7 @@
         },
         {
           "nombre": "Dolç de Leche Latte",
-          "desc": "Un cop de cafè amb llet. Llet vegetal +0,20€",
+          "desc": "Un cop de cafè amb llet.",
           "precio": "3,90",
           "etiquetas": [],
           "disponible": true
@@ -508,14 +477,14 @@
         },
         {
           "nombre": "Caramel gelat o latte de vainilla",
-          "desc": "Un tret de cafè, caramel o xarop de vainilla, llet i gel. Llet vegetal +0,20€",
+          "desc": "Un tret de cafè, caramel o xarop de vainilla, llet i gel.",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true
         },
         {
           "nombre": "Dulce de Leche Latte gelat",
-          "desc": "Un cop de cafè, fudge, llet i gel. Llet vegetal +0,20€",
+          "desc": "Un cop de cafè, fudge, llet i gel.",
           "precio": "4,00",
           "etiquetas": [],
           "disponible": true

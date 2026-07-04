@@ -66,7 +66,7 @@
     "title": "Arau was born from <span class=\"ital\">a simple idea.</span>",
     "p1": "To bring together in one place the flavours, experiences and cultures that left their mark over the course of a journey. With Argentine roots, Australian inspiration and a Barcelona heart, [[ARAU]] blends the tradition of Argentina, the creativity of Australian brunch and a passion for specialty coffee.",
     "p2": "A space where different cultures meet around the table to create something new, warm and authentic. Because we believe some of the best things <em>are born from the mix</em>.",
-    "p3": "We're inspired by home cooking, quality produce and those little details that turn a meal into an experience. For us, hospitality isn't just a service: it's our way of welcoming everyone who walks through the door.",
+    "p3": "We're inspired by home cooking, quality produce and those little details that turn a meal into an experience. For us, hospitality isn't just a service: it's our way of making them feel at home.",
     "p4": "Barcelona is now our home, and [[ARAU]] is our way of sharing with the city everything that inspired us through years of travelling, learning and discovery. <strong>Welcome to Arau. Welcome to our story.</strong>",
     "sign": "— Agustina, founder of [[ARAU]]",
     "heartImgAlt": "Two hands forming a heart, ARAU's signature",
@@ -112,7 +112,7 @@
       "note": "Allergies or a special diet? Let us know when you book and we'll sort it out."
     },
     "intro": {
-      "actionInstagram": "Order & news on Instagram"
+      "actionInstagram": "News on Instagram"
     },
     "nav": {
       "inicio": "Home",
@@ -144,7 +144,7 @@
     "imgAlt": "Specialty flat white in a handmade ceramic cup",
     "eyebrow": "Specialty coffee",
     "title": "The <span class=\"ital\">flat white</span> is a religion",
-    "lead": "We work with specialty coffees chosen one by one and serve them the Australian way: flat white, long cortado, filter of the day. More than <strong>1,500 cups</strong> leave the bar every month.",
+    "lead": "The brunch brings us here; the coffee makes you want to come back. We work with specialty coffee and pay tribute to Australian coffee culture with classics like the Flat White, Magic and Long Black. More than <strong>1,500 cups</strong> leave our bar every month.",
     "chip1": "Flat white",
     "chip2": "Single origin",
     "chip3": "V60 filter",
@@ -154,7 +154,7 @@
   "eventos": {
     "eyebrow": "More than a brunch",
     "title": "Things <span class=\"ital\">happen</span> at [[ARAU]]",
-    "sub": "Bingo, folk music and live performances. Tap a photo to see it full size, or follow us on <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> for what's on and photos from the latest edition.",
+    "sub": "Bingo, live music, ñoqui night and more. Follow us on Instagram <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> for the calendar and more information.",
     "feature": {
       "play": "See photos",
       "waReservar": "Book via WhatsApp",
@@ -188,7 +188,7 @@
     "formId": "mJG9L7",
     "eyebrow": "Bookings",
     "title": "Join the <span class=\"ital\">table</span>",
-    "lead": "Tell us when and how many. We'll confirm by email the same day. For groups of more than 8, get in touch with us directly.",
+    "lead": "Book your spot or your table. For groups of 5 people or more, we'll confirm your booking by email once you've made it.",
     "waButton": "Book via WhatsApp"
   },
   "form": {
