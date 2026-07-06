@@ -1,5 +1,22 @@
 {
   "baseUrl": "https://araubrunch.es",
+  "meta": {
+    "ogLocale": "fr_FR",
+    "home": {
+      "title": "ARAU · Brunch grillé & café de spécialité — Barcelone",
+      "description": "Saveurs argentines, esprit australien, cœur barcelonais. Brunch d'inspiration argentino-australienne et café de spécialité dans l'Eixample, à Barcelone.",
+      "ogTitle": "ARAU · Brunch grillé & café de spécialité",
+      "ogDescription": "Brunch argentino-australien et café de spécialité dans l'Eixample, à Barcelone.",
+      "ogImageAlt": "La façade d'ARAU et son arche en terre cuite au Provença 322, Barcelone"
+    },
+    "carta": {
+      "title": "Carte · ARAU — Brunch grillé & café de spécialité, Barcelone",
+      "description": "La carte complète d'ARAU : œufs, milanesas, douceurs maison et café de spécialité dans l'Eixample, à Barcelone. Saveurs argentines, esprit australien.",
+      "ogTitle": "Carte · ARAU — Brunch grillé & café de spécialité",
+      "ogDescription": "La carte complète : œufs, milanesas, douceurs maison et café de spécialité à Barcelone.",
+      "ogImageAlt": "Une table d'ARAU avec toast à l'avocat, eggs benedict et café de spécialité"
+    }
+  },
   "hero": {
     "titleStart": "On n'est pas un brunch",
     "titleAccent": "comme les autres.",

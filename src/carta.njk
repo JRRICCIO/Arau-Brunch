@@ -7,6 +7,7 @@ permalink: "/{{ lng.dir }}carta.html"
 pageKey: "carta"
 ---
 {%- set arauWord %}{% include "arau-word.njk" %}{% endset -%}
+{%- set m = site.meta[pageKey] -%}
 <!DOCTYPE html>
 <html lang="{{ lng.htmlLang }}" class="no-js">
 <head>
@@ -14,21 +15,23 @@ pageKey: "carta"
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#e6dcc2" />
 
-  <title>Carta · ARAU — Brunch &amp; Café de especialidad, Barcelona</title>
-  <meta name="description" content="La carta completa de ARAU: huevos en su punto, milanesas, dulces caseros y café de especialidad en el Eixample, Barcelona. Sabores argentinos, espíritu australiano." />
+  <title>{{ m.title }}</title>
+  <meta name="description" content="{{ m.description }}" />
 
   <link rel="canonical" href="{{ site.baseUrl }}/{{ lng.dir }}carta.html" />
 {% include "seo-hreflang.njk" %}
 
   <meta property="og:type" content="restaurant.menu" />
   <meta property="og:site_name" content="ARAU" />
-  <meta property="og:title" content="Carta · ARAU — Brunch & Café de especialidad" />
-  <meta property="og:description" content="La carta completa: huevos, milanesas, dulces caseros y café de especialidad en Barcelona. Sabores argentinos, espíritu australiano." />
-  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="{{ m.ogTitle }}" />
+  <meta property="og:description" content="{{ m.ogDescription }}" />
+  <meta property="og:locale" content="{{ site.meta.ogLocale }}" />
   <meta property="og:url" content="{{ site.baseUrl }}/{{ lng.dir }}carta.html" />
   <meta property="og:image" content="https://araubrunch.es/img/spread.jpg" />
-  <meta property="og:image:alt" content="Mesa de ARAU con tostada de palta, eggs benedict y café de especialidad" />
+  <meta property="og:image:alt" content="{{ m.ogImageAlt }}" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ m.ogTitle }}" />
+  <meta name="twitter:description" content="{{ m.ogDescription }}" />
   <meta name="twitter:image" content="https://araubrunch.es/img/spread.jpg" />
 
   <!-- Favicon: logo ARAU (tacita con anteojos) -->

@@ -172,6 +172,11 @@
     "eyebrow": "Brunch lovers",
     "title": "What our <span class=\"ital\">Brunch Lovers</span> say",
     "sub": "This is how our guests enjoy the [[ARAU]] experience.",
+    "reviews": [
+      { "text": "The food is incredible, and so are the lovely people who look after you. The specialty coffee is exquisite… and the best dulce de leche flan I've had in my life. We'll be back!", "author": "Julieta P.", "source": "Google review" },
+      { "text": "Everything was delicious, especially the dessert! I came back after a year and it was as good as ever.", "author": "Sab", "source": "Local Guide · Google" },
+      { "text": "I had the best brunch, with wonderful service. The food is delicious and I loved the music. 10/10, highly recommended!", "author": "Mohammed", "source": "Local Guide · Google" }
+    ],
     "reviewsText": "Hundreds of customer reviews on Google back the [[ARAU]] experience.",
     "readReviews": "Read the reviews on Google"
   },
@@ -190,7 +195,8 @@
     "eyebrow": "Bookings",
     "title": "Join the <span class=\"ital\">table</span>",
     "lead": "Book your spot or your table. For groups of 5 people or more, we'll confirm your booking by email once you've made it.",
-    "waButton": "Book via WhatsApp"
+    "waButton": "Book via WhatsApp",
+    "iframeTitle": "Arau reservation form"
   },
   "form": {
     "honeypotLabel": "Leave blank if you're human:",

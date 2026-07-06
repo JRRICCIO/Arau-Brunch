@@ -172,6 +172,11 @@
     "eyebrow": "Brunch lovers",
     "title": "El que diuen els nostres <span class=\"ital\">Brunch Lovers</span>",
     "sub": "Així gaudeixen els nostres clients de l'experiència [[ARAU]].",
+    "reviews": [
+      { "text": "El menjar, increïble, igual que la bona onda de qui t'atén. El cafè d'especialitat, exquisit… i el millor flan de dulce de leche que he tastat mai. Hi tornarem!", "author": "Julieta P.", "source": "Ressenya de Google" },
+      { "text": "Tot boníssim, i les postres encara més! Vaig tornar després d'un any i tot estava tan deliciós com sempre.", "author": "Sab", "source": "Local Guide · Google" },
+      { "text": "Vaig gaudir del millor brunch, amb una atenció espectacular. El menjar és deliciós i em va encantar la música. 10/10, totalment recomanable!", "author": "Mohammed", "source": "Local Guide · Google" }
+    ],
     "reviewsText": "Centenars de ressenyes de clients a Google avalen l'experiència [[ARAU]].",
     "readReviews": "Llegeix les ressenyes a Google"
   },
@@ -190,7 +195,8 @@
     "eyebrow": "Reserves",
     "title": "Suma't a la <span class=\"ital\">taula</span>",
     "lead": "Reserva el teu lloc o la teva taula. Per a grups de 5 persones o més, et confirmem la reserva per correu després que la facis.",
-    "waButton": "Reservar per WhatsApp"
+    "waButton": "Reservar per WhatsApp",
+    "iframeTitle": "Formulari de reserves d'Arau"
   },
   "form": {
     "honeypotLabel": "No omplir si ets humà:",

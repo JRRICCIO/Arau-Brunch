@@ -172,6 +172,11 @@
     "eyebrow": "Brunch lovers",
     "title": "Ce que disent nos <span class=\"ital\">Brunch Lovers</span>",
     "sub": "Voici comment nos clients vivent l'expérience [[ARAU]].",
+    "reviews": [
+      { "text": "La cuisine est incroyable, tout comme la gentillesse de l'équipe. Le café de spécialité, exquis… et le meilleur flan au dulce de leche de ma vie. On reviendra !", "author": "Julieta P.", "source": "Avis Google" },
+      { "text": "Tout était délicieux, surtout le dessert ! Je suis revenue après un an et c'était toujours aussi bon.", "author": "Sab", "source": "Local Guide · Google" },
+      { "text": "J'ai dégusté le meilleur brunch, avec un service formidable. La cuisine est délicieuse et j'ai adoré la musique. 10/10, vivement recommandé !", "author": "Mohammed", "source": "Local Guide · Google" }
+    ],
     "reviewsText": "Des centaines d'avis clients sur Google témoignent de l'expérience [[ARAU]].",
     "readReviews": "Lire les avis sur Google"
   },
@@ -190,7 +195,8 @@
     "eyebrow": "Réservations",
     "title": "Rejoins la <span class=\"ital\">table</span>",
     "lead": "Réserve ta place ou ta table. Pour les groupes de 5 personnes ou plus, on te confirme la réservation par mail une fois que tu l'as faite.",
-    "waButton": "Réserver par WhatsApp"
+    "waButton": "Réserver par WhatsApp",
+    "iframeTitle": "Formulaire de réservation d'Arau"
   },
   "form": {
     "honeypotLabel": "À ne pas remplir si tu es humain :",

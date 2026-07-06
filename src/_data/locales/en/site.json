@@ -1,5 +1,22 @@
 {
   "baseUrl": "https://araubrunch.es",
+  "meta": {
+    "ogLocale": "en_US",
+    "home": {
+      "title": "ARAU · Grilled Brunch & Specialty Coffee — Barcelona",
+      "description": "Argentine flavours, Australian spirit, Barcelona heart. Argentine-Australian inspired brunch and specialty coffee in the Eixample, Barcelona.",
+      "ogTitle": "ARAU · Grilled Brunch & Specialty Coffee",
+      "ogDescription": "Argentine-Australian brunch and specialty coffee in the Eixample, Barcelona.",
+      "ogImageAlt": "ARAU's facade with its terracotta arch at Provença 322, Barcelona"
+    },
+    "carta": {
+      "title": "Menu · ARAU — Grilled Brunch & Specialty Coffee, Barcelona",
+      "description": "ARAU's full menu: eggs done right, milanesas, homemade sweets and specialty coffee in the Eixample, Barcelona. Argentine flavours, Australian spirit.",
+      "ogTitle": "Menu · ARAU — Grilled Brunch & Specialty Coffee",
+      "ogDescription": "The full menu: eggs, milanesas, homemade sweets and specialty coffee in Barcelona.",
+      "ogImageAlt": "An ARAU table with avocado toast, eggs benedict and specialty coffee"
+    }
+  },
   "hero": {
     "titleStart": "Brunch, but never",
     "titleAccent": "ordinary.",

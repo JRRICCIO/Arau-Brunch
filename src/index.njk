@@ -7,6 +7,7 @@ permalink: "/{{ lng.dir }}"
 pageKey: "home"
 ---
 {%- set arauWord %}{% include "arau-word.njk" %}{% endset -%}
+{%- set m = site.meta[pageKey] -%}
 <!DOCTYPE html>
 <html lang="{{ lng.htmlLang }}" class="no-js">
 <head>
@@ -14,23 +15,23 @@ pageKey: "home"
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#e6dcc2" />
 
-  <title>ARAU · Brunch & Café de especialidad — Barcelona</title>
-  <meta name="description" content="Sabores argentinos, espíritu australiano, corazón barcelonés. Brunch de inspiración argentino-australiana y café de especialidad en el Eixample, Barcelona." />
+  <title>{{ m.title }}</title>
+  <meta name="description" content="{{ m.description }}" />
 
   <link rel="canonical" href="{{ site.baseUrl }}/{{ lng.dir }}" />
 {% include "seo-hreflang.njk" %}
 
   <meta property="og:type" content="restaurant" />
   <meta property="og:site_name" content="ARAU" />
-  <meta property="og:title" content="ARAU · Brunch & Café de especialidad" />
-  <meta property="og:description" content="Sabores argentinos, espíritu australiano, corazón barcelonés. Brunch argentino-australiano y café de especialidad en el Eixample, Barcelona." />
-  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="{{ m.ogTitle }}" />
+  <meta property="og:description" content="{{ m.ogDescription }}" />
+  <meta property="og:locale" content="{{ site.meta.ogLocale }}" />
   <meta property="og:url" content="{{ site.baseUrl }}/{{ lng.dir }}" />
   <meta property="og:image" content="https://araubrunch.es/img/facade.jpg" />
-  <meta property="og:image:alt" content="Fachada de ARAU con su arco de terracota en Provença 322, Barcelona" />
+  <meta property="og:image:alt" content="{{ m.ogImageAlt }}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ARAU · Brunch & Café de especialidad" />
-  <meta name="twitter:description" content="Brunch argentino-australiano y café de especialidad en el Eixample, Barcelona." />
+  <meta name="twitter:title" content="{{ m.ogTitle }}" />
+  <meta name="twitter:description" content="{{ m.ogDescription }}" />
   <meta name="twitter:image" content="https://araubrunch.es/img/facade.jpg" />
 
   <script type="application/ld+json">
@@ -38,7 +39,7 @@ pageKey: "home"
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "ARAU — Brunch & Café de especialidad",
-    "description": "Brunch de inspiración argentino-australiana y café de especialidad en el Eixample, Barcelona.",
+    "description": "{{ m.description | safe }}",
     "image": "https://araubrunch.es/img/facade.jpg",
     "url": "{{ site.baseUrl }}/{{ lng.dir }}",
     "servesCuisine": ["Brunch", "Argentina", "Australiana", "Café de especialidad"],
@@ -379,6 +380,16 @@ pageKey: "home"
           <p class="carta__sub">{{ ui.experiencia.sub | replace("[[ARAU]]", "Arau") | safe }}</p>
         </div>
 
+        <ul class="reviews-grid reveal" role="list">
+          {%- for r in ui.experiencia.reviews %}
+          <li class="review-card">
+            <p class="review-card__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="review-card__text">{{ r.text }}</blockquote>
+            <p class="review-card__author">{{ r.author }}<span class="review-card__source">{{ r.source }}</span></p>
+          </li>
+          {%- endfor %}
+        </ul>
+
         <div class="reviews-summary reveal">
           <p class="reviews-summary__score">4,8 <span class="reviews-summary__stars" aria-hidden="true">★★★★★</span></p>
           <p class="reviews-summary__text">{{ ui.experiencia.reviewsText | replace("[[ARAU]]", "Arau") | safe }}</p>
@@ -461,7 +472,7 @@ pageKey: "home"
         <div class="reserva-embed reveal">
           <iframe data-tally-src="https://tally.so/embed/{{ ui.reservar.formId }}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                   loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"
-                  title="Formulario de reservas de ARAU"></iframe>
+                  title="{{ ui.reservar.iframeTitle }}"></iframe>
         </div>
         <script>
         (function(){var d=document,w="https://tally.so/widgets/embed.js",v=function(){if("undefined"!=typeof Tally){Tally.loadEmbeds();}else{d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc;});}};if("undefined"!=typeof Tally){v();}else if(null==d.querySelector('script[src="'+w+'"]')){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}})();

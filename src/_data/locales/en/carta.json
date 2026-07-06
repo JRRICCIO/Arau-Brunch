@@ -10,10 +10,10 @@
   "sections": [
     {
       "id": "picoteo",
-      "label": "Picoteo",
+      "label": "To share",
       "compact": false,
       "photo": "img/spread.webp",
-      "photoAlt": "Picoteo — ARAU",
+      "photoAlt": "To share — ARAU",
       "items": [
         {
           "nombre": "Bonnie & clyde",

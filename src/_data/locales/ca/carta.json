@@ -10,10 +10,10 @@
   "sections": [
     {
       "id": "picoteo",
-      "label": "Piccoteo",
+      "label": "Per picar",
       "compact": false,
       "photo": "img/spread.webp",
-      "photoAlt": "Piccoteo — ARAU",
+      "photoAlt": "Per picar — ARAU",
       "items": [
         {
           "nombre": "Bonnie i Clyde",
@@ -219,10 +219,10 @@
     },
     {
       "id": "pasteleria",
-      "label": "pastisseria",
+      "label": "Pastisseria",
       "compact": false,
       "photo": "img/medialunas.webp",
-      "photoAlt": "pastisseria — ARAU",
+      "photoAlt": "Pastisseria — ARAU",
       "items": [
         {
           "nombre": "Pa vegà de plàtan",

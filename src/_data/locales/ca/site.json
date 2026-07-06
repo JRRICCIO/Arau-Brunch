@@ -1,5 +1,22 @@
 {
   "baseUrl": "https://araubrunch.es",
+  "meta": {
+    "ogLocale": "ca_ES",
+    "home": {
+      "title": "ARAU · Brunch a la brasa & cafè d'especialitat — Barcelona",
+      "description": "Sabors argentins, esperit australià, cor barceloní. Brunch d'inspiració argentino-australiana i cafè d'especialitat a l'Eixample, Barcelona.",
+      "ogTitle": "ARAU · Brunch a la brasa & cafè d'especialitat",
+      "ogDescription": "Brunch argentino-australià i cafè d'especialitat a l'Eixample, Barcelona.",
+      "ogImageAlt": "La façana d'ARAU amb el seu arc de terracota al Provença 322, Barcelona"
+    },
+    "carta": {
+      "title": "Carta · ARAU — Brunch a la brasa & cafè d'especialitat, Barcelona",
+      "description": "La carta completa d'ARAU: ous al punt, milaneses, dolços casolans i cafè d'especialitat a l'Eixample, Barcelona. Sabors argentins, esperit australià.",
+      "ogTitle": "Carta · ARAU — Brunch a la brasa & cafè d'especialitat",
+      "ogDescription": "La carta completa: ous, milaneses, dolços casolans i cafè d'especialitat a Barcelona.",
+      "ogImageAlt": "Una taula d'ARAU amb torrada d'alvocat, ous benedict i cafè d'especialitat"
+    }
+  },
   "hero": {
     "titleStart": "No som un brunch",
     "titleAccent": "qualsevol.",
