@@ -448,9 +448,13 @@ pageKey: "home"
         </div>
 
         <div class="visitanos__map reveal">
-          <iframe title="{{ ui.visitanos.mapTitle }}"
-                  src="https://maps.google.com/maps?q=Carrer%20de%20Proven%C3%A7a%20322%20Barcelona&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  width="100%" height="460" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <button type="button" class="map-embed" id="map-embed"
+                  data-map="https://maps.google.com/maps?q=Carrer%20de%20Proven%C3%A7a%20322%20Barcelona&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  data-map-title="{{ ui.visitanos.mapTitle }}">
+            <svg class="map-embed__pin" viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
+            <span class="map-embed__label">{{ ui.cookies.mapAccept }}</span>
+            <span class="map-embed__hint">{{ ui.cookies.mapBlocked }}</span>
+          </button>
           <p class="map-embed__alt">
             <a class="inline-link" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener noreferrer">{{ ui.visitanos.openInMaps }}</a>
           </p>
@@ -515,6 +519,7 @@ pageKey: "home"
     <div class="container footer__bottom">
       <p>{{ ui.footer.copyright | replace("[[YEAR]]", buildYear) | replace("[[ARAU]]", "Arau") | safe }}</p>
       <p class="footer__credit">{{ ui.footer.credit | safe }}</p>
+      <p class="footer__legal"><button type="button" class="footer__cookies" data-cookie="manage">{{ ui.cookies.manage }}</button></p>
     </div>
   </footer>
 
@@ -589,6 +594,8 @@ pageKey: "home"
       <p class="inscripcion__hint" id="insc-hint" aria-live="polite"></p>
     </form>
   </dialog>
+
+  {% include "cookie-consent.njk" %}
 
   <script src="/script.js" defer></script>
   {% include "jmrr-credit.njk" %}

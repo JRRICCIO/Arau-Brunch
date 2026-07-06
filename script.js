@@ -348,20 +348,62 @@
     sections.forEach(function (s) { spy.observe(s); });
   })();
 
-  /* ---------- Mapa: carga diferida al hacer clic (privacidad) ---------- */
+  /* ---------- Consentimiento de cookies ---------- */
+  (function () {
+    var KEY = 'arau-consent';                 // 'all' | 'essential'
+    var banner = document.getElementById('cookie-banner');
+    var policy = document.getElementById('cookie-policy');
+    function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+    function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+    function openPolicy() {
+      if (!policy) return;
+      if (policy.showModal) { try { policy.showModal(); return; } catch (e) {} }
+      policy.setAttribute('open', '');
+    }
+    function closePolicy() {
+      if (!policy) return;
+      if (policy.close) { try { policy.close(); return; } catch (e) {} }
+      policy.removeAttribute('open');
+    }
+    function apply(v) {
+      save(v);
+      document.documentElement.setAttribute('data-consent', v);
+      if (banner) { banner.classList.remove('is-in'); banner.hidden = true; }
+      closePolicy();
+      window.dispatchEvent(new CustomEvent('arau:consent', { detail: v }));
+    }
+    document.addEventListener('click', function (e) {
+      var t = e.target && e.target.closest ? e.target.closest('[data-cookie]') : null;
+      if (!t) return;
+      var a = t.getAttribute('data-cookie');
+      if (a === 'accept') apply('all');
+      else if (a === 'reject') apply('essential');
+      else if (a === 'more' || a === 'manage') { e.preventDefault(); openPolicy(); }
+      else if (a === 'close') closePolicy();
+    });
+    var cur = read();
+    if (cur) { document.documentElement.setAttribute('data-consent', cur); }
+    else if (banner) { banner.hidden = false; requestAnimationFrame(function () { banner.classList.add('is-in'); }); }
+  })();
+
+  /* ---------- Mapa: carga diferida (privacidad + consentimiento) ---------- */
   (function () {
     var btn = document.getElementById('map-embed');
     if (!btn) return;
-    btn.addEventListener('click', function () {
+    function load() {
+      if (!btn.isConnected) return;
       var ifr = document.createElement('iframe');
-      ifr.title = 'Mapa de ARAU en Carrer de Provença 322, Barcelona';
+      ifr.title = btn.getAttribute('data-map-title') || 'Google Maps';
       ifr.src = btn.getAttribute('data-map');
       ifr.loading = 'lazy';
       ifr.referrerPolicy = 'no-referrer-when-downgrade';
       ifr.setAttribute('width', '100%');
       ifr.setAttribute('height', '460');
       btn.replaceWith(ifr);
-    });
+    }
+    btn.addEventListener('click', load);        // clic = carga a pedido del usuario
+    window.addEventListener('arau:consent', function (e) { if (e.detail === 'all') load(); });
+    try { if (localStorage.getItem('arau-consent') === 'all') load(); } catch (e) {}
   })();
 
   /* ---------- Barra de acción fija (móvil) ---------- */

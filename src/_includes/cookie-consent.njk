@@ -1,0 +1,21 @@
+<!-- ===================== CONSENTIMIENTO DE COOKIES ===================== -->
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="{{ ui.cookies.aria }}" hidden>
+  <p class="cookie-banner__text">{{ ui.cookies.message | replace("[[ARAU]]", "Arau") | safe }}</p>
+  <div class="cookie-banner__actions">
+    <button type="button" class="cookie-btn cookie-btn--ghost" data-cookie="reject">{{ ui.cookies.reject }}</button>
+    <button type="button" class="cookie-btn cookie-btn--primary" data-cookie="accept">{{ ui.cookies.accept }}</button>
+    <button type="button" class="cookie-link" data-cookie="more">{{ ui.cookies.more }}</button>
+  </div>
+</div>
+
+<dialog class="cookie-policy" id="cookie-policy" aria-labelledby="cookie-policy-title">
+  <button type="button" class="cookie-policy__close" data-cookie="close" aria-label="{{ ui.cookies.close }}">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+  </button>
+  <h2 class="cookie-policy__title" id="cookie-policy-title">{{ ui.cookies.policyTitle }}</h2>
+  <div class="cookie-policy__body">{{ ui.cookies.policyBody | replace("[[ARAU]]", "Arau") | safe }}</div>
+  <div class="cookie-policy__actions">
+    <button type="button" class="cookie-btn cookie-btn--ghost" data-cookie="reject">{{ ui.cookies.reject }}</button>
+    <button type="button" class="cookie-btn cookie-btn--primary" data-cookie="accept">{{ ui.cookies.accept }}</button>
+  </div>
+</dialog>

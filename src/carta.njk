@@ -595,6 +595,7 @@ pageKey: "carta"
     <div class="container footer__bottom">
       <p>{{ ui.footer.copyright | replace("[[YEAR]]", buildYear) | replace("[[ARAU]]", "Arau") | safe }}</p>
       <p class="footer__credit">{{ ui.footer.credit | safe }}</p>
+      <p class="footer__legal"><button type="button" class="footer__cookies" data-cookie="manage">{{ ui.cookies.manage }}</button></p>
     </div>
   </footer>
 
@@ -603,6 +604,8 @@ pageKey: "carta"
     <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M7 2.5v3M17 2.5v3M3.5 9h17M5.5 4.5h13A1.5 1.5 0 0 1 20 6v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19V6a1.5 1.5 0 0 1 1.5-1.5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <span class="wa-float__label">{{ ui.waFloat.label }}</span>
   </a>
+
+  {% include "cookie-consent.njk" %}
 
   <!-- Comportamientos compartidos: año del footer, header al scroll, nav móvil, reveal -->
   <script src="/script.js" defer></script>

@@ -226,6 +226,19 @@
     "errorMsg": "No hem pogut enviar la teva inscripció. Torna-ho a provar o escriu-nos per Instagram.",
     "cerrar": "Tancar"
   },
+  "cookies": {
+    "aria": "Avís de cookies",
+    "message": "Utilitzem cookies tècniques necessàries perquè el lloc funcioni i, si les acceptes, cookies de Google Maps per mostrar-te el mapa. No fem servir cookies de publicitat.",
+    "accept": "Acceptar",
+    "reject": "Només essencials",
+    "more": "Més informació",
+    "close": "Tancar",
+    "manage": "Cookies",
+    "policyTitle": "Política de cookies",
+    "policyBody": "<p>A [[ARAU]] fem servir les mínimes cookies necessàries, sense publicitat ni perfilat.</p><p><strong>Cookies tècniques (necessàries):</strong> permeten el funcionament del lloc i recordar la teva preferència de cookies. També carreguem el formulari de reserves (Tally) com a servei necessari quan vols reservar.</p><p><strong>Cookies de tercers (opcionals):</strong> si acceptes, mostrem el mapa amb Google Maps, que pot instal·lar cookies pròpies de Google. Si tries «Només essencials», el mapa no es carrega i el pots obrir igualment en una pestanya nova.</p><p>Pots canviar la teva elecció quan vulguis des de l'enllaç «Cookies» del peu de pàgina.</p>",
+    "mapAccept": "Veure el mapa",
+    "mapBlocked": "El mapa fa servir Google Maps. Toca per carregar-lo."
+  },
   "footer": {
     "tag": "Brunch & cafè d'especialitat<br />al cor de l'Eixample, Barcelona.",
     "nav": {
