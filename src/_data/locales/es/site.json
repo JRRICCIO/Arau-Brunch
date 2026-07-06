@@ -20,7 +20,7 @@
   "hero": {
     "titleStart": "No somos un brunch",
     "titleAccent": "cualquiera.",
-    "accentSwap": ["cualquiera.", "ordinary.", "común.", "boring."],
+    "accentSwap": ["cualquiera.", "común.", "ordinaria.", "aburrida."],
     "lead": "Un brunch de inspiración argentino-australiana en el corazón del Eixample, Barcelona. Recetas con raíces, café de especialidad y la hospitalidad como forma de recibir.",
     "image": "img/facade.webp",
     "imageAlt": "Fachada de ARAU en Carrer de Provença 322, con su arco de terracota y brunch recién servido"
