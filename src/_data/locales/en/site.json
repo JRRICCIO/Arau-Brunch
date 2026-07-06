@@ -1,9 +1,9 @@
 {
   "baseUrl": "https://araubrunch.es",
   "hero": {
-    "titleStart": "We're not just any",
-    "titleAccent": "brunch.",
-    "accentSwap": ["brunch.", "ordinary.", "basic.", "boring."],
+    "titleStart": "Brunch, but never",
+    "titleAccent": "ordinary.",
+    "accentSwap": ["ordinary.", "boring.", "basic."],
     "lead": "An Argentine-Australian inspired brunch in the heart of the Eixample, Barcelona. Recipes with roots, specialty coffee, and hospitality as our way of welcoming you.",
     "image": "img/facade.webp",
     "imageAlt": "ARAU's facade at Carrer de Provença 322, with its terracotta arch and brunch just served"
