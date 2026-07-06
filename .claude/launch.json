@@ -3,9 +3,9 @@
   "configurations": [
     {
       "name": "arau-brunch",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "4600"],
-      "port": 4600
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 8080
     }
   ]
 }
