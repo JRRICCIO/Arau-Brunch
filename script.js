@@ -383,7 +383,7 @@
     });
     var cur = read();
     if (cur) { document.documentElement.setAttribute('data-consent', cur); }
-    else if (banner) { banner.hidden = false; requestAnimationFrame(function () { banner.classList.add('is-in'); }); }
+    else if (banner) { banner.hidden = false; void banner.offsetWidth; banner.classList.add('is-in'); }
   })();
 
   /* ---------- Mapa: carga diferida (privacidad + consentimiento) ---------- */
