@@ -7,7 +7,7 @@
     "desc": "Tres rondes amb premis i l'especial de la casa: entrepà de mila en pa de chipá.",
     "id": "bingo-night",
     "inscripciones": true,
-    "photo": "img/benedict-mimosa.webp",
+    "photo": "",
     "photoAlt": "Taula de brunch amb mimosa en una Bingo Night",
     "strip": [
       { "src": "img/terrace.webp", "alt": "Terrassa d'ARAU en una nit d'esdeveniment", "caption": "La terrassa d'ARAU en caure la tarda" },
@@ -23,7 +23,7 @@
       "desc": "Empanadas tucumanas, locro i folklore en directe. La festa nacional a la nostra manera, amb música fins tard.",
       "id": "noche-argentina",
       "inscripciones": true,
-      "photo": "img/spread.webp",
+      "photo": "",
       "photoAlt": "Taula compartida de la Nit Argentina amb plats per al centre i cafè",
       "caption": "Nit Argentina — empanadas, Malbec i folklore"
     },

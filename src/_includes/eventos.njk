@@ -1,5 +1,6 @@
         <!-- Feature -->
-        <article class="event-feature reveal">
+        <article class="event-feature reveal{% if not eventos.feature.photo %} event-feature--no-photo{% endif %}">
+          {%- if eventos.feature.photo %}
           <div class="event-feature__media">
             <button type="button" class="event-feature__photo thumb" data-gallery="evento-feature"
                     data-full="{{ eventos.feature.photo | asset }}" data-caption="{{ eventos.feature.kicker }} — {{ eventos.feature.titleStart }} {{ eventos.feature.titleAccent }}">
@@ -14,6 +15,7 @@
               {%- endfor %}
             </div>
           </div>
+          {%- endif %}
           <div class="event-feature__body">
             <p class="event__kicker">{{ eventos.feature.kicker }}</p>
             <h3 class="event-feature__title">{{ eventos.feature.titleStart }} <span class="ital">{{ eventos.feature.titleAccent }}</span></h3>
@@ -31,12 +33,14 @@
         <!-- Noches recurrentes -->
         <div class="events-grid">
           {%- for card in eventos.cards %}
-          <article class="event-card reveal">
+          <article class="event-card reveal{% if not card.photo %} event-card--no-photo{% endif %}">
+            {%- if card.photo %}
             <button type="button" class="event-card__photo thumb" data-gallery="evento-{{ loop.index }}"
                     data-full="{{ card.photo | asset }}" data-caption="{{ card.caption }}">
               <img src="{{ card.photo | asset }}" alt="{{ card.photoAlt }}" width="600" height="400" loading="lazy" decoding="async" />
               <span class="event-feature__play" aria-hidden="true">{{ ui.eventos.card.play }}</span>
             </button>
+            {%- endif %}
             <div class="event-card__body">
               <p class="event__kicker">{{ card.kicker }}</p>
               <h3 class="event-card__title">{{ card.title }}</h3>

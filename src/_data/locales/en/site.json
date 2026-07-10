@@ -22,8 +22,8 @@
     "titleAccent": "ordinary.",
     "accentSwap": ["ordinary.", "boring.", "basic."],
     "lead": "An Argentine-Australian inspired brunch in the heart of the Eixample, Barcelona. Recipes with roots, specialty coffee, and hospitality as our way of welcoming you.",
-    "image": "img/facade.webp",
-    "imageAlt": "ARAU's facade at Carrer de Provença 322, with its terracotta arch and brunch just served"
+    "image": "img/fachada-hero.webp",
+    "imageAlt": "ARAU's storefront on Carrer de Provença 322: terracotta awning reading «ARAU · Grilled Brunch» with the glass door open"
   },
   "horarios": [
     { "dia": "Monday", "apertura": "9:00", "cierre": "16:00", "cerrado": false },

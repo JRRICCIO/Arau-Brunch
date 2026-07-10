@@ -7,7 +7,7 @@
     "desc": "Three rounds with prizes and the house special: milanesa sandwich on pan de chipá.",
     "id": "bingo-night",
     "inscripciones": true,
-    "photo": "img/benedict-mimosa.webp",
+    "photo": "",
     "photoAlt": "A brunch table with a mimosa on Bingo Night",
     "strip": [
       { "src": "img/terrace.webp", "alt": "ARAU's terrace with brunch and the facade behind", "caption": "ARAU's terrace as the afternoon winds down" },
@@ -23,7 +23,7 @@
       "desc": "Tucumán-style empanadas, locro and live folk music. Argentina's national celebration our way, with music late into the night.",
       "id": "noche-argentina",
       "inscripciones": true,
-      "photo": "img/spread.webp",
+      "photo": "",
       "photoAlt": "A shared Argentine Night table with dishes for the centre and coffee",
       "caption": "Argentine Night — empanadas, Malbec and folk music"
     },

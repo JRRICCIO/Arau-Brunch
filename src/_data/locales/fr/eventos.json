@@ -7,7 +7,7 @@
     "desc": "Trois manches avec des lots et la spécialité de la maison : sandwich de mila au pain de chipá.",
     "id": "bingo-night",
     "inscripciones": true,
-    "photo": "img/benedict-mimosa.webp",
+    "photo": "",
     "photoAlt": "Table de brunch avec une mimosa lors d'une Bingo Night",
     "strip": [
       { "src": "img/terrace.webp", "alt": "Terrasse d'ARAU avec un brunch et la façade en arrière-plan", "caption": "La terrasse d'ARAU à la tombée du jour" },
@@ -23,7 +23,7 @@
       "desc": "Empanadas tucumanas, locro et folklore en live. La fête nationale à notre façon, avec de la musique jusque tard.",
       "id": "noche-argentina",
       "inscripciones": true,
-      "photo": "img/spread.webp",
+      "photo": "",
       "photoAlt": "Table à partager de la Soirée Argentine avec des plats à poser au centre et du café",
       "caption": "Soirée Argentine — empanadas, Malbec et folklore"
     },

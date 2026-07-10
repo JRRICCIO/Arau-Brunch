@@ -745,6 +745,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
 @media (max-width: 540px) {
   .header__actions .btn--terra { display: none; }
   .hero__trust-sep { display: none; }
+  .hero__title { font-size: clamp(2.1rem, 9vw, 3rem); letter-spacing: -.03em; line-height: 1.05; }
+  .hero__lead { display: none; }
+  .hero__cta { gap: .6rem; margin-top: 1.5rem; }
+  .hero__cta .btn { padding: .6rem 1.2rem; font-size: .9rem; }
+  .hero__trust { gap: .5rem .9rem; margin-top: 1.4rem; }
+  .hero__trust-num { font-size: .95rem; }
+  .hero__trust-label { font-size: .55rem; margin-top: .1rem; }
+  .section { padding-block: clamp(3rem, 7vw, 5rem); }
   .field-row { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr; }
   .dishes { grid-template-columns: 1fr; }
@@ -1205,6 +1213,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .event-card__body { padding: clamp(1.3rem, 2.6vw, 1.9rem); }
 .event-card__title { font-family: var(--font-display); font-weight: 600; font-size: 1.42rem; color: var(--ink); margin-top: .4rem; line-height: 1.15; }
 .event-card__desc { color: var(--ink-soft); margin-top: .55rem; font-size: .97rem; }
+/* Eventos sin foto: el cuerpo ocupa todo el ancho de su contenedor */
+.event-feature--no-photo { grid-template-columns: 1fr; }
+.event-feature--no-photo .event-feature__body { max-width: 62ch; }
+.event-card--no-photo { justify-content: center; }  /* centra el texto cuando no hay foto */
 @media (hover: hover) {
   .event-card:hover { transform: translateY(-5px); box-shadow: 0 26px 46px -30px rgba(51, 51, 51, .5); }
   .event-feature__photo:hover img,
@@ -1376,6 +1388,24 @@ section[id], [id].section { scroll-margin-top: 5rem; }
   .event-feature__body { order: -1; }
   .wa-float { display: none; }
   .cta-bar { display: flex; }
+}
+/* Móvil: hero pegado arriba (texto arranca justo bajo el header) */
+@media (max-width: 540px) {
+  .hero {
+    min-height: 100vh;
+    min-height: 100dvh;
+    align-items: stretch;
+    margin-top: calc(-1 * var(--header-h));
+    padding: calc(var(--header-h) + .4rem) 0 2.5rem;
+  }
+  .hero__inner { margin-top: 0; display: flex; flex-direction: column; }
+  .hero__copy { flex: 1 1 auto; display: flex; flex-direction: column; }
+  .hero .eyebrow { margin-top: 0; }               /* el tagline queda arriba de todo */
+  .hero__title { margin-top: auto; }              /* baja el título a media altura de la foto */
+  .hero__title-accent { color: var(--on-dark); }  /* palabra que rota en crema (legible sobre la foto) */
+  .hero__cta { margin-top: auto; }                /* empuja botones + stats al fondo de la foto */
+  .hero .open-badge { display: none; }
+  .hero__cue { display: none; }      /* la foto full-screen + stats abajo ya invitan a bajar */
 }
 @media (max-width: 640px) {
   .events-grid { grid-template-columns: 1fr; }
