@@ -37,6 +37,15 @@
       "photo": "img/noquis-v2.webp",
       "photoAlt": "Homemade ñoquis with bolognese sauce at ARAU",
       "caption": "Homemade ñoquis del 29, with live music"
+    },
+    {
+      "kicker": "In the dark",
+      "title": "Blind dinner",
+      "chip": "Once a month · follow the calendar",
+      "desc": "A multi-course menu in complete darkness. Without sight, smell, taste and touch take over — every dish is a surprise until the last bite.",
+      "id": "cena-a-ciegas",
+      "inscripciones": true,
+      "photo": ""
     }
   ]
 }

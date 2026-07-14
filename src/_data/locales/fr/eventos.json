@@ -37,6 +37,15 @@
       "photo": "img/noquis-v2.webp",
       "photoAlt": "Ñoquis maison avec sauce bolognaise chez ARAU",
       "caption": "Ñoquis maison du 29, avec musique live"
+    },
+    {
+      "kicker": "Dans le noir",
+      "title": "Dîner à l'aveugle",
+      "chip": "Une fois par mois · suis l'agenda",
+      "desc": "Un menu en plusieurs plats dans le noir complet. Sans la vue, l'odorat, le goût et le toucher prennent le relais — chaque plat est une surprise jusqu'à la dernière bouchée.",
+      "id": "cena-a-ciegas",
+      "inscripciones": true,
+      "photo": ""
     }
   ]
 }

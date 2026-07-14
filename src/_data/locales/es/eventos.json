@@ -37,6 +37,15 @@
       "photo": "img/noquis-v2.webp",
       "photoAlt": "Ñoquis caseros con salsa bolognesa en ARAU",
       "caption": "Ñoquis caseros del 29, con música en vivo"
+    },
+    {
+      "kicker": "Experiencia a oscuras",
+      "title": "Cena a ciegas",
+      "chip": "Una vez al mes · seguí la agenda",
+      "desc": "Un menú de varios pasos completamente a oscuras. Sin la vista, el olfato, el gusto y el tacto toman el control: cada plato es una sorpresa hasta el último bocado.",
+      "id": "cena-a-ciegas",
+      "inscripciones": true,
+      "photo": ""
     }
   ]
 }

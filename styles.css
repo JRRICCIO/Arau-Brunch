@@ -959,7 +959,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .hero .eyebrow { color: var(--on-dark); }
 .hero .eyebrow__dot { background: var(--gold); box-shadow: 0 0 0 4px rgba(212, 123, 59, .28); }
 .hero__title { color: var(--on-dark); text-shadow: 0 2px 34px rgba(51, 51, 51, .45); }
-.hero__title-accent { color: var(--gold); }
+.hero__title-accent { color: var(--on-dark); }
 /* Palabra cinética AR x AU (cambia sola) — reserva el ancho mayor, 0 CLS */
 .hero__title-accent.swap { display: inline-grid; vertical-align: top; }
 .swap__w { grid-area: 1 / 1; opacity: 0; transform: translateY(.16em); transition: opacity .45s var(--ease), transform .45s var(--ease); }
@@ -1402,7 +1402,6 @@ section[id], [id].section { scroll-margin-top: 5rem; }
   .hero__copy { flex: 1 1 auto; display: flex; flex-direction: column; }
   .hero .eyebrow { margin-top: 0; }               /* el tagline queda arriba de todo */
   .hero__title { margin-top: auto; }              /* baja el título a media altura de la foto */
-  .hero__title-accent { color: var(--on-dark); }  /* palabra que rota en crema (legible sobre la foto) */
   .hero__cta { margin-top: auto; }                /* empuja botones + stats al fondo de la foto */
   .hero .open-badge { display: none; }
   .hero__cue { display: none; }      /* la foto full-screen + stats abajo ya invitan a bajar */
