@@ -126,7 +126,7 @@ pageKey: "home"
           <span id="open-status" class="open-badge" aria-live="polite"></span>
 
           <h1 class="hero__title" id="hero-title">
-            {{ site.hero.titleStart }} <span class="hero__title-accent swap" id="hero-swap" aria-label="{{ site.hero.titleAccent }}">{%- for w in (site.hero.accentSwap or [site.hero.titleAccent]) %}<span class="swap__w{% if loop.first %} is-on{% endif %}" aria-hidden="true">{{ w }}</span>{%- endfor %}</span>
+            {{ site.hero.titleStart }} <span class="hero__title-accent swap" id="hero-swap">{%- for w in (site.hero.accentSwap or [site.hero.titleAccent]) %}<span class="swap__w{% if loop.first %} is-on{% endif %}"{% if not loop.first %} aria-hidden="true"{% endif %}>{{ w }}</span>{%- endfor %}</span>
           </h1>
 
           <p class="hero__lead">{{ site.hero.lead }}</p>
