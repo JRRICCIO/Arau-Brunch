@@ -15,37 +15,5 @@
       { "src": "img/terrace-coffee.webp", "alt": "A flat white on ARAU's terrace at sunset", "caption": "Coffee on the terrace before the night gets going" }
     ]
   },
-  "cards": [
-    {
-      "kicker": "Argentine Night",
-      "title": "25 de mayo at Arau",
-      "chip": "Once a month · follow the calendar",
-      "desc": "Tucumán-style empanadas, locro and live folk music. Argentina's national celebration our way, with music late into the night.",
-      "id": "noche-argentina",
-      "inscripciones": true,
-      "photo": "",
-      "photoAlt": "A shared Argentine Night table with dishes for the centre and coffee",
-      "caption": "Argentine Night — empanadas, Malbec and folk music"
-    },
-    {
-      "kicker": "Live music & ñoquis",
-      "title": "Ñoquis del 29",
-      "chip": "The 29th of every month",
-      "desc": "Live music and homemade ñoquis with different sauces to choose from.",
-      "id": "noquis-del-29",
-      "inscripciones": true,
-      "photo": "img/noquis-v2.webp",
-      "photoAlt": "Homemade ñoquis with bolognese sauce at ARAU",
-      "caption": "Homemade ñoquis del 29, with live music"
-    },
-    {
-      "kicker": "In the dark",
-      "title": "Blind dinner",
-      "chip": "Once a month · follow the calendar",
-      "desc": "A multi-course menu in complete darkness. Without sight, smell, taste and touch take over — every dish is a surprise until the last bite.",
-      "id": "cena-a-ciegas",
-      "inscripciones": true,
-      "photo": ""
-    }
-  ]
+  "cards": []
 }

@@ -15,37 +15,5 @@
       { "src": "img/terrace-coffee.webp", "alt": "Flat white sur la terrasse d'ARAU au coucher du soleil", "caption": "Un café en terrasse avant que la soirée ne commence" }
     ]
   },
-  "cards": [
-    {
-      "kicker": "Soirée Argentine",
-      "title": "Le 25 mai chez Arau",
-      "chip": "Une fois par mois · suis l'agenda",
-      "desc": "Empanadas tucumanas, locro et folklore en live. La fête nationale à notre façon, avec de la musique jusque tard.",
-      "id": "noche-argentina",
-      "inscripciones": true,
-      "photo": "",
-      "photoAlt": "Table à partager de la Soirée Argentine avec des plats à poser au centre et du café",
-      "caption": "Soirée Argentine — empanadas, Malbec et folklore"
-    },
-    {
-      "kicker": "Musique live & ñoquis",
-      "title": "Les ñoquis du 29",
-      "chip": "Le 29 de chaque mois",
-      "desc": "Musique live et ñoquis maison avec différentes sauces au choix.",
-      "id": "noquis-del-29",
-      "inscripciones": true,
-      "photo": "img/noquis-v2.webp",
-      "photoAlt": "Ñoquis maison avec sauce bolognaise chez ARAU",
-      "caption": "Ñoquis maison du 29, avec musique live"
-    },
-    {
-      "kicker": "Dans le noir",
-      "title": "Dîner à l'aveugle",
-      "chip": "Une fois par mois · suis l'agenda",
-      "desc": "Un menu en plusieurs plats dans le noir complet. Sans la vue, l'odorat, le goût et le toucher prennent le relais — chaque plat est une surprise jusqu'à la dernière bouchée.",
-      "id": "cena-a-ciegas",
-      "inscripciones": true,
-      "photo": ""
-    }
-  ]
+  "cards": []
 }

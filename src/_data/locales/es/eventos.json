@@ -15,37 +15,5 @@
       { "src": "img/terrace-coffee.webp", "alt": "Flat white en la terraza de ARAU al atardecer", "caption": "Café en la terraza antes de que arranque la noche" }
     ]
   },
-  "cards": [
-    {
-      "kicker": "Noche Argentina",
-      "title": "25 de mayo en Arau",
-      "chip": "Una vez al mes · seguí la agenda",
-      "desc": "Empanadas tucumanas, locro y folklore en vivo. La fiesta nacional a nuestra manera, con música hasta tarde.",
-      "id": "noche-argentina",
-      "inscripciones": true,
-      "photo": "",
-      "photoAlt": "Mesa compartida de Noche Argentina con platos para el centro y café",
-      "caption": "Noche Argentina — empanadas, Malbec y folklore"
-    },
-    {
-      "kicker": "Música en vivo & ñoquis",
-      "title": "Los ñoquis del 29",
-      "chip": "Los 29 de cada mes",
-      "desc": "Música en vivo y ñoquis caseros con diferentes salsas para elegir.",
-      "id": "noquis-del-29",
-      "inscripciones": true,
-      "photo": "img/noquis-v2.webp",
-      "photoAlt": "Ñoquis caseros con salsa bolognesa en ARAU",
-      "caption": "Ñoquis caseros del 29, con música en vivo"
-    },
-    {
-      "kicker": "Experiencia a oscuras",
-      "title": "Cena a ciegas",
-      "chip": "Una vez al mes · seguí la agenda",
-      "desc": "Un menú de varios pasos completamente a oscuras. Sin la vista, el olfato, el gusto y el tacto toman el control: cada plato es una sorpresa hasta el último bocado.",
-      "id": "cena-a-ciegas",
-      "inscripciones": true,
-      "photo": ""
-    }
-  ]
+  "cards": []
 }

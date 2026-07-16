@@ -15,37 +15,5 @@
       { "src": "img/terrace-coffee.webp", "alt": "Flat white a la terrassa d'ARAU a la posta de sol", "caption": "Cafè a la terrassa abans que arrenqui la nit" }
     ]
   },
-  "cards": [
-    {
-      "kicker": "Nit Argentina",
-      "title": "25 de maig a l'Arau",
-      "chip": "Un cop al mes · segueix l'agenda",
-      "desc": "Empanadas tucumanas, locro i folklore en directe. La festa nacional a la nostra manera, amb música fins tard.",
-      "id": "noche-argentina",
-      "inscripciones": true,
-      "photo": "",
-      "photoAlt": "Taula compartida de la Nit Argentina amb plats per al centre i cafè",
-      "caption": "Nit Argentina — empanadas, Malbec i folklore"
-    },
-    {
-      "kicker": "Música en directe & ñoquis",
-      "title": "Els ñoquis del 29",
-      "chip": "Els 29 de cada mes",
-      "desc": "Música en directe i ñoquis casolans amb diferents salses per triar.",
-      "id": "noquis-del-29",
-      "inscripciones": true,
-      "photo": "img/noquis-v2.webp",
-      "photoAlt": "Ñoquis casolans amb salsa bolonyesa a ARAU",
-      "caption": "Ñoquis casolans del 29, amb música en directe"
-    },
-    {
-      "kicker": "A les fosques",
-      "title": "Sopar a cegues",
-      "chip": "Un cop al mes · segueix l'agenda",
-      "desc": "Un menú de diversos passos completament a les fosques. Sense la vista, l'olfacte, el gust i el tacte prenen el control — cada plat és una sorpresa fins a l'última mossegada.",
-      "id": "cena-a-ciegas",
-      "inscripciones": true,
-      "photo": ""
-    }
-  ]
+  "cards": []
 }
