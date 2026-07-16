@@ -755,8 +755,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .hero__cta { gap: .6rem; margin-top: 1.5rem; }
   .hero__cta .btn { padding: .6rem 1.2rem; font-size: .9rem; }
   .hero__trust { flex-wrap: nowrap; gap: .5rem .6rem; margin-top: 1.4rem; }
-  .hero__trust li { flex: 1 1 0; min-width: 0; }        /* 3 columnas iguales, siempre en una fila */
-  .hero__trust-sep { display: none; }
+  .hero__trust li:not(.hero__trust-sep) { flex: 1 1 0; min-width: 0; }  /* 3 columnas iguales, siempre en una fila */
+  .hero__trust li.hero__trust-sep { display: none; }    /* ocultar separadores en móvil (especificidad correcta) */
   .hero__trust-num { font-size: clamp(.82rem, 4.3vw, .95rem); }
   .hero__trust-label { font-size: clamp(.5rem, 2.5vw, .55rem); margin-top: .1rem; line-height: 1.2; }
   .section { padding-block: clamp(3rem, 7vw, 5rem); }
