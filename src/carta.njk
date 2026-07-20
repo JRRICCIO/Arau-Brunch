@@ -288,9 +288,12 @@ pageKey: "carta"
       width: clamp(64px, 18vw, 88px);
       height: clamp(64px, 18vw, 88px);
       border-radius: 14px;
-      object-fit: cover;
       background: rgba(51, 51, 51, .06);
+      padding: 0; border: 0; overflow: hidden; display: block; cursor: zoom-in;
     }
+    .menu-item__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s var(--ease); }
+    @media (hover: hover) { .menu-item__thumb:hover img { transform: scale(1.06); } }
+    .menu-item__thumb:focus-visible { outline: 2px solid var(--terra); outline-offset: 2px; }
     .menu-item--agotado .menu-item__thumb { filter: grayscale(.7); opacity: .6; }
     .menu-item__allerg {
       margin-top: .4rem;
@@ -554,6 +557,8 @@ pageKey: "carta"
       </div>
     </section>
   </main>
+
+  {% include "lightbox.njk" %}
 
   <!-- ===================== BARRA DE ACCIÓN MÓVIL ===================== -->
   <div class="menu-actionbar" aria-label="{{ ui.a11y.cartaActionbar }}">

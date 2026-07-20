@@ -519,22 +519,7 @@ pageKey: "home"
   </div>
 
   <!-- Lightbox reutilizable (galería + platos + eventos) -->
-  <dialog class="lightbox" id="lightbox" aria-label="{{ ui.a11y.lightboxLabel }}">
-    <button type="button" class="lightbox__close" data-lb="close" aria-label="{{ ui.a11y.lightboxClose }}">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-    </button>
-    <button type="button" class="lightbox__nav lightbox__prev" data-lb="prev" aria-label="{{ ui.a11y.prevPhoto }}">
-      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <figure class="lightbox__fig">
-      <img class="lightbox__img" id="lightbox-img" alt="" />
-      <figcaption class="lightbox__cap" id="lightbox-cap"></figcaption>
-    </figure>
-    <button type="button" class="lightbox__nav lightbox__next" data-lb="next" aria-label="{{ ui.a11y.lightboxNext }}">
-      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <p class="lightbox__count" id="lightbox-count" aria-live="polite"></p>
-  </dialog>
+  {% include "lightbox.njk" %}
 
   <!-- Diálogo de inscripción a eventos (Netlify Forms) -->
   <dialog class="inscripcion" id="inscripcion-dialog" aria-labelledby="insc-title">
