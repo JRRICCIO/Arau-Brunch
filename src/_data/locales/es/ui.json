@@ -90,22 +90,22 @@
       "sub": "Platos preparados con dedicación, ingredientes frescos y una combinación de sabores inspirada en nuestras raíces argentinas y la cultura del brunch australiano. La carta completa está a un clic.",
       "dish1": {
         "name": "Big brekky",
-        "desc": "Chorizo, panceta, alubias, dos huevos, champiñones, hash brown y espinaca.",
+        "desc": "El desayuno australiano por excelencia, generoso y lleno de sabor. En Arau lo llevamos un paso más allá con nuestro toque argentino de chorizo criollo.",
         "tag": "La bestia"
       },
       "dish2": {
         "name": "Benny & the eggs",
-        "desc": "Pan de chipá (pan de queso sin gluten), huevos pochados, holandesa y bacon crocante.",
+        "desc": "Nuestros Eggs Benedict viajan de Australia a Argentina sobre un esponjoso pan de chipá casero. La combinación perfecta entre dos culturas.",
         "tag": "De los más pedidos"
       },
       "dish3": {
         "name": "The tru mila",
-        "desc": "Milanesa con salsa de hongos trufada, Gouda fundido y huevo frito. Con papas y mayo de chipotle.",
+        "desc": "La milanesa a caballo de siempre, como nunca la probaste: coronada con una cremosa salsa de hongos trufada que eleva cada bocado.",
         "tag": "Más vendido"
       },
       "dish4": {
         "name": "Flantástico",
-        "desc": "Flan casero de dulce de leche con nata montada. Para muchos, el mejor flan de Barcelona.",
+        "desc": "El postre más querido de Argentina, reinventado. El dulce de leche se integra en el propio flan para lograr una cremosidad y un sabor simplemente espectaculares.",
         "tag": "Para el dulce"
       },
       "ctaFull": "Ver la carta completa",

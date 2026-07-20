@@ -90,22 +90,22 @@
       "sub": "Plats preparats amb dedicació, ingredients frescos i una combinació de sabors inspirada en les nostres arrels argentines i la cultura del brunch australià. La carta completa és a un clic.",
       "dish1": {
         "name": "Big brekky",
-        "desc": "Xoriço, cansalada, mongetes, dos ous, xampinyons, hash brown i espinacs.",
+        "desc": "L'esmorzar australià per excel·lència, generós i ple de sabor. A l'Arau el portem un pas més enllà amb el nostre toc argentí de xoriço crioll.",
         "tag": "La bèstia"
       },
       "dish2": {
         "name": "Benny & the eggs",
-        "desc": "Pa de chipá (pa de formatge sense gluten), ous escumats, holandesa i bacon cruixent.",
+        "desc": "Els nostres Eggs Benedict viatgen d'Austràlia a l'Argentina sobre un esponjós pa de chipá casolà. La combinació perfecta entre dues cultures.",
         "tag": "Dels més demanats"
       },
       "dish3": {
         "name": "The tru mila",
-        "desc": "Milanesa amb salsa de bolets trufada, Gouda fos i ou ferrat. Amb patates i maionesa de chipotle.",
+        "desc": "La milanesa a caballo de sempre, com no l'has tastat mai: coronada amb una cremosa salsa de bolets trufada que eleva cada mos.",
         "tag": "El més venut"
       },
       "dish4": {
         "name": "Flantástico",
-        "desc": "Flam casolà de dulce de leche amb nata muntada. Per a molts, el millor flam de Barcelona.",
+        "desc": "El postre més estimat de l'Argentina, reinventat. El dulce de leche s'integra dins del mateix flam per aconseguir una cremositat i un sabor simplement espectaculars.",
         "tag": "Per al dolç"
       },
       "ctaFull": "Veure la carta completa",

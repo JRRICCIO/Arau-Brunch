@@ -90,22 +90,22 @@
       "sub": "Des plats préparés avec soin, des ingrédients frais et un mariage de saveurs inspiré de nos racines argentines et de la culture du brunch australien. La carte complète n'est qu'à un clic.",
       "dish1": {
         "name": "Big brekky",
-        "desc": "Chorizo, lard, haricots, deux œufs, champignons, hash brown et épinards.",
+        "desc": "Le petit-déjeuner australien par excellence, généreux et plein de saveur. Chez Arau, on va encore plus loin avec notre touche argentine de chorizo criollo.",
         "tag": "La bête"
       },
       "dish2": {
         "name": "Benny & the eggs",
-        "desc": "Pain de chipá (pain au fromage sans gluten), œufs pochés, sauce hollandaise et bacon croustillant.",
+        "desc": "Nos Eggs Benedict voyagent d'Australie en Argentine sur un moelleux pain de chipá maison. La rencontre parfaite entre deux cultures.",
         "tag": "Parmi les plus demandés"
       },
       "dish3": {
         "name": "The tru mila",
-        "desc": "Milanesa, sauce aux champignons truffée, Gouda fondu et œuf au plat. Servie avec frites et mayo au chipotle.",
+        "desc": "La milanesa a caballo de toujours, comme tu ne l'as jamais goûtée : nappée d'une crémeuse sauce aux champignons truffée qui sublime chaque bouchée.",
         "tag": "Le plus vendu"
       },
       "dish4": {
         "name": "Flantástico",
-        "desc": "Flan maison au dulce de leche et chantilly. Pour beaucoup, le meilleur flan de Barcelone.",
+        "desc": "Le dessert le plus aimé d'Argentine, réinventé. Le dulce de leche s'intègre au flan lui-même pour une onctuosité et une saveur tout simplement spectaculaires.",
         "tag": "Pour les gourmands"
       },
       "ctaFull": "Voir la carte complète",

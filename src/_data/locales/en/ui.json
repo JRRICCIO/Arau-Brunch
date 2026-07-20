@@ -90,22 +90,22 @@
       "sub": "Dishes made with care, fresh ingredients and a blend of flavours inspired by our Argentine roots and Australian brunch culture. The full menu is just one click away.",
       "dish1": {
         "name": "Big brekky",
-        "desc": "Sausage, bacon, beans, two eggs, mushrooms, hash brown and spinach.",
+        "desc": "The quintessential Australian breakfast — generous and full of flavour. At Arau we take it one step further with our Argentine touch of chorizo criollo.",
         "tag": "The beast"
       },
       "dish2": {
         "name": "Benny & the eggs",
-        "desc": "Chipá bread (gluten-free cheese bread), poached eggs, hollandaise and crispy bacon.",
+        "desc": "Our Eggs Benedict travel from Australia to Argentina on a fluffy house-made chipá bread. The perfect blend of two cultures.",
         "tag": "One of the most ordered"
       },
       "dish3": {
         "name": "The tru mila",
-        "desc": "Schnitzel with truffled mushroom sauce, melted Gouda and a fried egg. Served with fries and chipotle mayo.",
+        "desc": "The classic milanesa a caballo like you've never tried it: crowned with a creamy truffled mushroom sauce that elevates every bite.",
         "tag": "Best seller"
       },
       "dish4": {
         "name": "Flantástico",
-        "desc": "Homemade dulce de leche flan with whipped cream. For many, the best flan in Barcelona.",
+        "desc": "Argentina's most beloved dessert, reinvented. The dulce de leche is blended into the flan itself for a creaminess and flavour that are simply spectacular.",
         "tag": "For your sweet tooth"
       },
       "ctaFull": "See the full menu",
