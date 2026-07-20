@@ -15,5 +15,15 @@
       { "src": "img/terrace-coffee.webp", "alt": "Flat white en la terraza de ARAU al atardecer", "caption": "Café en la terraza antes de que arranque la noche" }
     ]
   },
-  "cards": []
+  "cards": [
+    {
+      "kicker": "Experiencia a oscuras",
+      "title": "Cena a ciegas",
+      "chip": "Una vez al mes · seguí la agenda",
+      "desc": "Un menú de varios pasos completamente a oscuras. Sin la vista, el olfato, el gusto y el tacto toman el control: cada plato es una sorpresa hasta el último bocado.",
+      "id": "cena-a-ciegas",
+      "inscripciones": true,
+      "photo": ""
+    }
+  ]
 }

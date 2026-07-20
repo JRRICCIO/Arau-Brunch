@@ -15,5 +15,15 @@
       { "src": "img/terrace-coffee.webp", "alt": "Flat white sur la terrasse d'ARAU au coucher du soleil", "caption": "Un café en terrasse avant que la soirée ne commence" }
     ]
   },
-  "cards": []
+  "cards": [
+    {
+      "kicker": "Dans le noir",
+      "title": "Dîner à l'aveugle",
+      "chip": "Une fois par mois · suis l'agenda",
+      "desc": "Un menu en plusieurs plats dans le noir complet. Sans la vue, l'odorat, le goût et le toucher prennent le relais — chaque plat est une surprise jusqu'à la dernière bouchée.",
+      "id": "cena-a-ciegas",
+      "inscripciones": true,
+      "photo": ""
+    }
+  ]
 }
