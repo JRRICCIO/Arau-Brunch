@@ -10,7 +10,7 @@
         {%- set base = 'menu-drinks' if section.id == 'bebidas' else 'menu-coffee' %}
         <ul class="{{ base }}">
           {%- for item in section.items %}
-          <li{% if not item.disponible %} class="is-agotado"{% endif %} data-nombre="{{ item.nombre }}" data-precio="{{ item.precio }}"{% if not item.disponible %} data-agotado="1"{% endif %}><span class="{{ base }}__name">{{ item.nombre }}{% if not item.disponible %} <span class="menu-soldout">Agotado</span>{% endif %}</span><span class="{{ base }}__dots" aria-hidden="true"></span><span class="{{ base }}__price">{{ item.precio }}</span></li>
+          <li{% if not item.disponible %} class="is-agotado"{% endif %} data-nombre="{{ item.nombre }}" data-precio="{{ item.precio }}"{% if not item.disponible %} data-agotado="1"{% endif %}><span class="{{ base }}__name">{{ item.nombre }}{% if not item.disponible %} <span class="menu-soldout">Agotado</span>{% endif %}{% if item.alergenos %} <span class="drink-allerg">{{ item.alergenos }}</span>{% endif %}</span><span class="{{ base }}__dots" aria-hidden="true"></span><span class="{{ base }}__price">{{ item.precio }}</span></li>
           {%- endfor %}
         </ul>
         {%- if section.id == 'cafe' %}

@@ -23,7 +23,8 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_3b726f57e4.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_3b726f57e4.jpg",
+          "alergenos": "Ou"
         },
         {
           "nombre": "Provo con chimi",
@@ -212,7 +213,8 @@
           "precio": "14,50",
           "etiquetas": [],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg",
+          "alergenos": "Gluten · Làctics · Ou · Peix"
         }
       ],
       "extras": "Extres: Alvocat +2,50€ · Bacon +2,50€ · Salmó gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
@@ -244,7 +246,8 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_100874_arau_grilled_brunch_Food_alfajor_de_coco_y_dulce_de_leche_7d28162463.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_100874_arau_grilled_brunch_Food_alfajor_de_coco_y_dulce_de_leche_7d28162463.jpg",
+          "alergenos": "Làctics · Ou"
         },
         {
           "nombre": "Chipá (pa de formatge GF)",
@@ -305,14 +308,16 @@
           "desc": "Un cop de cafè amb llet.",
           "precio": "1,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Macchiato",
           "desc": "Un cop de cafè amb escuma de llet.",
           "precio": "1,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Americano",
@@ -326,91 +331,104 @@
           "desc": "Doble ristretto amb llet, més petit i més intens que el blanc pla.",
           "precio": "3,40",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Blanc pla",
           "desc": "Espresso doble amb llet.",
           "precio": "3,60",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Latte (cafè amb llet)",
           "desc": "Un cop de cafè amb llet.",
           "precio": "3,20",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Caputxino",
           "desc": "Un tret de cafè amb llet (decorat amb cacau o canyella).",
           "precio": "3,20",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Llet de caramel",
           "desc": "Un cop de cafè amb llet i xarop de caramel.",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Latte de vainilla",
           "desc": "Un cop de cafè amb llet i xarop de vainilla.",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "moca",
           "desc": "Un cop de cafè amb llet i cacau.",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Babyccino",
           "desc": "Llet escumosa en una tassa petita decorada amb cacau (per a nadons)",
           "precio": "1,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Matcha latte",
           "desc": "Te matcha en pols amb llet.",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Latte de cúrcuma",
           "desc": "",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Chai Latte",
           "desc": "Te Chai en pols amb llet.",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Chai brut",
           "desc": "Chai latte amb un cop de cafè.",
           "precio": "4,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Submarí",
           "desc": "Xocolata calenta a l'estil argentí (Llet amb un tros de xocolata per fondre)",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Varietats de tes i infusions",
@@ -424,7 +442,8 @@
           "desc": "Un cop de cafè amb llet.",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         }
       ]
     },
@@ -438,28 +457,32 @@
           "desc": "Un cop de cafè amb llet i gel",
           "precio": "3,30",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Moca gelada",
           "desc": "Un cop de cafè amb llet i cacau + gel",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Chai latte gelat",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Chai brut gelat",
           "desc": "Chai latte gelat amb un espresso",
           "precio": "5,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Cold brew",
@@ -480,14 +503,16 @@
           "desc": "Un tret de cafè, caramel o xarop de vainilla, llet i gel.",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         },
         {
           "nombre": "Dulce de Leche Latte gelat",
           "desc": "Un cop de cafè, fudge, llet i gel.",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Làctics"
         }
       ]
     },
@@ -641,14 +666,16 @@
           "desc": "Copa de cervesa",
           "precio": "3,30",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Gluten"
         },
         {
           "nombre": "vermut",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfits"
         },
         {
           "nombre": "Mimosa",
@@ -657,7 +684,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfits"
         },
         {
           "nombre": "Cola de Fernet",
@@ -671,7 +699,8 @@
           "desc": "",
           "precio": "7,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfits"
         },
         {
           "nombre": "Gin tònic",
@@ -685,7 +714,8 @@
           "desc": "Suc de tomàquet, vodka, suc de llima, sal, pebre, salsa Worcestershire i Tabasco",
           "precio": "8,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Peix · Sulfits"
         },
         {
           "nombre": "Espresso Martini",
@@ -715,7 +745,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfits"
         }
       ]
     },
@@ -729,28 +760,32 @@
           "desc": "",
           "precio": "25,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfits"
         },
         {
           "nombre": "Catena Malbec",
           "desc": "",
           "precio": "28,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfits"
         },
         {
           "nombre": "Oyuc Malbec",
           "desc": "Vi negre Malbec Argentino",
           "precio": "19,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfits"
         },
         {
           "nombre": "Mes que Paraules",
           "desc": "",
           "precio": "19,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfits"
         }
       ]
     }

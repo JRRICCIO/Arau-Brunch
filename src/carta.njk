@@ -390,6 +390,9 @@ pageKey: "carta"
     .menu-drinks__name { font-family: var(--font-display); font-weight: 500; font-size: 1.02rem; color: var(--ink); }
     .menu-drinks__dots { flex: 1 1 auto; border-bottom: 1px dotted rgba(51, 51, 51, .22); transform: translateY(-.25em); }
     .menu-drinks__price { font-family: var(--font-display); font-weight: 600; color: var(--terra-deep); font-variant-numeric: tabular-nums; }
+    /* Alérgenos en bebidas/cafés (formato compacto) */
+    .drink-allerg { font-family: var(--font-body); font-weight: 400; font-size: .72rem; color: var(--ink-soft); letter-spacing: .01em; white-space: nowrap; }
+    .drink-allerg::before { content: "⚠ "; color: var(--terra); font-size: .9em; }
 
     /* Cierre / volver */
     .menu-outro {

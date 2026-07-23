@@ -23,7 +23,8 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_3b726f57e4.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_3b726f57e4.jpg",
+          "alergenos": "Œuf"
         },
         {
           "nombre": "Provo avec chimi",
@@ -212,7 +213,8 @@
           "precio": "14,50",
           "etiquetas": [],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg",
+          "alergenos": "Gluten · Produits laitiers · Œuf · Poisson"
         }
       ],
       "extras": "Extras : Avocat +2,50€ · Bacon +2,50€ · Saumon gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
@@ -244,7 +246,8 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_100874_arau_grilled_brunch_Food_alfajor_de_coco_y_dulce_de_leche_7d28162463.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_100874_arau_grilled_brunch_Food_alfajor_de_coco_y_dulce_de_leche_7d28162463.jpg",
+          "alergenos": "Produits laitiers · Œuf"
         },
         {
           "nombre": "Chipá (pain au fromage GF)",
@@ -305,14 +308,16 @@
           "desc": "Un café au lait",
           "precio": "1,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Macchiato",
           "desc": "Un café avec de la mousse de lait",
           "precio": "1,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Américain",
@@ -326,91 +331,104 @@
           "desc": "Double ristretto au lait, plus petit et plus intense que le flat white",
           "precio": "3,40",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Blanc cassé",
           "desc": "Double expresso avec lait",
           "precio": "3,60",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Latte (café au lait)",
           "desc": "Un café au lait",
           "precio": "3,20",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Cappuccino",
           "desc": "Un café au lait (agrémenté de cacao ou de cannelle)",
           "precio": "3,20",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Latte au caramel",
           "desc": "Un café avec du lait et du sirop de caramel",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Latte à la vanille",
           "desc": "Un café avec du lait et du sirop de vanille",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Moka",
           "desc": "Un café au lait et au cacao",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Babyccino",
           "desc": "Lait en poudre dans une petite tasse décorée de cacao (pour les bébés)",
           "precio": "1,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Matcha latte",
           "desc": "Thé Matcha en poudre avec du lait",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Latte au curcuma",
           "desc": "",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Chai latte",
           "desc": "Thé chai en poudre avec lait",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Chai sale",
           "desc": "Chai latte avec une dose de café",
           "precio": "4,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Sous-marin",
           "desc": "Chocolat chaud à l'argentine <br />(lait avec un morceau de chocolat à faire fondre)",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Variétés de thés et d'infusions",
@@ -424,7 +442,8 @@
           "desc": "Un café avec du lait et du dulce de leche",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         }
       ]
     },
@@ -438,28 +457,32 @@
           "desc": "Un café avec du lait et des glaçons",
           "precio": "3,30",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Moka glacé",
           "desc": "Café au lait et au cacao + glace",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Chai latte glacé",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Chai glacé",
           "desc": "Chai latte glacé avec un espresso",
           "precio": "5,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Infusion froide",
@@ -480,14 +503,16 @@
           "desc": "Une dose de café, du sirop de caramel ou de vanille, du lait et de la glace",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         },
         {
           "nombre": "Latte glacé au dulce de leche",
           "desc": "Un café, du dulce de leche, du lait et de la glace",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Produits laitiers"
         }
       ]
     },
@@ -641,14 +666,16 @@
           "desc": "Verre de bière",
           "precio": "3,30",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Gluten"
         },
         {
           "nombre": "Vermouth",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfites"
         },
         {
           "nombre": "Mimosa",
@@ -657,7 +684,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfites"
         },
         {
           "nombre": "Fernet cola",
@@ -671,7 +699,8 @@
           "desc": "",
           "precio": "7,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfites"
         },
         {
           "nombre": "Gin Tonic",
@@ -685,7 +714,8 @@
           "desc": "Jus de tomate, vodka, jus de citron vert, sel, poivre, sauce Worcestershire et sauce Tabasco.",
           "precio": "8,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Poisson · Sulfites"
         },
         {
           "nombre": "Martini à l'espresso",
@@ -715,7 +745,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfites"
         }
       ]
     },
@@ -729,28 +760,32 @@
           "desc": "",
           "precio": "25,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfites"
         },
         {
           "nombre": "Catena malbec",
           "desc": "",
           "precio": "28,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfites"
         },
         {
           "nombre": "Oyuc Malbec",
           "desc": "Vin rouge Malbec argentin",
           "precio": "19,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfites"
         },
         {
           "nombre": "Plus que des mots",
           "desc": "",
           "precio": "19,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulfites"
         }
       ]
     }

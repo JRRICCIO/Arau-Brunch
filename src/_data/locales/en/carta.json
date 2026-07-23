@@ -23,7 +23,8 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_3b726f57e4.jpg"
+          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_3b726f57e4.jpg",
+          "alergenos": "Egg"
         },
         {
           "nombre": "Provo with chimi",
@@ -212,7 +213,8 @@
           "precio": "14,50",
           "etiquetas": [],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg",
+          "alergenos": "Gluten · Dairy · Egg · Fish"
         }
       ],
       "extras": "Add-ons: Avocado +€2.50 · Bacon +€2.50 · Gravlax salmon +€3.50 · Halloumi +€3 · Hash brown +€1.50"
@@ -244,7 +246,8 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_100874_arau_grilled_brunch_Food_alfajor_de_coco_y_dulce_de_leche_7d28162463.jpg"
+          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_100874_arau_grilled_brunch_Food_alfajor_de_coco_y_dulce_de_leche_7d28162463.jpg",
+          "alergenos": "Dairy · Egg"
         },
         {
           "nombre": "Chipá (GF cheese bread)",
@@ -305,14 +308,16 @@
           "desc": "A shot of coffee with milk",
           "precio": "1,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Macchiato",
           "desc": "A shot of coffee with milk foam",
           "precio": "1,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "American",
@@ -326,91 +331,104 @@
           "desc": "Double ristretto with milk, smaller and more intense than the flat white",
           "precio": "3,40",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Flat white",
           "desc": "Double espresso with milk",
           "precio": "3,60",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Latte (coffee with milk)",
           "desc": "A shot of coffee with milk",
           "precio": "3,20",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Cappuccino",
           "desc": "A shot of coffee with milk (decorated with cocoa or cinnamon)",
           "precio": "3,20",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Caramel latte",
           "desc": "A shot of coffee with milk and caramel syrup",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Vanilla latte",
           "desc": "A shot of coffee with milk and vanilla syrup",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Mocha",
           "desc": "A shot of coffee with milk and cocoa",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Babyccino",
           "desc": "Frothed milk in a small cup decorated with cocoa (for babies)",
           "precio": "1,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Matcha latte",
           "desc": "Matcha tea powder with milk ",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Turmeric latte",
           "desc": "",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Chai latte",
           "desc": "Chai tea powder with milk",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Dirty chai",
           "desc": "Chai latte with a shot of coffee",
           "precio": "4,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Submarine",
           "desc": "Argentinian style hot chocolate <br />(Milk with a piece of chocolate to melt)",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Varieties of teas and infusions",
@@ -424,7 +442,8 @@
           "desc": "A shot of coffee with milk and dulce de leche",
           "precio": "3,90",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         }
       ]
     },
@@ -438,28 +457,32 @@
           "desc": "A shot of coffee with milk and ice",
           "precio": "3,30",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Iced mocha",
           "desc": "Shot of coffee with milk and cocoa + ice",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Iced chai latte",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Iced dirty chai",
           "desc": "Iced chai latte with espresso",
           "precio": "5,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Cold brew",
@@ -480,14 +503,16 @@
           "desc": "A shot of coffee, caramel or vanilla syrup, milk and ice",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         },
         {
           "nombre": "Iced dulce de leche latte",
           "desc": "A shot of coffee, dulce de leche, milk and ice",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Dairy"
         }
       ]
     },
@@ -641,14 +666,16 @@
           "desc": "Glass of beer",
           "precio": "3,30",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Gluten"
         },
         {
           "nombre": "Vermouth",
           "desc": "",
           "precio": "4,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulphites"
         },
         {
           "nombre": "Mimosa",
@@ -657,7 +684,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulphites"
         },
         {
           "nombre": "Fernet cola",
@@ -671,7 +699,8 @@
           "desc": "",
           "precio": "7,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulphites"
         },
         {
           "nombre": "Gin Tonic",
@@ -685,7 +714,8 @@
           "desc": "Tomato juice, vodka, lime juice, salt, pepper, Worcestershire sauce and tabasco",
           "precio": "8,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Fish · Sulphites"
         },
         {
           "nombre": "Espresso Martini",
@@ -715,7 +745,8 @@
           "etiquetas": [
             "casa"
           ],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulphites"
         }
       ]
     },
@@ -729,28 +760,32 @@
           "desc": "",
           "precio": "25,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulphites"
         },
         {
           "nombre": "Catena malbec",
           "desc": "",
           "precio": "28,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulphites"
         },
         {
           "nombre": "Oyuc Malbec",
           "desc": "Argentine Malbec red wine",
           "precio": "19,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulphites"
         },
         {
           "nombre": "More than words",
           "desc": "",
           "precio": "19,00",
           "etiquetas": [],
-          "disponible": true
+          "disponible": true,
+          "alergenos": "Sulphites"
         }
       ]
     }
