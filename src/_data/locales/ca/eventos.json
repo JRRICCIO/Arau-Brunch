@@ -10,20 +10,48 @@
     "photo": "",
     "photoAlt": "Taula de brunch amb mimosa en una Bingo Night",
     "strip": [
-      { "src": "img/terrace.webp", "alt": "Terrassa d'ARAU en una nit d'esdeveniment", "caption": "La terrassa d'ARAU en caure la tarda" },
-      { "src": "img/big-arau.webp", "alt": "The Big ARAU, brunch complet per començar la nit", "caption": "The Big ARAU — per arrencar la nit amb tot" },
-      { "src": "img/terrace-coffee.webp", "alt": "Flat white a la terrassa d'ARAU a la posta de sol", "caption": "Cafè a la terrassa abans que arrenqui la nit" }
+      {
+        "src": "img/terrace.webp",
+        "alt": "Terrassa d'ARAU en una nit d'esdeveniment",
+        "caption": "La terrassa d'ARAU en caure la tarda"
+      },
+      {
+        "src": "img/big-arau.webp",
+        "alt": "The Big ARAU, brunch complet per començar la nit",
+        "caption": "The Big ARAU — per arrencar la nit amb tot"
+      },
+      {
+        "src": "img/terrace-coffee.webp",
+        "alt": "Flat white a la terrassa d'ARAU a la posta de sol",
+        "caption": "Cafè a la terrassa abans que arrenqui la nit"
+      }
     ]
   },
-  "cards": [
-    {
-      "kicker": "A les fosques",
-      "title": "Sopar a cegues",
-      "chip": "Segueix l'agenda",
-      "desc": "Un menú de diversos passos completament a les fosques. Sense la vista, l'olfacte, el gust i el tacte prenen el control — cada plat és una sorpresa fins a l'última mossegada.",
-      "id": "cena-a-ciegas",
-      "inscripciones": true,
-      "photo": ""
-    }
-  ]
+  "otros": {
+    "heading": "Altres esdeveniments a l'Arau",
+    "sub": "També organitzem altres nits especials. Demana'ns més informació i t'expliquem les properes dates.",
+    "cta": "Demanar més info",
+    "items": [
+      {
+        "title": "Sopar a les fosques",
+        "desc": "Un menú de diversos passos completament a les fosques: sense la vista, la resta de sentits prenen el control."
+      },
+      {
+        "title": "Nit de ñoquis i música en directe",
+        "desc": "Ñoquis casolans amb diferents salses i música en directe."
+      },
+      {
+        "title": "Festes patriòtiques argentines",
+        "desc": "Locro, empanadas tucumanas i folklore en directe per celebrar les festes nacionals argentines."
+      },
+      {
+        "title": "Torneig de truco i Tutti Frutti",
+        "desc": "Nits de joc amb torneig de truco i Tutti Frutti."
+      },
+      {
+        "title": "Coffee fest",
+        "desc": "Una jornada dedicada al cafè d'especialitat: tastos, mètodes i baristes."
+      }
+    ]
+  }
 }

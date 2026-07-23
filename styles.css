@@ -1228,6 +1228,30 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .event-feature--no-photo { grid-template-columns: 1fr; }
 .event-feature--no-photo .event-feature__body { max-width: 62ch; }
 .event-card--no-photo { justify-content: center; }  /* centra el texto cuando no hay foto */
+
+/* Destacado en recuadro (Bingo) */
+.event-feature--boxed {
+  background: var(--cream-card);
+  border: 1px solid rgba(51, 51, 51, .08);
+  border-radius: var(--radius);
+  padding: clamp(1.6rem, 4vw, 2.8rem);
+  box-shadow: 0 30px 60px -46px rgba(156, 58, 31, .35);
+}
+.event-feature--boxed.event-feature--no-photo .event-feature__body { max-width: 60ch; }
+
+/* Bloque "Otros eventos en Arau" */
+.events-more { margin-top: clamp(2.4rem, 6vw, 4rem); }
+.events-more__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.1; color: var(--ink); }
+.events-more__sub { color: var(--ink-soft); margin-top: .55rem; max-width: 56ch; font-size: 1.02rem; }
+.events-more__list {
+  list-style: none; padding: 0; margin: 1.7rem 0 0;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 2.6rem;
+}
+.events-more__item { padding-left: 1rem; border-left: 2px solid var(--terra); }
+.events-more__name { font-family: var(--font-display); font-weight: 600; font-size: 1.14rem; color: var(--ink); line-height: 1.2; }
+.events-more__desc { color: var(--ink-soft); margin-top: .25rem; font-size: .95rem; }
+.events-more > .btn { margin-top: 1.9rem; }
+@media (max-width: 700px) { .events-more__list { grid-template-columns: 1fr; gap: 1.1rem; } }
 @media (hover: hover) {
   .event-card:hover { transform: translateY(-5px); box-shadow: 0 26px 46px -30px rgba(51, 51, 51, .5); }
   .event-feature__photo:hover img,

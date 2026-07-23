@@ -10,20 +10,48 @@
     "photo": "",
     "photoAlt": "A brunch table with a mimosa on Bingo Night",
     "strip": [
-      { "src": "img/terrace.webp", "alt": "ARAU's terrace with brunch and the facade behind", "caption": "ARAU's terrace as the afternoon winds down" },
-      { "src": "img/big-arau.webp", "alt": "The Big ARAU, a full brunch", "caption": "The Big ARAU — to kick off the night in style" },
-      { "src": "img/terrace-coffee.webp", "alt": "A flat white on ARAU's terrace at sunset", "caption": "Coffee on the terrace before the night gets going" }
+      {
+        "src": "img/terrace.webp",
+        "alt": "ARAU's terrace with brunch and the facade behind",
+        "caption": "ARAU's terrace as the afternoon winds down"
+      },
+      {
+        "src": "img/big-arau.webp",
+        "alt": "The Big ARAU, a full brunch",
+        "caption": "The Big ARAU — to kick off the night in style"
+      },
+      {
+        "src": "img/terrace-coffee.webp",
+        "alt": "A flat white on ARAU's terrace at sunset",
+        "caption": "Coffee on the terrace before the night gets going"
+      }
     ]
   },
-  "cards": [
-    {
-      "kicker": "In the dark",
-      "title": "Blind dinner",
-      "chip": "Follow the calendar",
-      "desc": "A multi-course menu in complete darkness. Without sight, smell, taste and touch take over — every dish is a surprise until the last bite.",
-      "id": "cena-a-ciegas",
-      "inscripciones": true,
-      "photo": ""
-    }
-  ]
+  "otros": {
+    "heading": "More events at Arau",
+    "sub": "We also host other special nights. Ask us for more info and we'll tell you the upcoming dates.",
+    "cta": "Ask for more info",
+    "items": [
+      {
+        "title": "Dinner in the dark",
+        "desc": "A multi-course menu in complete darkness: without sight, the other senses take over."
+      },
+      {
+        "title": "Ñoqui night with live music",
+        "desc": "Homemade ñoquis with different sauces and live music."
+      },
+      {
+        "title": "Argentine national days",
+        "desc": "Locro, empanadas tucumanas and live folklore to celebrate Argentina's national holidays."
+      },
+      {
+        "title": "Truco & Tutti Frutti tournament",
+        "desc": "Game nights with a truco and Tutti Frutti tournament."
+      },
+      {
+        "title": "Coffee fest",
+        "desc": "A day dedicated to specialty coffee: tastings, brew methods and baristas."
+      }
+    ]
+  }
 }

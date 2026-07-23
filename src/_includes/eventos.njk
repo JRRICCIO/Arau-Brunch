@@ -1,5 +1,5 @@
-        <!-- Feature -->
-        <article class="event-feature reveal{% if not eventos.feature.photo %} event-feature--no-photo{% endif %}">
+        <!-- Destacado: Bingo (con recuadro) -->
+        <article class="event-feature event-feature--boxed reveal{% if not eventos.feature.photo %} event-feature--no-photo{% endif %}">
           {%- if eventos.feature.photo %}
           <div class="event-feature__media">
             <button type="button" class="event-feature__photo thumb" data-gallery="evento-feature"
@@ -30,26 +30,17 @@
           </div>
         </article>
 
-        <!-- Noches recurrentes -->
-        <div class="events-grid">
-          {%- for card in eventos.cards %}
-          <article class="event-card reveal{% if not card.photo %} event-card--no-photo{% endif %}">
-            {%- if card.photo %}
-            <button type="button" class="event-card__photo thumb" data-gallery="evento-{{ loop.index }}"
-                    data-full="{{ card.photo | asset }}" data-caption="{{ card.caption }}">
-              <img src="{{ card.photo | asset }}" alt="{{ card.photoAlt }}" width="600" height="400" loading="lazy" decoding="async" />
-              <span class="event-feature__play" aria-hidden="true">{{ ui.eventos.card.play }}</span>
-            </button>
-            {%- endif %}
-            <div class="event-card__body">
-              <p class="event__kicker">{{ card.kicker }}</p>
-              <h3 class="event-card__title">{{ card.title }}</h3>
-              <span class="event__chip">{{ card.chip }}</span>
-              <p class="event-card__desc">{{ card.desc }}</p>
-              {%- if card.inscripciones %}
-              <button type="button" class="btn btn--ghost btn--sm js-inscribirme" data-evento-id="{{ card.id }}" data-evento-nombre="{{ card.title }}">{{ ui.inscripcion.cta }}</button>
-              {%- endif %}
-            </div>
-          </article>
-          {%- endfor %}
+        <!-- Otros eventos en Arau -->
+        <div class="events-more reveal">
+          <h3 class="events-more__title">{{ eventos.otros.heading }}</h3>
+          <p class="events-more__sub">{{ eventos.otros.sub }}</p>
+          <ul class="events-more__list">
+            {%- for it in eventos.otros.items %}
+            <li class="events-more__item">
+              <h4 class="events-more__name">{{ it.title }}</h4>
+              <p class="events-more__desc">{{ it.desc }}</p>
+            </li>
+            {%- endfor %}
+          </ul>
+          <button type="button" class="btn btn--terra js-inscribirme" data-evento-id="otros-eventos" data-evento-nombre="{{ eventos.otros.heading }}">{{ eventos.otros.cta }}</button>
         </div>

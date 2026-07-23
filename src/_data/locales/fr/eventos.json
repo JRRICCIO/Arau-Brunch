@@ -10,20 +10,48 @@
     "photo": "",
     "photoAlt": "Table de brunch avec une mimosa lors d'une Bingo Night",
     "strip": [
-      { "src": "img/terrace.webp", "alt": "Terrasse d'ARAU avec un brunch et la façade en arrière-plan", "caption": "La terrasse d'ARAU à la tombée du jour" },
-      { "src": "img/big-arau.webp", "alt": "The Big ARAU, brunch complet", "caption": "The Big ARAU — pour démarrer la soirée en beauté" },
-      { "src": "img/terrace-coffee.webp", "alt": "Flat white sur la terrasse d'ARAU au coucher du soleil", "caption": "Un café en terrasse avant que la soirée ne commence" }
+      {
+        "src": "img/terrace.webp",
+        "alt": "Terrasse d'ARAU avec un brunch et la façade en arrière-plan",
+        "caption": "La terrasse d'ARAU à la tombée du jour"
+      },
+      {
+        "src": "img/big-arau.webp",
+        "alt": "The Big ARAU, brunch complet",
+        "caption": "The Big ARAU — pour démarrer la soirée en beauté"
+      },
+      {
+        "src": "img/terrace-coffee.webp",
+        "alt": "Flat white sur la terrasse d'ARAU au coucher du soleil",
+        "caption": "Un café en terrasse avant que la soirée ne commence"
+      }
     ]
   },
-  "cards": [
-    {
-      "kicker": "Dans le noir",
-      "title": "Dîner à l'aveugle",
-      "chip": "Suis l'agenda",
-      "desc": "Un menu en plusieurs plats dans le noir complet. Sans la vue, l'odorat, le goût et le toucher prennent le relais — chaque plat est une surprise jusqu'à la dernière bouchée.",
-      "id": "cena-a-ciegas",
-      "inscripciones": true,
-      "photo": ""
-    }
-  ]
+  "otros": {
+    "heading": "Autres événements chez Arau",
+    "sub": "On organise aussi d'autres soirées spéciales. Demande-nous plus d'infos et on te donne les prochaines dates.",
+    "cta": "Demander plus d'info",
+    "items": [
+      {
+        "title": "Dîner dans le noir",
+        "desc": "Un menu en plusieurs plats dans le noir complet : sans la vue, les autres sens prennent le relais."
+      },
+      {
+        "title": "Soirée ñoquis et musique live",
+        "desc": "Ñoquis maison avec différentes sauces et musique live."
+      },
+      {
+        "title": "Fêtes nationales argentines",
+        "desc": "Locro, empanadas tucumanas et folklore live pour célébrer les fêtes nationales argentines."
+      },
+      {
+        "title": "Tournoi de truco et Tutti Frutti",
+        "desc": "Soirées jeux avec tournoi de truco et Tutti Frutti."
+      },
+      {
+        "title": "Coffee fest",
+        "desc": "Une journée dédiée au café de spécialité : dégustations, méthodes et baristas."
+      }
+    ]
+  }
 }

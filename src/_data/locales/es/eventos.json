@@ -10,20 +10,48 @@
     "photo": "",
     "photoAlt": "Mesa de brunch con mimosa en una Bingo Night",
     "strip": [
-      { "src": "img/terrace.webp", "alt": "Terraza de ARAU con brunch y la fachada al fondo", "caption": "La terraza de ARAU al caer la tarde" },
-      { "src": "img/big-arau.webp", "alt": "The Big ARAU, brunch completo", "caption": "The Big ARAU — para arrancar la noche con todo" },
-      { "src": "img/terrace-coffee.webp", "alt": "Flat white en la terraza de ARAU al atardecer", "caption": "Café en la terraza antes de que arranque la noche" }
+      {
+        "src": "img/terrace.webp",
+        "alt": "Terraza de ARAU con brunch y la fachada al fondo",
+        "caption": "La terraza de ARAU al caer la tarde"
+      },
+      {
+        "src": "img/big-arau.webp",
+        "alt": "The Big ARAU, brunch completo",
+        "caption": "The Big ARAU — para arrancar la noche con todo"
+      },
+      {
+        "src": "img/terrace-coffee.webp",
+        "alt": "Flat white en la terraza de ARAU al atardecer",
+        "caption": "Café en la terraza antes de que arranque la noche"
+      }
     ]
   },
-  "cards": [
-    {
-      "kicker": "Experiencia a oscuras",
-      "title": "Cena a ciegas",
-      "chip": "Seguí la agenda",
-      "desc": "Un menú de varios pasos completamente a oscuras. Sin la vista, el olfato, el gusto y el tacto toman el control: cada plato es una sorpresa hasta el último bocado.",
-      "id": "cena-a-ciegas",
-      "inscripciones": true,
-      "photo": ""
-    }
-  ]
+  "otros": {
+    "heading": "Otros eventos en Arau",
+    "sub": "También armamos otras noches especiales. Pedinos más info y te contamos las próximas fechas.",
+    "cta": "Pedir más info",
+    "items": [
+      {
+        "title": "Cena a oscuras",
+        "desc": "Un menú de varios pasos completamente a oscuras: sin la vista, el resto de los sentidos toman el control."
+      },
+      {
+        "title": "Noche de ñoquis y música en vivo",
+        "desc": "Ñoquis caseros con distintas salsas y música en vivo."
+      },
+      {
+        "title": "Fiestas patrias",
+        "desc": "Locro, empanadas tucumanas y folklore en vivo para celebrar las fechas patrias argentinas."
+      },
+      {
+        "title": "Torneo de truco y Tutti Frutti",
+        "desc": "Noches de juego con torneo de truco y Tutti Frutti."
+      },
+      {
+        "title": "Coffee fest",
+        "desc": "Una jornada dedicada al café de especialidad: catas, métodos y baristas."
+      }
+    ]
+  }
 }
