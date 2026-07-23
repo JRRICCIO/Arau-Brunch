@@ -503,17 +503,10 @@ pageKey: "carta"
     <!-- ===================== INTRO ===================== -->
     <section class="menu-intro" aria-labelledby="menu-title">
       <div class="container menu-intro__inner">
-        <p class="section-eyebrow">{{ carta.intro.eyebrow }}</p>
         <h1 class="menu-intro__title" id="menu-title">{{ carta.intro.titleStart }} <span class="ital">{{ carta.intro.titleAccent }}</span></h1>
         <p class="menu-intro__sub">{{ carta.intro.subtitle }}</p>
         <p class="menu-intro__dateline">{{ carta.intro.dateline }}</p>
         <p class="menu-intro__disclaimer">{{ carta.intro.disclaimer }}</p>
-        <div class="menu-intro__actions">
-          <a class="btn btn--ghost" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">
-            {{ ui.carta.intro.actionInstagram }}
-            <svg class="btn__arrow" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
       </div>
     </section>
 
@@ -526,7 +519,9 @@ pageKey: "carta"
       </div>
     </nav>
 
-    <!-- ===================== LEYENDA ===================== -->
+    {% include "carta-sections.njk" %}
+
+    <!-- ===================== LEYENDA (al final de la carta) ===================== -->
     <div class="menu-legend">
       <div class="menu-legend__inner">
         <ul class="menu-legend__keys" aria-label="{{ ui.legend.keysLabel }}">
@@ -541,8 +536,6 @@ pageKey: "carta"
       </div>
     </div>
 
-    {% include "carta-sections.njk" %}
-
     <!-- ===================== CIERRE ===================== -->
     <section class="menu-outro" aria-labelledby="outro-title">
       <div class="container">
@@ -552,6 +545,10 @@ pageKey: "carta"
           <a class="btn btn--ghost btn--lg" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener">
             {{ ui.carta.outro.comoLlegar }}
             <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">
+            {{ ui.carta.intro.actionInstagram }}
+            <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
       </div>
