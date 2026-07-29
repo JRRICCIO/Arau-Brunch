@@ -1,25 +1,24 @@
 {
   "proximo": {
-    "activo": false,
-    "kicker": "Próximo evento",
-    "titulo": "Nombre del próximo evento",
-    "fecha": "Día 00 de mes · 00:00 h",
-    "desc": "Contá de qué se trata el evento y por qué no se lo pueden perder.",
     "foto": "",
     "fotoAlt": "",
+    "cta": "Inscribirme",
+    "activo": true,
+    "desc": "Contá de qué se trata el evento y por qué no se lo pueden perder.",
+    "kicker": "Próximo evento",
+    "titulo": "Nombre del próximo evento",
     "id": "proximo-evento",
-    "cta": "Inscribirme"
+    "fecha": "Día 00 de mes · 00:00 h"
   },
   "feature": {
-    "kicker": "Bingo Night",
-    "titleStart": "No es el bingo de tu",
     "titleAccent": "abuela",
+    "titleStart": "No es el bingo de tu",
     "chip": "Noche temática · seguí la agenda",
     "desc": "Tres rondas con premios y el especial de la casa: sándwich de mila en pan de chipá.",
-    "id": "bingo-night",
-    "inscripciones": true,
     "photo": "",
+    "kicker": "Bingo Night",
     "photoAlt": "Mesa de brunch con mimosa en una Bingo Night",
+    "inscripciones": true,
     "strip": [
       {
         "src": "img/terrace.webp",
@@ -36,7 +35,8 @@
         "alt": "Flat white en la terraza de ARAU al atardecer",
         "caption": "Café en la terraza antes de que arranque la noche"
       }
-    ]
+    ],
+    "id": "bingo-night"
   },
   "otros": {
     "heading": "Otros eventos en Arau",
