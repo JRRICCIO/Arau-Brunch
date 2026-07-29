@@ -155,6 +155,8 @@ collections:
                 fields:
                   - { name: "title", label: "Nombre del evento", widget: "string" }
                   - { name: "desc", label: "Descripción", widget: "text" }
+                  - { name: "foto", label: "Foto (opcional)", widget: "image", required: false, hint: "Si cargás una, aparece arriba del evento y se agranda al tocarla. Dejala vacía para que quede solo texto." }
+                  - { name: "fotoAlt", label: "Texto alternativo de la foto", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
       - name: "eventos-en"
         label: "Eventos · English"
         file: "src/_data/locales/en/eventos.json"

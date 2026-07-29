@@ -60,7 +60,12 @@
           <p class="events-more__sub">{{ eventos.otros.sub }}</p>
           <ul class="events-more__list">
             {%- for it in eventos.otros.items %}
-            <li class="events-more__item">
+            <li class="events-more__item{% if it.foto %} events-more__item--haspic{% endif %}">
+              {%- if it.foto %}
+              <button type="button" class="events-more__thumb thumb" data-gallery="evento-otros" data-full="{{ it.foto | asset }}" data-caption="{{ it.title }}">
+                <img src="{{ it.foto | asset }}" alt="{{ it.fotoAlt }}" width="320" height="180" loading="lazy" decoding="async" />
+              </button>
+              {%- endif %}
               <h4 class="events-more__name">{{ it.title }}</h4>
               <p class="events-more__desc">{{ it.desc }}</p>
             </li>
