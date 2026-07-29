@@ -189,7 +189,6 @@ collections:
               - { name: "src", label: "Foto", widget: "image" }
               - { name: "alt", label: "Texto alternativo", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
               - { name: "caption", label: "Pie de foto", widget: "string", required: false }
-              - { name: "main", label: "Foto destacada (grande)", widget: "boolean", default: false }
       - name: "galeria-en"
         label: "Galería · English"
         file: "src/_data/locales/en/galeria.json"
@@ -240,7 +239,6 @@ collections:
             label: "Favoritos de la casa"
             widget: "object"
             fields:
-              - { name: "eyebrow", label: "Antetítulo", widget: "string" }
               - { name: "title", label: "Título", widget: "string", hint: "La parte en cursiva va entre <span class=\"ital\"> y </span>." }
               - { name: "sub", label: "Subtítulo", widget: "text" }
               - name: "dish1"
@@ -283,7 +281,6 @@ collections:
               - { name: "imgAlt", label: "Texto alternativo de la foto", widget: "string" }
               - { name: "chip1", label: "Etiqueta 1", widget: "string" }
               - { name: "chip2", label: "Etiqueta 2", widget: "string" }
-              - { name: "chip3", label: "Etiqueta 3", widget: "string", hint: "Actualmente no se muestra en la web." }
               - { name: "chip4", label: "Etiqueta 4", widget: "string" }
               - { name: "chip5", label: "Etiqueta 5", widget: "string" }
           - name: "eventos"
@@ -298,7 +295,6 @@ collections:
             label: "Reseñas (Brunch Lovers)"
             widget: "object"
             fields:
-              - { name: "eyebrow", label: "Antetítulo", widget: "string" }
               - { name: "title", label: "Título", widget: "string", hint: "La cursiva va entre <span class=\"ital\"> y </span>." }
               - { name: "sub", label: "Subtítulo", widget: "text" }
               - name: "reviews"
