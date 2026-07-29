@@ -43,7 +43,6 @@ collections:
             label: "Encabezado de la carta"
             widget: "object"
             fields:
-              - { name: "eyebrow", label: "Antetítulo", widget: "string", hint: "Texto pequeño arriba del título. Ej: La carta" }
               - { name: "titleStart", label: "Título (primera parte)", widget: "string" }
               - { name: "titleAccent", label: "Título (parte destacada)", widget: "string", hint: "Esta parte se muestra resaltada" }
               - { name: "subtitle", label: "Subtítulo", widget: "text" }
@@ -58,8 +57,6 @@ collections:
               - { name: "label", label: "Nombre de la sección", widget: "string", hint: "Ej: Para empezar, De la parrilla, Postres" }
               - { name: "id", label: "Identificador (opcional)", widget: "string", required: false, hint: "Dejalo VACÍO en secciones nuevas — se genera solo a partir del nombre. No lo cambies en las secciones que ya existen." }
               - { name: "subtitle", label: "Subtítulo", widget: "string", required: false }
-              - { name: "photo", label: "Foto", widget: "image", required: false }
-              - { name: "photoAlt", label: "Texto alternativo de la foto", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
               - { name: "compact", label: "Mostrar como lista compacta (café/bebidas)", widget: "boolean", default: false }
               - name: "items"
                 label: "Platos"
@@ -359,10 +356,8 @@ collections:
             fields:
               - { name: "telefono", label: "Teléfono", widget: "string", required: false }
               - { name: "telefonoLink", label: "Teléfono (enlace)", widget: "string", required: false, hint: "Con prefijo, sin espacios: +34612345678" }
-              - { name: "whatsapp", label: "WhatsApp", widget: "string", required: false, hint: "Solo números, ej: 34612345678" }
               - { name: "email", label: "Email", widget: "string", required: false }
               - { name: "instagram", label: "Instagram", widget: "string", required: false, hint: "Sin @" }
-              - { name: "tiktok", label: "TikTok", widget: "string", required: false }
               - { name: "direccion", label: "Dirección", widget: "string", required: false }
               - { name: "ciudad", label: "Ciudad", widget: "string", required: false }
       - name: "site-en"
