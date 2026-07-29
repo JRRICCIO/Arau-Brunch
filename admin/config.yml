@@ -70,6 +70,7 @@ collections:
                   - { name: "nombre", label: "Nombre", widget: "string" }
                   - { name: "desc", label: "Descripción", widget: "text", required: false }
                   - { name: "precio", label: "Precio", widget: "string", hint: "Sin el símbolo €, ej: 18,90" }
+                  - { name: "foto", label: "Foto del plato", widget: "image", required: false, hint: "Opcional. Si cargás una, el plato la muestra y se agranda al tocarla. Dejala vacía para que no tenga foto." }
                   - name: "etiquetas"
                     label: "Etiquetas"
                     widget: "select"
@@ -81,6 +82,7 @@ collections:
                       - { value: "ve", label: "Vegano (VE)" }
                       - { value: "picante", label: "Picante" }
                       - { value: "casa", label: "De la casa ⭐" }
+                  - { name: "alergenos", label: "Alérgenos", widget: "string", required: false, hint: "Ej: Gluten, Lácteos, Huevo. Separá con comas." }
                   - { name: "disponible", label: "Disponible (apagá si se agotó)", widget: "boolean", default: true }
       - name: "carta-en"
         label: "Carta · English"
