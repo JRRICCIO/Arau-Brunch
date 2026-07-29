@@ -484,6 +484,7 @@ pageKey: "carta"
       a[href]::after { content: ""; }
     }
   </style>
+  {% include "tema-vars.njk" %}
 </head>
 <body>
   <a class="skip-link" href="#contenido">{{ ui.a11y.skipToContent }}</a>
@@ -598,7 +599,7 @@ pageKey: "carta"
           </span>
           <span class="brand__word" translate="no">{% include "arau-word.njk" %}</span>
         </a>
-        <p class="footer__tag">{{ ui.footer.tag | safe }}</p>
+        <p class="footer__tag">{{ contenido.footer.tag | safe }}</p>
       </div>
 
       <nav class="footer__nav" aria-label="{{ ui.a11y.footerNavLabel }}">
@@ -621,7 +622,7 @@ pageKey: "carta"
 
     <div class="container footer__bottom">
       <p>{{ ui.footer.copyright | replace("[[YEAR]]", buildYear) | replace("[[ARAU]]", "Arau") | safe }}</p>
-      <p class="footer__credit">{{ ui.footer.credit | safe }}</p>
+      <p class="footer__credit">{{ contenido.footer.credit | safe }}</p>
       <p class="footer__legal"><button type="button" class="footer__cookies" data-cookie="manage">{{ ui.cookies.manage }}</button></p>
     </div>
   </footer>

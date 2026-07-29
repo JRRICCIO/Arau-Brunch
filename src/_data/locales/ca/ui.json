@@ -51,27 +51,6 @@
     "reservarMesa": "Reservar taula",
     "reservaTuMesa": "Reserva la teva taula"
   },
-  "hero": {
-    "eyebrow": "Sabors argentins · esperit australià · cor barceloní",
-    "trust": {
-      "reviews": "en ressenyes de Google",
-      "local": "producte local i fresc",
-      "coffee": "cafès d'especialitat al mes"
-    }
-  },
-  "historia": {
-    "cap": "Provença 322 · on tot passa",
-    "imgAlt": "Barista d'ARAU preparant un espresso d'especialitat a la màquina, amb la paret de terracota al fons",
-    "eyebrow": "La nostra història",
-    "title": "L'Arau va néixer d'<span class=\"ital\">una idea senzilla.</span>",
-    "p1": "Reunir en un mateix lloc els sabors, les experiències i les cultures que van deixar petjada al llarg d'un viatge. Amb arrels argentines, inspiració australiana i cor barceloní, [[ARAU]] fusiona la tradició de l'Argentina, la creativitat del brunch australià i la passió pel cafè d'especialitat.",
-    "p2": "Un espai on diferents cultures es troben al voltant de la taula per crear quelcom nou, proper i autèntic. Perquè creiem que algunes de les millors coses <em>neixen de la barreja</em>.",
-    "p3": "Ens inspira la cuina casolana, els productes de qualitat i aquells petits detalls que converteixen un àpat en una experiència. Per a nosaltres l'hospitalitat no és només un servei: és la nostra manera de fer-los sentir com a casa.",
-    "p4": "Barcelona és avui la nostra llar, i [[ARAU]] és la nostra manera de compartir amb la ciutat tot allò que ens va inspirar durant anys de viatges, aprenentatge i descoberta. <strong>Benvinguts a l'Arau. Benvinguts a la nostra història.</strong>",
-    "sign": "— Agustina, fundadora d'[[ARAU]]",
-    "heartImgAlt": "Dues mans formant un cor, el segell d'ARAU",
-    "heartLine": "cor barceloní"
-  },
   "stats": {
     "local": {
       "label": "ingredients locals i frescos"
@@ -84,33 +63,6 @@
     }
   },
   "carta": {
-    "home": {
-      "eyebrow": "Els favorits de la casa",
-      "title": "Descobreix els <span class=\"ital\">favorits de la casa</span>",
-      "sub": "Plats preparats amb dedicació, ingredients frescos i una combinació de sabors inspirada en les nostres arrels argentines i la cultura del brunch australià. La carta completa és a un clic.",
-      "dish1": {
-        "name": "Big brekky",
-        "desc": "L'esmorzar australià per excel·lència, generós i ple de sabor. A l'Arau el portem un pas més enllà amb el nostre toc argentí de xoriço crioll.",
-        "tag": "La bèstia"
-      },
-      "dish2": {
-        "name": "Benny & the eggs",
-        "desc": "Els nostres Eggs Benedict viatgen d'Austràlia a l'Argentina sobre un esponjós pa de chipá casolà. La combinació perfecta entre dues cultures.",
-        "tag": "Dels més demanats"
-      },
-      "dish3": {
-        "name": "The tru mila",
-        "desc": "La milanesa a caballo de sempre, com no l'has tastat mai: coronada amb una cremosa salsa de bolets trufada que eleva cada mos.",
-        "tag": "El més venut"
-      },
-      "dish4": {
-        "name": "Flantástico",
-        "desc": "El postre més estimat de l'Argentina, reinventat. El dulce de leche s'integra dins del mateix flam per aconseguir una cremositat i un sabor simplement espectaculars.",
-        "tag": "Per al dolç"
-      },
-      "ctaFull": "Veure la carta completa",
-      "note": "Al·lèrgies o dieta especial? Aviseu-nos en reservar i ho resolem."
-    },
     "intro": {
       "actionInstagram": "Novetats a Instagram"
     },
@@ -140,21 +92,7 @@
       }
     }
   },
-  "cafe": {
-    "imgAlt": "Flat white d'especialitat en tassa de ceràmica artesanal",
-    "eyebrow": "Cafè d'especialitat",
-    "title": "El <span class=\"ital\">flat white</span> és religió",
-    "lead": "El brunch ens porta fins aquí; el cafè fa que vulguis tornar. Treballem amb cafè d'especialitat i retem homenatge a la cultura cafetera australiana amb clàssics com el Flat White, el Magic i el Long Black. Més de <strong>1.500 tasses</strong> surten de la nostra barra cada mes.",
-    "chip1": "Flat white",
-    "chip2": "Single origin",
-    "chip3": "Filtrat V60",
-    "chip4": "Cold brew",
-    "chip5": "Matcha"
-  },
   "eventos": {
-    "eyebrow": "Més que un brunch",
-    "title": "Suren <span class=\"ital\">coses</span> a [[ARAU]]",
-    "sub": "Bingo, música en directe, nit de ñoquis i molt més. Segueix-nos a Instagram <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> per veure el calendari i més informació.",
     "feature": {
       "play": "Veure fotos",
       "waReservar": "Reservar per WhatsApp",
@@ -167,18 +105,6 @@
   "loyalty": {
     "text": "<strong>El teu 6è brunch, gratis.</strong> Suma punts amb cada visita a la nostra app de fidelitat i el sisè va a càrrec de la casa.",
     "cta": "Suma els teus punts"
-  },
-  "experiencia": {
-    "eyebrow": "Brunch lovers",
-    "title": "El que diuen els nostres <span class=\"ital\">Brunch Lovers</span>",
-    "sub": "Així gaudeixen els nostres clients de l'experiència [[ARAU]].",
-    "reviews": [
-      { "text": "El menjar, increïble, igual que la bona onda de qui t'atén. El cafè d'especialitat, exquisit… i el millor flan de dulce de leche que he tastat mai. Hi tornarem!", "author": "Julieta P.", "source": "Ressenya de Google" },
-      { "text": "Tot boníssim, i les postres encara més! Vaig tornar després d'un any i tot estava tan deliciós com sempre.", "author": "Sab", "source": "Local Guide · Google" },
-      { "text": "Vaig gaudir del millor brunch, amb una atenció espectacular. El menjar és deliciós i em va encantar la música. 10/10, totalment recomanable!", "author": "Mohammed", "source": "Local Guide · Google" }
-    ],
-    "reviewsText": "Centenars de ressenyes de clients a Google avalen l'experiència [[ARAU]].",
-    "readReviews": "Llegeix les ressenyes a Google"
   },
   "visitanos": {
     "eyebrow": "Visita'ns",
@@ -240,7 +166,6 @@
     "mapBlocked": "El mapa fa servir Google Maps. Toca per carregar-lo."
   },
   "footer": {
-    "tag": "Brunch & cafè d'especialitat<br />al cor de l'Eixample, Barcelona.",
     "nav": {
       "nosotros": "Nosaltres",
       "laCarta": "La carta",
@@ -248,8 +173,7 @@
       "eventos": "Esdeveniments",
       "reservar": "Reservar"
     },
-    "copyright": "© <span id=\"year\">[[YEAR]]</span> [[ARAU]] · Fet amb estima a Barcelona.",
-    "credit": "Brunch & cafè d'especialitat, tots els dies excepte els dimarts."
+    "copyright": "© <span id=\"year\">[[YEAR]]</span> [[ARAU]] · Fet amb estima a Barcelona."
   },
   "waFloat": {
     "label": "Reservar"

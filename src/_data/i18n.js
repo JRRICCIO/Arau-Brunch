@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 const DIR = path.join(__dirname, "locales");
-const FILES = ["site", "carta", "eventos", "galeria", "ui"];
+const FILES = ["site", "carta", "eventos", "galeria", "ui", "contenido"];
 const LANGS = ["es", "en", "fr", "ca"];
 
 function read(p) {

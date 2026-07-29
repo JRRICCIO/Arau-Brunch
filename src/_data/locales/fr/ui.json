@@ -51,27 +51,6 @@
     "reservarMesa": "Réserver une table",
     "reservaTuMesa": "Réserve ta table"
   },
-  "hero": {
-    "eyebrow": "Saveurs argentines · esprit australien · cœur barcelonais",
-    "trust": {
-      "reviews": "sur les avis Google",
-      "local": "produits locaux et frais",
-      "coffee": "cafés de spécialité par mois"
-    }
-  },
-  "historia": {
-    "cap": "Provença 322 · là où tout se passe",
-    "imgAlt": "Barista d'ARAU préparant un espresso de spécialité à la machine, avec le mur en terre cuite en fond",
-    "eyebrow": "Notre histoire",
-    "title": "Arau est né d'<span class=\"ital\">une idée toute simple.</span>",
-    "p1": "Réunir en un seul lieu les saveurs, les expériences et les cultures qui ont marqué tout un voyage. Avec des racines argentines, une inspiration australienne et un cœur barcelonais, [[ARAU]] mêle la tradition argentine, la créativité du brunch australien et la passion du café de spécialité.",
-    "p2": "Un endroit où des cultures différentes se rencontrent autour de la table pour créer quelque chose de neuf, de chaleureux et d'authentique. Parce que nous croyons que certaines des plus belles choses <em>naissent du mélange</em>.",
-    "p3": "Nous puisons notre inspiration dans la cuisine maison, les produits de qualité et ces petits détails qui transforment un repas en une véritable expérience. Pour nous, l'hospitalité n'est pas un simple service : c'est notre façon de les faire se sentir comme chez eux.",
-    "p4": "Barcelone est aujourd'hui notre maison, et [[ARAU]] est notre manière de partager avec la ville tout ce qui nous a inspirés au fil de tant d'années de voyages, d'apprentissage et de découverte. <strong>Bienvenue chez Arau. Bienvenue dans notre histoire.</strong>",
-    "sign": "— Agustina, fondatrice d'[[ARAU]]",
-    "heartImgAlt": "Deux mains formant un cœur, la signature d'ARAU",
-    "heartLine": "cœur barcelonais"
-  },
   "stats": {
     "local": {
       "label": "ingrédients locaux et frais"
@@ -84,33 +63,6 @@
     }
   },
   "carta": {
-    "home": {
-      "eyebrow": "Les coups de cœur de la maison",
-      "title": "Découvre les <span class=\"ital\">coups de cœur de la maison</span>",
-      "sub": "Des plats préparés avec soin, des ingrédients frais et un mariage de saveurs inspiré de nos racines argentines et de la culture du brunch australien. La carte complète n'est qu'à un clic.",
-      "dish1": {
-        "name": "Big brekky",
-        "desc": "Le petit-déjeuner australien par excellence, généreux et plein de saveur. Chez Arau, on va encore plus loin avec notre touche argentine de chorizo criollo.",
-        "tag": "La bête"
-      },
-      "dish2": {
-        "name": "Benny & the eggs",
-        "desc": "Nos Eggs Benedict voyagent d'Australie en Argentine sur un moelleux pain de chipá maison. La rencontre parfaite entre deux cultures.",
-        "tag": "Parmi les plus demandés"
-      },
-      "dish3": {
-        "name": "The tru mila",
-        "desc": "La milanesa a caballo de toujours, comme tu ne l'as jamais goûtée : nappée d'une crémeuse sauce aux champignons truffée qui sublime chaque bouchée.",
-        "tag": "Le plus vendu"
-      },
-      "dish4": {
-        "name": "Flantástico",
-        "desc": "Le dessert le plus aimé d'Argentine, réinventé. Le dulce de leche s'intègre au flan lui-même pour une onctuosité et une saveur tout simplement spectaculaires.",
-        "tag": "Pour les gourmands"
-      },
-      "ctaFull": "Voir la carte complète",
-      "note": "Allergies ou régime particulier ? Dis-le-nous au moment de réserver et on s'en occupe."
-    },
     "intro": {
       "actionInstagram": "Nouveautés sur Instagram"
     },
@@ -140,21 +92,7 @@
       }
     }
   },
-  "cafe": {
-    "imgAlt": "Flat white de spécialité dans une tasse en céramique artisanale",
-    "eyebrow": "Café de spécialité",
-    "title": "Le <span class=\"ital\">flat white</span>, c'est sacré",
-    "lead": "Le brunch nous amène jusqu'ici ; le café donne envie de revenir. On travaille des cafés de spécialité et on rend hommage à la culture caféière australienne avec des classiques comme le Flat White, le Magic et le Long Black. Plus de <strong>1 500 tasses</strong> sortent de notre comptoir chaque mois.",
-    "chip1": "Flat white",
-    "chip2": "Single origin",
-    "chip3": "Filtre V60",
-    "chip4": "Cold brew",
-    "chip5": "Matcha"
-  },
   "eventos": {
-    "eyebrow": "Bien plus qu'un brunch",
-    "title": "Il se passe des <span class=\"ital\">choses</span> chez [[ARAU]]",
-    "sub": "Bingo, musique live, soirée ñoquis et plus encore. Suis-nous sur Instagram <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> pour voir l'agenda et en savoir plus.",
     "feature": {
       "play": "Voir les photos",
       "waReservar": "Réserver par WhatsApp",
@@ -167,18 +105,6 @@
   "loyalty": {
     "text": "<strong>Ton 6ᵉ brunch, offert.</strong> Cumule des points à chaque visite avec notre appli de fidélité, et le sixième est pour la maison.",
     "cta": "Cumule tes points"
-  },
-  "experiencia": {
-    "eyebrow": "Brunch lovers",
-    "title": "Ce que disent nos <span class=\"ital\">Brunch Lovers</span>",
-    "sub": "Voici comment nos clients vivent l'expérience [[ARAU]].",
-    "reviews": [
-      { "text": "La cuisine est incroyable, tout comme la gentillesse de l'équipe. Le café de spécialité, exquis… et le meilleur flan au dulce de leche de ma vie. On reviendra !", "author": "Julieta P.", "source": "Avis Google" },
-      { "text": "Tout était délicieux, surtout le dessert ! Je suis revenue après un an et c'était toujours aussi bon.", "author": "Sab", "source": "Local Guide · Google" },
-      { "text": "J'ai dégusté le meilleur brunch, avec un service formidable. La cuisine est délicieuse et j'ai adoré la musique. 10/10, vivement recommandé !", "author": "Mohammed", "source": "Local Guide · Google" }
-    ],
-    "reviewsText": "Des centaines d'avis clients sur Google témoignent de l'expérience [[ARAU]].",
-    "readReviews": "Lire les avis sur Google"
   },
   "visitanos": {
     "eyebrow": "Nous trouver",
@@ -240,7 +166,6 @@
     "mapBlocked": "Le plan utilise Google Maps. Touchez pour le charger."
   },
   "footer": {
-    "tag": "Brunch & café de spécialité<br />au cœur de l'Eixample, à Barcelone.",
     "nav": {
       "nosotros": "Qui sommes-nous",
       "laCarta": "La carte",
@@ -248,8 +173,7 @@
       "eventos": "Événements",
       "reservar": "Réserver"
     },
-    "copyright": "© <span id=\"year\">[[YEAR]]</span> [[ARAU]] · Fait avec amour à Barcelone.",
-    "credit": "Brunch & café de spécialité, tous les jours sauf le mardi."
+    "copyright": "© <span id=\"year\">[[YEAR]]</span> [[ARAU]] · Fait avec amour à Barcelone."
   },
   "waFloat": {
     "label": "Réserver"

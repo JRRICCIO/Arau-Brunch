@@ -127,21 +127,21 @@ collections:
                   - { name: "src", label: "Foto", widget: "image" }
                   - { name: "alt", label: "Texto alternativo", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
                   - { name: "caption", label: "Pie de foto", widget: "string", required: false }
-          - name: "cards"
-            label: "Tarjetas de eventos"
-            label_singular: "Tarjeta"
-            widget: "list"
-            summary: "{{fields.kicker}}"
+          - name: "otros"
+            label: "Otros eventos en Arau"
+            widget: "object"
             fields:
-              - { name: "kicker", label: "Antetítulo", widget: "string" }
-              - { name: "title", label: "Título", widget: "string" }
-              - { name: "chip", label: "Etiqueta / horario", widget: "string", hint: "Ej: Los 29 de cada mes" }
-              - { name: "desc", label: "Descripción", widget: "text" }
-              - { name: "id", label: "Identificador para inscripciones", widget: "string", required: false, hint: "Slug corto y estable, ej: noche-argentina. Usá el MISMO en los 4 idiomas para juntar bien los inscriptos." }
-              - { name: "inscripciones", label: "Abrir inscripciones para este evento", widget: "boolean", default: false }
-              - { name: "photo", label: "Foto", widget: "image", required: false }
-              - { name: "photoAlt", label: "Texto alternativo de la foto", widget: "string", required: false }
-              - { name: "caption", label: "Pie de foto", widget: "string", required: false }
+              - { name: "heading", label: "Título del bloque", widget: "string", hint: "Ej: Otros eventos en Arau" }
+              - { name: "sub", label: "Subtítulo", widget: "text" }
+              - { name: "cta", label: "Texto del botón", widget: "string", hint: "Ej: Pedir más info" }
+              - name: "items"
+                label: "Eventos"
+                label_singular: "Evento"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { name: "title", label: "Nombre del evento", widget: "string" }
+                  - { name: "desc", label: "Descripción", widget: "text" }
       - name: "eventos-en"
         label: "Eventos · English"
         file: "src/_data/locales/en/eventos.json"
@@ -187,6 +187,134 @@ collections:
         label: "Galería · Català"
         file: "src/_data/locales/ca/galeria.json"
         fields: *galeriaFields
+
+  # ──────────────────── TEXTOS DE LA PORTADA ───────────────────────
+  - name: "contenido"
+    label: "Textos de la portada"
+    description: "Los textos de la página de inicio: franja del hero, Nuestra historia, favoritos de la casa, café, reseñas y pie. Editá cada idioma por separado."
+    files:
+      - name: "contenido-es"
+        label: "Textos de la portada · Español"
+        file: "src/_data/locales/es/contenido.json"
+        fields: &contenidoFields
+          - name: "hero"
+            label: "Portada — franja del hero"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Frase de arriba", widget: "string", hint: "La línea chiquita arriba del título. Ej: Sabores argentinos · espíritu australiano · corazón barcelonés" }
+              - name: "trust"
+                label: "Números de confianza"
+                widget: "object"
+                fields:
+                  - { name: "reviews", label: "Texto al lado de «4.8★»", widget: "string" }
+                  - { name: "local", label: "Texto al lado de «100%»", widget: "string" }
+                  - { name: "coffee", label: "Texto al lado de «1500+»", widget: "string" }
+          - name: "historia"
+            label: "Nuestra historia"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Antetítulo", widget: "string" }
+              - { name: "title", label: "Título", widget: "string", hint: "La parte en cursiva va entre <span class=\"ital\"> y </span>. Cambiá el texto, pero no borres esas etiquetas." }
+              - { name: "p1", label: "Párrafo 1", widget: "text", hint: "[[ARAU]] se muestra como el nombre de la marca. No borres ese código ni las etiquetas <...>." }
+              - { name: "p2", label: "Párrafo 2", widget: "text", hint: "Podés usar <em>cursiva</em> y <strong>negrita</strong>." }
+              - { name: "p3", label: "Párrafo 3", widget: "text" }
+              - { name: "p4", label: "Párrafo 4", widget: "text", hint: "[[ARAU]] = nombre de la marca. No borres los códigos ni las etiquetas." }
+              - { name: "sign", label: "Firma", widget: "string", hint: "Ej: — Agustina, fundadora de [[ARAU]]" }
+              - { name: "imgAlt", label: "Texto alternativo de la foto", widget: "string", hint: "Describí la foto (accesibilidad/SEO)" }
+          - name: "favoritos"
+            label: "Favoritos de la casa"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Antetítulo", widget: "string" }
+              - { name: "title", label: "Título", widget: "string", hint: "La parte en cursiva va entre <span class=\"ital\"> y </span>." }
+              - { name: "sub", label: "Subtítulo", widget: "text" }
+              - name: "dish1"
+                label: "Plato destacado 1"
+                widget: "object"
+                fields:
+                  - { name: "name", label: "Nombre", widget: "string" }
+                  - { name: "desc", label: "Descripción", widget: "text" }
+                  - { name: "tag", label: "Etiqueta", widget: "string", hint: "Ej: Más vendido, La bestia" }
+              - name: "dish2"
+                label: "Plato destacado 2"
+                widget: "object"
+                fields:
+                  - { name: "name", label: "Nombre", widget: "string" }
+                  - { name: "desc", label: "Descripción", widget: "text" }
+                  - { name: "tag", label: "Etiqueta", widget: "string" }
+              - name: "dish3"
+                label: "Plato destacado 3"
+                widget: "object"
+                fields:
+                  - { name: "name", label: "Nombre", widget: "string" }
+                  - { name: "desc", label: "Descripción", widget: "text" }
+                  - { name: "tag", label: "Etiqueta", widget: "string" }
+              - name: "dish4"
+                label: "Plato destacado 4"
+                widget: "object"
+                fields:
+                  - { name: "name", label: "Nombre", widget: "string" }
+                  - { name: "desc", label: "Descripción", widget: "text" }
+                  - { name: "tag", label: "Etiqueta", widget: "string" }
+              - { name: "ctaFull", label: "Texto del botón «Ver la carta»", widget: "string" }
+              - { name: "note", label: "Nota al pie", widget: "string" }
+          - name: "cafe"
+            label: "Café"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Antetítulo", widget: "string" }
+              - { name: "title", label: "Título", widget: "string", hint: "La parte en cursiva va entre <span class=\"ital\"> y </span>." }
+              - { name: "lead", label: "Texto principal", widget: "text", hint: "Podés usar <strong>negrita</strong>." }
+              - { name: "imgAlt", label: "Texto alternativo de la foto", widget: "string" }
+              - { name: "chip1", label: "Etiqueta 1", widget: "string" }
+              - { name: "chip2", label: "Etiqueta 2", widget: "string" }
+              - { name: "chip3", label: "Etiqueta 3", widget: "string", hint: "Actualmente no se muestra en la web." }
+              - { name: "chip4", label: "Etiqueta 4", widget: "string" }
+              - { name: "chip5", label: "Etiqueta 5", widget: "string" }
+          - name: "eventos"
+            label: "Eventos — encabezado de la sección"
+            widget: "object"
+            hint: "Solo el título y bajada de la sección Eventos. Los eventos en sí se editan en la sección «Eventos» del panel."
+            fields:
+              - { name: "eyebrow", label: "Antetítulo", widget: "string" }
+              - { name: "title", label: "Título", widget: "string", hint: "[[ARAU]] = nombre de la marca. La cursiva va entre <span class=\"ital\"> y </span>." }
+              - { name: "sub", label: "Subtítulo", widget: "text", hint: "Puede tener un enlace <a ...>. No borres las etiquetas." }
+          - name: "experiencia"
+            label: "Reseñas (Brunch Lovers)"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Antetítulo", widget: "string" }
+              - { name: "title", label: "Título", widget: "string", hint: "La cursiva va entre <span class=\"ital\"> y </span>." }
+              - { name: "sub", label: "Subtítulo", widget: "text" }
+              - name: "reviews"
+                label: "Opiniones"
+                label_singular: "Opinión"
+                widget: "list"
+                summary: "{{fields.author}}"
+                fields:
+                  - { name: "text", label: "Texto de la reseña", widget: "text" }
+                  - { name: "author", label: "Autor", widget: "string" }
+                  - { name: "source", label: "Fuente", widget: "string", hint: "Ej: Reseña de Google" }
+              - { name: "reviewsText", label: "Texto del resumen (al lado de 4,8★)", widget: "text" }
+              - { name: "readReviews", label: "Texto del botón «Leé las reseñas»", widget: "string" }
+          - name: "footer"
+            label: "Pie de página"
+            widget: "object"
+            fields:
+              - { name: "tag", label: "Frase del pie", widget: "text", hint: "Podés usar <br /> para cortar la línea." }
+              - { name: "credit", label: "Línea de crédito", widget: "string" }
+      - name: "contenido-en"
+        label: "Textos de la portada · English"
+        file: "src/_data/locales/en/contenido.json"
+        fields: *contenidoFields
+      - name: "contenido-fr"
+        label: "Textos de la portada · Français"
+        file: "src/_data/locales/fr/contenido.json"
+        fields: *contenidoFields
+      - name: "contenido-ca"
+        label: "Textos de la portada · Català"
+        file: "src/_data/locales/ca/contenido.json"
+        fields: *contenidoFields
 
   # ───────────────────────── CONFIGURACIÓN ─────────────────────────
   - name: "configuracion"
@@ -247,3 +375,31 @@ collections:
         label: "Configuración · Català"
         file: "src/_data/locales/ca/site.json"
         fields: *siteFields
+
+  # ─────────────────── TIPOGRAFÍA Y TAMAÑO ─────────────────────────
+  - name: "apariencia"
+    label: "Tipografía y tamaño"
+    description: "Cambiá la tipografía y el tamaño del texto de todo el sitio. Vale para los 4 idiomas."
+    files:
+      - name: "tema"
+        label: "Tipografía y tamaño"
+        file: "src/_data/tema.json"
+        fields:
+          - name: "tipografia"
+            label: "Tipografía"
+            widget: "select"
+            default: "clasica"
+            hint: "La familia tipográfica de todo el sitio."
+            options:
+              - { label: "Clásica (actual) — Lato", value: "clasica" }
+              - { label: "Editorial — títulos con serif elegante", value: "editorial" }
+              - { label: "Redonda — tipografía del sistema", value: "redonda" }
+          - name: "tamano"
+            label: "Tamaño del texto"
+            widget: "select"
+            default: "normal"
+            hint: "Agranda o achica el texto de todo el sitio."
+            options:
+              - { label: "Chico", value: "chico" }
+              - { label: "Normal (actual)", value: "normal" }
+              - { label: "Grande", value: "grande" }

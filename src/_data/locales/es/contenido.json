@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "eyebrow": "Sabores argentinos · espíritu australiano · corazón barcelonés",
+    "trust": {
+      "reviews": "en reseñas de Google",
+      "local": "producto local y fresco",
+      "coffee": "cafés de especialidad al mes"
+    }
+  },
+  "historia": {
+    "imgAlt": "Barista de ARAU preparando un espresso de especialidad en la máquina, con la pared de terracota de fondo",
+    "eyebrow": "Nuestra historia",
+    "title": "Arau nació de <span class=\"ital\">una idea simple.</span>",
+    "p1": "Reunir en un mismo lugar los sabores, experiencias y culturas que dejaron huella a lo largo de un viaje. Con raíces argentinas, inspiración australiana y corazón barcelonés, [[ARAU]] fusiona la tradición de Argentina, la creatividad del brunch australiano y la pasión por el café de especialidad.",
+    "p2": "Un espacio donde diferentes culturas se encuentran alrededor de la mesa para crear algo nuevo, cercano y auténtico. Porque creemos que algunas de las mejores cosas <em>nacen de la mezcla</em>.",
+    "p3": "Nos inspira la cocina casera, los productos de calidad y esos pequeños detalles que convierten una comida en una experiencia. Para nosotros la hospitalidad no es solo un servicio: es nuestra forma de hacerlos sentir como en casa.",
+    "p4": "Barcelona es hoy nuestro hogar, y [[ARAU]] es nuestra forma de compartir con la ciudad todo lo que nos inspiró durante años de viajes, aprendizaje y descubrimiento. <strong>Bienvenidos a Arau. Bienvenidos a nuestra historia.</strong>",
+    "sign": "— Agustina, fundadora de [[ARAU]]"
+  },
+  "favoritos": {
+    "eyebrow": "Los favoritos de la casa",
+    "title": "Descubre los <span class=\"ital\">favoritos de la casa</span>",
+    "sub": "Platos preparados con dedicación, ingredientes frescos y una combinación de sabores inspirada en nuestras raíces argentinas y la cultura del brunch australiano. La carta completa está a un clic.",
+    "dish1": {
+      "name": "Big brekky",
+      "desc": "El desayuno australiano por excelencia, generoso y lleno de sabor. En Arau lo llevamos un paso más allá con nuestro toque argentino de chorizo criollo.",
+      "tag": "La bestia"
+    },
+    "dish2": {
+      "name": "Benny & the eggs",
+      "desc": "Nuestros Eggs Benedict viajan de Australia a Argentina sobre un esponjoso pan de chipá casero. La combinación perfecta entre dos culturas.",
+      "tag": "De los más pedidos"
+    },
+    "dish3": {
+      "name": "The tru mila",
+      "desc": "La milanesa a caballo de siempre, como nunca la probaste: coronada con una cremosa salsa de hongos trufada que eleva cada bocado.",
+      "tag": "Más vendido"
+    },
+    "dish4": {
+      "name": "Flantástico",
+      "desc": "El postre más querido de Argentina, reinventado. El dulce de leche se integra en el propio flan para lograr una cremosidad y un sabor simplemente espectaculares.",
+      "tag": "Para el dulce"
+    },
+    "ctaFull": "Ver la carta completa",
+    "note": "¿Alergias o dieta especial? Avisanos al reservar y lo resolvemos."
+  },
+  "cafe": {
+    "imgAlt": "Flat white de especialidad en taza de cerámica artesanal",
+    "eyebrow": "Café de especialidad",
+    "title": "El <span class=\"ital\">flat white</span> es religión",
+    "lead": "El brunch nos trae hasta aquí; el café hace que quieras volver. Trabajamos con café de especialidad y rendimos homenaje a la cultura cafetera australiana con clásicos como el Flat White, Magic y el Long Black. Más de <strong>1.500 tazas</strong> salen de nuestra barra cada mes.",
+    "chip1": "Flat white",
+    "chip2": "Single origin",
+    "chip3": "Filtrado V60",
+    "chip4": "Cold brew",
+    "chip5": "Matcha"
+  },
+  "eventos": {
+    "eyebrow": "Más que un brunch",
+    "title": "Suceden <span class=\"ital\">cosas</span> en [[ARAU]]",
+    "sub": "Bingo, música en vivo, noche de ñoquis y más. Seguinos en Instagram <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> para ver el calendario y más información."
+  },
+  "experiencia": {
+    "eyebrow": "Brunch lovers",
+    "title": "Lo que dicen nuestros <span class=\"ital\">Brunch Lovers</span>",
+    "sub": "Así disfrutan nuestros clientes de la experiencia [[ARAU]].",
+    "reviews": [
+      {
+        "text": "La comida, increíble, igual que la buena onda de quienes atienden. El café de especialidad, exquisito… y el mejor flan de dulce de leche que probé en mi vida. ¡Volveremos!",
+        "author": "Julieta P.",
+        "source": "Reseña de Google"
+      },
+      {
+        "text": "¡Todo estaba riquísimo, sobre todo el postre! Volví después de un año y estaba tan delicioso como siempre.",
+        "author": "Sab",
+        "source": "Local Guide · Google"
+      },
+      {
+        "text": "Disfruté del mejor brunch, con una atención espectacular. La comida es deliciosa y me encantó la música. ¡10/10, totalmente recomendable!",
+        "author": "Mohammed",
+        "source": "Local Guide · Google"
+      }
+    ],
+    "reviewsText": "Cientos de reseñas de clientes en Google avalan la experiencia [[ARAU]].",
+    "readReviews": "Leé las reseñas en Google"
+  },
+  "footer": {
+    "tag": "Brunch & café de especialidad<br />en el corazón del Eixample, Barcelona.",
+    "credit": "Brunch & café de especialidad, todos los días menos los martes."
+  }
+}

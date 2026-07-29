@@ -15,4 +15,5 @@ module.exports = {
   eventos: (data) => slice(data, "eventos"),
   galeria: (data) => slice(data, "galeria"),
   ui: (data) => slice(data, "ui"),
+  contenido: (data) => slice(data, "contenido"),
 };

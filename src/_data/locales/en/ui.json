@@ -51,27 +51,6 @@
     "reservarMesa": "Book a table",
     "reservaTuMesa": "Book your table"
   },
-  "hero": {
-    "eyebrow": "Argentine flavours · Australian spirit · Barcelona heart",
-    "trust": {
-      "reviews": "in Google reviews",
-      "local": "local, fresh produce",
-      "coffee": "specialty coffees a month"
-    }
-  },
-  "historia": {
-    "cap": "Provença 322 · where it all happens",
-    "imgAlt": "ARAU barista pulling a specialty espresso at the machine, with the terracotta wall behind",
-    "eyebrow": "Our story",
-    "title": "Arau was born from <span class=\"ital\">a simple idea.</span>",
-    "p1": "To bring together in one place the flavours, experiences and cultures that left their mark over the course of a journey. With Argentine roots, Australian inspiration and a Barcelona heart, [[ARAU]] blends the tradition of Argentina, the creativity of Australian brunch and a passion for specialty coffee.",
-    "p2": "A space where different cultures meet around the table to create something new, warm and authentic. Because we believe some of the best things <em>are born from the mix</em>.",
-    "p3": "We're inspired by home cooking, quality produce and those little details that turn a meal into an experience. For us, hospitality isn't just a service: it's our way of making them feel at home.",
-    "p4": "Barcelona is now our home, and [[ARAU]] is our way of sharing with the city everything that inspired us through years of travelling, learning and discovery. <strong>Welcome to Arau. Welcome to our story.</strong>",
-    "sign": "— Agustina, founder of [[ARAU]]",
-    "heartImgAlt": "Two hands forming a heart, ARAU's signature",
-    "heartLine": "Barcelona heart"
-  },
   "stats": {
     "local": {
       "label": "local, fresh ingredients"
@@ -84,33 +63,6 @@
     }
   },
   "carta": {
-    "home": {
-      "eyebrow": "House favourites",
-      "title": "Discover the <span class=\"ital\">house favourites</span>",
-      "sub": "Dishes made with care, fresh ingredients and a blend of flavours inspired by our Argentine roots and Australian brunch culture. The full menu is just one click away.",
-      "dish1": {
-        "name": "Big brekky",
-        "desc": "The quintessential Australian breakfast — generous and full of flavour. At Arau we take it one step further with our Argentine touch of chorizo criollo.",
-        "tag": "The beast"
-      },
-      "dish2": {
-        "name": "Benny & the eggs",
-        "desc": "Our Eggs Benedict travel from Australia to Argentina on a fluffy house-made chipá bread. The perfect blend of two cultures.",
-        "tag": "One of the most ordered"
-      },
-      "dish3": {
-        "name": "The tru mila",
-        "desc": "The classic milanesa a caballo like you've never tried it: crowned with a creamy truffled mushroom sauce that elevates every bite.",
-        "tag": "Best seller"
-      },
-      "dish4": {
-        "name": "Flantástico",
-        "desc": "Argentina's most beloved dessert, reinvented. The dulce de leche is blended into the flan itself for a creaminess and flavour that are simply spectacular.",
-        "tag": "For your sweet tooth"
-      },
-      "ctaFull": "See the full menu",
-      "note": "Allergies or a special diet? Let us know when you book and we'll sort it out."
-    },
     "intro": {
       "actionInstagram": "News on Instagram"
     },
@@ -140,21 +92,7 @@
       }
     }
   },
-  "cafe": {
-    "imgAlt": "Specialty flat white in a handmade ceramic cup",
-    "eyebrow": "Specialty coffee",
-    "title": "The <span class=\"ital\">flat white</span> is a religion",
-    "lead": "The brunch brings us here; the coffee makes you want to come back. We work with specialty coffee and pay tribute to Australian coffee culture with classics like the Flat White, Magic and Long Black. More than <strong>1,500 cups</strong> leave our bar every month.",
-    "chip1": "Flat white",
-    "chip2": "Single origin",
-    "chip3": "V60 filter",
-    "chip4": "Cold brew",
-    "chip5": "Matcha"
-  },
   "eventos": {
-    "eyebrow": "More than a brunch",
-    "title": "Things <span class=\"ital\">happen</span> at [[ARAU]]",
-    "sub": "Bingo, live music, ñoqui night and more. Follow us on Instagram <a class=\"inline-link\" href=\"https://instagram.com/araubrunch\" target=\"_blank\" rel=\"noopener noreferrer\">@araubrunch</a> for the calendar and more information.",
     "feature": {
       "play": "See photos",
       "waReservar": "Book via WhatsApp",
@@ -167,18 +105,6 @@
   "loyalty": {
     "text": "<strong>Your 6th brunch, on us.</strong> Earn points with every visit in our loyalty app and the sixth one is on the house.",
     "cta": "Collect your points"
-  },
-  "experiencia": {
-    "eyebrow": "Brunch lovers",
-    "title": "What our <span class=\"ital\">Brunch Lovers</span> say",
-    "sub": "This is how our guests enjoy the [[ARAU]] experience.",
-    "reviews": [
-      { "text": "The food is incredible, and so are the lovely people who look after you. The specialty coffee is exquisite… and the best dulce de leche flan I've had in my life. We'll be back!", "author": "Julieta P.", "source": "Google review" },
-      { "text": "Everything was delicious, especially the dessert! I came back after a year and it was as good as ever.", "author": "Sab", "source": "Local Guide · Google" },
-      { "text": "I had the best brunch, with wonderful service. The food is delicious and I loved the music. 10/10, highly recommended!", "author": "Mohammed", "source": "Local Guide · Google" }
-    ],
-    "reviewsText": "Hundreds of customer reviews on Google back the [[ARAU]] experience.",
-    "readReviews": "Read the reviews on Google"
   },
   "visitanos": {
     "eyebrow": "Visit us",
@@ -240,7 +166,6 @@
     "mapBlocked": "The map uses Google Maps. Tap to load it."
   },
   "footer": {
-    "tag": "Brunch & specialty coffee<br />in the heart of the Eixample, Barcelona.",
     "nav": {
       "nosotros": "About us",
       "laCarta": "The menu",
@@ -248,8 +173,7 @@
       "eventos": "Events",
       "reservar": "Book"
     },
-    "copyright": "© <span id=\"year\">[[YEAR]]</span> [[ARAU]] · Made with love in Barcelona.",
-    "credit": "Brunch & specialty coffee, every day except Tuesdays."
+    "copyright": "© <span id=\"year\">[[YEAR]]</span> [[ARAU]] · Made with love in Barcelona."
   },
   "waFloat": {
     "label": "Book"
