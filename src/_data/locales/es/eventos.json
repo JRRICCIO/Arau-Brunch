@@ -1,4 +1,15 @@
 {
+  "proximo": {
+    "activo": false,
+    "kicker": "Próximo evento",
+    "titulo": "Nombre del próximo evento",
+    "fecha": "Día 00 de mes · 00:00 h",
+    "desc": "Contá de qué se trata el evento y por qué no se lo pueden perder.",
+    "foto": "",
+    "fotoAlt": "",
+    "id": "proximo-evento",
+    "cta": "Inscribirme"
+  },
   "feature": {
     "kicker": "Bingo Night",
     "titleStart": "No es el bingo de tu",

@@ -103,6 +103,20 @@ collections:
         label: "Eventos · Español"
         file: "src/_data/locales/es/eventos.json"
         fields: &eventosFields
+          - name: "proximo"
+            label: "Próximo evento (destacado arriba)"
+            widget: "object"
+            hint: "Un evento destacado arriba de todo. Apagá «Mostrar» si no hay ninguno programado."
+            fields:
+              - { name: "activo", label: "Mostrar la sección «Próximo evento»", widget: "boolean", default: false }
+              - { name: "kicker", label: "Antetítulo", widget: "string", hint: "Ej: Próximo evento" }
+              - { name: "titulo", label: "Título del evento", widget: "string" }
+              - { name: "fecha", label: "Fecha y horario", widget: "string", hint: "Ej: Sábado 16 de agosto · 20:30 h" }
+              - { name: "desc", label: "Descripción", widget: "text" }
+              - { name: "foto", label: "Foto (opcional)", widget: "image", required: false, hint: "Si cargás una, aparece al lado del texto y se agranda al tocarla." }
+              - { name: "fotoAlt", label: "Texto alternativo de la foto", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
+              - { name: "cta", label: "Texto del botón de inscripción", widget: "string", hint: "Ej: Inscribirme, Pedir más info" }
+              - { name: "id", label: "Identificador para inscripciones", widget: "string", required: false, hint: "Slug corto y estable, ej: cena-a-oscuras-agosto. Usá el MISMO en los 4 idiomas para juntar bien los inscriptos." }
           - name: "feature"
             label: "Evento destacado"
             widget: "object"

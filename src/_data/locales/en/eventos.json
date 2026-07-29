@@ -1,4 +1,15 @@
 {
+  "proximo": {
+    "activo": false,
+    "kicker": "Next event",
+    "titulo": "Name of the next event",
+    "fecha": "Day 00 month · 00:00",
+    "desc": "Tell people what the event is about and why they can't miss it.",
+    "foto": "",
+    "fotoAlt": "",
+    "id": "proximo-evento",
+    "cta": "Sign up"
+  },
   "feature": {
     "kicker": "Bingo Night",
     "titleStart": "Not your grandma's",
