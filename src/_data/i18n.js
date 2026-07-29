@@ -22,8 +22,34 @@ function loadLang(lang) {
   return out;
 }
 
+// Los precios son iguales en todos los idiomas, así que se definen UNA sola vez
+// en la carta en Español y se replican al resto al construir el sitio (por
+// posición: misma sección y mismo plato). Si una sección no está alineada entre
+// idiomas, se deja el precio propio de ese idioma para no mostrar algo erróneo.
+function syncPrices(content) {
+  const es = content.es;
+  if (!es || !es.carta || !Array.isArray(es.carta.sections)) return;
+  const esSecs = es.carta.sections;
+  for (const lang of LANGS) {
+    if (lang === "es") continue;
+    const c = content[lang];
+    if (!c || !c.carta || !Array.isArray(c.carta.sections)) continue;
+    const secs = c.carta.sections;
+    if (secs.length !== esSecs.length) continue;
+    for (let i = 0; i < secs.length; i++) {
+      const esItems = esSecs[i].items || [];
+      const items = secs[i].items || [];
+      if (items.length !== esItems.length) continue; // sección desalineada → no tocar
+      for (let j = 0; j < items.length; j++) {
+        if (esItems[j] && items[j]) items[j].precio = esItems[j].precio;
+      }
+    }
+  }
+}
+
 module.exports = function () {
   const content = {};
   for (const lang of LANGS) content[lang] = loadLang(lang);
+  syncPrices(content);
   return content;
 };
