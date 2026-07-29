@@ -191,15 +191,14 @@ pageKey: "carta"
       align-items: flex-start;
       margin: .6rem 0 0;
       padding: .7rem .95rem;
-      background: rgba(175, 69, 46, .1);
-      border: 1px solid rgba(175, 69, 46, .32);
+      background: var(--cream-card);
+      border: 1px solid rgba(51, 51, 51, .14);
       border-radius: 10px;
       font-size: .9rem;
       line-height: 1.5;
-      color: var(--terra-deep);
+      color: var(--ink-soft);
       font-weight: 500;
     }
-    .menu-legend__note-ic { font-size: 1.15rem; line-height: 1.1; flex: 0 0 auto; }
     .menu-legend__keys {
       display: flex; flex-wrap: wrap; gap: .5rem;
       list-style: none; padding: 0; margin: 0;
@@ -536,18 +535,7 @@ pageKey: "carta"
       </div>
     </section>
 
-    <!-- ===================== TABS PEGAJOSAS ===================== -->
-    <nav class="menu-tabs" aria-label="{{ ui.a11y.cartaTabsLabel }}">
-      <div class="menu-tabs__scroll">
-        {%- for section in carta.sections %}
-        <a class="menu-tab" href="#{{ section | anchor }}" data-tab="{{ section | anchor }}">{{ section.label }}</a>
-        {%- endfor %}
-      </div>
-    </nav>
-
-    {% include "carta-sections.njk" %}
-
-    <!-- ===================== LEYENDA (al final de la carta) ===================== -->
+    <!-- ===================== LEYENDA (arriba de la carta) ===================== -->
     <div class="menu-legend">
       <div class="menu-legend__inner">
         <ul class="menu-legend__keys" aria-label="{{ ui.legend.keysLabel }}">
@@ -558,9 +546,20 @@ pageKey: "carta"
           <li><span class="diet diet--house" aria-hidden="true">⭐</span> {{ ui.legend.house }}</li>
         </ul>
         <p class="menu-legend__price">{{ ui.legend.price }}</p>
-        <p class="menu-legend__note"><span class="menu-legend__note-ic" aria-hidden="true">⚠</span> <span>{{ ui.legend.allergens }}</span></p>
+        <p class="menu-legend__note"><span>{{ ui.legend.allergens }}</span></p>
       </div>
     </div>
+
+    <!-- ===================== TABS PEGAJOSAS ===================== -->
+    <nav class="menu-tabs" aria-label="{{ ui.a11y.cartaTabsLabel }}">
+      <div class="menu-tabs__scroll">
+        {%- for section in carta.sections %}
+        <a class="menu-tab" href="#{{ section | anchor }}" data-tab="{{ section | anchor }}">{{ section.label }}</a>
+        {%- endfor %}
+      </div>
+    </nav>
+
+    {% include "carta-sections.njk" %}
 
     <!-- ===================== CIERRE ===================== -->
     <section class="menu-outro" aria-labelledby="outro-title">
