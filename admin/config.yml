@@ -46,7 +46,6 @@ collections:
               - { name: "titleStart", label: "Título (primera parte)", widget: "string" }
               - { name: "titleAccent", label: "Título (parte destacada)", widget: "string", hint: "Esta parte se muestra resaltada" }
               - { name: "subtitle", label: "Subtítulo", widget: "text" }
-              - { name: "dateline", label: "Pie de fecha", widget: "string", hint: "Ej: Carta de temporada · actualizada junio 2026" }
               - { name: "disclaimer", label: "Aviso legal", widget: "text", hint: "Ej: Los precios son orientativos…" }
           - name: "sections"
             label: "Secciones"

@@ -101,15 +101,8 @@ pageKey: "carta"
       text-wrap: pretty;
     }
     .menu-intro__sub strong { color: var(--ink); font-weight: 600; }
-    .menu-intro__dateline {
-      margin-top: 1.4rem;
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: .98rem;
-      color: var(--terra-deep);
-    }
     .menu-intro__disclaimer {
-      margin-top: .55rem;
+      margin-top: 1.4rem;
       font-size: .86rem;
       color: var(--ink-soft);
       max-width: 56ch;
@@ -522,7 +515,6 @@ pageKey: "carta"
       <div class="container menu-intro__inner">
         <h1 class="menu-intro__title" id="menu-title">{{ carta.intro.titleStart }} <span class="ital">{{ carta.intro.titleAccent }}</span></h1>
         <p class="menu-intro__sub">{{ carta.intro.subtitle }}</p>
-        <p class="menu-intro__dateline">{{ carta.intro.dateline }}</p>
         <p class="menu-intro__disclaimer">{{ carta.intro.disclaimer }}</p>
       </div>
     </section>
