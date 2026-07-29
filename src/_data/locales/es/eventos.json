@@ -3,7 +3,7 @@
     "foto": "",
     "fotoAlt": "",
     "cta": "Inscribirme",
-    "activo": true,
+    "activo": false,
     "desc": "Contá de qué se trata el evento y por qué no se lo pueden perder.",
     "kicker": "Próximo evento",
     "titulo": "Nombre del próximo evento",
