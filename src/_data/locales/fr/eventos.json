@@ -11,6 +11,7 @@
     "cta": "Je m'inscris"
   },
   "feature": {
+    "activo": true,
     "kicker": "Bingo Night",
     "titleStart": "Ce n'est pas le bingo de ta",
     "titleAccent": "grand-mère",
@@ -44,22 +45,27 @@
     "cta": "Demander plus d'info",
     "items": [
       {
+        "activo": true,
         "title": "Dîner dans le noir",
         "desc": "Un menu en plusieurs plats dans le noir complet : sans la vue, les autres sens prennent le relais."
       },
       {
+        "activo": true,
         "title": "Soirée ñoquis et musique live",
         "desc": "Ñoquis maison avec différentes sauces et musique live."
       },
       {
+        "activo": true,
         "title": "Fêtes nationales argentines",
         "desc": "Locro, empanadas tucumanas et folklore live pour célébrer les fêtes nationales argentines."
       },
       {
+        "activo": true,
         "title": "Tournoi de truco et Tutti Frutti",
         "desc": "Soirées jeux avec tournoi de truco et Tutti Frutti."
       },
       {
+        "activo": true,
         "title": "Coffee fest",
         "desc": "Une journée dédiée au café de spécialité : dégustations, méthodes et baristas."
       }

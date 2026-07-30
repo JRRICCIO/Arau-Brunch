@@ -11,6 +11,7 @@
     "fecha": "Día 00 de mes · 00:00 h"
   },
   "feature": {
+    "activo": true,
     "titleAccent": "abuela",
     "titleStart": "No es el bingo de tu",
     "chip": "Noche temática · seguí la agenda",
@@ -44,22 +45,27 @@
     "cta": "Pedir más info",
     "items": [
       {
+        "activo": true,
         "title": "Cena a oscuras",
         "desc": "Un menú de varios pasos completamente a oscuras: sin la vista, el resto de los sentidos toman el control."
       },
       {
+        "activo": true,
         "title": "Noche de ñoquis y música en vivo",
         "desc": "Ñoquis caseros con distintas salsas y música en vivo."
       },
       {
+        "activo": true,
         "title": "Fiestas patrias",
         "desc": "Locro, empanadas tucumanas y folklore en vivo para celebrar las fechas patrias argentinas."
       },
       {
+        "activo": true,
         "title": "Torneo de truco y Tutti Frutti",
         "desc": "Noches de juego con torneo de truco y Tutti Frutti."
       },
       {
+        "activo": true,
         "title": "Coffee fest",
         "desc": "Una jornada dedicada al café de especialidad: catas, métodos y baristas."
       }

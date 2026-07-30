@@ -23,6 +23,7 @@
         {%- endif %}
 
         <!-- Destacado: Bingo (con recuadro) -->
+        {%- if eventos.feature.activo != false %}
         <article class="event-feature event-feature--boxed reveal{% if not eventos.feature.photo %} event-feature--no-photo{% endif %}">
           {%- if eventos.feature.photo %}
           <div class="event-feature__media">
@@ -53,13 +54,16 @@
             </div>
           </div>
         </article>
+        {%- endif %}
 
         <!-- Otros eventos en Arau -->
+        {%- set otrosActivos = eventos.otros.items | selectattr("activo") | list %}
+        {%- if otrosActivos | length %}
         <div class="events-more reveal">
           <h3 class="events-more__title">{{ eventos.otros.heading }}</h3>
           <p class="events-more__sub">{{ eventos.otros.sub }}</p>
           <ul class="events-more__list">
-            {%- for it in eventos.otros.items %}
+            {%- for it in otrosActivos %}
             <li class="events-more__item{% if it.foto %} events-more__item--haspic{% endif %}">
               {%- if it.foto %}
               <button type="button" class="events-more__thumb thumb" data-gallery="evento-otros" data-full="{{ it.foto | asset }}" data-caption="{{ it.title }}">
@@ -73,3 +77,4 @@
           </ul>
           <button type="button" class="btn btn--terra js-inscribirme" data-evento-id="otros-eventos" data-evento-nombre="{{ eventos.otros.heading }}">{{ eventos.otros.cta }}</button>
         </div>
+        {%- endif %}

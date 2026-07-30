@@ -120,6 +120,7 @@ collections:
             label: "Evento destacado"
             widget: "object"
             fields:
+              - { name: "activo", label: "Mostrar este evento", widget: "boolean", default: true, hint: "Apagalo para ocultar el Bingo del sitio (sin borrarlo)." }
               - { name: "kicker", label: "Antetítulo", widget: "string" }
               - { name: "titleStart", label: "Título (primera parte)", widget: "string" }
               - { name: "titleAccent", label: "Título (parte destacada)", widget: "string" }
@@ -152,6 +153,7 @@ collections:
                 widget: "list"
                 summary: "{{fields.title}}"
                 fields:
+                  - { name: "activo", label: "Mostrar este evento", widget: "boolean", default: true, hint: "Apagalo para ocultar el evento del sitio (sin borrarlo)." }
                   - { name: "title", label: "Nombre del evento", widget: "string" }
                   - { name: "desc", label: "Descripción", widget: "text" }
                   - { name: "foto", label: "Foto (opcional)", widget: "image", required: false, hint: "Si cargás una, aparece arriba del evento y se agranda al tocarla. Dejala vacía para que quede solo texto." }

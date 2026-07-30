@@ -11,6 +11,7 @@
     "cta": "Vull apuntar-me"
   },
   "feature": {
+    "activo": true,
     "kicker": "Bingo Night",
     "titleStart": "No és el bingo de la teva",
     "titleAccent": "àvia",
@@ -44,22 +45,27 @@
     "cta": "Demanar més info",
     "items": [
       {
+        "activo": true,
         "title": "Sopar a les fosques",
         "desc": "Un menú de diversos passos completament a les fosques: sense la vista, la resta de sentits prenen el control."
       },
       {
+        "activo": true,
         "title": "Nit de ñoquis i música en directe",
         "desc": "Ñoquis casolans amb diferents salses i música en directe."
       },
       {
+        "activo": true,
         "title": "Festes patriòtiques argentines",
         "desc": "Locro, empanadas tucumanas i folklore en directe per celebrar les festes nacionals argentines."
       },
       {
+        "activo": true,
         "title": "Torneig de truco i Tutti Frutti",
         "desc": "Nits de joc amb torneig de truco i Tutti Frutti."
       },
       {
+        "activo": true,
         "title": "Coffee fest",
         "desc": "Una jornada dedicada al cafè d'especialitat: tastos, mètodes i baristes."
       }

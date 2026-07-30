@@ -11,6 +11,7 @@
     "cta": "Sign up"
   },
   "feature": {
+    "activo": true,
     "kicker": "Bingo Night",
     "titleStart": "Not your grandma's",
     "titleAccent": "bingo",
@@ -44,22 +45,27 @@
     "cta": "Ask for more info",
     "items": [
       {
+        "activo": true,
         "title": "Dinner in the dark",
         "desc": "A multi-course menu in complete darkness: without sight, the other senses take over."
       },
       {
+        "activo": true,
         "title": "Ñoqui night with live music",
         "desc": "Homemade ñoquis with different sauces and live music."
       },
       {
+        "activo": true,
         "title": "Argentine national days",
         "desc": "Locro, empanadas tucumanas and live folklore to celebrate Argentina's national holidays."
       },
       {
+        "activo": true,
         "title": "Truco & Tutti Frutti tournament",
         "desc": "Game nights with a truco and Tutti Frutti tournament."
       },
       {
+        "activo": true,
         "title": "Coffee fest",
         "desc": "A day dedicated to specialty coffee: tastings, brew methods and baristas."
       }
