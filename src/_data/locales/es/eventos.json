@@ -13,8 +13,17 @@
   "feature": {
     "activo": true,
     "titleAccent": "abuela",
+    "fechas": [
+      {
+        "fecha": "Jueves 6 de agosto",
+        "agotado": true
+      },
+      {
+        "fecha": "Jueves 20 de agosto",
+        "agotado": false
+      }
+    ],
     "titleStart": "No es el bingo de tu",
-    "chip": "Jueves 6 de agosto",
     "desc": "Tres rondas con premios y el especial de la casa: sándwich de mila en pan de chipá.",
     "photo": "",
     "kicker": "Bingo Night",

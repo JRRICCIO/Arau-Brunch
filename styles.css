@@ -1166,6 +1166,21 @@ button { font: inherit; color: inherit; cursor: pointer; }
   border: 1px solid rgba(175, 69, 46, .24);
   padding: .32rem .85rem; border-radius: 100px;
 }
+.event__dates { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
+.event__dates .event__chip { margin-top: 0; }
+.event__chip--soldout {
+  color: var(--ink-soft);
+  background: rgba(51, 51, 51, .05);
+  border-color: rgba(51, 51, 51, .15);
+  text-decoration: line-through;
+  text-decoration-color: rgba(51, 51, 51, .5);
+}
+.soldout-tag {
+  display: inline-block; text-decoration: none; vertical-align: middle;
+  margin-left: .4rem; padding: .1rem .45rem; border-radius: 5px;
+  font-size: .66rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  color: #fff; background: var(--terra);
+}
 .event__actions { display: flex; align-items: center; gap: 1.3rem; flex-wrap: wrap; margin-top: 1.6rem; }
 
 .event-feature {

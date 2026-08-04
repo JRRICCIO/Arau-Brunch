@@ -124,7 +124,15 @@ collections:
               - { name: "kicker", label: "Antetítulo", widget: "string" }
               - { name: "titleStart", label: "Título (primera parte)", widget: "string" }
               - { name: "titleAccent", label: "Título (parte destacada)", widget: "string" }
-              - { name: "chip", label: "Etiqueta / horario", widget: "string", hint: "Ej: Cada jueves · 20:30" }
+              - name: "fechas"
+                label: "Fechas del Bingo"
+                label_singular: "Fecha"
+                widget: "list"
+                summary: "{{fields.fecha}}"
+                hint: "Agregá una o más fechas. Marcá “Agotado” en las que ya no tienen lugar (se ve tachada con el cartel Agotado)."
+                fields:
+                  - { name: "fecha", label: "Fecha y horario", widget: "string", hint: "Ej: Jueves 20 de agosto · 20:30 h" }
+                  - { name: "agotado", label: "Agotado (sin lugares)", widget: "boolean", default: false }
               - { name: "desc", label: "Descripción", widget: "text" }
               - { name: "id", label: "Identificador para inscripciones", widget: "string", required: false, hint: "Slug corto y estable, ej: noche-argentina. Usá el MISMO en los 4 idiomas para juntar bien los inscriptos." }
               - { name: "inscripciones", label: "Abrir inscripciones para este evento", widget: "boolean", default: false }

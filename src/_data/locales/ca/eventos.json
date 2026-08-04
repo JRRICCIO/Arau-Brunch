@@ -15,7 +15,16 @@
     "kicker": "Bingo Night",
     "titleStart": "No és el bingo de la teva",
     "titleAccent": "àvia",
-    "chip": "Dijous 6 d'agost",
+    "fechas": [
+      {
+        "fecha": "Dijous 6 d'agost",
+        "agotado": true
+      },
+      {
+        "fecha": "Dijous 20 d'agost",
+        "agotado": false
+      }
+    ],
     "desc": "Tres rondes amb premis i l'especial de la casa: entrepà de mila en pa de chipá.",
     "id": "bingo-night",
     "inscripciones": true,

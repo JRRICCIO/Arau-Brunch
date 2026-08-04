@@ -100,7 +100,8 @@
     },
     "card": {
       "play": "See photos"
-    }
+    },
+    "agotado": "Sold out"
   },
   "loyalty": {
     "text": "<strong>Your 6th brunch, on us.</strong> Earn points with every visit in our loyalty app and the sixth one is on the house.",

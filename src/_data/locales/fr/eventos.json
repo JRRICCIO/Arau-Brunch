@@ -15,7 +15,16 @@
     "kicker": "Bingo Night",
     "titleStart": "Ce n'est pas le bingo de ta",
     "titleAccent": "grand-mère",
-    "chip": "Jeudi 6 août",
+    "fechas": [
+      {
+        "fecha": "Jeudi 6 août",
+        "agotado": true
+      },
+      {
+        "fecha": "Jeudi 20 août",
+        "agotado": false
+      }
+    ],
     "desc": "Trois manches avec des lots et la spécialité de la maison : sandwich de mila au pain de chipá.",
     "id": "bingo-night",
     "inscripciones": true,
