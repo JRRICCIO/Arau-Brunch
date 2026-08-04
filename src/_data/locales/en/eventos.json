@@ -18,11 +18,13 @@
     "fechas": [
       {
         "fecha": "Thursday, August 6",
-        "agotado": true
+        "agotado": true,
+        "nueva": false
       },
       {
         "fecha": "Thursday, August 20",
-        "agotado": false
+        "agotado": false,
+        "nueva": true
       }
     ],
     "desc": "Three rounds with prizes and the house special: milanesa sandwich on pan de chipá.",

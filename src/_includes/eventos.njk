@@ -47,7 +47,7 @@
             {%- if eventos.feature.fechas %}
             <div class="event__dates">
               {%- for f in eventos.feature.fechas %}
-              <span class="event__chip{% if f.agotado %} event__chip--soldout{% endif %}">{{ f.fecha }}{% if f.agotado %} <span class="soldout-tag">{{ ui.eventos.agotado }}</span>{% endif %}</span>
+              <span class="event__chip{% if f.agotado %} event__chip--soldout{% elif f.nueva %} event__chip--nueva{% endif %}">{{ f.fecha }}{% if f.agotado %} <span class="soldout-tag">{{ ui.eventos.agotado }}</span>{% elif f.nueva %} <span class="nueva-tag">{{ ui.eventos.nueva }}</span>{% endif %}</span>
               {%- endfor %}
             </div>
             {%- elif eventos.feature.chip %}

@@ -18,11 +18,13 @@
     "fechas": [
       {
         "fecha": "Jeudi 6 août",
-        "agotado": true
+        "agotado": true,
+        "nueva": false
       },
       {
         "fecha": "Jeudi 20 août",
-        "agotado": false
+        "agotado": false,
+        "nueva": true
       }
     ],
     "desc": "Trois manches avec des lots et la spécialité de la maison : sandwich de mila au pain de chipá.",

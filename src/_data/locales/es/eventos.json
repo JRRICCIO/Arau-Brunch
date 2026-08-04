@@ -16,11 +16,13 @@
     "fechas": [
       {
         "fecha": "Jueves 6 de agosto",
-        "agotado": true
+        "agotado": true,
+        "nueva": false
       },
       {
         "fecha": "Jueves 20 de agosto",
-        "agotado": false
+        "agotado": false,
+        "nueva": true
       }
     ],
     "titleStart": "No es el bingo de tu",

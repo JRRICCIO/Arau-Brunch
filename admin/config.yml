@@ -133,6 +133,7 @@ collections:
                 fields:
                   - { name: "fecha", label: "Fecha y horario", widget: "string", hint: "Ej: Jueves 20 de agosto · 20:30 h" }
                   - { name: "agotado", label: "Agotado (sin lugares)", widget: "boolean", default: false }
+                  - { name: "nueva", label: "Nueva fecha (cartel “Nueva fecha”)", widget: "boolean", default: false, hint: "Marcala para destacar una fecha recién abierta. Si está “Agotado”, gana Agotado." }
               - { name: "desc", label: "Descripción", widget: "text" }
               - { name: "id", label: "Identificador para inscripciones", widget: "string", required: false, hint: "Slug corto y estable, ej: noche-argentina. Usá el MISMO en los 4 idiomas para juntar bien los inscriptos." }
               - { name: "inscripciones", label: "Abrir inscripciones para este evento", widget: "boolean", default: false }

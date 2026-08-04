@@ -18,11 +18,13 @@
     "fechas": [
       {
         "fecha": "Dijous 6 d'agost",
-        "agotado": true
+        "agotado": true,
+        "nueva": false
       },
       {
         "fecha": "Dijous 20 d'agost",
-        "agotado": false
+        "agotado": false,
+        "nueva": true
       }
     ],
     "desc": "Tres rondes amb premis i l'especial de la casa: entrepà de mila en pa de chipá.",

@@ -1175,12 +1175,19 @@ button { font: inherit; color: inherit; cursor: pointer; }
   text-decoration: line-through;
   text-decoration-color: rgba(51, 51, 51, .5);
 }
-.soldout-tag {
+.event__chip--nueva {
+  color: var(--terra-deep);
+  background: rgba(175, 69, 46, .14);
+  border-color: rgba(175, 69, 46, .4);
+}
+.soldout-tag, .nueva-tag {
   display: inline-block; text-decoration: none; vertical-align: middle;
   margin-left: .4rem; padding: .1rem .45rem; border-radius: 5px;
   font-size: .66rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
-  color: #fff; background: var(--terra);
+  color: #fff;
 }
+.soldout-tag { background: var(--terra); }
+.nueva-tag { background: var(--olive-deep); }
 .event__actions { display: flex; align-items: center; gap: 1.3rem; flex-wrap: wrap; margin-top: 1.6rem; }
 
 .event-feature {
