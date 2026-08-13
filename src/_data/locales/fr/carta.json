@@ -171,7 +171,7 @@
           "desc": "Bagel au pastrami, cornichons aigres-doux, roquette, gouda et notre sauce à la moutarde de Dijon, fromage frais et miel. Servi avec des frites",
           "precio": "15,50",
           "etiquetas": [],
-          "disponible": true,
+          "disponible": false,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Pastrami_Editada_5ac9cac2f8.jpg",
           "alergenos": "Gluten · Lactose · Moutarde"
         }
