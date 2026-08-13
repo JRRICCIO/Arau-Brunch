@@ -171,7 +171,7 @@
           "desc": "Bagel amb pastrami, cogombrets agredolços, ruca, Gouda i la nostra salsa de mostassa de Dijon, formatge crema i mel. Acompanyat de patates fregides",
           "precio": "15,50",
           "etiquetas": [],
-          "disponible": true,
+          "disponible": false,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Pastrami_Editada_5ac9cac2f8.jpg",
           "alergenos": "Gluten · Lactis · Mostassa"
         }
