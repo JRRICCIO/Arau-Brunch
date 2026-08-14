@@ -125,7 +125,7 @@
         },
         {
           "nombre": "Big brekky",
-          "desc": "Chorizo grillado, panceta crujiente, alubias blancas guisadas, 2 huevos (fritos o revueltos) decorados con ají molido, tomates asados, champiñones salteados, hash brown y espinaca. \nExtra tostada de masa madre +1€",
+          "desc": "Chorizo grillado, panceta crujiente, alubias blancas guisadas, 2 huevos (fritos o revueltos) decorados con ají molido, tomates asados, champiñones salteados, hash brown y espinaca. \nExtra tostada de masa madre +1€\nExtra Halloumi 3€\nExtra aguacate 3€",
           "precio": "14,50",
           "etiquetas": [
             "casa"
@@ -148,7 +148,7 @@
         },
         {
           "nombre": "Omelette",
-          "desc": "Omelette de tres huevos con champiñones salteados, queso Gouda, espinaca y pan de masa madre",
+          "desc": "Omelette de tres huevos con champiñones salteados, queso Gouda, espinaca y pan de masa madre.\nExtra bacon 3€",
           "precio": "13,00",
           "etiquetas": [
             "vg"
@@ -159,8 +159,8 @@
         },
         {
           "nombre": "Bagel Salmón Gravlax",
-          "desc": "Con salmón gravlax casero, alcaparras, queso crema con cebollino, tomates asados, rúcula salvaje y cebolla encurtida. Acompañado de patatas fritas.",
-          "precio": "13,50",
+          "desc": "Con salmón gravlax casero, alcaparras, queso crema con cebollino, tomates asados, rúcula salvaje y cebolla encurtida. Acompañado de patatas fritas.\nExtra aguacate 3€",
+          "precio": "14",
           "etiquetas": [],
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Bagel_6420c4434a.jpg",
