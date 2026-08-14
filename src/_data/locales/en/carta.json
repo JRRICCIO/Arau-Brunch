@@ -125,7 +125,7 @@
         },
         {
           "nombre": "Big brekky",
-          "desc": "Grilled sausage, crispy bacon, stewed white beans, 2 eggs (fried or scrambled) garnished with ground chili, roasted tomatoes, sautéed mushrooms, hash brown and spinach.\nExtra sourdough toast +1€",
+          "desc": "Grilled sausage, crispy bacon, stewed white beans, 2 eggs (fried or scrambled) garnished with ground chili, roasted tomatoes, sautéed mushrooms, hash brown and spinach.\nExtra sourdough toast +1€\nExtra Halloumi 3€\nExtra avocado 3€",
           "precio": "14,50",
           "etiquetas": [
             "casa"
@@ -148,7 +148,7 @@
         },
         {
           "nombre": "Omelette",
-          "desc": "Three-egg omelette with sautéed mushrooms, Gouda cheese, spinach, and sourdough bread",
+          "desc": "Three-egg omelette with sautéed mushrooms, Gouda cheese, spinach, and sourdough bread.\nExtra bacon 3€",
           "precio": "13,00",
           "etiquetas": [
             "vg"
@@ -159,8 +159,8 @@
         },
         {
           "nombre": "Salmon Bagel Gravlax",
-          "desc": "With homemade salmon gravlax, capers, cream cheese with chives, roasted tomatoes, wild arugula and pickled onion. Served with french fries.",
-          "precio": "13,50",
+          "desc": "With homemade salmon gravlax, capers, cream cheese with chives, roasted tomatoes, wild arugula and pickled onion. Served with french fries.\nExtra avocado 3€",
+          "precio": "14",
           "etiquetas": [],
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_Bagel_6420c4434a.jpg",
