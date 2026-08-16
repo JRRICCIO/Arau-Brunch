@@ -29,26 +29,7 @@
     ],
     "desc": "Tres rondes amb premis i l'especial de la casa: entrepà de mila en pa de chipá.",
     "id": "bingo-night",
-    "inscripciones": true,
-    "photo": "",
-    "photoAlt": "Taula de brunch amb mimosa en una Bingo Night",
-    "strip": [
-      {
-        "src": "img/terrace.webp",
-        "alt": "Terrassa d'ARAU en una nit d'esdeveniment",
-        "caption": "La terrassa d'ARAU en caure la tarda"
-      },
-      {
-        "src": "img/big-arau.webp",
-        "alt": "The Big ARAU, brunch complet per començar la nit",
-        "caption": "The Big ARAU — per arrencar la nit amb tot"
-      },
-      {
-        "src": "img/terrace-coffee.webp",
-        "alt": "Flat white a la terrassa d'ARAU a la posta de sol",
-        "caption": "Cafè a la terrassa abans que arrenqui la nit"
-      }
-    ]
+    "inscripciones": true
   },
   "otros": {
     "heading": "Altres esdeveniments a l'Arau",

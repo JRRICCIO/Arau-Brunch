@@ -29,26 +29,7 @@
     ],
     "desc": "Trois manches avec des lots et la spécialité de la maison : sandwich de mila au pain de chipá.",
     "id": "bingo-night",
-    "inscripciones": true,
-    "photo": "",
-    "photoAlt": "Table de brunch avec une mimosa lors d'une Bingo Night",
-    "strip": [
-      {
-        "src": "img/terrace.webp",
-        "alt": "Terrasse d'ARAU avec un brunch et la façade en arrière-plan",
-        "caption": "La terrasse d'ARAU à la tombée du jour"
-      },
-      {
-        "src": "img/big-arau.webp",
-        "alt": "The Big ARAU, brunch complet",
-        "caption": "The Big ARAU — pour démarrer la soirée en beauté"
-      },
-      {
-        "src": "img/terrace-coffee.webp",
-        "alt": "Flat white sur la terrasse d'ARAU au coucher du soleil",
-        "caption": "Un café en terrasse avant que la soirée ne commence"
-      }
-    ]
+    "inscripciones": true
   },
   "otros": {
     "heading": "Autres événements chez Arau",

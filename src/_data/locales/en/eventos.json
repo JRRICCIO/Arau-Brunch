@@ -29,26 +29,7 @@
     ],
     "desc": "Three rounds with prizes and the house special: milanesa sandwich on pan de chipá.",
     "id": "bingo-night",
-    "inscripciones": true,
-    "photo": "",
-    "photoAlt": "A brunch table with a mimosa on Bingo Night",
-    "strip": [
-      {
-        "src": "img/terrace.webp",
-        "alt": "ARAU's terrace with brunch and the facade behind",
-        "caption": "ARAU's terrace as the afternoon winds down"
-      },
-      {
-        "src": "img/big-arau.webp",
-        "alt": "The Big ARAU, a full brunch",
-        "caption": "The Big ARAU — to kick off the night in style"
-      },
-      {
-        "src": "img/terrace-coffee.webp",
-        "alt": "A flat white on ARAU's terrace at sunset",
-        "caption": "Coffee on the terrace before the night gets going"
-      }
-    ]
+    "inscripciones": true
   },
   "otros": {
     "heading": "More events at Arau",

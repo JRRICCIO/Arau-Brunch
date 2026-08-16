@@ -138,18 +138,6 @@ collections:
               - { name: "desc", label: "Descripción", widget: "text" }
               - { name: "id", label: "Identificador para inscripciones", widget: "string", required: false, hint: "Slug corto y estable, ej: noche-argentina. Usá el MISMO en los 4 idiomas para juntar bien los inscriptos." }
               - { name: "inscripciones", label: "Abrir inscripciones para este evento", widget: "boolean", default: false }
-              - { name: "photo", label: "Foto", widget: "image", required: false }
-              - { name: "photoAlt", label: "Texto alternativo de la foto", widget: "string", required: false }
-              - name: "strip"
-                label: "Tira de fotos"
-                label_singular: "Foto"
-                widget: "list"
-                required: false
-                summary: "{{fields.caption}}"
-                fields:
-                  - { name: "src", label: "Foto", widget: "image" }
-                  - { name: "alt", label: "Texto alternativo", widget: "string", required: false, hint: "Describí la foto (accesibilidad/SEO)" }
-                  - { name: "caption", label: "Pie de foto", widget: "string", required: false }
           - name: "otros"
             label: "Otros eventos en Arau"
             widget: "object"

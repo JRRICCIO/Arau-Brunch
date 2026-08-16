@@ -24,23 +24,7 @@
 
         <!-- Destacado: Bingo (con recuadro) -->
         {%- if eventos.feature.activo != false %}
-        <article class="event-feature event-feature--boxed reveal{% if not eventos.feature.photo %} event-feature--no-photo{% endif %}">
-          {%- if eventos.feature.photo %}
-          <div class="event-feature__media">
-            <button type="button" class="event-feature__photo thumb" data-gallery="evento-feature"
-                    data-full="{{ eventos.feature.photo | asset }}" data-caption="{{ eventos.feature.kicker }} — {{ eventos.feature.titleStart }} {{ eventos.feature.titleAccent }}">
-              <img src="{{ eventos.feature.photo | asset }}" alt="{{ eventos.feature.photoAlt }}" width="760" height="560" loading="lazy" decoding="async" />
-              <span class="event-feature__play" aria-hidden="true">{{ ui.eventos.feature.play }}</span>
-            </button>
-            <div class="event-strip" aria-label="Más fotos de {{ eventos.feature.kicker }}">
-              {%- for s in eventos.feature.strip %}
-              <button type="button" class="event-strip__thumb thumb" data-gallery="evento-feature" data-full="{{ s.src | asset }}" data-caption="{{ s.caption }}">
-                <img src="{{ s.src | asset }}" alt="{{ s.alt }}" width="200" height="150" loading="lazy" decoding="async" />
-              </button>
-              {%- endfor %}
-            </div>
-          </div>
-          {%- endif %}
+        <article class="event-feature event-feature--boxed event-feature--no-photo reveal">
           <div class="event-feature__body">
             <p class="event__kicker">{{ eventos.feature.kicker }}</p>
             <h3 class="event-feature__title">{{ eventos.feature.titleStart }} <span class="ital">{{ eventos.feature.titleAccent }}</span></h3>
