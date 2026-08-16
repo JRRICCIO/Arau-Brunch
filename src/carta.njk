@@ -538,7 +538,9 @@ pageKey: "carta"
     <nav class="menu-tabs" aria-label="{{ ui.a11y.cartaTabsLabel }}">
       <div class="menu-tabs__scroll">
         {%- for section in carta.sections %}
+        {%- if (section.items | selectattr("visible") | list | length) %}
         <a class="menu-tab" href="#{{ section | anchor }}" data-tab="{{ section | anchor }}">{{ section.label }}</a>
+        {%- endif %}
         {%- endfor %}
       </div>
     </nav>

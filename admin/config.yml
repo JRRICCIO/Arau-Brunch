@@ -63,6 +63,7 @@ collections:
                 widget: "list"
                 summary: "{{fields.nombre}} — {{fields.precio}} €"
                 fields:
+                  - { name: "visible", label: "Mostrar en la carta", widget: "boolean", default: true, hint: "Apagá para sacar el plato de la carta sin borrarlo. Prendé para volver a mostrarlo cuando quieras." }
                   - { name: "nombre", label: "Nombre", widget: "string" }
                   - { name: "desc", label: "Descripción", widget: "text", required: false }
                   - { name: "precio", label: "Precio", widget: "string", hint: "Sin el símbolo €, ej: 18,90" }

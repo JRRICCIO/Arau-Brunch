@@ -16,6 +16,7 @@
       "photoAlt": "Per picar — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Bonnie i Clyde",
           "desc": "Patates dolces fregides amb maionesa de chipotle",
           "precio": "5,00",
@@ -27,6 +28,7 @@
           "alergenos": "Ou"
         },
         {
+          "visible": true,
           "nombre": "Provo con chimi",
           "desc": "Formatge provolone fos amb chimichurri, tomàquets confitats i pa de massa mare",
           "precio": "11,90",
@@ -38,6 +40,7 @@
           "alergenos": "Lactis"
         },
         {
+          "visible": true,
           "nombre": "Chori amb chimi",
           "desc": "Entrepà de botifarra a la planxa amb salsa chimichurri",
           "precio": "6,00",
@@ -58,6 +61,7 @@
       "photoAlt": "Esmorzar — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Bol de Açaí",
           "desc": "Base d'açaí, granola casolana, fruites de temporada, coulis de fruits vermells, flocs de coco, mantega de cacauet i mel.",
           "precio": "12,90",
@@ -69,6 +73,7 @@
           "alergenos": "Gluten · Cacauet"
         },
         {
+          "visible": true,
           "nombre": "Bol de iogurt",
           "desc": "Iogurt grec, granola casolana, fruites de temporada, coulis de fruits vermells, baies de goji, flocs de coco, mantega de cacauet i mel.",
           "precio": "10,50",
@@ -80,6 +85,7 @@
           "alergenos": "Gluten · Lactis · Cacauet"
         },
         {
+          "visible": true,
           "nombre": "Creps d'Arau",
           "desc": "Creps amb crema de mascarpone, fruites de temporada i salsa fudge.",
           "precio": "10,50",
@@ -92,6 +98,7 @@
           "alergenos": "Ou · Gluten · Lactis · Fruita de closca"
         },
         {
+          "visible": true,
           "nombre": "Torrada francesa de plàtan",
           "desc": "Torrada francesa de pa de plàtan amb crema de mascarpone cítrics, mel, flocs de coco, fruits vermells, nous i ratlladura de taronja",
           "precio": "10,50",
@@ -113,6 +120,7 @@
       "photoAlt": "Brunch — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Smashed avo toast",
           "desc": "Pa de massa mare, alvocat, ruca silvestre, tomàquets rostits, formatge feta, ou escalfat, ceba escabetxada.",
           "precio": "13,50",
@@ -124,6 +132,7 @@
           "alergenos": "Ou · Gluten · Lactis · Sèsam"
         },
         {
+          "visible": true,
           "nombre": "Big Brekky",
           "desc": "Salsitxa a la planxa, cansalada cruixent, mongetes blanques estofades, 2 ous (fregits o remenats) guarnits amb xili mòlt, tomàquets rostits, xampinyons saltats, hash brown i espinacs.\nExtra de pa de massa mare +1 €\nExtra Halloumi 3€\nExtra alvocat 3€",
           "precio": "14,50",
@@ -135,6 +144,7 @@
           "alergenos": "Ou"
         },
         {
+          "visible": true,
           "nombre": "Benny i els ous",
           "desc": "Pa de chipa (pa de formatge sense gluten fet amb farina de yuca), espinacs saltats, dos ous escalfats, salsa hollandaise i cansalada cruixent. Servit amb amanida verda amb tomàquets rostits i moniatos. <br />Substituir Cansalada per: Alvocat, Salmó Gravlax casolà (+2,50€), Halloumi (+2€)",
           "precio": "14,00",
@@ -147,6 +157,7 @@
           "alergenos": "Ou · Lactis · Mostassa · Soja"
         },
         {
+          "visible": true,
           "nombre": "Truita",
           "desc": "Truita de tres ous amb bolets saltats, formatge Gouda, espinacs i pa de massa mare\nExtra bacó 3€",
           "precio": "13,00",
@@ -158,6 +169,7 @@
           "alergenos": "Ou · Gluten · Lactis · Mostassa · Soja"
         },
         {
+          "visible": true,
           "nombre": "Bagel de salmó Gravlax",
           "desc": "Amb salmó gravlax casolà, tàperes, formatge crema amb cibulet, tomàquets rostits, ruca silvestre i ceba adobada. Acompanyat de patates fregides.\nExtra alvocat 3€",
           "precio": "14",
@@ -167,6 +179,7 @@
           "alergenos": "Peix · Gluten · Lactis"
         },
         {
+          "visible": true,
           "nombre": "Pastrami Lover NOU!!",
           "desc": "Bagel amb pastrami, cogombrets agredolços, ruca, Gouda i la nostra salsa de mostassa de Dijon, formatge crema i mel. Acompanyat de patates fregides",
           "precio": "15,50",
@@ -186,6 +199,7 @@
       "photoAlt": "Dinars — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "La Tru Mila",
           "desc": "Milanesa de vedella (opció vegetariana d'albergínia 14,60€) amb salsa de bolets trufada, formatge Gouda fos i un ou fregit per sobre. <br />Acompanyat de patates fregides i maionesa de chipotle. (Canvia les patates per moniato o mescla de verds i tomàquets rostits +1€)",
           "precio": "17,00",
@@ -197,6 +211,7 @@
           "alergenos": "Ou · Gluten · Lactis"
         },
         {
+          "visible": true,
           "nombre": "El provocador",
           "desc": "Pa de brioche, hamburguesa de 180g de vedella (opció vegetariana Heura 16€), formatge provolone, cansalada, ceba caramel·litzada, tomàquet, enciam i maionesa de Chimichurri. (Ou fregit extra + 1,50€)<br />Acompanyat de patates fregides. (Canvia per moniato o mescla de verds +1€)",
           "precio": "17,90",
@@ -208,6 +223,7 @@
           "alergenos": "Gluten · Lactis"
         },
         {
+          "visible": true,
           "nombre": "NOU Ceasar Austral",
           "desc": "Enciam romaine, pollastre marinat i a la planxa, cansalada cruixent, rodanxes de parmesà, crostons fets a mà, llavors de carbassa i la nostra salsa Cèsar amb un toc de chimichurri.",
           "precio": "14,50",
@@ -227,6 +243,7 @@
       "photoAlt": "Pastisseria — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Pa vegà de plàtan",
           "desc": "Pa de plàtan vegà casolà amb fruits secs i xips de xocolata negra",
           "precio": "3,50",
@@ -238,6 +255,7 @@
           "alergenos": "Cacauet"
         },
         {
+          "visible": true,
           "nombre": "Alfajor de coco amb Dulce de Leche",
           "desc": "Sense gluten",
           "precio": "4,50",
@@ -250,6 +268,7 @@
           "alergenos": "Làctics · Ou"
         },
         {
+          "visible": true,
           "nombre": "Chipá (pa de formatge GF)",
           "desc": "Pa de formatge casolà elaborat amb farina de mandioca i una varietat de formatges. GF",
           "precio": "2,90",
@@ -271,6 +290,7 @@
       "photoAlt": "Postres — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Flantàstic",
           "desc": "Flan casolà de Dulce de Leche acompanyat de nata muntada",
           "precio": "5,50",
@@ -290,6 +310,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Espresso",
           "desc": "",
           "precio": "1,70",
@@ -297,6 +318,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Espresso doble",
           "desc": "",
           "precio": "2,40",
@@ -304,6 +326,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Tallat",
           "desc": "Un cop de cafè amb llet.",
           "precio": "1,90",
@@ -312,6 +335,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Macchiato",
           "desc": "Un cop de cafè amb escuma de llet.",
           "precio": "1,90",
@@ -320,6 +344,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Americano",
           "desc": "",
           "precio": "2,50",
@@ -327,6 +352,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Màgia",
           "desc": "Doble ristretto amb llet, més petit i més intens que el blanc pla.",
           "precio": "3,40",
@@ -335,6 +361,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Blanc pla",
           "desc": "Espresso doble amb llet.",
           "precio": "3,60",
@@ -343,6 +370,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Latte (cafè amb llet)",
           "desc": "Un cop de cafè amb llet.",
           "precio": "3,20",
@@ -351,6 +379,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Caputxino",
           "desc": "Un tret de cafè amb llet (decorat amb cacau o canyella).",
           "precio": "3,20",
@@ -359,6 +388,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Llet de caramel",
           "desc": "Un cop de cafè amb llet i xarop de caramel.",
           "precio": "3,90",
@@ -367,6 +397,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Latte de vainilla",
           "desc": "Un cop de cafè amb llet i xarop de vainilla.",
           "precio": "3,90",
@@ -375,6 +406,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "moca",
           "desc": "Un cop de cafè amb llet i cacau.",
           "precio": "3,90",
@@ -383,6 +415,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Babyccino",
           "desc": "Llet escumosa en una tassa petita decorada amb cacau (per a nadons)",
           "precio": "1,00",
@@ -391,6 +424,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Matcha latte",
           "desc": "Te matcha en pols amb llet.",
           "precio": "3,90",
@@ -399,6 +433,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Latte de cúrcuma",
           "desc": "",
           "precio": "3,90",
@@ -407,6 +442,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Chai Latte",
           "desc": "Te Chai en pols amb llet.",
           "precio": "3,90",
@@ -415,6 +451,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Chai brut",
           "desc": "Chai latte amb un cop de cafè.",
           "precio": "4,90",
@@ -423,6 +460,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Submarí",
           "desc": "Xocolata calenta a l'estil argentí (Llet amb un tros de xocolata per fondre)",
           "precio": "4,00",
@@ -431,6 +469,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Varietats de tes i infusions",
           "desc": "Esmorzar anglès, Camamilla, Menta Ecològica, Bon Ànim, Secret de la Caputxeta Vermella, Gessamí de la Xina",
           "precio": "3,00",
@@ -438,6 +477,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Dolç de Leche Latte",
           "desc": "Un cop de cafè amb llet.",
           "precio": "3,90",
@@ -453,6 +493,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Latte gelat o capucciano gelat",
           "desc": "Un cop de cafè amb llet i gel",
           "precio": "3,30",
@@ -461,6 +502,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Moca gelada",
           "desc": "Un cop de cafè amb llet i cacau + gel",
           "precio": "4,00",
@@ -469,6 +511,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Chai latte gelat",
           "desc": "",
           "precio": "4,00",
@@ -477,6 +520,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Chai brut gelat",
           "desc": "Chai latte gelat amb un espresso",
           "precio": "5,00",
@@ -485,6 +529,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Cold brew",
           "desc": "Cafè filtre infusionat en fred amb gel",
           "precio": "4,00",
@@ -492,6 +537,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Tònic Espresso",
           "desc": "Espresso doble amb aigua tònica, gel i una rodanxa de llimona",
           "precio": "4,50",
@@ -499,6 +545,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Caramel gelat o latte de vainilla",
           "desc": "Un tret de cafè, caramel o xarop de vainilla, llet i gel.",
           "precio": "4,00",
@@ -507,6 +554,7 @@
           "alergenos": "Làctics"
         },
         {
+          "visible": true,
           "nombre": "Dulce de Leche Latte gelat",
           "desc": "Un cop de cafè, fudge, llet i gel.",
           "precio": "4,00",
@@ -522,6 +570,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Desintoxicació",
           "desc": "Pinya natural, cogombre, menta, espinacs, poma verda i suc de llimona",
           "precio": "7,00",
@@ -529,6 +578,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Estat d'ànim tropical",
           "desc": "Suc natural de taronja, pinya, polpa de fruita de la passió i coulis de fruits vermells",
           "precio": "6,50",
@@ -536,6 +586,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Rellotge Taronja",
           "desc": "Taronja natural, pastanaga, cúrcuma fresca i suc de llimona",
           "precio": "6,00",
@@ -543,6 +594,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Suc de taronja espremut",
           "desc": "",
           "precio": "3,50",
@@ -550,6 +602,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Pantera Rosa",
           "desc": "Suc natural de taronja, remolatxa, gingebre i poma",
           "precio": "6,00",
@@ -564,6 +617,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Coca-Cola",
           "desc": "",
           "precio": "3,00",
@@ -571,6 +625,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Coca-Cola zero",
           "desc": "",
           "precio": "3,00",
@@ -578,6 +633,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Aigua",
           "desc": "Ampolla d'aigua filtrada",
           "precio": "1,50",
@@ -585,6 +641,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Aigua escumosa",
           "desc": "",
           "precio": "2,50",
@@ -592,6 +649,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Vichy Català",
           "desc": "",
           "precio": "3,50",
@@ -599,6 +657,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Sprite",
           "desc": "",
           "precio": "3,00",
@@ -606,6 +665,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Fanta llimona",
           "desc": "",
           "precio": "2,50",
@@ -613,6 +673,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Fanta Taronja",
           "desc": "",
           "precio": "2,50",
@@ -620,6 +681,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Tònica Shweppes",
           "desc": "",
           "precio": "3,50",
@@ -627,6 +689,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Cervesa de gingebre",
           "desc": "",
           "precio": "4,50",
@@ -634,6 +697,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Kombucha",
           "desc": "",
           "precio": "5,00",
@@ -641,6 +705,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Llimonada casolana",
           "desc": "Llimona, menta, gingebre i xarop",
           "precio": "4,00",
@@ -648,6 +713,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Llimonada tropical NOVETAT!",
           "desc": "suc de llimona, llet de coco, menta i xarop",
           "precio": "4,00",
@@ -662,6 +728,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Cervesa de calat Alhambra",
           "desc": "Copa de cervesa",
           "precio": "3,30",
@@ -670,6 +737,7 @@
           "alergenos": "Gluten"
         },
         {
+          "visible": true,
           "nombre": "vermut",
           "desc": "",
           "precio": "4,00",
@@ -678,6 +746,7 @@
           "alergenos": "Sulfits"
         },
         {
+          "visible": true,
           "nombre": "Mimosa",
           "desc": "Cava i suc de taronja espremut",
           "precio": "5,00",
@@ -688,6 +757,7 @@
           "alergenos": "Sulfits"
         },
         {
+          "visible": true,
           "nombre": "Cola de Fernet",
           "desc": "Fernet amb Coca-Cola (típic de l'Argentina)",
           "precio": "7,50",
@@ -695,6 +765,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Aperol Spritz",
           "desc": "",
           "precio": "7,00",
@@ -703,6 +774,7 @@
           "alergenos": "Sulfits"
         },
         {
+          "visible": true,
           "nombre": "Gin tònic",
           "desc": "",
           "precio": "7,00",
@@ -710,6 +782,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Bloody Mary",
           "desc": "Suc de tomàquet, vodka, suc de llima, sal, pebre, salsa Worcestershire i Tabasco",
           "precio": "8,00",
@@ -718,6 +791,7 @@
           "alergenos": "Peix · Sulfits"
         },
         {
+          "visible": true,
           "nombre": "Espresso Martini",
           "desc": "Cafè, Kahlua, Vodka i Xarop",
           "precio": "8,00",
@@ -725,6 +799,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Mojito de fruita de la passió",
           "desc": "Ron, menta, suc de llima, xarop, polpa de fruita de la passió, tònic",
           "precio": "9,00",
@@ -732,6 +807,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Caipiroska (fruita de la passió opcional)",
           "desc": "",
           "precio": "7,00",
@@ -739,6 +815,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Caipi Malbec",
           "desc": "Còctel de casa, una versió original i fresca de caipiroska amb Malbec",
           "precio": "8,00",
@@ -756,6 +833,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Abadal Picapoll Blanc",
           "desc": "",
           "precio": "25,00",
@@ -764,6 +842,7 @@
           "alergenos": "Sulfits"
         },
         {
+          "visible": true,
           "nombre": "Catena Malbec",
           "desc": "",
           "precio": "28,00",
@@ -772,6 +851,7 @@
           "alergenos": "Sulfits"
         },
         {
+          "visible": true,
           "nombre": "Oyuc Malbec",
           "desc": "Vi negre Malbec Argentino",
           "precio": "19,00",
@@ -780,6 +860,7 @@
           "alergenos": "Sulfits"
         },
         {
+          "visible": true,
           "nombre": "Mes que Paraules",
           "desc": "",
           "precio": "19,00",

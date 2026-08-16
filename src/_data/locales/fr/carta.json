@@ -16,6 +16,7 @@
       "photoAlt": "En-cas — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Bonnie & clyde",
           "desc": "Patates douces frites avec mayonnaise au chipotle",
           "precio": "5,00",
@@ -27,6 +28,7 @@
           "alergenos": "Œuf"
         },
         {
+          "visible": true,
           "nombre": "Provo avec chimi",
           "desc": "Fromage provolone fondu avec chimichurri, tomates confites et pain au levain",
           "precio": "11,90",
@@ -38,6 +40,7 @@
           "alergenos": "Lactose"
         },
         {
+          "visible": true,
           "nombre": "Chori con chimi",
           "desc": "Sandwich au chorizo grillé avec sauce chimichurri",
           "precio": "6,00",
@@ -58,6 +61,7 @@
       "photoAlt": "Petit déjeuner — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Bol d'açaí",
           "desc": "Base d'açaí, granola maison, fruits de saison, coulis de fruits rouges, tranches de noix de coco, beurre de cacahuète et miel.",
           "precio": "12,90",
@@ -69,6 +73,7 @@
           "alergenos": "Gluten · Arachides"
         },
         {
+          "visible": true,
           "nombre": "Bol de yaourt",
           "desc": "Yaourt grec, granola maison, fruits de saison, coulis de fruits rouges, baies de goji, flocons de noix de coco, beurre de cacahuète et miel.",
           "precio": "10,50",
@@ -80,6 +85,7 @@
           "alergenos": "Gluten · Lactose · Arachides"
         },
         {
+          "visible": true,
           "nombre": "Les crêpes d'Arau",
           "desc": "Crêpes avec crème de mascarpone, fruits de saison et sauce dulce de leche.",
           "precio": "10,50",
@@ -92,6 +98,7 @@
           "alergenos": "Œuf · Gluten · Lactose · Fruits à coque"
         },
         {
+          "visible": true,
           "nombre": "Pain perdu à la banane",
           "desc": "Pain perdu à la banane avec crème mascarpone aux agrumes, miel, flocons de noix de coco, baies rouges, noix et zeste d'orange",
           "precio": "10,50",
@@ -113,6 +120,7 @@
       "photoAlt": "Brunch — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Toast à l'avocat écrasé",
           "desc": "Pain au levain, avocat, roquette sauvage, tomates rôties, feta, œuf poché, oignon mariné.",
           "precio": "13,50",
@@ -124,6 +132,7 @@
           "alergenos": "Œuf · Gluten · Lactose · Sésame"
         },
         {
+          "visible": true,
           "nombre": "Petit déjeuner copieux",
           "desc": "Chorizo grillé, bacon croustillant, haricots blancs mijotés, 2 œufs (au plat ou brouillés) garnis de piment moulu, de tomates rôties, de champignons sautés, de pommes de terre rissolées et d'épinards.\nSupplément pain au levain grillé +1 €\nExtra Halloumi 3€\nExtra avocat 3€",
           "precio": "14,50",
@@ -135,6 +144,7 @@
           "alergenos": "Œuf"
         },
         {
+          "visible": true,
           "nombre": "Benny et les œufs",
           "desc": "Pain de chipá (pain au fromage sans gluten fait avec de la farine de yuca), épinards sautés, deux œufs pochés, sauce hollandaise et bacon croustillant. Servi avec une salade verte, des tomates rôties et des patates douces. <br />Remplacer le bacon par : Avocat, saumon gravlax maison (+2,50€), Halloumi (+2€)",
           "precio": "14,00",
@@ -147,6 +157,7 @@
           "alergenos": "Œuf · Lactose · Moutarde · Soja"
         },
         {
+          "visible": true,
           "nombre": "Omelette",
           "desc": "Omelette de trois œufs aux champignons sautés, gouda, épinards et pain au levain.\nExtra bacon croustillant 3€",
           "precio": "13,00",
@@ -158,6 +169,7 @@
           "alergenos": "Œuf · Gluten · Lactose · Moutarde · Soja"
         },
         {
+          "visible": true,
           "nombre": "Bagel au saumon Gravlax",
           "desc": "Avec saumon gravlax maison, câpres, fromage frais à la ciboulette, tomates rôties, roquette sauvage et oignon mariné. Servi avec des frites.\nExtra avocat 3€",
           "precio": "14",
@@ -167,6 +179,7 @@
           "alergenos": "Poisson · Gluten · Lactose"
         },
         {
+          "visible": true,
           "nombre": "Pastrami Lover NOUVEAU!!",
           "desc": "Bagel au pastrami, cornichons aigres-doux, roquette, gouda et notre sauce à la moutarde de Dijon, fromage frais et miel. Servi avec des frites",
           "precio": "15,50",
@@ -186,6 +199,7 @@
       "photoAlt": "Déjeuners — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Le tru mila",
           "desc": "Milanesa de bœuf (option veggie d'aubergine 14,60€) avec une sauce aux champignons truffée, du fromage Gouda fondu et un œuf au plat sur le dessus. <br />Servi avec des frites et une mayonnaise au chipotle. (Remplacer les frites par des patates douces ou un mélange de verdures et de tomates rôties +1€)",
           "precio": "17,00",
@@ -197,6 +211,7 @@
           "alergenos": "Œuf · Gluten · Lactose"
         },
         {
+          "visible": true,
           "nombre": "Le Provocateur",
           "desc": "Pain brioché, hamburger de 180gr de bœuf (option veggie Heura 16€), fromage provolone, bacon, oignon caramélisé, tomate, laitue et mayonnaise Chimichurri. (Œuf au plat supplémentaire + 1,50€)<br />Servi avec des frites. (Remplacer par des patates douces ou un mélange vert +1€)",
           "precio": "17,90",
@@ -208,6 +223,7 @@
           "alergenos": "Gluten · Lactose"
         },
         {
+          "visible": true,
           "nombre": "NOUVEAU Ceasar Austral",
           "desc": "Laitue romaine, poulet mariné et grillé, bacon croustillant, copeaux de parmesan, croûtons artisanaux, graines de courge et notre sauce César avec une touche de chimichurri.",
           "precio": "14,50",
@@ -227,6 +243,7 @@
       "photoAlt": "Pâtisserie — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Pain aux bananes",
           "desc": "Pain à la banane maison végan avec noix et pépites de chocolat noir",
           "precio": "3,50",
@@ -238,6 +255,7 @@
           "alergenos": "Arachides"
         },
         {
+          "visible": true,
           "nombre": "Alfajor à la noix de coco et au dulce de leche",
           "desc": "Sans gluten",
           "precio": "4,50",
@@ -250,6 +268,7 @@
           "alergenos": "Produits laitiers · Œuf"
         },
         {
+          "visible": true,
           "nombre": "Chipá (pain au fromage GF)",
           "desc": "Pain au fromage maison fait avec de la farine de manioc et une variété de fromages. GF",
           "precio": "2,90",
@@ -271,6 +290,7 @@
       "photoAlt": "Desserts — ARAU",
       "items": [
         {
+          "visible": true,
           "nombre": "Flantástico",
           "desc": "Crème pâtissière maison au dulce de leche avec crème fouettée",
           "precio": "5,50",
@@ -290,6 +310,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Espresso",
           "desc": "",
           "precio": "1,70",
@@ -297,6 +318,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Double expresso",
           "desc": "",
           "precio": "2,40",
@@ -304,6 +326,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Couper",
           "desc": "Un café au lait",
           "precio": "1,90",
@@ -312,6 +335,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Macchiato",
           "desc": "Un café avec de la mousse de lait",
           "precio": "1,90",
@@ -320,6 +344,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Américain",
           "desc": "",
           "precio": "2,50",
@@ -327,6 +352,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Magie",
           "desc": "Double ristretto au lait, plus petit et plus intense que le flat white",
           "precio": "3,40",
@@ -335,6 +361,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Blanc cassé",
           "desc": "Double expresso avec lait",
           "precio": "3,60",
@@ -343,6 +370,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Latte (café au lait)",
           "desc": "Un café au lait",
           "precio": "3,20",
@@ -351,6 +379,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Cappuccino",
           "desc": "Un café au lait (agrémenté de cacao ou de cannelle)",
           "precio": "3,20",
@@ -359,6 +388,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Latte au caramel",
           "desc": "Un café avec du lait et du sirop de caramel",
           "precio": "3,90",
@@ -367,6 +397,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Latte à la vanille",
           "desc": "Un café avec du lait et du sirop de vanille",
           "precio": "3,90",
@@ -375,6 +406,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Moka",
           "desc": "Un café au lait et au cacao",
           "precio": "3,90",
@@ -383,6 +415,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Babyccino",
           "desc": "Lait en poudre dans une petite tasse décorée de cacao (pour les bébés)",
           "precio": "1,00",
@@ -391,6 +424,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Matcha latte",
           "desc": "Thé Matcha en poudre avec du lait",
           "precio": "3,90",
@@ -399,6 +433,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Latte au curcuma",
           "desc": "",
           "precio": "3,90",
@@ -407,6 +442,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Chai latte",
           "desc": "Thé chai en poudre avec lait",
           "precio": "3,90",
@@ -415,6 +451,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Chai sale",
           "desc": "Chai latte avec une dose de café",
           "precio": "4,90",
@@ -423,6 +460,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Sous-marin",
           "desc": "Chocolat chaud à l'argentine <br />(lait avec un morceau de chocolat à faire fondre)",
           "precio": "4,00",
@@ -431,6 +469,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Variétés de thés et d'infusions",
           "desc": "Petit déjeuner anglais, camomille, menthe verte bio, bonne humeur, secret du petit chaperon rouge, jasmin de Chine",
           "precio": "3,00",
@@ -438,6 +477,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Latte à la Dulce de leche",
           "desc": "Un café avec du lait et du dulce de leche",
           "precio": "3,90",
@@ -453,6 +493,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Latte glacé ou capucciono glacé",
           "desc": "Un café avec du lait et des glaçons",
           "precio": "3,30",
@@ -461,6 +502,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Moka glacé",
           "desc": "Café au lait et au cacao + glace",
           "precio": "4,00",
@@ -469,6 +511,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Chai latte glacé",
           "desc": "",
           "precio": "4,00",
@@ -477,6 +520,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Chai glacé",
           "desc": "Chai latte glacé avec un espresso",
           "precio": "5,00",
@@ -485,6 +529,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Infusion froide",
           "desc": "Café filtre infusé à froid sur glace",
           "precio": "4,00",
@@ -492,6 +537,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Tonique à l'espresso",
           "desc": "Double expresso avec de l'eau tonique, de la glace et une tranche de citron",
           "precio": "4,50",
@@ -499,6 +545,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Latte glacé au caramel ou à la vanille",
           "desc": "Une dose de café, du sirop de caramel ou de vanille, du lait et de la glace",
           "precio": "4,00",
@@ -507,6 +554,7 @@
           "alergenos": "Produits laitiers"
         },
         {
+          "visible": true,
           "nombre": "Latte glacé au dulce de leche",
           "desc": "Un café, du dulce de leche, du lait et de la glace",
           "precio": "4,00",
@@ -522,6 +570,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Désintoxication",
           "desc": "Jus frais d'ananas, de concombre, de menthe, d'épinards, de pomme verte et de citron vert.",
           "precio": "7,00",
@@ -529,6 +578,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Humeur tropicale",
           "desc": "Jus d'orange frais, ananas, pulpe de fruit de la passion et coulis de fruits rouges",
           "precio": "6,50",
@@ -536,6 +586,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Orange mécanique",
           "desc": "Jus d'orange, de carotte, de curcuma frais et de citron fraîchement pressés",
           "precio": "6,00",
@@ -543,6 +594,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Jus d'orange pressé",
           "desc": "",
           "precio": "3,50",
@@ -550,6 +602,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Panthère rose",
           "desc": "Jus d'orange, de betterave, de gingembre et de pomme frais",
           "precio": "6,00",
@@ -564,6 +617,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Coca cola",
           "desc": "",
           "precio": "3,00",
@@ -571,6 +625,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Coca zéro",
           "desc": "",
           "precio": "3,00",
@@ -578,6 +633,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "L'eau",
           "desc": "Bouteille d'eau filtrée",
           "precio": "1,50",
@@ -585,6 +641,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Eau pétillante",
           "desc": "",
           "precio": "2,50",
@@ -592,6 +649,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Vichy Catalan",
           "desc": "",
           "precio": "3,50",
@@ -599,6 +657,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Sprite",
           "desc": "",
           "precio": "3,00",
@@ -606,6 +665,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Fanta Citron",
           "desc": "",
           "precio": "2,50",
@@ -613,6 +673,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Fanta Orange",
           "desc": "",
           "precio": "2,50",
@@ -620,6 +681,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Shweppes Tonic",
           "desc": "",
           "precio": "3,50",
@@ -627,6 +689,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Bière au gingembre",
           "desc": "",
           "precio": "4,50",
@@ -634,6 +697,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Kombucha",
           "desc": "",
           "precio": "5,00",
@@ -641,6 +705,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Limonade maison",
           "desc": "Citron, menthe, gingembre et sirop",
           "precio": "4,00",
@@ -648,6 +713,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Limonade tropicale NOUVEAU!",
           "desc": "jus de citron, lait de coco, menthe et sirop",
           "precio": "4,00",
@@ -662,6 +728,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Alhambra bière pression",
           "desc": "Verre de bière",
           "precio": "3,30",
@@ -670,6 +737,7 @@
           "alergenos": "Gluten"
         },
         {
+          "visible": true,
           "nombre": "Vermouth",
           "desc": "",
           "precio": "4,00",
@@ -678,6 +746,7 @@
           "alergenos": "Sulfites"
         },
         {
+          "visible": true,
           "nombre": "Mimosa",
           "desc": "Cava et jus d'orange pressé",
           "precio": "5,00",
@@ -688,6 +757,7 @@
           "alergenos": "Sulfites"
         },
         {
+          "visible": true,
           "nombre": "Fernet cola",
           "desc": "Fernet avec coca cola (typiquement argentin)",
           "precio": "7,50",
@@ -695,6 +765,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Aperol Spritz",
           "desc": "",
           "precio": "7,00",
@@ -703,6 +774,7 @@
           "alergenos": "Sulfites"
         },
         {
+          "visible": true,
           "nombre": "Gin Tonic",
           "desc": "",
           "precio": "7,00",
@@ -710,6 +782,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Bloody Mary",
           "desc": "Jus de tomate, vodka, jus de citron vert, sel, poivre, sauce Worcestershire et sauce Tabasco.",
           "precio": "8,00",
@@ -718,6 +791,7 @@
           "alergenos": "Poisson · Sulfites"
         },
         {
+          "visible": true,
           "nombre": "Martini à l'espresso",
           "desc": "Café, Kahlua, Vodka et sirop",
           "precio": "8,00",
@@ -725,6 +799,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Mojito aux fruits de la passion",
           "desc": "Rhum, menthe, jus de citron vert, sirop, pulpe de fruit de la passion, tonic",
           "precio": "9,00",
@@ -732,6 +807,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Caipiroska (fruit de la passion en option)",
           "desc": "",
           "precio": "7,00",
@@ -739,6 +815,7 @@
           "disponible": true
         },
         {
+          "visible": true,
           "nombre": "Caipi Malbec",
           "desc": "Cocktail maison, une version originale et fraîche de la caipiroska au Malbec",
           "precio": "8,00",
@@ -756,6 +833,7 @@
       "compact": true,
       "items": [
         {
+          "visible": true,
           "nombre": "Abadal picapoll blanc",
           "desc": "",
           "precio": "25,00",
@@ -764,6 +842,7 @@
           "alergenos": "Sulfites"
         },
         {
+          "visible": true,
           "nombre": "Catena malbec",
           "desc": "",
           "precio": "28,00",
@@ -772,6 +851,7 @@
           "alergenos": "Sulfites"
         },
         {
+          "visible": true,
           "nombre": "Oyuc Malbec",
           "desc": "Vin rouge Malbec argentin",
           "precio": "19,00",
@@ -780,6 +860,7 @@
           "alergenos": "Sulfites"
         },
         {
+          "visible": true,
           "nombre": "Plus que des mots",
           "desc": "",
           "precio": "19,00",
