@@ -201,7 +201,7 @@
         {
           "visible": true,
           "nombre": "The tru mila",
-          "desc": "Milanesa de ternera (opción veggie de berenjena 14,60€) con salsa de hongos trufada, queso Gouda fundido y un huevo frito por encima. <br />Acompañado de patatas fritas y mayonesa de chipotle. (Cambiar las patatas por boniatos o mix de verdes y tomates asados +1€)",
+          "desc": "Milanesa de ternera con salsa de hongos trufada, queso Gouda fundido y un huevo frito por encima. <br />Acompañado de patatas fritas y mayonesa de chipotle. (Cambiar las patatas por boniatos o mix de verdes y tomates asados +1€)",
           "precio": "17,00",
           "etiquetas": [
             "casa"
@@ -212,8 +212,20 @@
         },
         {
           "visible": true,
+          "nombre": "Tru Mila Veggie",
+          "desc": "Milanesa de berenjena con salsa de hongos trufada, queso Gouda fundido y un huevo frito por encima. <br />Acompañado de patatas fritas y mayonesa de chipotle. (Cambiar las patatas por boniatos o mix de verdes y tomates asados +1€)",
+          "precio": "14,60",
+          "foto": "",
+          "etiquetas": [
+            "vg"
+          ],
+          "alergenos": "Huevo · Gluten · Lácteos",
+          "disponible": true
+        },
+        {
+          "visible": true,
           "nombre": "La Provocadora",
-          "desc": "Pan brioche, hamburguesa de 180gr de carne vacuna (opción veggie Heura 16€), queso provolone, panceta, cebolla caramelizada, tomate, lechuga y mayonesa de Chimichurri. (Extra huevo frito + 1,50€)<br />Acompañado de patatas fritas. (Cambiar por boniatos o mix verdes +1€)",
+          "desc": "Pan brioche, hamburguesa de 180gr de carne vacuna, queso provolone, panceta, cebolla caramelizada, tomate, lechuga y mayonesa de Chimichurri. (Extra huevo frito + 1,50€)<br />Acompañado de patatas fritas. (Cambiar por boniatos o mix verdes +1€)",
           "precio": "17,90",
           "etiquetas": [
             "casa"
@@ -221,6 +233,18 @@
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg",
           "alergenos": "Gluten · Lácteos"
+        },
+        {
+          "visible": true,
+          "nombre": "La Provocadora Veggie",
+          "desc": "Pan brioche, hamburguesa vegetariana, queso provolone, setas salteadas, cebolla caramelizada, tomate, lechuga y mayonesa de Chimichurri. (Extra huevo frito + 1,50€)<br />Acompañado de patatas fritas. (Cambiar por boniatos o ensalada +1€)",
+          "precio": "16,00",
+          "foto": "",
+          "etiquetas": [
+            "vg"
+          ],
+          "alergenos": "Gluten · Lácteos",
+          "disponible": true
         },
         {
           "visible": true,

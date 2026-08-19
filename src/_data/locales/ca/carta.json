@@ -201,7 +201,7 @@
         {
           "visible": true,
           "nombre": "La Tru Mila",
-          "desc": "Milanesa de vedella (opció vegetariana d'albergínia 14,60€) amb salsa de bolets trufada, formatge Gouda fos i un ou fregit per sobre. <br />Acompanyat de patates fregides i maionesa de chipotle. (Canvia les patates per moniato o mescla de verds i tomàquets rostits +1€)",
+          "desc": "Milanesa de vedella amb salsa de bolets trufada, formatge Gouda fos i un ou fregit per sobre. <br />Acompanyat de patates fregides i maionesa de chipotle. (Canvia les patates per moniato o mescla de verds i tomàquets rostits +1€)",
           "precio": "17,00",
           "etiquetas": [
             "casa"
@@ -212,8 +212,20 @@
         },
         {
           "visible": true,
+          "nombre": "La Tru Mila Veggie",
+          "desc": "Milanesa d'albergínia amb salsa de bolets trufada, formatge Gouda fos i un ou fregit per sobre. <br />Acompanyat de patates fregides i maionesa de chipotle. (Canvia les patates per moniato o mescla de verds i tomàquets rostits +1€)",
+          "precio": "14,60",
+          "foto": "",
+          "etiquetas": [
+            "vg"
+          ],
+          "alergenos": "Ou · Gluten · Lactis",
+          "disponible": true
+        },
+        {
+          "visible": true,
           "nombre": "El provocador",
-          "desc": "Pa de brioche, hamburguesa de 180g de vedella (opció vegetariana Heura 16€), formatge provolone, cansalada, ceba caramel·litzada, tomàquet, enciam i maionesa de Chimichurri. (Ou fregit extra + 1,50€)<br />Acompanyat de patates fregides. (Canvia per moniato o mescla de verds +1€)",
+          "desc": "Pa de brioche, hamburguesa de 180g de vedella, formatge provolone, cansalada, ceba caramel·litzada, tomàquet, enciam i maionesa de Chimichurri. (Ou fregit extra + 1,50€)<br />Acompanyat de patates fregides. (Canvia per moniato o mescla de verds +1€)",
           "precio": "17,90",
           "etiquetas": [
             "casa"
@@ -221,6 +233,18 @@
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg",
           "alergenos": "Gluten · Lactis"
+        },
+        {
+          "visible": true,
+          "nombre": "El provocador Veggie",
+          "desc": "Pa de brioche, hamburguesa vegetariana, formatge provolone, bolets saltejats, ceba caramel·litzada, tomàquet, enciam i maionesa de Chimichurri. (Ou fregit extra + 1,50€)<br />Acompanyat de patates fregides. (Canvia per moniato o amanida +1€)",
+          "precio": "16,00",
+          "foto": "",
+          "etiquetas": [
+            "vg"
+          ],
+          "alergenos": "Gluten · Lactis",
+          "disponible": true
         },
         {
           "visible": true,

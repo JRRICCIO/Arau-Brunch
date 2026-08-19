@@ -201,7 +201,7 @@
         {
           "visible": true,
           "nombre": "Le tru mila",
-          "desc": "Milanesa de bœuf (option veggie d'aubergine 14,60€) avec une sauce aux champignons truffée, du fromage Gouda fondu et un œuf au plat sur le dessus. <br />Servi avec des frites et une mayonnaise au chipotle. (Remplacer les frites par des patates douces ou un mélange de verdures et de tomates rôties +1€)",
+          "desc": "Milanesa de bœuf avec une sauce aux champignons truffée, du fromage Gouda fondu et un œuf au plat sur le dessus. <br />Servi avec des frites et une mayonnaise au chipotle. (Remplacer les frites par des patates douces ou un mélange de verdures et de tomates rôties +1€)",
           "precio": "17,00",
           "etiquetas": [
             "casa"
@@ -212,8 +212,20 @@
         },
         {
           "visible": true,
+          "nombre": "Le tru mila Veggie",
+          "desc": "Milanesa d'aubergine avec une sauce aux champignons truffée, du fromage Gouda fondu et un œuf au plat sur le dessus. <br />Servi avec des frites et une mayonnaise au chipotle. (Remplacer les frites par des patates douces ou un mélange de verdures et de tomates rôties +1€)",
+          "precio": "14,60",
+          "foto": "",
+          "etiquetas": [
+            "vg"
+          ],
+          "alergenos": "Œuf · Gluten · Lactose",
+          "disponible": true
+        },
+        {
+          "visible": true,
           "nombre": "Le Provocateur",
-          "desc": "Pain brioché, hamburger de 180gr de bœuf (option veggie Heura 16€), fromage provolone, bacon, oignon caramélisé, tomate, laitue et mayonnaise Chimichurri. (Œuf au plat supplémentaire + 1,50€)<br />Servi avec des frites. (Remplacer par des patates douces ou un mélange vert +1€)",
+          "desc": "Pain brioché, hamburger de 180gr de bœuf, fromage provolone, bacon, oignon caramélisé, tomate, laitue et mayonnaise Chimichurri. (Œuf au plat supplémentaire + 1,50€)<br />Servi avec des frites. (Remplacer par des patates douces ou un mélange vert +1€)",
           "precio": "17,90",
           "etiquetas": [
             "casa"
@@ -221,6 +233,18 @@
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg",
           "alergenos": "Gluten · Lactose"
+        },
+        {
+          "visible": true,
+          "nombre": "Le Provocateur Veggie",
+          "desc": "Pain brioché, hamburger végétarien, fromage provolone, champignons sautés, oignon caramélisé, tomate, laitue et mayonnaise Chimichurri. (Œuf au plat supplémentaire + 1,50€)<br />Servi avec des frites. (Remplacer par des patates douces ou une salade +1€)",
+          "precio": "16,00",
+          "foto": "",
+          "etiquetas": [
+            "vg"
+          ],
+          "alergenos": "Gluten · Lactose",
+          "disponible": true
         },
         {
           "visible": true,

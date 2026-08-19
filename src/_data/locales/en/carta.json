@@ -201,7 +201,7 @@
         {
           "visible": true,
           "nombre": "The tru mila",
-          "desc": "Beef schnitzel (eggplant veggie option 14,60€) with truffled mushroom sauce, melted Gouda cheese and a fried egg on top. <br />Served with french fries and chipotle mayonnaise. (Change the potatoes for sweet potatoes or mixed greens and roasted tomatoes +1€)",
+          "desc": "Beef schnitzel with truffled mushroom sauce, melted Gouda cheese and a fried egg on top. <br />Served with french fries and chipotle mayonnaise. (Change the potatoes for sweet potatoes or mixed greens and roasted tomatoes +1€)",
           "precio": "17,00",
           "etiquetas": [
             "casa"
@@ -212,8 +212,20 @@
         },
         {
           "visible": true,
+          "nombre": "The tru mila Veggie",
+          "desc": "Eggplant schnitzel with truffled mushroom sauce, melted Gouda cheese and a fried egg on top. <br />Served with french fries and chipotle mayonnaise. (Change the potatoes for sweet potatoes or mixed greens and roasted tomatoes +1€)",
+          "precio": "14,60",
+          "foto": "",
+          "etiquetas": [
+            "vg"
+          ],
+          "alergenos": "Egg · Gluten · Dairy",
+          "disponible": true
+        },
+        {
+          "visible": true,
           "nombre": "The Provoking",
-          "desc": "Brioche bread, 180gr beef hamburger (Heura veggie option 16€), provolone cheese, bacon, caramelized onion, tomato, lettuce and Chimichurri mayonnaise. (Extra fried egg + 1,50€)<br />Served with french fries. (Change for sweet potatoes or green mix +1€)",
+          "desc": "Brioche bread, 180gr beef hamburger, provolone cheese, bacon, caramelized onion, tomato, lettuce and Chimichurri mayonnaise. (Extra fried egg + 1,50€)<br />Served with french fries. (Change for sweet potatoes or green mix +1€)",
           "precio": "17,90",
           "etiquetas": [
             "casa"
@@ -221,6 +233,18 @@
           "disponible": true,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg",
           "alergenos": "Gluten · Dairy"
+        },
+        {
+          "visible": true,
+          "nombre": "The Provoking Veggie",
+          "desc": "Brioche bread, vegetarian hamburger, provolone cheese, sautéed mushrooms, caramelized onion, tomato, lettuce and Chimichurri mayonnaise. (Extra fried egg + 1,50€)<br />Served with french fries. (Change for sweet potatoes or salad +1€)",
+          "precio": "16,00",
+          "foto": "",
+          "etiquetas": [
+            "vg"
+          ],
+          "alergenos": "Gluten · Dairy",
+          "disponible": true
         },
         {
           "visible": true,
