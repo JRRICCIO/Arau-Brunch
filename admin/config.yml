@@ -67,7 +67,7 @@ collections:
                   - { name: "nombre", label: "Nombre", widget: "string" }
                   - { name: "desc", label: "Descripción", widget: "text", required: false }
                   - { name: "precio", label: "Precio", widget: "string", hint: "Sin el símbolo €, ej: 18,90" }
-                  - { name: "foto", label: "Foto del plato", widget: "image", required: false, hint: "Opcional. Si cargás una, el plato la muestra y se agranda al tocarla. Dejala vacía para que no tenga foto." }
+                  - { name: "foto", label: "Foto del plato", widget: "image", required: false, hint: "Opcional. Elegí la foto y tocá «Publicar» arriba: en 1-2 minutos se ve en la web. Si al elegirla el recuadro se ve ROTO o vacío, es NORMAL — la foto se ve bien igual una vez publicada. Se agranda al tocarla en la web." }
                   - name: "etiquetas"
                     label: "Etiquetas"
                     widget: "select"
