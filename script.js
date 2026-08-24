@@ -386,6 +386,18 @@
     else if (banner) { banner.hidden = false; void banner.offsetWidth; banner.classList.add('is-in'); }
   })();
 
+  /* ---------- Consent Mode (Google): conceder cookies al aceptar ---------- */
+  (function () {
+    function grant() {
+      if (typeof window.gtag !== 'function') return;
+      window.gtag('consent', 'update', {
+        'ad_storage': 'granted', 'ad_user_data': 'granted',
+        'ad_personalization': 'granted', 'analytics_storage': 'granted'
+      });
+    }
+    window.addEventListener('arau:consent', function (e) { if (e.detail === 'all') grant(); });
+  })();
+
   /* ---------- Mapa: carga diferida (privacidad + consentimiento) ---------- */
   (function () {
     var btn = document.getElementById('map-embed');

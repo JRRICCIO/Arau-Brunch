@@ -156,14 +156,14 @@
   },
   "cookies": {
     "aria": "Avis sur les cookies",
-    "message": "Nous utilisons des cookies techniques nécessaires au fonctionnement du site et, si vous les acceptez, des cookies Google Maps pour afficher le plan. Aucun cookie publicitaire.",
+    "message": "Nous utilisons des cookies techniques nécessaires au fonctionnement du site et, si vous les acceptez, des cookies d'analyse de Google et de Google Maps. Si vous choisissez « Essentiels uniquement », nous mesurons quand même les visites de façon anonyme, sans cookies. Aucun cookie publicitaire.",
     "accept": "Accepter",
     "reject": "Essentiels uniquement",
     "more": "Plus d'informations",
     "close": "Fermer",
     "manage": "Cookies",
     "policyTitle": "Politique de cookies",
-    "policyBody": "<p>Chez [[ARAU]], nous utilisons le minimum de cookies nécessaires, sans publicité ni profilage.</p><p><strong>Cookies techniques (nécessaires) :</strong> ils font fonctionner le site et mémorisent votre choix de cookies. Nous chargeons aussi le formulaire de réservation (Tally) comme service nécessaire lorsque vous souhaitez réserver.</p><p><strong>Cookies tiers (optionnels) :</strong> si vous acceptez, nous affichons le plan via Google Maps, qui peut déposer ses propres cookies Google. Si vous choisissez « Essentiels uniquement », le plan ne se charge pas et vous pouvez l'ouvrir dans un nouvel onglet.</p><p>Vous pouvez modifier votre choix à tout moment via le lien « Cookies » en bas de page.</p>",
+    "policyBody": "<p>Chez [[ARAU]], nous utilisons le minimum de cookies nécessaires, sans publicité ni profilage.</p><p><strong>Cookies techniques (nécessaires) :</strong> ils font fonctionner le site et mémorisent votre choix de cookies. Nous chargeons aussi le formulaire de réservation (Tally) comme service nécessaire lorsque vous souhaitez réserver.</p><p><strong>Cookies tiers (optionnels) :</strong> si vous acceptez, nous affichons le plan via Google Maps, qui peut déposer ses propres cookies Google. Si vous choisissez « Essentiels uniquement », le plan ne se charge pas et vous pouvez l'ouvrir dans un nouvel onglet.</p><p><strong>Analyse (optionnel) :</strong> nous utilisons Google Analytics, via Google Tag Manager, pour comprendre l'usage du site et l'améliorer. Si vous acceptez, des cookies d'analyse sont installés. Si vous choisissez « Essentiels uniquement », nous mesurons de façon anonyme et agrégée, sans cookies ni vous identifier.</p><p>Vous pouvez modifier votre choix à tout moment via le lien « Cookies » en bas de page.</p>",
     "mapAccept": "Voir le plan",
     "mapBlocked": "Le plan utilise Google Maps. Touchez pour le charger."
   },

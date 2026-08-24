@@ -14,6 +14,7 @@ pageKey: "carta"
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#e6dcc2" />
+  {% include "gtm-head.njk" %}
 
   <title>{{ m.title }}</title>
   <meta name="description" content="{{ m.description }}" />
@@ -471,6 +472,7 @@ pageKey: "carta"
   {% include "tema-vars.njk" %}
 </head>
 <body>
+  {% include "gtm-body.njk" %}
   <a class="skip-link" href="#contenido">{{ ui.a11y.skipToContent }}</a>
 
   <!-- ===================== HEADER ===================== -->
