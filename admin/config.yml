@@ -24,7 +24,9 @@ site_url: https://araubrunch.es
 
 # Carpeta donde se suben las imágenes (en el repo) y ruta pública desde el sitio.
 media_folder: "img"
-public_folder: "/img"
+# URL completa (no "/img") para que el panel previsualice bien las fotos
+# subidas: con ruta corta "/img/..." el recuadro se ve roto; con URL entera sí.
+public_folder: "https://araubrunch.es/img"
 
 # Idioma del panel
 locale: es
