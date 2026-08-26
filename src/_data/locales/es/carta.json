@@ -128,7 +128,7 @@
             "vg"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_smash_avo_3_ab97d36004.jpg",
+          "foto": "https://araubrunch.es/img/smashed-avo-carta.webp",
           "alergenos": "Huevo · Gluten · Lácteos · Sésamo"
         },
         {
@@ -140,7 +140,7 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_add2e68113.jpg",
+          "foto": "https://araubrunch.es/img/big-brekky-carta.webp",
           "alergenos": "Huevo"
         },
         {
@@ -231,7 +231,7 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_provocadora_abb9088221.jpg",
+          "foto": "https://araubrunch.es/img/provocadora-carta.webp",
           "alergenos": "Gluten · Lácteos"
         },
         {
@@ -323,7 +323,7 @@
             "casa"
           ],
           "disponible": true,
-          "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_2119_bbcd7fedf9.jpg",
+          "foto": "https://araubrunch.es/img/flantastico-carta.webp",
           "alergenos": "Huevo · Lácteos"
         }
       ]
