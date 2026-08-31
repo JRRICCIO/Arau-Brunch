@@ -179,7 +179,7 @@
           "alergenos": "Pescado · Gluten · Lácteos"
         },
         {
-          "visible": true,
+          "visible": false,
           "nombre": "Pastrami Lover NUEVO!!",
           "desc": "Bagel con pastrami, pepinillos agridulces, rúcula, Gouda y nuestra salsa de mostaza de Dijon, queso crema y miel. Acompañado de patatas fritas",
           "precio": "15,50",
