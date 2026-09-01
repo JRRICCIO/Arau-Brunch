@@ -1,0 +1,204 @@
+---
+variants:
+  - { key: ladrillo,  n: 1, label: "Ladrillo mate",     desc: "Ladrillo plano, cálido, botón crema." }
+  - { key: terracota, n: 2, label: "Terracota degradé", desc: "Terracota con brillo tipo brasa." }
+  - { key: crema,     n: 3, label: "Crema clara",        desc: "Fondo crema como el sitio, acentos terracota." }
+  - { key: panel,     n: 4, label: "Crema con panel",    desc: "Saludo en tarjeta terracota sobre crema." }
+pagination:
+  data: variants
+  size: 1
+  alias: v
+permalink: "/opciones-gracias/{{ v.key }}.html"
+eleventyExcludeFromCollections: true
+---
+{#- 4 opciones de la página de gracias para que el equipo elija. Solo ES.
+    Páginas cargadas pero SIN conectar al sitio ni a reservas. -#}
+{%- set mapsUrl = "https://www.google.com/maps/dir/?api=1&destination=ARAU%20brunch%20Carrer%20de%20Proven%C3%A7a%20322%20Barcelona" -%}
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Opción {{ v.n }} · {{ v.label }} · Gracias ARAU</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/lato-900.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/lato-400.woff2" crossorigin />
+  <link rel="stylesheet" href="/styles.css" />
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; }
+
+    /* barra de vista previa (solo para elegir; no va en la versión final) */
+    .pvbar { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: .35rem .9rem; align-items: center; justify-content: center;
+      padding: .5rem 1rem; background: #211a16; color: #f3e8d4; font-size: .82rem; text-align: center; }
+    .pvbar b { font-weight: 900; }
+    .pvbar a { color: #f3e8d4; font-weight: 800; text-decoration: underline; text-underline-offset: 2px; }
+    .pvbar .muted { opacity: .7; }
+
+    .ty {
+      position: relative; isolation: isolate; min-height: calc(100svh - 40px);
+      display: grid; place-items: center; overflow-x: clip;
+      padding: clamp(30px, 6vw, 76px) clamp(20px, 5vw, 58px);
+      color: var(--fg); background: var(--bg);
+      font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .ty::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+      opacity: var(--grain, 0); mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+    .ty__inner { width: min(1120px, 100%); display: grid; grid-template-columns: 1fr; row-gap: clamp(24px, 4vw, 32px); }
+    @media (min-width: 940px) {
+      .ty__inner { grid-template-columns: 1.04fr 0.96fr; grid-template-areas: "hero photo" "lleg photo" "foot photo"; column-gap: clamp(44px, 5vw, 72px); align-items: start; }
+      .ty__hero { grid-area: hero; } .ty__aside { grid-area: photo; align-self: center; }
+      .ty__llegar { grid-area: lleg; } .ty__foot { grid-area: foot; }
+    }
+
+    .js .rise { opacity: 0; transform: translateY(14px); animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    .d1{animation-delay:.05s}.d2{animation-delay:.13s}.d3{animation-delay:.21s}.d4{animation-delay:.29s}.d5{animation-delay:.37s}.d6{animation-delay:.45s}
+    .js .ty__aside { opacity: 0; transform: translateY(18px) scale(.985); animation: rise .85s cubic-bezier(.2,.7,.2,1) .1s forwards; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .js .rise, .js .ty__aside { animation: none; opacity: 1; transform: none; } }
+
+    .ty__word { display: inline-block; width: clamp(118px, 15vw, 146px); color: var(--fg); }
+    .ty__word .arau-word { width: 100%; height: auto; display: block; }
+    .ty__word small { display: block; font-size: .56rem; letter-spacing: .44em; text-transform: uppercase; color: var(--fg-soft); margin-top: 7px; padding-left: 4px; }
+
+    .ty__eyebrow { display: inline-flex; align-items: center; gap: .55rem; margin: clamp(18px,3vw,28px) 0 1.05rem;
+      padding: .4rem .95rem .4rem .46rem; border: 1px solid var(--line); border-radius: 999px; background: var(--pill-bg, transparent);
+      font-weight: 900; font-size: .72rem; letter-spacing: .17em; text-transform: uppercase; color: var(--eyebrow, var(--fg)); }
+    .ty__check { display: grid; place-content: center; flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); }
+    .ty__check svg { width: 13px; height: 13px; }
+
+    .ty__title { font-weight: 900; font-size: clamp(2.8rem, 7.5vw, 4.5rem); line-height: .99; letter-spacing: -.015em; margin: 0 0 .55rem; text-wrap: balance; color: var(--title, var(--fg)); }
+    .ty__lead { font-size: clamp(1.02rem, 1.7vw, 1.18rem); line-height: 1.58; max-width: 42ch; color: var(--fg-soft); margin: 0 0 1.4rem; }
+
+    .ty__steps { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; margin: 0 0 1.7rem; padding: 0; }
+    .ty__step { display: inline-flex; align-items: center; gap: .5rem; font-size: .95rem; }
+    .ty__step .sdot { width: 20px; height: 20px; border-radius: 50%; flex: 0 0 auto; display: grid; place-content: center; border: 1.5px solid var(--line-strong); color: transparent; }
+    .ty__step.is-done { color: var(--fg); font-weight: 700; }
+    .ty__step.is-done .sdot { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    .ty__step.is-done .sdot svg { width: 11px; height: 11px; }
+    .ty__step.is-pending { color: var(--fg-soft); }
+    .ty__step.is-pending .sdot::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--fg-soft); opacity: .6; }
+
+    .ty__q { font-weight: 700; font-size: 1.02rem; color: var(--fg-soft); margin: 0 0 .7rem; }
+    .ty .btn--go { display: inline-block; background: var(--btn-bg); color: var(--btn-fg); box-shadow: 0 16px 38px -18px rgba(0,0,0,.45); transition: transform .18s ease, filter .18s ease; }
+    .ty .btn--go:hover { transform: translateY(-2px); filter: brightness(1.05); }
+    .ty a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+
+    .ty__llegar { padding-top: clamp(22px, 3vw, 30px); border-top: 1px solid var(--line); }
+    .ty__llegar-eyebrow { font-weight: 900; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: var(--eyebrow, var(--accent)); margin: 0 0 .4rem; }
+    .ty__llegar-title { font-weight: 900; font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 0 0 .9rem; color: var(--title, var(--fg)); }
+    .ty__place { display: flex; align-items: flex-start; gap: .8rem; margin: 0 0 1.1rem; }
+    .ty__place-pin { flex: 0 0 auto; width: 42px; height: 42px; border-radius: 12px; display: grid; place-content: center; background: var(--pin-bg); border: 1px solid var(--line); color: var(--eyebrow, var(--accent)); }
+    .ty__place-txt { line-height: 1.45; }
+    .ty__place-txt strong { display: block; font-size: 1.05rem; color: var(--fg); }
+    .ty__place-txt span { color: var(--fg-soft); font-size: .94rem; }
+    .ty__place-txt em { display: block; font-style: normal; color: var(--fg-soft); font-size: .92rem; margin-top: .25rem; max-width: 40ch; }
+    .ty__llegar-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .8rem 1.35rem; border-radius: 999px; border: 1.5px solid var(--line-strong); color: var(--btnghost, var(--fg)); font-weight: 900; font-size: .95rem; text-decoration: none; transition: background .18s, border-color .18s, transform .18s; }
+    .ty__llegar-btn:hover { border-color: var(--btnghost, var(--fg)); transform: translateY(-1px); }
+
+    .ty__foot { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .85rem; padding-top: clamp(4px,2vw,10px); font-size: .92rem; color: var(--fg-soft); }
+    .ty__foot a { color: var(--link, var(--fg)); text-decoration: none; border-bottom: 1px solid var(--line-strong); padding-bottom: 1px; }
+    .ty__foot a:hover { opacity: .8; }
+    .ty__foot .sep { opacity: .5; }
+    .ty__ig { display: inline-flex; align-items: center; gap: .35rem; }
+    .ty__ig svg { width: 16px; height: 16px; }
+
+    .ty__aside { position: relative; will-change: transform, opacity; }
+    .ty__frame { position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 4 / 5; border: 9px solid var(--frame); box-shadow: 0 46px 88px -46px rgba(40,20,10,.55), 0 0 0 1px rgba(40,20,10,.06); transform: rotate(1.4deg); }
+    .ty__frame::after { content: ""; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(40,20,10,.1); border-radius: 13px; pointer-events: none; }
+    .ty__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 939px) { .ty__frame { aspect-ratio: 16 / 10; transform: none; border-width: 7px; border-radius: 18px; box-shadow: 0 28px 56px -34px rgba(40,20,10,.45); } }
+
+    /* ===== VARIANTES ===== */
+    .v-ladrillo { --bg: #9e4430; --grain: .06; --fg: #f3e8d4; --fg-soft: #d9c4a6; --title: #f7ecd8; --eyebrow: #eab873;
+      --accent: #e3ad63; --accent-ink: #3a1a10; --line: rgba(243,232,212,.26); --line-strong: rgba(243,232,212,.5);
+      --pill-bg: rgba(243,232,212,.06); --pin-bg: rgba(243,232,212,.09); --btn-bg: #efe7d5; --btn-fg: #8c3724; --frame: #efe7d5; --link: #f3e8d4; --btnghost: #f3e8d4; }
+    .v-ladrillo .ty { background-image: repeating-linear-gradient(0deg, rgba(0,0,0,.05) 0 1px, transparent 1px 46px), repeating-linear-gradient(90deg, rgba(0,0,0,.045) 0 1px, transparent 1px 92px); background-blend-mode: overlay; }
+
+    .v-terracota { --bg: radial-gradient(115% 90% at 84% -12%, #c65a3d 0%, #af452e 34%, #8c3724 72%, #6f2a1b 100%); --grain: .05;
+      --fg: #efe7d5; --fg-soft: #cabb9f; --title: #f4ead7; --eyebrow: #e08a4c;
+      --accent: #d47b3b; --accent-ink: #3a1a10; --line: rgba(239,231,213,.2); --line-strong: rgba(239,231,213,.5);
+      --pill-bg: rgba(239,231,213,.06); --pin-bg: rgba(239,231,213,.1); --btn-bg: #f3eedf; --btn-fg: #8c3724; --frame: #f3eedf; --link: #efe7d5; --btnghost: #efe7d5; }
+    .v-terracota .ty::before { content: ""; position: absolute; inset: 0; z-index: -2; background: radial-gradient(46% 40% at 88% 6%, rgba(212,123,59,.36), transparent 70%), radial-gradient(60% 55% at 8% 108%, rgba(79,107,46,.15), transparent 72%); }
+
+    .v-crema { --bg: radial-gradient(125% 100% at 82% -10%, #efe8d7 0%, #e6dcc2 58%); --grain: 0;
+      --fg: #333333; --fg-soft: #5e564d; --title: #333333; --eyebrow: #9c3d28;
+      --accent: #af452e; --accent-ink: #ffffff; --line: rgba(51,51,51,.15); --line-strong: rgba(51,51,51,.3);
+      --pill-bg: rgba(175,69,46,.05); --pin-bg: rgba(175,69,46,.08); --btn-bg: #af452e; --btn-fg: #ffffff; --frame: #f3eedf; --link: #9c3d28; --btnghost: #9c3d28; }
+
+    .v-panel { --bg: radial-gradient(125% 100% at 82% -10%, #efe8d7 0%, #e6dcc2 58%); --grain: 0;
+      --fg: #333333; --fg-soft: #5e564d; --title: #333333; --eyebrow: #9c3d28;
+      --accent: #af452e; --accent-ink: #ffffff; --line: rgba(51,51,51,.15); --line-strong: rgba(51,51,51,.3);
+      --pin-bg: rgba(175,69,46,.08); --btn-bg: #efe7d5; --btn-fg: #8c3724; --frame: #f3eedf; --link: #9c3d28; --btnghost: #9c3d28; }
+    .v-panel .ty__hero { background: radial-gradient(120% 130% at 82% -10%, #c65a3d 0%, #a8452e 42%, #8c3724 100%); color: #f3e8d4;
+      padding: clamp(26px,4vw,44px); border-radius: 26px; box-shadow: 0 40px 80px -46px rgba(58,26,16,.7);
+      --fg: #f3e8d4; --fg-soft: #d9c4a6; --title: #f7ecd8; --eyebrow: #eab873; --accent: #e3ad63; --accent-ink: #3a1a10;
+      --line: rgba(243,232,212,.26); --line-strong: rgba(243,232,212,.5); --pill-bg: rgba(243,232,212,.07); --btnghost: #f3e8d4; }
+    @media (min-width: 940px) { .v-panel .ty__inner { align-items: center; } }
+  </style>
+</head>
+<body class="v-{{ v.key }}">
+  <div class="pvbar">
+    <span><b>Vista previa · Opción {{ v.n }} de 4</b> <span class="muted">— {{ v.label }}</span></span>
+    <a href="/opciones-gracias/">↤ Comparar las 4 opciones</a>
+  </div>
+  <main class="ty">
+    <div class="ty__inner">
+      <section class="ty__hero">
+        <span class="ty__word rise d1" aria-label="ARAU Grilled Brunch">
+          {% include "arau-word.njk" %}
+          <small>Grilled Brunch</small>
+        </span>
+        <div class="rise d2">
+          <span class="ty__eyebrow">
+            <span class="ty__check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Reserva pre-confirmada
+          </span>
+        </div>
+        <h1 class="ty__title rise d2">¡Muchas gracias!</h1>
+        <p class="ty__lead rise d3">Ya tenemos tu solicitud. Como es una pre-reserva, nos pondremos en contacto contigo para confirmar el día y la hora.</p>
+        <ul class="ty__steps rise d3">
+          <li class="ty__step is-done"><span class="sdot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Solicitud recibida</li>
+          <li class="ty__step is-pending"><span class="sdot" aria-hidden="true"></span>Te confirmamos en breve</li>
+        </ul>
+        <div class="rise d4">
+          <p class="ty__q">¿Ya sabes qué vas a pedir?</p>
+          <a class="btn btn--lg btn--go" href="/carta.html">Ver la carta</a>
+        </div>
+      </section>
+
+      <aside class="ty__aside">
+        <div class="ty__frame"><img src="/img/spread.jpg" alt="Brunch a la parrilla en ARAU, Barcelona" loading="eager" /></div>
+      </aside>
+
+      <section class="ty__llegar rise d5">
+        <p class="ty__llegar-eyebrow">Nos vemos pronto</p>
+        <h2 class="ty__llegar-title">Cómo llegar</h2>
+        <div class="ty__place">
+          <span class="ty__place-pin" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg></span>
+          <span class="ty__place-txt">
+            <strong>Carrer de Provença, 322</strong>
+            <span>08037 Barcelona · Eixample</span>
+            <em>En pleno Eixample, a un paso del passeig de Gràcia.</em>
+          </span>
+        </div>
+        <a class="ty__llegar-btn" href="{{ mapsUrl }}" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
+          Cómo llegar
+        </a>
+      </section>
+
+      <div class="ty__foot rise d6">
+        <span>¿Necesitas cambiar algo?</span>
+        <a href="mailto:hola@araubrunch.es">Escríbenos</a>
+        <span class="sep">·</span>
+        <a class="ty__ig" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.4" fill="currentColor"/></svg>@araubrunch</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

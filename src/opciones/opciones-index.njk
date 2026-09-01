@@ -1,0 +1,73 @@
+---
+permalink: "/opciones-gracias/index.html"
+eleventyExcludeFromCollections: true
+---
+{#- Índice para elegir entre las 4 opciones de la página de gracias. -#}
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Elegí el estilo · Página de gracias · ARAU</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/lato-900.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/lato-400.woff2" crossorigin />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font-family: "Lato", system-ui, sans-serif; }
+    .wrap { max-width: 940px; margin: 0 auto; padding: clamp(38px, 7vw, 76px) clamp(20px, 5vw, 40px) clamp(50px, 8vw, 90px); }
+    .kick { font-weight: 900; font-size: .74rem; letter-spacing: .2em; text-transform: uppercase; color: var(--terra-text); margin: 0 0 .6rem; }
+    h1 { font-weight: 900; font-size: clamp(2rem, 5.5vw, 3rem); line-height: 1.03; letter-spacing: -.01em; margin: 0 0 .6rem; text-wrap: balance; }
+    .sub { color: var(--ink-soft); font-size: 1.06rem; line-height: 1.55; max-width: 52ch; margin: 0 0 clamp(28px, 4vw, 42px); }
+    .grid { display: grid; grid-template-columns: 1fr; gap: clamp(16px, 2.4vw, 22px); }
+    @media (min-width: 620px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { display: flex; flex-direction: column; border-radius: 18px; overflow: hidden; background: var(--cream-card);
+      border: 1px solid rgba(51,51,51,.1); box-shadow: 0 20px 44px -30px rgba(90,48,28,.5); text-decoration: none; color: inherit;
+      transition: transform .16s ease, box-shadow .16s ease; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 28px 56px -30px rgba(90,48,28,.6); }
+    .swatch { height: 96px; display: flex; align-items: flex-end; padding: .7rem .9rem; position: relative; }
+    .swatch b { font-weight: 900; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: #fff; background: rgba(0,0,0,.28); padding: .25rem .55rem; border-radius: 999px; }
+    .sw-ladrillo { background: #9e4430; }
+    .sw-terracota { background: radial-gradient(120% 120% at 84% -12%, #c65a3d, #8c3724 78%); }
+    .sw-crema { background: radial-gradient(120% 120% at 80% -10%, #efe8d7, #e6dcc2); }
+    .sw-crema b, .sw-panel b { color: #4a2318; background: rgba(255,255,255,.5); }
+    .sw-panel { background: linear-gradient(105deg, #a8452e 0 52%, #e6dcc2 52% 100%); }
+    .card__body { padding: 1rem 1.1rem 1.15rem; display: flex; flex-direction: column; gap: .3rem; flex: 1; }
+    .card__name { font-weight: 900; font-size: 1.2rem; }
+    .card__desc { color: var(--ink-soft); font-size: .96rem; line-height: 1.4; flex: 1; }
+    .card__go { margin-top: .6rem; font-weight: 900; color: var(--terra-text); font-size: .95rem; }
+    .note { margin-top: clamp(26px, 4vw, 40px); padding-top: 1.2rem; border-top: 1px solid rgba(51,51,51,.14); color: var(--ink-soft); font-size: .95rem; line-height: 1.55; }
+    .note strong { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="kick">Página de gracias · para elegir</p>
+    <h1>Elegí el estilo que más te guste</h1>
+    <p class="sub">Son 4 versiones de la pantalla que verá el cliente después de reservar. Tocá cada una para verla completa (en el teléfono y en la compu se ven distinto). Cuando decidan, avísennos y la dejamos así.</p>
+
+    <div class="grid">
+      <a class="card" href="/opciones-gracias/ladrillo.html">
+        <div class="swatch sw-ladrillo"><b>Opción 1</b></div>
+        <div class="card__body"><div class="card__name">Ladrillo mate</div><div class="card__desc">Fondo ladrillo cálido y plano, con botón crema. Look intenso y acogedor.</div><div class="card__go">Ver opción 1 →</div></div>
+      </a>
+      <a class="card" href="/opciones-gracias/terracota.html">
+        <div class="swatch sw-terracota"><b>Opción 2</b></div>
+        <div class="card__body"><div class="card__name">Terracota degradé</div><div class="card__desc">Terracota con un brillo tipo brasa. Más “grilled”, con profundidad.</div><div class="card__go">Ver opción 2 →</div></div>
+      </a>
+      <a class="card" href="/opciones-gracias/crema.html">
+        <div class="swatch sw-crema"><b>Opción 3</b></div>
+        <div class="card__body"><div class="card__name">Crema clara</div><div class="card__desc">Fondo crema igual que la web araubrunch.es, con acentos terracota. La más “de la casa”.</div><div class="card__go">Ver opción 3 →</div></div>
+      </a>
+      <a class="card" href="/opciones-gracias/panel.html">
+        <div class="swatch sw-panel"><b>Opción 4</b></div>
+        <div class="card__body"><div class="card__name">Crema con panel</div><div class="card__desc">El saludo en una tarjeta terracota sobre fondo crema. Mezcla contraste y aire.</div><div class="card__go">Ver opción 4 →</div></div>
+      </a>
+    </div>
+
+    <p class="note"><strong>Nota:</strong> estas páginas son solo para elegir. Todavía no están conectadas a las reservas ni aparecen en el menú de la web. Cuando elijan una, la conectamos para que se muestre al reservar.</p>
+  </div>
+</body>
+</html>
