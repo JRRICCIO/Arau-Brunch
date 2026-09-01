@@ -13,56 +13,72 @@ pageKey: "gracias"
     title: "¡Gracias por tu reserva! · ARAU",
     eyebrow: "Reserva pre-confirmada",
     h1: "¡Muchas gracias!",
-    lead: "Esta es una pre-reserva, así que nos pondremos en contacto contigo para confirmarla.",
+    lead: "Ya tenemos tu solicitud. Como es una pre-reserva, nos pondremos en contacto contigo para confirmar el día y la hora.",
+    step1: "Solicitud recibida",
+    step2: "Te confirmamos en breve",
     q: "¿Ya sabes qué vas a pedir?",
-    cta: "Ver menú completo",
-    badge: "Bebida de regalo con tu reserva",
+    cta: "Ver la carta",
+    photoAlt: "Brunch a la parrilla en ARAU, Barcelona",
     llegarEyebrow: "Nos vemos pronto",
     llegarTitle: "Cómo llegar",
-    llegarText: "Estamos en pleno Eixample, a un paso del passeig de Gràcia.",
-    llegarBtn: "Cómo llegar con Google Maps",
+    llegarText: "En pleno Eixample, a un paso del passeig de Gràcia.",
+    llegarBtn: "Cómo llegar",
+    contactPre: "¿Necesitas cambiar algo?",
+    contactMail: "Escríbenos",
     back: "Volver a la web"
   },
   en: {
     title: "Thank you for your booking · ARAU",
     eyebrow: "Pre-confirmed reservation",
-    h1: "Thank you very much!",
-    lead: "This is a pre-reservation, so we'll get in touch with you to confirm it.",
-    q: "Already know what you'll order?",
-    cta: "View full menu",
-    badge: "A free drink with your booking",
+    h1: "Thank you!",
+    lead: "We've got your request. As this is a pre-reservation, we'll get in touch to confirm the day and time.",
+    step1: "Request received",
+    step2: "We'll confirm shortly",
+    q: "Already thinking about your order?",
+    cta: "See the menu",
+    photoAlt: "Grilled brunch at ARAU, Barcelona",
     llegarEyebrow: "See you soon",
     llegarTitle: "How to get here",
-    llegarText: "We're in the heart of the Eixample, steps from passeig de Gràcia.",
-    llegarBtn: "Get directions on Google Maps",
+    llegarText: "In the heart of the Eixample, steps from passeig de Gràcia.",
+    llegarBtn: "Get directions",
+    contactPre: "Need to change something?",
+    contactMail: "Email us",
     back: "Back to the website"
   },
   fr: {
     title: "Merci pour votre réservation · ARAU",
     eyebrow: "Réservation pré-confirmée",
-    h1: "Merci beaucoup !",
-    lead: "Ceci est une pré-réservation ; nous vous contacterons pour la confirmer.",
-    q: "Vous savez déjà ce que vous allez commander ?",
-    cta: "Voir la carte complète",
-    badge: "Une boisson offerte avec votre réservation",
+    h1: "Merci !",
+    lead: "Nous avons bien reçu votre demande. Comme il s'agit d'une pré-réservation, nous vous contacterons pour confirmer le jour et l'heure.",
+    step1: "Demande reçue",
+    step2: "Confirmation très bientôt",
+    q: "Vous pensez déjà à votre commande ?",
+    cta: "Voir la carte",
+    photoAlt: "Brunch grillé chez ARAU, Barcelone",
     llegarEyebrow: "À très bientôt",
     llegarTitle: "Comment venir",
-    llegarText: "Nous sommes au cœur de l'Eixample, à deux pas du passeig de Gràcia.",
-    llegarBtn: "Itinéraire sur Google Maps",
+    llegarText: "Au cœur de l'Eixample, à deux pas du passeig de Gràcia.",
+    llegarBtn: "Itinéraire",
+    contactPre: "Besoin de modifier quelque chose ?",
+    contactMail: "Écrivez-nous",
     back: "Retour au site"
   },
   ca: {
     title: "Gràcies per la teva reserva · ARAU",
     eyebrow: "Reserva pre-confirmada",
     h1: "Moltes gràcies!",
-    lead: "Aquesta és una pre-reserva, així que ens posarem en contacte amb tu per confirmar-la.",
+    lead: "Ja tenim la teva sol·licitud. Com que és una pre-reserva, ens posarem en contacte amb tu per confirmar el dia i l'hora.",
+    step1: "Sol·licitud rebuda",
+    step2: "Et confirmem aviat",
     q: "Ja saps què demanaràs?",
-    cta: "Veure la carta completa",
-    badge: "Una beguda de regal amb la teva reserva",
+    cta: "Veure la carta",
+    photoAlt: "Brunch a la brasa a ARAU, Barcelona",
     llegarEyebrow: "Ens veiem aviat",
     llegarTitle: "Com arribar",
-    llegarText: "Som al cor de l'Eixample, a tocar del passeig de Gràcia.",
-    llegarBtn: "Com arribar amb Google Maps",
+    llegarText: "Al cor de l'Eixample, a tocar del passeig de Gràcia.",
+    llegarBtn: "Com arribar",
+    contactPre: "Necessites canviar alguna cosa?",
+    contactMail: "Escriu-nos",
     back: "Tornar al web"
   }
 } -%}
@@ -82,176 +98,173 @@ pageKey: "gracias"
   <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
   <link rel="preload" as="font" type="font/woff2" href="/fonts/lato-900.woff2" crossorigin />
   <link rel="preload" as="font" type="font/woff2" href="/fonts/lato-400.woff2" crossorigin />
+  <link rel="preload" as="image" href="/img/spread.jpg" />
   <link rel="stylesheet" href="/styles.css" />
   <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 
   <style>
-    /* Usa los tokens de styles.css (--terra, --cream, etc). Página autocontenida. */
+    /* Página autocontenida. Usa los tokens de marca de styles.css (--terra, --cream…). */
+    *, *::before, *::after { box-sizing: border-box; }
     body { margin: 0; }
+
     .ty {
+      position: relative;
+      isolation: isolate;
       min-height: 100svh;
       display: grid;
       place-items: center;
-      padding: clamp(28px, 6vw, 72px) clamp(20px, 5vw, 56px);
+      overflow-x: clip;
+      padding: clamp(30px, 6vw, 80px) clamp(20px, 5vw, 60px);
       color: var(--on-dark);
-      background:
-        radial-gradient(130% 120% at 82% -10%, var(--terra) 0%, var(--terra-deep) 62%, #782e1e 100%);
       font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background:
+        radial-gradient(115% 90% at 84% -12%, #c65a3d 0%, var(--terra) 34%, var(--terra-deep) 72%, #6f2a1b 100%);
     }
+    /* Brillo cálido tipo brasa, arriba a la derecha */
+    .ty::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(46% 40% at 88% 6%, rgba(212, 123, 59, .38), transparent 70%),
+        radial-gradient(60% 55% at 8% 108%, rgba(79, 107, 46, .16), transparent 72%);
+    }
+    /* Grano sutil para dar textura (sin pedir red) */
+    .ty::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .05;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
     .ty__inner {
-      width: min(1060px, 100%);
+      width: min(1120px, 100%);
       display: grid;
       grid-template-columns: 1fr;
-      gap: clamp(32px, 5vw, 60px);
+      gap: clamp(36px, 5vw, 68px);
       align-items: center;
     }
-    @media (min-width: 900px) {
-      .ty__inner { grid-template-columns: 1.02fr 0.98fr; }
+    @media (min-width: 940px) {
+      .ty__inner { grid-template-columns: 1.04fr 0.96fr; }
     }
-    .ty__word {
-      display: inline-block;
-      width: clamp(118px, 16vw, 150px);
-      color: var(--on-dark);
-      opacity: .95;
-      margin-bottom: clamp(20px, 3vw, 30px);
+
+    /* ---------- animación de entrada (solo con JS; sin JS, todo visible) ---------- */
+    .js .rise { opacity: 0; transform: translateY(14px); animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    .d1 { animation-delay: .05s } .d2 { animation-delay: .13s } .d3 { animation-delay: .21s }
+    .d4 { animation-delay: .29s } .d5 { animation-delay: .37s } .d6 { animation-delay: .47s }
+    .js .ty__aside { opacity: 0; transform: translateY(18px) scale(.985); animation: riseAside .85s cubic-bezier(.2,.7,.2,1) .12s forwards; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+    @keyframes riseAside { to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) {
+      .js .rise, .js .ty__aside { animation: none; opacity: 1; transform: none; }
     }
+
+    /* ---------- marca ---------- */
+    .ty__word { display: inline-block; width: clamp(120px, 15vw, 148px); color: var(--on-dark); }
     .ty__word .arau-word { width: 100%; height: auto; display: block; }
     .ty__word small {
-      display: block;
-      font-size: .58rem;
-      letter-spacing: .42em;
-      text-transform: uppercase;
-      color: var(--on-dark-soft);
-      margin-top: 6px;
-      padding-left: 3px;
+      display: block; font-size: .56rem; letter-spacing: .44em; text-transform: uppercase;
+      color: var(--on-dark-soft); margin-top: 7px; padding-left: 4px;
     }
+
+    /* ---------- sello de confirmación ---------- */
     .ty__eyebrow {
-      display: inline-block;
-      font-weight: 900;
-      font-size: .78rem;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      color: var(--gold-text);
-      margin: 0 0 .5rem;
+      display: inline-flex; align-items: center; gap: .6rem;
+      margin: clamp(20px, 3vw, 30px) 0 1.1rem;
+      padding: .42rem .9rem .42rem .5rem;
+      border: 1px solid rgba(239, 231, 213, .28);
+      border-radius: 999px;
+      background: rgba(239, 231, 213, .06);
+      font-weight: 900; font-size: .72rem; letter-spacing: .19em; text-transform: uppercase;
+      color: var(--on-dark);
     }
-    .ty__eyebrow::before,
-    .ty__eyebrow::after { content: "🎉"; margin: 0 .5em; }
+    .ty__check {
+      display: grid; place-content: center; flex: 0 0 auto;
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--gold); color: #3a1a10;
+    }
+    .ty__check svg { width: 13px; height: 13px; display: block; }
+
     .ty__title {
-      font-weight: 900;
-      font-size: clamp(2.7rem, 7.5vw, 4.4rem);
-      line-height: 1.02;
-      letter-spacing: -.01em;
-      margin: 0 0 .5rem;
-      text-wrap: balance;
+      font-weight: 900; font-size: clamp(2.9rem, 8vw, 4.7rem); line-height: .98;
+      letter-spacing: -.015em; margin: 0 0 .55rem; text-wrap: balance;
     }
     .ty__lead {
-      font-size: clamp(1.02rem, 1.7vw, 1.18rem);
-      line-height: 1.55;
-      max-width: 40ch;
-      color: var(--on-dark);
-      margin: 0 0 1.4rem;
+      font-size: clamp(1.03rem, 1.7vw, 1.2rem); line-height: 1.58; max-width: 42ch;
+      color: var(--on-dark); margin: 0 0 1.5rem;
     }
-    .ty__q {
-      font-weight: 900;
-      font-size: clamp(1.1rem, 2vw, 1.3rem);
-      margin: 0 0 1.1rem;
-      color: var(--on-dark);
+
+    /* ---------- tracker de estado ---------- */
+    .ty__steps { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: 0 0 1.75rem; padding: 0; }
+    .ty__step { display: inline-flex; align-items: center; gap: .55rem; font-size: .95rem; position: relative; }
+    .ty__step .sdot {
+      width: 20px; height: 20px; border-radius: 50%; flex: 0 0 auto; display: grid; place-content: center;
+      border: 1.5px solid rgba(239, 231, 213, .5); color: transparent;
     }
+    .ty__step.is-done .sdot { background: var(--gold); border-color: var(--gold); color: #3a1a10; }
+    .ty__step.is-done .sdot svg { width: 11px; height: 11px; }
+    .ty__step.is-pending { color: var(--on-dark-soft); }
+    .ty__step.is-pending .sdot::after {
+      content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--on-dark-soft); opacity: .7;
+    }
+
+    .ty__q { font-weight: 700; font-size: 1.02rem; color: var(--on-dark-soft); margin: 0 0 .7rem; }
     .ty .btn--cream {
-      background: var(--cream-card);
-      color: var(--terra-deep);
-      box-shadow: 0 14px 34px -18px rgba(0,0,0,.55);
+      background: var(--cream-card); color: var(--terra-deep);
+      box-shadow: 0 16px 38px -18px rgba(0,0,0,.6); transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
     }
-    .ty .btn--cream:hover { background: #fff; }
-    .ty__llegar {
-      margin-top: clamp(26px, 3.5vw, 40px);
-      padding-top: clamp(22px, 3vw, 30px);
-      border-top: 1px solid rgba(239, 231, 213, .22);
+    .ty .btn--cream:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 22px 46px -20px rgba(0,0,0,.62); }
+    .ty a:focus-visible, .ty button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 8px; }
+
+    /* ---------- cómo llegar ---------- */
+    .ty__llegar { margin-top: clamp(30px, 3.6vw, 44px); padding-top: clamp(24px, 3vw, 32px); border-top: 1px solid rgba(239, 231, 213, .2); }
+    .ty__llegar-eyebrow { font-weight: 900; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-text); margin: 0 0 .4rem; }
+    .ty__llegar-title { font-weight: 900; font-size: clamp(1.45rem, 3vw, 1.95rem); margin: 0 0 .9rem; }
+    .ty__place { display: flex; align-items: flex-start; gap: .85rem; margin: 0 0 1.15rem; }
+    .ty__place-pin {
+      flex: 0 0 auto; width: 42px; height: 42px; border-radius: 12px; display: grid; place-content: center;
+      background: rgba(239, 231, 213, .1); border: 1px solid rgba(239, 231, 213, .22); color: var(--gold-text);
     }
-    .ty__llegar-eyebrow {
-      font-weight: 900;
-      font-size: .72rem;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      color: var(--on-dark-soft);
-      margin: 0 0 .35rem;
-    }
-    .ty__llegar-title {
-      font-weight: 900;
-      font-size: clamp(1.4rem, 3vw, 1.9rem);
-      margin: 0 0 .3rem;
-    }
-    .ty__addr {
-      font-size: 1.02rem;
-      line-height: 1.5;
-      color: var(--on-dark);
-      margin: 0 0 1rem;
-    }
-    .ty__addr strong { display: block; font-size: 1.08rem; }
-    .ty__addr span { color: var(--on-dark-soft); }
+    .ty__place-txt { line-height: 1.45; }
+    .ty__place-txt strong { display: block; font-size: 1.06rem; }
+    .ty__place-txt span { color: var(--on-dark-soft); font-size: .95rem; }
+    .ty__place-txt em { display: block; font-style: normal; color: var(--on-dark-soft); font-size: .92rem; margin-top: .25rem; max-width: 40ch; }
     .ty__llegar-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: .55rem;
-      padding: .8rem 1.35rem;
-      border-radius: 999px;
-      border: 1.5px solid rgba(239, 231, 213, .5);
-      color: var(--on-dark);
-      font-weight: 900;
-      font-size: .96rem;
-      text-decoration: none;
+      display: inline-flex; align-items: center; gap: .55rem;
+      padding: .82rem 1.4rem; border-radius: 999px;
+      border: 1.5px solid rgba(239, 231, 213, .5); color: var(--on-dark);
+      font-weight: 900; font-size: .96rem; text-decoration: none;
       transition: background .18s ease, border-color .18s ease, transform .18s ease;
     }
-    .ty__llegar-btn:hover {
-      background: rgba(239, 231, 213, .12);
-      border-color: rgba(239, 231, 213, .8);
-      transform: translateY(-1px);
-    }
-    .ty__llegar-btn svg { flex: 0 0 auto; }
-    /* Columna visual */
-    .ty__aside { position: relative; }
+    .ty__llegar-btn:hover { background: rgba(239, 231, 213, .12); border-color: rgba(239, 231, 213, .82); transform: translateY(-1px); }
+
+    /* ---------- contacto / cierre ---------- */
+    .ty__foot { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .9rem; margin-top: clamp(26px, 3.4vw, 38px); font-size: .92rem; color: var(--on-dark-soft); }
+    .ty__foot a { color: var(--on-dark); text-decoration: none; border-bottom: 1px solid rgba(202, 187, 159, .45); padding-bottom: 1px; transition: color .16s ease, border-color .16s ease; }
+    .ty__foot a:hover { color: #fff; border-color: rgba(239, 231, 213, .8); }
+    .ty__foot .sep { color: rgba(202, 187, 159, .5); }
+    .ty__ig { display: inline-flex; align-items: center; gap: .35rem; }
+    .ty__ig svg { width: 16px; height: 16px; }
+
+    /* ---------- columna visual ---------- */
+    .ty__aside { position: relative; will-change: transform, opacity; }
     .ty__frame {
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 40px 80px -40px rgba(0,0,0,.7);
-      border: 8px solid var(--cream-card);
-      aspect-ratio: 4 / 5;
+      position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 4 / 5;
+      border: 9px solid var(--cream-card);
+      box-shadow: 0 48px 90px -44px rgba(0,0,0,.75), 0 0 0 1px rgba(0,0,0,.05);
+      transform: rotate(1.4deg);
     }
+    .ty__frame::after { content: ""; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(58,26,16,.12); border-radius: 13px; pointer-events: none; }
     .ty__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .ty__drink {
-      position: absolute;
-      right: clamp(-6px, -1vw, -14px);
-      bottom: clamp(-10px, -1.4vw, -18px);
-      width: clamp(140px, 22vw, 186px);
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: var(--cream-card);
-      color: var(--terra-deep);
-      display: grid;
-      place-content: center;
-      text-align: center;
-      padding: 1rem;
-      box-shadow: 0 22px 44px -20px rgba(0,0,0,.6);
-      transform: rotate(-6deg);
-    }
-    .ty__drink b { font-size: 1.5rem; line-height: 1; display: block; }
-    .ty__drink-big { font-weight: 900; font-size: clamp(1.05rem, 2.4vw, 1.35rem); line-height: 1.05; margin-top: .3rem; }
-    .ty__drink-small { font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; margin-top: .35rem; color: var(--terra); }
-    .ty__back {
-      display: inline-block;
-      margin-top: clamp(20px, 3vw, 28px);
-      color: var(--on-dark-soft);
-      font-size: .92rem;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(202, 187, 159, .4);
-      padding-bottom: 2px;
-    }
-    .ty__back:hover { color: var(--on-dark); }
-    @media (max-width: 899px) {
-      .ty__aside { order: -1; max-width: 380px; margin: 0 auto; width: 100%; }
-      .ty__drink { right: 6px; bottom: -14px; width: clamp(128px, 34vw, 150px); transform: rotate(-6deg); }
-      .ty__drink-big { font-size: 1rem; }
+
+    @media (max-width: 939px) {
+      .ty__aside { order: -1; max-width: 400px; margin: 0 auto; width: 100%; }
+      .ty__frame { transform: rotate(1deg); }
     }
   </style>
 </head>
@@ -259,41 +272,71 @@ pageKey: "gracias"
   <main class="ty">
     <div class="ty__inner">
       <section class="ty__copy">
-        <span class="ty__word" aria-label="ARAU Grilled Brunch">
+        <span class="ty__word rise d1" aria-label="ARAU Grilled Brunch">
           {% include "arau-word.njk" %}
           <small>Grilled Brunch</small>
         </span>
 
-        <p class="ty__eyebrow">{{ t.eyebrow }}</p>
-        <h1 class="ty__title">{{ t.h1 }}</h1>
-        <p class="ty__lead">{{ t.lead }}</p>
-        <p class="ty__q">{{ t.q }}</p>
-        <a class="btn btn--lg btn--cream" href="/{{ lng.dir }}carta.html">{{ t.cta }}</a>
+        <div class="rise d2">
+          <span class="ty__eyebrow">
+            <span class="ty__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            {{ t.eyebrow }}
+          </span>
+        </div>
 
-        <div class="ty__llegar">
+        <h1 class="ty__title rise d2">{{ t.h1 }}</h1>
+        <p class="ty__lead rise d3">{{ t.lead }}</p>
+
+        <ul class="ty__steps rise d3">
+          <li class="ty__step is-done">
+            <span class="sdot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            {{ t.step1 }}
+          </li>
+          <li class="ty__step is-pending"><span class="sdot" aria-hidden="true"></span>{{ t.step2 }}</li>
+        </ul>
+
+        <div class="rise d4">
+          <p class="ty__q">{{ t.q }}</p>
+          <a class="btn btn--lg btn--cream" href="/{{ lng.dir }}carta.html">{{ t.cta }}</a>
+        </div>
+
+        <div class="ty__llegar rise d5">
           <p class="ty__llegar-eyebrow">{{ t.llegarEyebrow }}</p>
           <h2 class="ty__llegar-title">{{ t.llegarTitle }}</h2>
-          <p class="ty__addr">
-            <strong>Carrer de Provença, 322</strong>
-            <span>08037 Barcelona · Eixample</span>
-          </p>
-          <p class="ty__addr" style="max-width:38ch;margin-bottom:1.1rem">{{ t.llegarText }}</p>
+          <div class="ty__place">
+            <span class="ty__place-pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
+            </span>
+            <span class="ty__place-txt">
+              <strong>Carrer de Provença, 322</strong>
+              <span>08037 Barcelona · Eixample</span>
+              <em>{{ t.llegarText }}</em>
+            </span>
+          </div>
           <a class="ty__llegar-btn" href="{{ mapsUrl }}" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
             {{ t.llegarBtn }}
           </a>
         </div>
 
-        <a class="ty__back" href="/{{ lng.dir }}">{{ t.back }} ↗</a>
+        <div class="ty__foot rise d6">
+          <span>{{ t.contactPre }}</span>
+          <a href="mailto:hola@araubrunch.es">{{ t.contactMail }}</a>
+          <span class="sep">·</span>
+          <a class="ty__ig" href="https://instagram.com/araubrunch" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.4" fill="currentColor"/></svg>
+            @araubrunch
+          </a>
+          <span class="sep">·</span>
+          <a href="/{{ lng.dir }}">{{ t.back }} ↗</a>
+        </div>
       </section>
 
       <aside class="ty__aside">
         <div class="ty__frame">
-          <img src="/img/spread.jpg" alt="ARAU Grilled Brunch" loading="eager" />
-        </div>
-        <div class="ty__drink" role="img" aria-label="{{ t.badge }}">
-          <b>🍹</b>
-          <span class="ty__drink-big">{{ t.badge }}</span>
+          <img src="/img/spread.jpg" alt="{{ t.photoAlt }}" loading="eager" />
         </div>
       </aside>
     </div>
