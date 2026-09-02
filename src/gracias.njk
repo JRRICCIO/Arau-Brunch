@@ -8,7 +8,7 @@ pageKey: "gracias"
 ---
 {#- Página de agradecimiento post-reserva. Una versión por idioma. La reserva
     (GoHighLevel) redirige a la que corresponda según el idioma.
-    Colores = tokens del sitio araubrunch.es (crema + terracota). -#}
+    Estilo elegido por el equipo: Opción 2 · Terracota degradé. -#}
 {%- set T = {
   es: {
     title: "¡Gracias por tu reserva! · ARAU",
@@ -90,7 +90,7 @@ pageKey: "gracias"
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#e6dcc2" />
+  <meta name="theme-color" content="#8c3724" />
   <meta name="robots" content="noindex, follow" />
 
   <title>{{ t.title }}</title>
@@ -104,96 +104,95 @@ pageKey: "gracias"
   <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 
   <style>
-    /* Página autocontenida. Colores = tokens del sitio (crema + terracota). */
+    /* Página autocontenida. Estilo: Terracota degradé (Opción 2). */
     *, *::before, *::after { box-sizing: border-box; }
     body { margin: 0; }
 
     .ty {
-      position: relative; min-height: 100svh;
+      position: relative; isolation: isolate; min-height: 100svh;
       display: grid; place-items: center; overflow-x: clip;
       padding: clamp(30px, 6vw, 80px) clamp(20px, 5vw, 58px);
-      color: var(--ink);
+      color: var(--fg);
       font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: radial-gradient(125% 100% at 82% -10%, var(--cream-100) 0%, var(--cream) 58%);
+      /* tokens del tema terracota */
+      --fg: #efe7d5; --fg-soft: #cabb9f; --title: #f4ead7; --eyebrow: #e08a4c;
+      --accent: #d47b3b; --accent-ink: #3a1a10;
+      --line: rgba(239,231,213,.2); --line-strong: rgba(239,231,213,.5);
+      --pill-bg: rgba(239,231,213,.06); --pin-bg: rgba(239,231,213,.1);
+      --btn-bg: #f3eedf; --btn-fg: #8c3724; --frame: #f3eedf; --link: #efe7d5; --btnghost: #efe7d5;
+      background: radial-gradient(115% 90% at 84% -12%, #c65a3d 0%, #af452e 34%, #8c3724 72%, #6f2a1b 100%);
     }
+    /* brillo tipo brasa */
+    .ty::before { content: ""; position: absolute; inset: 0; z-index: -2;
+      background: radial-gradient(46% 40% at 88% 6%, rgba(212,123,59,.36), transparent 70%), radial-gradient(60% 55% at 8% 108%, rgba(79,107,46,.15), transparent 72%); }
+    /* grano sutil */
+    .ty::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: .05; mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
 
     .ty__inner { width: min(1120px, 100%); display: grid; grid-template-columns: 1fr; row-gap: clamp(24px, 4vw, 32px); }
     @media (min-width: 940px) {
-      .ty__inner {
-        grid-template-columns: 1.04fr 0.96fr;
-        grid-template-areas: "hero photo" "lleg photo" "foot photo";
-        column-gap: clamp(44px, 5vw, 72px); align-items: start;
-      }
+      .ty__inner { grid-template-columns: 1.04fr 0.96fr; grid-template-areas: "hero photo" "lleg photo" "foot photo"; column-gap: clamp(44px, 5vw, 72px); align-items: start; }
       .ty__hero { grid-area: hero; } .ty__aside { grid-area: photo; align-self: center; }
       .ty__llegar { grid-area: lleg; } .ty__foot { grid-area: foot; }
     }
 
-    /* entrada (solo con JS; sin JS todo visible) */
     .js .rise { opacity: 0; transform: translateY(14px); animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
     .d1{animation-delay:.05s}.d2{animation-delay:.13s}.d3{animation-delay:.21s}.d4{animation-delay:.29s}.d5{animation-delay:.37s}.d6{animation-delay:.45s}
     .js .ty__aside { opacity: 0; transform: translateY(18px) scale(.985); animation: rise .85s cubic-bezier(.2,.7,.2,1) .1s forwards; }
     @keyframes rise { to { opacity: 1; transform: none; } }
     @media (prefers-reduced-motion: reduce) { .js .rise, .js .ty__aside { animation: none; opacity: 1; transform: none; } }
 
-    .ty__word { display: inline-block; width: clamp(118px, 15vw, 146px); color: var(--ink); }
+    .ty__word { display: inline-block; width: clamp(118px, 15vw, 146px); color: var(--fg); }
     .ty__word .arau-word { width: 100%; height: auto; display: block; }
-    .ty__word small { display: block; font-size: .56rem; letter-spacing: .44em; text-transform: uppercase; color: var(--ink-soft); margin-top: 7px; padding-left: 4px; }
+    .ty__word small { display: block; font-size: .56rem; letter-spacing: .44em; text-transform: uppercase; color: var(--fg-soft); margin-top: 7px; padding-left: 4px; }
 
-    .ty__eyebrow {
-      display: inline-flex; align-items: center; gap: .55rem; margin: clamp(18px,3vw,28px) 0 1.05rem;
-      padding: .4rem .95rem .4rem .46rem; border: 1px solid rgba(156,61,40,.28); border-radius: 999px; background: rgba(175,69,46,.05);
-      font-weight: 900; font-size: .72rem; letter-spacing: .17em; text-transform: uppercase; color: var(--terra-text);
-    }
-    .ty__check { display: grid; place-content: center; flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; background: var(--terra); color: #fff; }
+    .ty__eyebrow { display: inline-flex; align-items: center; gap: .55rem; margin: clamp(18px,3vw,28px) 0 1.05rem;
+      padding: .4rem .95rem .4rem .46rem; border: 1px solid var(--line); border-radius: 999px; background: var(--pill-bg);
+      font-weight: 900; font-size: .72rem; letter-spacing: .17em; text-transform: uppercase; color: var(--eyebrow); }
+    .ty__check { display: grid; place-content: center; flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); }
     .ty__check svg { width: 13px; height: 13px; }
 
-    .ty__title { font-weight: 900; font-size: clamp(2.8rem, 7.5vw, 4.5rem); line-height: .99; letter-spacing: -.015em; margin: 0 0 .55rem; text-wrap: balance; color: var(--ink); }
-    .ty__lead { font-size: clamp(1.02rem, 1.7vw, 1.18rem); line-height: 1.58; max-width: 42ch; color: var(--ink-soft); margin: 0 0 1.4rem; }
+    .ty__title { font-weight: 900; font-size: clamp(2.8rem, 7.5vw, 4.5rem); line-height: .99; letter-spacing: -.015em; margin: 0 0 .55rem; text-wrap: balance; color: var(--title); }
+    .ty__lead { font-size: clamp(1.02rem, 1.7vw, 1.18rem); line-height: 1.58; max-width: 42ch; color: var(--fg-soft); margin: 0 0 1.4rem; }
 
     .ty__steps { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; margin: 0 0 1.7rem; padding: 0; }
     .ty__step { display: inline-flex; align-items: center; gap: .5rem; font-size: .95rem; }
-    .ty__step .sdot { width: 20px; height: 20px; border-radius: 50%; flex: 0 0 auto; display: grid; place-content: center; border: 1.5px solid rgba(51,51,51,.3); color: transparent; }
-    .ty__step.is-done { color: var(--ink); font-weight: 700; }
-    .ty__step.is-done .sdot { background: var(--terra); border-color: var(--terra); color: #fff; }
+    .ty__step .sdot { width: 20px; height: 20px; border-radius: 50%; flex: 0 0 auto; display: grid; place-content: center; border: 1.5px solid var(--line-strong); color: transparent; }
+    .ty__step.is-done { color: var(--fg); font-weight: 700; }
+    .ty__step.is-done .sdot { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
     .ty__step.is-done .sdot svg { width: 11px; height: 11px; }
-    .ty__step.is-pending { color: var(--ink-soft); }
-    .ty__step.is-pending .sdot::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--ink-soft); opacity: .55; }
+    .ty__step.is-pending { color: var(--fg-soft); }
+    .ty__step.is-pending .sdot::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--fg-soft); opacity: .6; }
 
-    .ty__q { font-weight: 700; font-size: 1.02rem; color: var(--ink-soft); margin: 0 0 .7rem; }
-    /* El botón usa las clases reales del sitio: .btn .btn--terra */
-    .ty a:focus-visible, .ty button:focus-visible { outline: 2px solid var(--terra); outline-offset: 3px; border-radius: 8px; }
+    .ty__q { font-weight: 700; font-size: 1.02rem; color: var(--fg-soft); margin: 0 0 .7rem; }
+    .ty .btn--go { display: inline-block; background: var(--btn-bg); color: var(--btn-fg); box-shadow: 0 16px 38px -18px rgba(0,0,0,.45); transition: transform .18s ease, filter .18s ease; }
+    .ty .btn--go:hover { transform: translateY(-2px); filter: brightness(1.05); }
+    .ty a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
 
-    .ty__llegar { padding-top: clamp(22px, 3vw, 30px); border-top: 1px solid rgba(51,51,51,.14); }
-    .ty__llegar-eyebrow { font-weight: 900; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: var(--terra-text); margin: 0 0 .4rem; }
-    .ty__llegar-title { font-weight: 900; font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 0 0 .9rem; color: var(--ink); }
+    .ty__llegar { padding-top: clamp(22px, 3vw, 30px); border-top: 1px solid var(--line); }
+    .ty__llegar-eyebrow { font-weight: 900; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: var(--eyebrow); margin: 0 0 .4rem; }
+    .ty__llegar-title { font-weight: 900; font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 0 0 .9rem; color: var(--title); }
     .ty__place { display: flex; align-items: flex-start; gap: .8rem; margin: 0 0 1.1rem; }
-    .ty__place-pin { flex: 0 0 auto; width: 42px; height: 42px; border-radius: 12px; display: grid; place-content: center; background: rgba(175,69,46,.08); border: 1px solid rgba(156,61,40,.2); color: var(--terra-text); }
+    .ty__place-pin { flex: 0 0 auto; width: 42px; height: 42px; border-radius: 12px; display: grid; place-content: center; background: var(--pin-bg); border: 1px solid var(--line); color: var(--eyebrow); }
     .ty__place-txt { line-height: 1.45; }
-    .ty__place-txt strong { display: block; font-size: 1.05rem; color: var(--ink); }
-    .ty__place-txt span { color: var(--ink-soft); font-size: .94rem; }
-    .ty__place-txt em { display: block; font-style: normal; color: var(--ink-soft); font-size: .92rem; margin-top: .25rem; max-width: 40ch; }
-    .ty__llegar-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .8rem 1.35rem; border-radius: 999px; border: 1.5px solid rgba(156,61,40,.4); color: var(--terra-text); font-weight: 900; font-size: .95rem; text-decoration: none; transition: background .18s, border-color .18s, transform .18s; }
-    .ty__llegar-btn:hover { background: rgba(175,69,46,.08); border-color: var(--terra); transform: translateY(-1px); }
+    .ty__place-txt strong { display: block; font-size: 1.05rem; color: var(--fg); }
+    .ty__place-txt span { color: var(--fg-soft); font-size: .94rem; }
+    .ty__place-txt em { display: block; font-style: normal; color: var(--fg-soft); font-size: .92rem; margin-top: .25rem; max-width: 40ch; }
+    .ty__llegar-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .8rem 1.35rem; border-radius: 999px; border: 1.5px solid var(--line-strong); color: var(--btnghost); font-weight: 900; font-size: .95rem; text-decoration: none; transition: background .18s, border-color .18s, transform .18s; }
+    .ty__llegar-btn:hover { background: rgba(239,231,213,.12); border-color: var(--btnghost); transform: translateY(-1px); }
 
-    .ty__foot { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .85rem; padding-top: clamp(4px,2vw,10px); font-size: .92rem; color: var(--ink-soft); }
-    .ty__foot a { color: var(--terra-text); text-decoration: none; border-bottom: 1px solid rgba(156,61,40,.35); padding-bottom: 1px; transition: color .16s, border-color .16s; }
-    .ty__foot a:hover { color: var(--terra-deep); border-color: var(--terra); }
-    .ty__foot .sep { color: rgba(51,51,51,.3); }
+    .ty__foot { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .85rem; padding-top: clamp(4px,2vw,10px); font-size: .92rem; color: var(--fg-soft); }
+    .ty__foot a { color: var(--link); text-decoration: none; border-bottom: 1px solid var(--line-strong); padding-bottom: 1px; }
+    .ty__foot a:hover { opacity: .8; }
+    .ty__foot .sep { opacity: .5; }
     .ty__ig { display: inline-flex; align-items: center; gap: .35rem; }
     .ty__ig svg { width: 16px; height: 16px; }
 
     .ty__aside { position: relative; will-change: transform, opacity; }
-    .ty__frame {
-      position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 4 / 5;
-      border: 9px solid var(--cream-card);
-      box-shadow: 0 44px 84px -46px rgba(90, 48, 28, .6), 0 0 0 1px rgba(51,40,30,.06);
-      transform: rotate(1.4deg);
-    }
-    .ty__frame::after { content: ""; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(51,40,30,.1); border-radius: 13px; pointer-events: none; }
+    .ty__frame { position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 4 / 5; border: 9px solid var(--frame); box-shadow: 0 46px 88px -46px rgba(40,20,10,.6), 0 0 0 1px rgba(40,20,10,.06); transform: rotate(1.4deg); }
+    .ty__frame::after { content: ""; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(40,20,10,.12); border-radius: 13px; pointer-events: none; }
     .ty__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    @media (max-width: 939px) {
-      .ty__frame { aspect-ratio: 16 / 10; transform: none; border-width: 7px; border-radius: 18px; box-shadow: 0 28px 56px -34px rgba(90,48,28,.5); }
-    }
+    @media (max-width: 939px) { .ty__frame { aspect-ratio: 16 / 10; transform: none; border-width: 7px; border-radius: 18px; box-shadow: 0 28px 56px -34px rgba(40,20,10,.5); } }
   </style>
 </head>
 <body>
@@ -218,7 +217,7 @@ pageKey: "gracias"
         </ul>
         <div class="rise d4">
           <p class="ty__q">{{ t.q }}</p>
-          <a class="btn btn--lg btn--terra" href="/{{ lng.dir }}carta.html">{{ t.cta }}</a>
+          <a class="btn btn--lg btn--go" href="/{{ lng.dir }}carta.html">{{ t.cta }}</a>
         </div>
       </section>
 
