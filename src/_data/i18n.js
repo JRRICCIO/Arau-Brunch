@@ -47,6 +47,16 @@ function syncSharedFields(content) {
         }
       }
     }
+    // Extras: el precio se define UNA vez en Español y se copia a los demás
+    // idiomas por posición. El nombre de cada extra queda traducido por idioma.
+    const esEx = es.carta.extras;
+    const ex = c.carta.extras;
+    if (esEx && ex && Array.isArray(esEx.items) && Array.isArray(ex.items)
+        && esEx.items.length === ex.items.length) {
+      for (let k = 0; k < ex.items.length; k++) {
+        if (esEx.items[k] && ex.items[k]) ex.items[k].precio = esEx.items[k].precio;
+      }
+    }
   }
 }
 

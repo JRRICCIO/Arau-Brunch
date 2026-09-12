@@ -7,6 +7,31 @@
     "dateline": "",
     "disclaimer": "Els preus són orientatius i la carta pot variar segons la temporada i la disponibilitat."
   },
+  "extras": {
+    "label": "Extres:",
+    "items": [
+      {
+        "nombre": "Alvocat",
+        "precio": "3€"
+      },
+      {
+        "nombre": "Bacon",
+        "precio": "3€"
+      },
+      {
+        "nombre": "Salmó gravlax",
+        "precio": "3,50€"
+      },
+      {
+        "nombre": "Halloumi",
+        "precio": "3€"
+      },
+      {
+        "nombre": "Hash brown",
+        "precio": "1,50€"
+      }
+    ]
+  },
   "sections": [
     {
       "id": "picoteo",
@@ -110,7 +135,7 @@
           "alergenos": "Gluten"
         }
       ],
-      "extras": "Extres: Alvocat +2,50€ · Bacon +2,50€ · Salmó gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
+      "mostrarExtras": true
     },
     {
       "id": "brunch",
@@ -189,7 +214,7 @@
           "alergenos": "Gluten · Lactis · Mostassa"
         }
       ],
-      "extras": "Extres: Alvocat +2,50€ · Bacon +2,50€ · Salmó gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
+      "mostrarExtras": true
     },
     {
       "id": "almuerzos",
@@ -257,7 +282,7 @@
           "alergenos": "Gluten · Làctics · Ou · Peix"
         }
       ],
-      "extras": "Extres: Alvocat +2,50€ · Bacon +2,50€ · Salmó gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
+      "mostrarExtras": true
     },
     {
       "id": "pasteleria",

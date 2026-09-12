@@ -38,8 +38,8 @@
           {%- endfor %}
         </ul>
         {%- endif %}
-        {%- if section.extras %}
-        <p class="menu-section__extras">{{ section.extras }}</p>
+        {%- if section.mostrarExtras and carta.extras and carta.extras.items | length %}
+        <p class="menu-section__extras">{{ carta.extras.label }} {% for e in carta.extras.items %}{{ e.nombre }} +{{ e.precio }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
         {%- endif %}
       </div>
     </section>

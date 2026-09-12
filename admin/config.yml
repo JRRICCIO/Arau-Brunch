@@ -49,6 +49,22 @@ collections:
               - { name: "titleAccent", label: "Título (parte destacada)", widget: "string", hint: "Esta parte se muestra resaltada" }
               - { name: "subtitle", label: "Subtítulo", widget: "text" }
               - { name: "disclaimer", label: "Aviso legal", widget: "text", hint: "Ej: Los precios son orientativos…" }
+          - name: "extras"
+            label: "Extras (ingredientes para sumar a los platos)"
+            widget: "object"
+            required: false
+            hint: "Es la línea «Extras: Aguacate +3€ · Bacon +3€ …» que aparece debajo de algunas secciones. Se edita UNA sola vez acá y cambia en todas las secciones donde esté activada. El precio se toma del Español y se copia solo a los demás idiomas."
+            fields:
+              - { name: "label", label: "Texto inicial", widget: "string", required: false, hint: 'Lo que va antes de la lista. Ej: «Extras:»' }
+              - name: "items"
+                label: "Lista de extras"
+                label_singular: "Extra"
+                widget: "list"
+                required: false
+                summary: "{{fields.nombre}} +{{fields.precio}}"
+                fields:
+                  - { name: "nombre", label: "Nombre", widget: "string", hint: "Ej: Aguacate, Bacon, Halloumi" }
+                  - { name: "precio", label: "Precio", widget: "string", hint: "Con el símbolo €. Ej: 3€ · 2,50€ · 3,50€" }
           - name: "sections"
             label: "Secciones"
             label_singular: "Sección"
@@ -59,6 +75,7 @@ collections:
               - { name: "id", label: "Identificador (opcional)", widget: "string", required: false, hint: "Dejalo VACÍO en secciones nuevas — se genera solo a partir del nombre. No lo cambies en las secciones que ya existen." }
               - { name: "subtitle", label: "Subtítulo", widget: "string", required: false }
               - { name: "compact", label: "Mostrar como lista compacta (café/bebidas)", widget: "boolean", default: false }
+              - { name: "mostrarExtras", label: "Mostrar la línea de «Extras» en esta sección", widget: "boolean", default: false, hint: "Prendé para que debajo de esta sección aparezca la lista de Extras (se edita arriba de todo, en «Extras»)." }
               - name: "items"
                 label: "Platos"
                 label_singular: "Plato"

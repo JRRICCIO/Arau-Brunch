@@ -7,6 +7,31 @@
     "dateline": "",
     "disclaimer": "Los precios son orientativos y la carta puede variar según temporada y disponibilidad."
   },
+  "extras": {
+    "label": "Extras:",
+    "items": [
+      {
+        "nombre": "Aguacate",
+        "precio": "3€"
+      },
+      {
+        "nombre": "Bacon",
+        "precio": "3€"
+      },
+      {
+        "nombre": "Salmón gravlax",
+        "precio": "3,50€"
+      },
+      {
+        "nombre": "Halloumi",
+        "precio": "3€"
+      },
+      {
+        "nombre": "Hash brown",
+        "precio": "1,50€"
+      }
+    ]
+  },
   "sections": [
     {
       "id": "picoteo",
@@ -110,7 +135,7 @@
           "alergenos": "Gluten"
         }
       ],
-      "extras": "Extras: Aguacate +2,50€ · Bacon +2,50€ · Salmón gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
+      "mostrarExtras": true
     },
     {
       "id": "brunch",
@@ -189,7 +214,7 @@
           "alergenos": "Gluten · Lácteos · Mostaza"
         }
       ],
-      "extras": "Extras: Aguacate +2,50€ · Bacon +2,50€ · Salmón gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
+      "mostrarExtras": true
     },
     {
       "id": "almuerzos",
@@ -257,7 +282,7 @@
           "alergenos": "Gluten · Lácteos · Huevo · Pescado"
         }
       ],
-      "extras": "Extras: Aguacate +2,50€ · Bacon +2,50€ · Salmón gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
+      "mostrarExtras": true
     },
     {
       "id": "pasteleria",

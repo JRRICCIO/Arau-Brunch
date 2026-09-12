@@ -7,6 +7,31 @@
     "dateline": "",
     "disclaimer": "Les prix sont donnés à titre indicatif et la carte peut varier selon la saison et les disponibilités."
   },
+  "extras": {
+    "label": "Extras :",
+    "items": [
+      {
+        "nombre": "Avocat",
+        "precio": "3€"
+      },
+      {
+        "nombre": "Bacon",
+        "precio": "3€"
+      },
+      {
+        "nombre": "Saumon gravlax",
+        "precio": "3,50€"
+      },
+      {
+        "nombre": "Halloumi",
+        "precio": "3€"
+      },
+      {
+        "nombre": "Hash brown",
+        "precio": "1,50€"
+      }
+    ]
+  },
   "sections": [
     {
       "id": "picoteo",
@@ -110,7 +135,7 @@
           "alergenos": "Gluten"
         }
       ],
-      "extras": "Extras : Avocat +2,50€ · Bacon +2,50€ · Saumon gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
+      "mostrarExtras": true
     },
     {
       "id": "brunch",
@@ -189,7 +214,7 @@
           "alergenos": "Gluten · Lactose · Moutarde"
         }
       ],
-      "extras": "Extras : Avocat +2,50€ · Bacon +2,50€ · Saumon gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
+      "mostrarExtras": true
     },
     {
       "id": "almuerzos",
@@ -257,7 +282,7 @@
           "alergenos": "Gluten · Produits laitiers · Œuf · Poisson"
         }
       ],
-      "extras": "Extras : Avocat +2,50€ · Bacon +2,50€ · Saumon gravlax +3,50€ · Halloumi +3€ · Hash brown +1,50€"
+      "mostrarExtras": true
     },
     {
       "id": "pasteleria",
