@@ -96,7 +96,9 @@
     "feature": {
       "play": "Voir les photos",
       "waReservar": "Réserver par WhatsApp",
-      "verFotosIg": "Voir les photos sur Instagram →"
+      "verFotosIg": "Voir les photos sur Instagram →",
+      "inscribirse": "S'inscrire à l'événement",
+      "verReelsIg": "Voir les reels sur Instagram →"
     },
     "card": {
       "play": "Voir les photos"

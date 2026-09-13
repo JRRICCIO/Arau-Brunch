@@ -63,6 +63,20 @@ function syncSharedFields(content) {
       }
     }
   }
+
+  // Eventos: el link de inscripción (Luma) y el de Instagram del bingo son
+  // iguales en todos los idiomas → se definen UNA vez en Español y se replican.
+  const esEv = es.eventos;
+  if (esEv && esEv.feature) {
+    for (const lang of LANGS) {
+      if (lang === "es") continue;
+      const ev = content[lang] && content[lang].eventos;
+      if (ev && ev.feature) {
+        ev.feature.lumaUrl = esEv.feature.lumaUrl;
+        ev.feature.igReelsUrl = esEv.feature.igReelsUrl;
+      }
+    }
+  }
 }
 
 module.exports = function () {

@@ -39,10 +39,14 @@
             {%- endif %}
             <p class="event-feature__desc">{{ eventos.feature.desc }}</p>
             <div class="event__actions">
-              {%- if eventos.feature.inscripciones %}
+              {%- if eventos.feature.lumaUrl %}
+              <a class="btn btn--terra js-bingo-balls" id="arau-bingo-btn" href="{{ eventos.feature.lumaUrl }}" target="_blank" rel="noopener noreferrer">{{ ui.eventos.feature.inscribirse }}</a>
+              {%- elif eventos.feature.inscripciones %}
               <button type="button" class="btn btn--terra js-inscribirme" data-evento-id="{{ eventos.feature.id }}" data-evento-nombre="{{ eventos.feature.kicker }}">{{ ui.inscripcion.cta }}</button>
               {%- endif %}
-              <a class="inline-link" href="https://instagram.com/{{ site.contacto.instagram }}" target="_blank" rel="noopener noreferrer">{{ ui.eventos.feature.verFotosIg }}</a>
+              {%- set igHref = eventos.feature.igReelsUrl if eventos.feature.igReelsUrl else "https://instagram.com/" + site.contacto.instagram %}
+              {%- set igText = ui.eventos.feature.verReelsIg if eventos.feature.igReelsUrl else ui.eventos.feature.verFotosIg %}
+              <a class="inline-link" href="{{ igHref }}" target="_blank" rel="noopener noreferrer">{{ igText }}</a>
             </div>
           </div>
         </article>

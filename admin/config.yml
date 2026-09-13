@@ -156,6 +156,8 @@ collections:
               - { name: "desc", label: "Descripción", widget: "text" }
               - { name: "id", label: "Identificador para inscripciones", widget: "string", required: false, hint: "Slug corto y estable, ej: noche-argentina. Usá el MISMO en los 4 idiomas para juntar bien los inscriptos." }
               - { name: "inscripciones", label: "Abrir inscripciones para este evento", widget: "boolean", default: false }
+              - { name: "lumaUrl", label: "Link de inscripción (Luma)", widget: "string", required: false, hint: "El botón «Inscribirse al evento» lleva a este link. Pegá el link del evento en Luma (ej: https://luma.com/xxxx) y cambialo cada mes; o usá el link del CALENDARIO de ARAU para no tener que cambiarlo nunca. Se copia solo a los 4 idiomas." }
+              - { name: "igReelsUrl", label: "Link de Instagram del Bingo (reels)", widget: "string", required: false, hint: "El enlace «Ver reels en Instagram» lleva acá. Ej: https://www.instagram.com/binguerosdearau  ·  Se copia solo a los 4 idiomas." }
           - name: "otros"
             label: "Otros eventos en Arau"
             widget: "object"

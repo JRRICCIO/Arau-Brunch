@@ -1231,7 +1231,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .event-feature__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.05; color: var(--ink); margin-top: .7rem; }
 .event-feature__title .ital { color: var(--terra); }
-.event-feature__desc { color: var(--ink-soft); margin-top: 1rem; font-size: 1.06rem; max-width: 42ch; }
+.event-feature__desc { color: var(--ink-soft); margin-top: 1rem; font-size: 1.06rem; max-width: 42ch; white-space: pre-line; }
 
 .events-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.8rem; }
 .event-card {

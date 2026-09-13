@@ -641,3 +641,45 @@
     }
   })();
 })();
+
+/* Bingo Night: lluvia de bolas de bingo al tocar "Inscribirse al evento".
+   No hace preventDefault → el link a Luma sigue funcionando. Respeta reduced-motion. */
+(function () {
+  var btns = document.querySelectorAll('.js-bingo-balls');
+  if (!btns.length) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var COLORS = ['#E4002B', '#0072CE', '#FFB81C', '#00A651', '#6A1B9A', '#FF6D00', '#00838F'];
+  function rand(a, b) { return a + Math.random() * (b - a); }
+  function burst(btn) {
+    if (reduce) return;
+    var rect = btn.getBoundingClientRect();
+    var ox = rect.left + rect.width / 2, oy = rect.top + rect.height / 2;
+    for (let i = 0; i < 24; i++) {
+      const ball = document.createElement('div');
+      const size = rand(26, 42);
+      const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+      ball.textContent = Math.floor(rand(1, 91));
+      Object.assign(ball.style, {
+        position: 'fixed', left: (ox - size / 2) + 'px', top: (oy - size / 2) + 'px',
+        width: size + 'px', height: size + 'px', borderRadius: '50%',
+        background: 'radial-gradient(circle at 35% 30%, #fff 0 16%, ' + color + ' 62%)',
+        color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center',
+        fontFamily: 'system-ui, sans-serif', fontWeight: '800', fontSize: (size * 0.42) + 'px',
+        textShadow: '0 1px 1px rgba(0,0,0,.35)',
+        boxShadow: 'inset -3px -4px 6px rgba(0,0,0,.28), 0 4px 10px rgba(0,0,0,.2)',
+        zIndex: '999999', pointerEvents: 'none', willChange: 'transform, opacity'
+      });
+      document.body.appendChild(ball);
+      const ang = rand(-Math.PI * 0.18, -Math.PI * 0.82), sp = rand(9, 16);
+      let vx = Math.cos(ang) * sp, vy = Math.sin(ang) * sp, x = 0, y = 0, rot = 0, life = 0;
+      const spin = rand(-13, 13);
+      (function frame() {
+        life++; vy += 0.45; x += vx; y += vy; rot += spin;
+        ball.style.transform = 'translate(' + x + 'px,' + y + 'px) rotate(' + rot + 'deg)';
+        ball.style.opacity = String(Math.max(0, 1 - life / 72));
+        if (life < 72) requestAnimationFrame(frame); else ball.remove();
+      })();
+    }
+  }
+  btns.forEach(function (btn) { btn.addEventListener('click', function () { burst(btn); }); });
+})();

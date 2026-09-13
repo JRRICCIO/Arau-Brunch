@@ -27,9 +27,11 @@
         "nueva": true
       }
     ],
-    "desc": "Trois manches avec des lots et la spécialité de la maison : sandwich de mila au pain de chipá.",
+    "desc": "Plus de 20 éditions et ça continue de se remplir.\n🏆 Prix (on joue 3 manches) :\n· Première ligne → un cocktail\n· Bingo → brunch pour 2\nEt le spécial maison : sandwich de Milanesa au pain de chipá (pain au fromage).",
     "id": "bingo-night",
-    "inscripciones": true
+    "inscripciones": true,
+    "lumaUrl": "https://luma.com/1fl7wirm",
+    "igReelsUrl": "https://www.instagram.com/binguerosdearau"
   },
   "otros": {
     "heading": "Autres événements chez Arau",
