@@ -11,28 +11,7 @@
     "fecha": "Día 00 de mes · 00:00 h"
   },
   "feature": {
-    "activo": true,
     "titleAccent": "abuela",
-    "fechas": [
-      {
-        "fecha": "Jueves 6 de agosto",
-        "agotado": true,
-        "nueva": false
-      },
-      {
-        "fecha": "Jueves 20 de agosto",
-        "agotado": false,
-        "nueva": true
-      }
-    ],
-    "titleStart": "No es el bingo de tu",
-    "kicker": "Bingo Night",
-    "inscripciones": true,
-    "id": "bingo-night",
-    "lumaUrl": "https://luma.com/1fl7wirm",
-    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
-    "intro": "Más de 20 ediciones y sigue llenándose.",
-    "premiosNota": "jugamos 3 rondas",
     "premios": [
       {
         "ronda": "Primera línea",
@@ -43,7 +22,28 @@
         "premio": "brunch para 2"
       }
     ],
-    "especial": "Sándwich de Milanesa en pan de chipá (pan de queso)."
+    "titleStart": "No es el bingo de tu",
+    "intro": "Más de 20 ediciones y sigue llenándose.",
+    "activo": true,
+    "premiosNota": "jugamos 3 rondas",
+    "lumaUrl": "https://luma.com/1fl7wirm",
+    "kicker": "Bingo Night",
+    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
+    "especial": "Sándwich de Milanesa en pan de chipá (pan de queso).",
+    "fechas": [
+      {
+        "fecha": "Jueves 8 de septiembre",
+        "agotado": false,
+        "nueva": false
+      },
+      {
+        "fecha": "Noviembre a confirmar",
+        "agotado": false,
+        "nueva": false
+      }
+    ],
+    "inscripciones": true,
+    "id": "bingo-night"
   },
   "otros": {
     "heading": "Otros eventos en Arau",
