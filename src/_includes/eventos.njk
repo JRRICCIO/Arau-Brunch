@@ -37,7 +37,30 @@
             {%- elif eventos.feature.chip %}
             <span class="event__chip">{{ eventos.feature.chip }}</span>
             {%- endif %}
+            {%- if eventos.feature.premios or eventos.feature.intro or eventos.feature.especial %}
+            <div class="bingo-copy">
+              {%- if eventos.feature.intro %}<p class="bingo-copy__intro">{{ eventos.feature.intro }}</p>{%- endif %}
+              {%- if eventos.feature.premios %}
+              <div class="bingo-prizes">
+                <p class="bingo-prizes__head"><span class="bingo-prizes__ic" aria-hidden="true">🏆</span> {{ ui.eventos.feature.premios }}{% if eventos.feature.premiosNota %} <span class="bingo-prizes__note">· {{ eventos.feature.premiosNota }}</span>{% endif %}</p>
+                <ul class="bingo-prizes__list">
+                  {%- for p in eventos.feature.premios %}
+                  <li class="bingo-prizes__row">
+                    <span class="bingo-prizes__ronda">{{ p.ronda }}</span>
+                    <span class="bingo-prizes__arrow" aria-hidden="true">→</span>
+                    <span class="bingo-prizes__win">{{ p.premio }}</span>
+                  </li>
+                  {%- endfor %}
+                </ul>
+              </div>
+              {%- endif %}
+              {%- if eventos.feature.especial %}
+              <p class="bingo-special"><span class="bingo-special__tag">{{ ui.eventos.feature.especialLabel }}</span> <span class="bingo-special__txt">{{ eventos.feature.especial }}</span></p>
+              {%- endif %}
+            </div>
+            {%- elif eventos.feature.desc %}
             <p class="event-feature__desc">{{ eventos.feature.desc }}</p>
+            {%- endif %}
             <div class="event__actions">
               {%- if eventos.feature.lumaUrl %}
               <a class="btn btn--terra js-bingo-balls" id="arau-bingo-btn" href="{{ eventos.feature.lumaUrl }}" target="_blank" rel="noopener noreferrer">{{ ui.eventos.feature.inscribirse }}</a>

@@ -153,7 +153,19 @@ collections:
                   - { name: "fecha", label: "Fecha y horario", widget: "string", hint: "Ej: Jueves 20 de agosto · 20:30 h" }
                   - { name: "agotado", label: "Agotado (sin lugares)", widget: "boolean", default: false }
                   - { name: "nueva", label: "Nueva fecha (cartel “Nueva fecha”)", widget: "boolean", default: false, hint: "Marcala para destacar una fecha recién abierta. Si está “Agotado”, gana Agotado." }
-              - { name: "desc", label: "Descripción", widget: "text" }
+              - { name: "intro", label: "Texto de arriba", widget: "text", required: false, hint: "Ej: Más de 20 ediciones y sigue llenándose." }
+              - { name: "premiosNota", label: "Nota de premios (al lado del título)", widget: "string", required: false, hint: "Ej: jugamos 3 rondas" }
+              - name: "premios"
+                label: "Premios"
+                label_singular: "Premio"
+                widget: "list"
+                required: false
+                summary: "{{fields.ronda}} → {{fields.premio}}"
+                hint: "Cada fila: qué se gana y con qué. Ej: «Primera línea» → «un cóctel»."
+                fields:
+                  - { name: "ronda", label: "Con qué (ronda/logro)", widget: "string", hint: "Ej: Primera línea, Bingo" }
+                  - { name: "premio", label: "Qué se gana", widget: "string", hint: "Ej: un cóctel, brunch para 2" }
+              - { name: "especial", label: "Especial de la casa", widget: "text", required: false, hint: "Ej: Sándwich de Milanesa en pan de chipá (pan de queso)." }
               - { name: "id", label: "Identificador para inscripciones", widget: "string", required: false, hint: "Slug corto y estable, ej: noche-argentina. Usá el MISMO en los 4 idiomas para juntar bien los inscriptos." }
               - { name: "inscripciones", label: "Abrir inscripciones para este evento", widget: "boolean", default: false }
               - { name: "lumaUrl", label: "Link de inscripción (Luma)", widget: "string", required: false, hint: "El botón «Inscribirse al evento» lleva a este link. Pegá el link del evento en Luma (ej: https://luma.com/xxxx) y cambialo cada mes; o usá el link del CALENDARIO de ARAU para no tener que cambiarlo nunca. Se copia solo a los 4 idiomas." }

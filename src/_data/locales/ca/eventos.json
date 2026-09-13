@@ -27,11 +27,23 @@
         "nueva": true
       }
     ],
-    "desc": "Més de 20 edicions i continua omplint-se.\n🏆 Premis (juguem 3 rondes):\n· Primera línia → un còctel\n· Bingo → brunch per a 2 persones\nI l'especial de la casa: entrepà de Milanesa en pa de chipá (pa de formatge).",
     "id": "bingo-night",
     "inscripciones": true,
     "lumaUrl": "https://luma.com/1fl7wirm",
-    "igReelsUrl": "https://www.instagram.com/binguerosdearau"
+    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
+    "intro": "Més de 20 edicions i continua omplint-se.",
+    "premiosNota": "juguem 3 rondes",
+    "premios": [
+      {
+        "ronda": "Primera línia",
+        "premio": "un còctel"
+      },
+      {
+        "ronda": "Bingo",
+        "premio": "brunch per a 2"
+      }
+    ],
+    "especial": "Entrepà de Milanesa en pa de chipá (pa de formatge)."
   },
   "otros": {
     "heading": "Altres esdeveniments a l'Arau",

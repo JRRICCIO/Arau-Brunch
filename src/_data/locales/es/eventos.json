@@ -26,12 +26,24 @@
       }
     ],
     "titleStart": "No es el bingo de tu",
-    "desc": "Más de 20 ediciones y sigue llenándose.\n🏆 Premios (jugamos 3 rondas):\n· Primera línea → un cóctel\n· Bingo → brunch para 2 personas\nY el especial de la casa: sándwich de Milanesa en pan de chipá (pan de queso).",
     "kicker": "Bingo Night",
     "inscripciones": true,
     "id": "bingo-night",
     "lumaUrl": "https://luma.com/1fl7wirm",
-    "igReelsUrl": "https://www.instagram.com/binguerosdearau"
+    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
+    "intro": "Más de 20 ediciones y sigue llenándose.",
+    "premiosNota": "jugamos 3 rondas",
+    "premios": [
+      {
+        "ronda": "Primera línea",
+        "premio": "un cóctel"
+      },
+      {
+        "ronda": "Bingo",
+        "premio": "brunch para 2"
+      }
+    ],
+    "especial": "Sándwich de Milanesa en pan de chipá (pan de queso)."
   },
   "otros": {
     "heading": "Otros eventos en Arau",

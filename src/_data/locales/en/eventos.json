@@ -27,11 +27,23 @@
         "nueva": true
       }
     ],
-    "desc": "Over 20 editions and still filling up.\n🏆 Prizes (we play 3 rounds):\n· First line → a cocktail\n· Bingo → brunch for 2\nAnd the house special: Milanesa sandwich on chipá bread (cheese bread).",
     "id": "bingo-night",
     "inscripciones": true,
     "lumaUrl": "https://luma.com/1fl7wirm",
-    "igReelsUrl": "https://www.instagram.com/binguerosdearau"
+    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
+    "intro": "Over 20 editions and still filling up.",
+    "premiosNota": "we play 3 rounds",
+    "premios": [
+      {
+        "ronda": "First line",
+        "premio": "a cocktail"
+      },
+      {
+        "ronda": "Bingo",
+        "premio": "brunch for 2"
+      }
+    ],
+    "especial": "Milanesa sandwich on chipá bread (cheese bread)."
   },
   "otros": {
     "heading": "More events at Arau",
