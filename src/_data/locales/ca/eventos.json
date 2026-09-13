@@ -1,38 +1,17 @@
 {
   "proximo": {
-    "activo": false,
-    "kicker": "Pròxim esdeveniment",
-    "titulo": "Nom del pròxim esdeveniment",
-    "fecha": "Dia 00 de mes · 00:00 h",
-    "desc": "Explica de què va l'esdeveniment i per què no se'l poden perdre.",
     "foto": "",
     "fotoAlt": "",
+    "cta": "Vull apuntar-me",
+    "activo": false,
+    "desc": "Explica de què va l'esdeveniment i per què no se'l poden perdre.",
+    "kicker": "Pròxim esdeveniment",
+    "titulo": "Nom del pròxim esdeveniment",
     "id": "proximo-evento",
-    "cta": "Vull apuntar-me"
+    "fecha": "Dia 00 de mes · 00:00 h"
   },
   "feature": {
-    "activo": true,
-    "kicker": "Bingo Night",
-    "titleStart": "No és el bingo de la teva",
     "titleAccent": "àvia",
-    "fechas": [
-      {
-        "fecha": "Dijous 6 d'agost",
-        "agotado": true,
-        "nueva": false
-      },
-      {
-        "fecha": "Dijous 20 d'agost",
-        "agotado": false,
-        "nueva": true
-      }
-    ],
-    "id": "bingo-night",
-    "inscripciones": true,
-    "lumaUrl": "https://luma.com/1fl7wirm",
-    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
-    "intro": "Més de 20 edicions i continua omplint-se.",
-    "premiosNota": "juguem 3 rondes",
     "premios": [
       {
         "ronda": "Primera línia",
@@ -43,7 +22,17 @@
         "premio": "brunch per a 2"
       }
     ],
-    "especial": "Entrepà de Milanesa en pa de chipá (pa de formatge)."
+    "titleStart": "No és el bingo de la teva",
+    "intro": "Més de 20 edicions i continua omplint-se.",
+    "activo": true,
+    "premiosNota": "juguem 3 rondes",
+    "lumaUrl": "https://luma.com/1fl7wirm",
+    "kicker": "Bingo Night",
+    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
+    "especial": "Entrepà de Milanesa en pa de chipá (pa de formatge).",
+    "fechas": [],
+    "inscripciones": true,
+    "id": "bingo-night"
   },
   "otros": {
     "heading": "Altres esdeveniments a l'Arau",
