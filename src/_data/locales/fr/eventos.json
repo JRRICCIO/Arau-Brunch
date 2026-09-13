@@ -1,38 +1,17 @@
 {
   "proximo": {
-    "activo": false,
-    "kicker": "Prochain événement",
-    "titulo": "Nom du prochain événement",
-    "fecha": "Jour 00 mois · 00:00",
-    "desc": "Expliquez de quoi il s'agit et pourquoi il ne faut pas le manquer.",
     "foto": "",
     "fotoAlt": "",
+    "cta": "Je m'inscris",
+    "activo": false,
+    "desc": "Expliquez de quoi il s'agit et pourquoi il ne faut pas le manquer.",
+    "kicker": "Prochain événement",
+    "titulo": "Nom du prochain événement",
     "id": "proximo-evento",
-    "cta": "Je m'inscris"
+    "fecha": "Jour 00 mois · 00:00"
   },
   "feature": {
-    "activo": true,
-    "kicker": "Bingo Night",
-    "titleStart": "Ce n'est pas le bingo de ta",
     "titleAccent": "grand-mère",
-    "fechas": [
-      {
-        "fecha": "Jeudi 6 août",
-        "agotado": true,
-        "nueva": false
-      },
-      {
-        "fecha": "Jeudi 20 août",
-        "agotado": false,
-        "nueva": true
-      }
-    ],
-    "id": "bingo-night",
-    "inscripciones": true,
-    "lumaUrl": "https://luma.com/1fl7wirm",
-    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
-    "intro": "Plus de 20 éditions et ça continue de se remplir.",
-    "premiosNota": "on joue 3 manches",
     "premios": [
       {
         "ronda": "Première ligne",
@@ -43,7 +22,17 @@
         "premio": "brunch pour 2"
       }
     ],
-    "especial": "Sandwich de Milanesa au pain de chipá (pain au fromage)."
+    "titleStart": "Ce n'est pas le bingo de ta",
+    "intro": "Plus de 20 éditions et ça continue de se remplir.",
+    "activo": true,
+    "premiosNota": "on joue 3 manches",
+    "lumaUrl": "https://luma.com/1fl7wirm",
+    "kicker": "Bingo Night",
+    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
+    "especial": "Sandwich de Milanesa au pain de chipá (pain au fromage).",
+    "fechas": [],
+    "inscripciones": true,
+    "id": "bingo-night"
   },
   "otros": {
     "heading": "Autres événements chez Arau",
