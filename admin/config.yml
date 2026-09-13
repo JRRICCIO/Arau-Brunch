@@ -75,7 +75,6 @@ collections:
               - { name: "id", label: "Identificador (opcional)", widget: "string", required: false, hint: "Dejalo VACÍO en secciones nuevas — se genera solo a partir del nombre. No lo cambies en las secciones que ya existen." }
               - { name: "subtitle", label: "Subtítulo", widget: "string", required: false }
               - { name: "compact", label: "Mostrar como lista compacta (café/bebidas)", widget: "boolean", default: false }
-              - { name: "mostrarExtras", label: "Mostrar la línea de «Extras» en esta sección", widget: "boolean", default: false, hint: "Prendé para que debajo de esta sección aparezca la lista de Extras (se edita arriba de todo, en «Extras»)." }
               - name: "items"
                 label: "Platos"
                 label_singular: "Plato"

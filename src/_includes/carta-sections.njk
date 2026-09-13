@@ -38,7 +38,9 @@
           {%- endfor %}
         </ul>
         {%- endif %}
-        {%- if section.mostrarExtras and carta.extras and carta.extras.items | length %}
+        {#- La línea de "Extras" se muestra SOLO en las secciones de comida (por id).
+            Así no depende de un interruptor por sección que se pueda activar por error. -#}
+        {%- if section.id in ["desayunos", "brunch", "almuerzos"] and carta.extras and carta.extras.items | length %}
         <p class="menu-section__extras">{{ carta.extras.label }} {% for e in carta.extras.items %}{{ e.nombre }} +{{ e.precio }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
         {%- endif %}
       </div>
