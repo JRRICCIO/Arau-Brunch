@@ -76,7 +76,8 @@
           "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_763b022d05.jpg",
           "alergenos": "Gluten"
         }
-      ]
+      ],
+      "mostrarExtras": true
     },
     {
       "id": "desayunos",
@@ -272,12 +273,12 @@
           "disponible": true
         },
         {
-          "visible": true,
+          "visible": false,
           "nombre": "NUEVO Ceasar Austral",
           "desc": "Lechuga romana, pollo marinado y grillado, panceta crocante, láminas de parmesano, croutons artesanales, pipas de calabaza y nuestra salsa César con un toque de chimichurri.",
           "precio": "14,50",
           "etiquetas": [],
-          "disponible": true,
+          "disponible": false,
           "foto": "https://d178qcw5t51h8k.cloudfront.net/medium_IMG_0020_f60ac1a756.jpeg",
           "alergenos": "Gluten · Lácteos · Huevo · Pescado"
         }
@@ -329,7 +330,8 @@
           "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_a29f8c66c0.jpg",
           "alergenos": "Huevo · Lácteos"
         }
-      ]
+      ],
+      "mostrarExtras": true
     },
     {
       "id": "postres",
@@ -351,7 +353,8 @@
           "foto": "https://araubrunch.es/img/flantastico-carta.webp",
           "alergenos": "Huevo · Lácteos"
         }
-      ]
+      ],
+      "mostrarExtras": true
     },
     {
       "id": "cafe",
@@ -534,7 +537,8 @@
           "disponible": true,
           "alergenos": "Lácteos"
         }
-      ]
+      ],
+      "mostrarExtras": true
     },
     {
       "id": "cafe-frio",
@@ -611,7 +615,8 @@
           "disponible": true,
           "alergenos": "Lácteos"
         }
-      ]
+      ],
+      "mostrarExtras": true
     },
     {
       "id": "zumos",
@@ -658,7 +663,8 @@
           "etiquetas": [],
           "disponible": true
         }
-      ]
+      ],
+      "mostrarExtras": true
     },
     {
       "id": "bebidas",
@@ -769,7 +775,8 @@
           "etiquetas": [],
           "disponible": true
         }
-      ]
+      ],
+      "mostrarExtras": true
     },
     {
       "id": "cocktails",
@@ -874,7 +881,8 @@
           "disponible": true,
           "alergenos": "Sulfitos"
         }
-      ]
+      ],
+      "mostrarExtras": true
     },
     {
       "id": "vinos",
@@ -917,7 +925,8 @@
           "disponible": true,
           "alergenos": "Sulfitos"
         }
-      ]
+      ],
+      "mostrarExtras": true
     }
   ]
 }
