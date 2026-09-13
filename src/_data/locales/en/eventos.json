@@ -1,38 +1,17 @@
 {
   "proximo": {
-    "activo": false,
-    "kicker": "Next event",
-    "titulo": "Name of the next event",
-    "fecha": "Day 00 month · 00:00",
-    "desc": "Tell people what the event is about and why they can't miss it.",
     "foto": "",
     "fotoAlt": "",
+    "cta": "Sign up",
+    "activo": false,
+    "desc": "Tell people what the event is about and why they can't miss it.",
+    "kicker": "Next event",
+    "titulo": "Name of the next event",
     "id": "proximo-evento",
-    "cta": "Sign up"
+    "fecha": "Day 00 month · 00:00"
   },
   "feature": {
-    "activo": true,
-    "kicker": "Bingo Night",
-    "titleStart": "Not your grandma's",
     "titleAccent": "bingo",
-    "fechas": [
-      {
-        "fecha": "Thursday, August 6",
-        "agotado": true,
-        "nueva": false
-      },
-      {
-        "fecha": "Thursday, August 20",
-        "agotado": false,
-        "nueva": true
-      }
-    ],
-    "id": "bingo-night",
-    "inscripciones": true,
-    "lumaUrl": "https://luma.com/1fl7wirm",
-    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
-    "intro": "Over 20 editions and still filling up.",
-    "premiosNota": "we play 3 rounds",
     "premios": [
       {
         "ronda": "First line",
@@ -43,7 +22,17 @@
         "premio": "brunch for 2"
       }
     ],
-    "especial": "Milanesa sandwich on chipá bread (cheese bread)."
+    "titleStart": "Not your grandma's",
+    "intro": "Over 20 editions and still filling up.",
+    "activo": true,
+    "premiosNota": "we play 3 rounds",
+    "lumaUrl": "https://luma.com/1fl7wirm",
+    "kicker": "Bingo Night",
+    "igReelsUrl": "https://www.instagram.com/binguerosdearau",
+    "especial": "Milanesa sandwich on chipá bread (cheese bread).",
+    "fechas": [],
+    "inscripciones": true,
+    "id": "bingo-night"
   },
   "otros": {
     "heading": "More events at Arau",
