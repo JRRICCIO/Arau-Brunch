@@ -44,6 +44,11 @@ function syncSharedFields(content) {
         if (esItems[j] && items[j]) {
           items[j].precio = esItems[j].precio;
           items[j].foto = esItems[j].foto;
+          // Mostrar/ocultar y "agotado" también se definen UNA vez en Español
+          // y se replican: si un plato se oculta o se agota, vale para todos
+          // los idiomas. (El nombre y la descripción quedan por idioma.)
+          if (typeof esItems[j].visible === "boolean") items[j].visible = esItems[j].visible;
+          if (typeof esItems[j].disponible === "boolean") items[j].disponible = esItems[j].disponible;
         }
       }
     }
