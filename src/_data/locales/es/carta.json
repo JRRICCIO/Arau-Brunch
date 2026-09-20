@@ -392,7 +392,7 @@
         {
           "visible": true,
           "nombre": "Americano",
-          "desc": "",
+          "desc": "Doble espresso + agua caliente",
           "precio": "2,50",
           "etiquetas": [],
           "disponible": true
