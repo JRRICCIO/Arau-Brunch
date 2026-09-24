@@ -38,3 +38,142 @@
   for = "/img/*"
   [headers.values]
     Cache-Control = "public, max-age=2592000"
+
+# ============================================================
+# Redirecciones 301 del sitio VIEJO (Wix) al NUEVO.
+# El sitio viejo (www.araubrunch.es) usaba prefijo /es/ y paginas
+# como /menu, /about, /eventos, /reservas, /bingo, /blog, /post/...
+# Todas esas URLs quedaron 404 tras la migracion y Google las tenia
+# indexadas -> se recupera el SEO redirigiendo cada una a su equivalente.
+# (El redirect www -> apex ya lo hace Netlify por dominio.)
+# ============================================================
+
+# --- Menu -> Carta ---
+[[redirects]]
+  from = "/menu"
+  to = "/carta.html"
+  status = 301
+[[redirects]]
+  from = "/es/menu"
+  to = "/carta.html"
+  status = 301
+
+# --- About -> Nosotros ---
+[[redirects]]
+  from = "/about"
+  to = "/#nosotros"
+  status = 301
+[[redirects]]
+  from = "/es/about"
+  to = "/#nosotros"
+  status = 301
+
+# --- Eventos y Bingo ---
+[[redirects]]
+  from = "/eventos"
+  to = "/#eventos"
+  status = 301
+[[redirects]]
+  from = "/es/eventos"
+  to = "/#eventos"
+  status = 301
+[[redirects]]
+  from = "/bingo"
+  to = "/#eventos"
+  status = 301
+[[redirects]]
+  from = "/es/bingo"
+  to = "/#eventos"
+  status = 301
+[[redirects]]
+  from = "/copy-of-bingo"
+  to = "/#eventos"
+  status = 301
+[[redirects]]
+  from = "/es/copy-of-bingo"
+  to = "/#eventos"
+  status = 301
+
+# --- Reservas ---
+[[redirects]]
+  from = "/reservas"
+  to = "/#reservar"
+  status = 301
+[[redirects]]
+  from = "/es/reservas"
+  to = "/#reservar"
+  status = 301
+
+# --- Contacto -> Visitanos ---
+[[redirects]]
+  from = "/contact"
+  to = "/#visitanos"
+  status = 301
+[[redirects]]
+  from = "/es/contact"
+  to = "/#visitanos"
+  status = 301
+
+# --- Paginas sin equivalente -> home ---
+[[redirects]]
+  from = "/privacidad"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/es/privacidad"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/blog"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/es/blog"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/arau-beats"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/es/arau-beats"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/truco"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/es/truco"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/tracker-page"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/es/tracker-page"
+  to = "/"
+  status = 301
+
+# --- Splats (blog posts, paginas de servicio, perfil, resto de /es/) ---
+[[redirects]]
+  from = "/post/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/service-page/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/profile/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/es"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/es/*"
+  to = "/"
+  status = 301

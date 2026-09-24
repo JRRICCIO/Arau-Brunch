@@ -59,7 +59,8 @@ pageKey: "home"
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "16:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "09:30", "closes": "17:00" }
     ],
-    "sameAs": ["https://instagram.com/araubrunch", "https://tiktok.com/@araubrunch"]
+    "hasMap": "https://maps.google.com/?cid=15997183832501658727",
+    "sameAs": ["https://instagram.com/araubrunch", "https://tiktok.com/@araubrunch", "https://maps.google.com/?cid=15997183832501658727"]
   }
   </script>
 
@@ -378,7 +379,7 @@ pageKey: "home"
         <div class="reviews-summary reveal">
           <p class="reviews-summary__score">4,8 <span class="reviews-summary__stars" aria-hidden="true">★★★★★</span></p>
           <p class="reviews-summary__text">{{ contenido.experiencia.reviewsText | replace("[[ARAU]]", "Arau") | safe }}</p>
-          <a class="btn btn--terra btn--lg" href="https://www.google.com/maps/search/?api=1&amp;query=ARAU%20brunch%20Carrer%20de%20Proven%C3%A7a%20322%20Barcelona" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn--terra btn--lg" href="https://maps.google.com/?cid=15997183832501658727" target="_blank" rel="noopener noreferrer">
             {{ contenido.experiencia.readReviews }}
             <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -441,7 +442,7 @@ pageKey: "home"
             <span class="map-embed__hint">{{ ui.cookies.mapBlocked }}</span>
           </button>
           <p class="map-embed__alt">
-            <a class="inline-link" href="https://maps.google.com/maps?q=Carrer+de+Proven%C3%A7a+322+Barcelona" target="_blank" rel="noopener noreferrer">{{ ui.visitanos.openInMaps }}</a>
+            <a class="inline-link" href="https://maps.google.com/?cid=15997183832501658727" target="_blank" rel="noopener noreferrer">{{ ui.visitanos.openInMaps }}</a>
           </p>
         </div>
       </div>
