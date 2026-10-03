@@ -75,6 +75,16 @@
           "disponible": true,
           "foto": "https://powermenu-media.s3.eu-west-2.amazonaws.com/medium_header_763b022d05.jpg",
           "alergenos": "Gluten"
+        },
+        {
+          "visible": false,
+          "nombre": "Patatas Arau",
+          "desc": "",
+          "precio": "",
+          "foto": "https://araubrunch.es/img/patatas-arau.webp",
+          "etiquetas": [],
+          "alergenos": "",
+          "disponible": true
         }
       ]
     },
