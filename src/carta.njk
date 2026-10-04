@@ -412,7 +412,7 @@ pageKey: "carta"
       padding-block: clamp(.5rem, 2vw, 1.5rem) clamp(2.5rem, 6vw, 4.5rem);
     }
     .menu-embed {
-      max-width: 1060px;
+      max-width: 480px;
       margin-inline: auto;
       padding-inline: var(--gutter);
     }
@@ -568,7 +568,7 @@ pageKey: "carta"
     <section class="menu-embed-wrap" aria-label="{{ carta.intro.titleStart }} {{ carta.intro.titleAccent }}">
       <div class="menu-embed">
         <div class="menu-embed__frame">
-          <iframe class="menu-embed__iframe" src="{{ carta.powerupUrl }}" title="{{ m.title }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="menu-embed__iframe" src="{{ carta.powerupUrl }}" title="{{ m.title }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe>
         </div>
         <p class="menu-embed__fallback">{{ ui.carta.embed.noCarga }} <a href="{{ carta.powerupUrl }}" target="_blank" rel="noopener">{{ ui.carta.embed.abrir }}</a></p>
       </div>
