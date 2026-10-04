@@ -79,6 +79,10 @@
       "title": "¿Se te hizo <span class=\"ital\">agua la boca?</span>",
       "comoLlegar": "Cómo llegar"
     },
+    "embed": {
+      "noCarga": "¿No ves la carta?",
+      "abrir": "Abrir en una pestaña nueva ↗"
+    },
     "actionbar": {
       "comoLlegar": "Cómo llegar"
     },

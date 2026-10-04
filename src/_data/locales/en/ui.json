@@ -79,6 +79,10 @@
       "title": "Is your <span class=\"ital\">mouth watering?</span>",
       "comoLlegar": "How to get here"
     },
+    "embed": {
+      "noCarga": "Can't see the menu?",
+      "abrir": "Open it in a new tab ↗"
+    },
     "actionbar": {
       "comoLlegar": "How to get here"
     },

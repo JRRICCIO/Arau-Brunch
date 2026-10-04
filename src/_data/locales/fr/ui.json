@@ -79,6 +79,10 @@
       "title": "L'eau t'en vient <span class=\"ital\">à la bouche ?</span>",
       "comoLlegar": "Comment venir"
     },
+    "embed": {
+      "noCarga": "Tu ne vois pas la carte ?",
+      "abrir": "Ouvrir dans un nouvel onglet ↗"
+    },
     "actionbar": {
       "comoLlegar": "Comment venir"
     },

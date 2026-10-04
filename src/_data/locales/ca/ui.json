@@ -79,6 +79,10 @@
       "title": "Se't ha fet <span class=\"ital\">la boca aigua?</span>",
       "comoLlegar": "Com arribar"
     },
+    "embed": {
+      "noCarga": "No veus la carta?",
+      "abrir": "Obre-la en una pestanya nova ↗"
+    },
     "actionbar": {
       "comoLlegar": "Com arribar"
     },

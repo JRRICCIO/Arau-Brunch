@@ -406,6 +406,43 @@ pageKey: "carta"
     .drink-allerg { font-family: var(--font-body); font-weight: 400; font-size: .72rem; color: var(--ink-soft); letter-spacing: .01em; white-space: nowrap; }
     .drink-allerg::before { content: "⚠ "; color: var(--terra); font-size: .9em; }
 
+    /* ---------- Carta embebida (PowerUp) ---------- */
+    .menu-embed-wrap {
+      background: var(--cream);
+      padding-block: clamp(.5rem, 2vw, 1.5rem) clamp(2.5rem, 6vw, 4.5rem);
+    }
+    .menu-embed {
+      max-width: 1060px;
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+    }
+    .menu-embed__frame {
+      border: 1px solid rgba(51, 51, 51, .14);
+      border-radius: 18px;
+      overflow: hidden;
+      background: var(--cream-card);
+      box-shadow: 0 28px 60px -42px rgba(90, 48, 28, .5);
+    }
+    .menu-embed__iframe {
+      display: block;
+      width: 100%;
+      border: 0;
+      height: min(calc(100dvh - var(--header-h, 72px) - 24px), 1600px);
+      min-height: 560px;
+    }
+    .menu-embed__fallback {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: .92rem;
+      color: var(--ink-soft);
+    }
+    .menu-embed__fallback a {
+      color: var(--terra-deep);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
     /* Cierre / volver */
     .menu-outro {
       background: var(--espresso);
@@ -526,6 +563,17 @@ pageKey: "carta"
       </div>
     </section>
 
+    {%- if carta.powerupUrl %}
+    <!-- ===================== CARTA EMBEBIDA (PowerUp) ===================== -->
+    <section class="menu-embed-wrap" aria-label="{{ carta.intro.titleStart }} {{ carta.intro.titleAccent }}">
+      <div class="menu-embed">
+        <div class="menu-embed__frame">
+          <iframe class="menu-embed__iframe" src="{{ carta.powerupUrl }}" title="{{ m.title }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="menu-embed__fallback">{{ ui.carta.embed.noCarga }} <a href="{{ carta.powerupUrl }}" target="_blank" rel="noopener">{{ ui.carta.embed.abrir }}</a></p>
+      </div>
+    </section>
+    {%- else %}
     <!-- ===================== LEYENDA (arriba de la carta) ===================== -->
     <div class="menu-legend">
       <div class="menu-legend__inner">
@@ -553,6 +601,7 @@ pageKey: "carta"
     </nav>
 
     {% include "carta-sections.njk" %}
+    {%- endif %}
 
     <!-- ===================== CIERRE ===================== -->
     <section class="menu-outro" aria-labelledby="outro-title">
