@@ -127,7 +127,7 @@
     "openInMaps": "Open in Google Maps ↗"
   },
   "reservar": {
-    "formId": "mJG9L7",
+    "reservaUrl": "https://arau-brunch.kivly.store/reservation/69f21d109017a7b08d9ad726",
     "eyebrow": "Bookings",
     "title": "Join the <span class=\"ital\">table</span>",
     "lead": "Book your spot or your table. For groups of 5 people or more, we'll confirm your booking by email once you've made it.",
